@@ -147,17 +147,34 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
 .action-btn { background: #D4AF37; color: #800020; border: none; padding: 12px 20px; font-weight: bold; border-radius: 6px; font-size: 12px; min-width: 130px; cursor: pointer; text-transform: uppercase; transition: 0.3s; }
 .action-btn:hover { background: #fff; }
 
-@media (max-width: 768px) { 
-    .stage-info-bar { padding: 15px; gap: 10px; } 
-    .text-group h3 { font-size: 1rem; } 
-    .action-btn { padding: 10px 15px; min-width: 110px; font-size: 11px; } 
-
-    .filter-row {
-        gap: 8px;
+@media (max-width: 768px) {
+    /* 1. Fix the clipping */
+    .stage-view-container {
+        height: auto !important; /* Allow it to grow with content */
+        min-height: 400px;        /* Set a safe minimum */
+        padding-top: 40px;
+        padding-bottom: 60px;     /* Give the button room at the bottom */
+        overflow: visible !important;
     }
-    #resetFilters {
-        font-size: 11px;
-        padding: 4px 6px;
+
+    /* 2. Tighten the "Featured Stories" spacing */
+    .featured-stories-section {
+        margin-top: -20px; /* Pull the section up */
+        padding-top: 10px;
+    }
+
+    .featured-stories-header {
+        font-size: 1.5rem; /* Scale down title for mobile */
+        margin-bottom: 10px;
+    }
+
+    /* 3. Dropdowns: Stack them or make them full width to save space */
+    .filter-container {
+        display: flex;
+        flex-direction: column; /* Stack dropdowns vertically if they are cramped */
+        gap: 8px;
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
