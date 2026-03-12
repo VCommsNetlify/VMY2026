@@ -476,3 +476,82 @@ function toggleVFAQ(btn) {
 
 // Initial Render
 renderVFAQs('en');
+
+
+// vkids
+
+// 1. DATA (Make sure paths to your images are correct)
+const vkidsData = {
+    "en": [
+        {
+            "id": "item1",
+            "type": "video",
+            "banner": "assets/vkids/04162025-join-the-v-kids-and-v-teens-at-vmalaysia2025-1.jpg",
+            "title": "The Future Leaders: V-Kids 2025",
+            "desc": "Watch the incredible journey of our youngest dreamers.",
+            "link": "https://players.brightcove.net/3745659807001/4JJdlFXsg_default/index.html?videoId=6374927478112" // YOUR VIDEO LINK
+        },
+        {
+            "id": "item2",
+            "type": "article",
+            "banner": "assets/vkids/05272025-create-an-epic-story-with-v-kids-and-v-teens-at-vmalaysia2025.webp",
+            "title": "V-Teens Workshop",
+            "desc": "Empowering the next generation of entrepreneurs.",
+            "link": "https://the-v.net/en/news?id=04162025-join-the-v-kids-and-v-teens-at-vmalaysia2025"
+        },
+        {
+            "id": "item1",
+            "type": "video",
+            "banner": "assets/vkids/04162025-join-the-v-kids-and-v-teens-at-vmalaysia2025-1.jpg",
+            "title": "The Future Leaders: V-Kids 2025",
+            "desc": "Watch the incredible journey of our youngest dreamers.",
+            "link": "https://players.brightcove.net/3745659807001/4JJdlFXsg_default/index.html?videoId=6374927478112" // YOUR VIDEO LINK
+        },
+        {
+            "id": "item2",
+            "type": "article",
+            "banner": "assets/vkids/05272025-create-an-epic-story-with-v-kids-and-v-teens-at-vmalaysia2025.webp",
+            "title": "V-Teens Workshop",
+            "desc": "Empowering the next generation of entrepreneurs.",
+            "link": "https://the-v.net/en/news?id=04162025-join-the-v-kids-and-v-teens-at-vmalaysia2025"
+        },
+        {
+            "id": "item1",
+            "type": "video",
+            "banner": "assets/vkids/04162025-join-the-v-kids-and-v-teens-at-vmalaysia2025-1.jpg",
+            "title": "The Future Leaders: V-Kids 2025",
+            "desc": "Watch the incredible journey of our youngest dreamers.",
+            "link": "https://players.brightcove.net/3745659807001/4JJdlFXsg_default/index.html?videoId=6374927478112" // YOUR VIDEO LINK
+        }
+    ]
+};
+
+// 2. THE RENDER FUNCTION
+function renderVKids(lang) {
+    const container = document.getElementById('vkids-list');
+    const items = vkidsData[lang];
+
+    container.innerHTML = items.map(item => `
+        <div class="vkids-card">
+            <div class="vkids-image-box" style="position: relative; aspect-ratio: 16/9;">
+                <img src="${item.banner}" style="width:100%; height:100%; object-fit:cover;">
+                <div class="type-overlay" style="position:absolute; top:10px; left:10px; background:#800020; color:#D4AF37; padding:4px 10px; font-size:10px; font-weight:bold; border-radius:4px;">
+                    ${item.type.toUpperCase()}
+                </div>
+            </div>
+            <div class="vkids-content" style="padding: 20px;">
+                <h3 style="color:#800020; margin-bottom:10px; font-size:1.2rem;">${item.title}</h3>
+                <p style="font-size:0.9rem; color:#666; height: 50px; overflow: hidden;">${item.desc}</p>
+                ${item.type === 'video' 
+                    ? `<button onclick="openVideoModal('${item.link}')" class="v-btn-gold" style="background:none; border:none; color:#D4AF37; font-weight:bold; border-bottom:2px solid #D4AF37; cursor:pointer; padding:0;">WATCH VIDEO</button>`
+                    : `<a href="${item.link}" class="v-btn-gold" style="text-decoration:none; color:#D4AF37; font-weight:bold; border-bottom:2px solid #D4AF37;">READ ARTICLE</a>`
+                }
+            </div>
+        </div>
+    `).join('');
+}
+
+// 3. RUN IT IMMEDIATELY
+document.addEventListener('DOMContentLoaded', () => {
+    renderVKids('en');
+});

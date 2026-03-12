@@ -25,7 +25,7 @@
                         <li><a href="#gallery">Gallery</a></li>
                     </ul>
                 </li>
-                <li><a href="#game">Game</a></li>
+                <!-- <li><a href="#game">Game</a></li> -->
                 <li><a href="#venue">Venue Map</a></li>
                 <li><a href="#v-kids">V-Kids & V-Teens</a></li>
                 <li><a href="#speakers">Speakers</a></li>
@@ -80,9 +80,11 @@
 
  <section id="video" class="master-section stories-theater">
     
-    <div class="v-convention-banner">
-        <h2>THE GREATEST STORIES FROM V-MALAYSIA 2026</h2>
-    </div>
+    <div style="text-align: center; margin-bottom: 40px; width: 100%;">
+    <h2 class="v-section-heading" data-i18n="stories.title">
+        THE GREATEST STORIES FROM V-MALAYSIA 2026
+    </h2>
+</div>
 
     <div class="stories-container">
         
@@ -150,33 +152,35 @@
 </section>
     
 
-<section id="gallery" class="gallery-carousel-section">
-    <h2 class="section-title">V-MALAYSIA 2025 GALLERY</h2>
-
+<section id="gallery" class="gallery-carousel-section" style="padding-top: 60px;">
+    
+    <div style="text-align: center; margin-bottom: 50px; width: 100%;">
+        <h2 class="v-section-heading" data-i18n="gallery.title">V-MALAYSIA 2025 GALLERY</h2>
+    </div>
     <div class="gallery-nav">
-        <button class="g-btn active" onclick="switchGallery('reg')">Registration</button>
-        <button class="g-btn" onclick="switchGallery('day1')">Day 1</button>
-        <button class="g-btn" onclick="switchGallery('day2')">Day 2</button>
-        <button class="g-btn" onclick="switchGallery('day3')">Day 3</button>
-        <button class="g-btn" onclick="switchGallery('day4')">Day 4</button>
-        <button class="g-btn" onclick="switchGallery('day5')">Day 5</button>
-        <button class="g-btn" onclick="switchGallery('fashion')">Fashion Show</button>
-        </div>
+        <button class="g-btn active" onclick="switchGallery('reg')" data-i18n="gallery.reg">Registration</button>
+        <button class="g-btn" onclick="switchGallery('day1')" data-i18n="gallery.day1">Day 1</button>
+        <button class="g-btn" onclick="switchGallery('day2')" data-i18n="gallery.day2">Day 2</button>
+        <button class="g-btn" onclick="switchGallery('day3')" data-i18n="gallery.day3">Day 3</button>
+        <button class="g-btn" onclick="switchGallery('day4')" data-i18n="gallery.day4">Day 4</button>
+        <button class="g-btn" onclick="switchGallery('day5')" data-i18n="gallery.day5">Day 5</button>
+        <button class="g-btn" onclick="switchGallery('fashion')" data-i18n="gallery.fashion">Fashion Show</button>
+    </div>
 
     <div class="gallery-relative-wrapper">
-        <button class="nav-arrow left" onclick="scrollGallery(-1)">&#10094;</button>
+        <button class="nav-arrow left" onclick="scrollGallery(-1)" aria-label="Scroll Left">&#10094;</button>
         
         <div class="gallery-scroll-container" id="galleryStage">
             </div>
 
-        <button class="nav-arrow right" onclick="scrollGallery(1)">&#10095;</button>
+        <button class="nav-arrow right" onclick="scrollGallery(1)" aria-label="Scroll Right">&#10095;</button>
     </div>
     
-    <p class="scroll-hint">Swipe or use arrows to see more →</p>
+    <p class="scroll-hint" data-i18n="gallery.hint">Swipe or use arrows to see more →</p>
 </section>
 
 
-    <section id="game" class="master-section"><h2>GAME SECTION</h2></section>
+    <!-- <section id="game" class="master-section"><h2>GAME SECTION</h2></section> -->
     
 <section class="v-venue-section" id="venue" style="background-image: url('assets/first-fold/map-background-sept.webp');">
   <div class="v-venue-overlay"></div>
@@ -196,10 +200,20 @@
   </div>
 </section>
 
-    <section id="v-kids" class="master-section"><h2>V-KIDS & V-TEENS SECTION</h2></section>
+<section class="vkids-section" id="v-kids">
+    <div class="v-section-header">
+        <h2 class="v-gold-title">V-KIDS & V-TEENS</h2>
+    </div>
+
+    <div id="vkids-list" class="vkids-grid"></div>
+</section>
     
 <section id="speakers" class="speakers-section">
-    <h2 class="section-title">V-Malaysia 2026 Speakers</h2>
+   <div style="text-align: center; margin-bottom: 50px; width: 100%;">
+    <h2 class="v-section-heading" data-i18n="speakers.title">
+        V-MALAYSIA 2026 SPEAKERS
+    </h2>
+</div>
     
     <div class="speakers-grid">
         

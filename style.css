@@ -424,6 +424,37 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
     padding: 0 20px;
 }
 
+.v-header-container {
+    text-align: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.v-section-heading {
+    display: inline-block;
+    background-color: #800020; /* Deep Maroon */
+    color: #ffffff;            /* Pure White */
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-size: 2.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 4px solid #D4AF37; /* The Gold Bottom Border */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+/* Ensure it scales down for mobile screens */
+@media (max-width: 768px) {
+    .v-section-heading {
+        font-size: 1.5rem;
+        padding: 10px 25px;
+        margin: 0 10px;
+    }
+}
+
 .g-btn {
     background: transparent;
     border: 2px solid #800020;
@@ -535,7 +566,7 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
 .scroll-hint {
     color: #D4AF37;
     text-align: center;
-    font-size: 12px;
+    font-size: 1.5rem;
     margin-top: 15px;
     opacity: 0.7;
 }
@@ -908,26 +939,28 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
 
 .v-venue-header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .v-venue-title {
-    font-size: 2.5rem;
-    font-weight: 900;
-    color: #800020; /* Maroon */
-    background-color: #D4AF37; /* Gold Highlight */
     display: inline-block;
-    padding: 10px 30px;
-    border-radius: 4px;
-    margin-bottom: 20px;
+    background-color: #800020; /* Deep Maroon */
+    color: #ffffff;            /* White text */
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-size: 2.2rem;
+    font-weight: 900;
     text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 4px solid #D4AF37; /* Gold bottom line */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
+/* Ensure the description below stays clean */
 .v-venue-desc {
-    font-size: 1.2rem;
+    margin-top: 20px;
     color: #333;
-    max-width: 700px;
-    margin: 0 auto;
+    font-size: 1.1rem;
     line-height: 1.6;
 }
 
@@ -958,4 +991,155 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
 @media (max-width: 768px) {
     .v-venue-title { font-size: 1.8rem; padding: 10px 15px; }
     .v-venue-section { padding: 50px 0; }
+}
+
+/* VKIDS and VTEENS SECTION */
+
+/* Container and Grid */
+.vkids-section {
+    padding: 60px 5%;
+    background-color: #fff;
+}
+
+.v-section-header {
+    text-align: center; /* Centers the header container */
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+
+.v-gold-title {
+    display: inline-block; /* Allows the background to wrap the text */
+    background-color: #800020; /* Your Brand Maroon */
+    color: #ffffff; /* White text */
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 4px solid #D4AF37; /* The Gold bottom line */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin: 0 auto;
+}
+
+/* Mobile adjustment to ensure it doesn't get too big on small screens */
+@media (max-width: 768px) {
+    .v-gold-title {
+        font-size: 1.5rem;
+        padding: 10px 25px;
+    }
+}
+
+.vkids-grid {
+    display: flex; /* Switched from grid to flex */
+    flex-wrap: nowrap; /* Prevents wrapping to a new row */
+    overflow-x: auto; /* Adds horizontal scrolling */
+    gap: 25px;
+    padding: 20px 5px 40px 5px; /* Added bottom padding for the scrollbar space */
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* Smooth swiping on iPhones */
+}
+
+.vkids-card {
+    flex: 0 0 350px; /* Each card stays exactly 350px wide */
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
+}
+
+/* Optional: Custom Scrollbar to make it look cleaner */
+.vkids-grid::-webkit-scrollbar {
+    height: 8px;
+}
+.vkids-grid::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+.vkids-grid::-webkit-scrollbar-thumb {
+    background: #800020; /* Your Brand Maroon */
+    border-radius: 10px;
+}
+
+.vkids-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(128, 0, 32, 0.15);
+}
+
+/* The Banner Box (Maintains Rectangle) */
+.vkids-image-box {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Forces the rectangular look */
+    background: #000;
+}
+
+.vkids-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Type Badge (Video/Article) */
+.type-overlay {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #800020; /* Maroon */
+    color: #D4AF37;    /* Gold */
+    padding: 5px 12px;
+    font-size: 10px;
+    font-weight: 800;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+/* Content Area */
+.vkids-content {
+    padding: 25px;
+}
+
+.vkids-content h3 {
+    font-size: 1.4rem;
+    color: #800020;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.vkids-content p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Gold Button Style */
+.v-btn-gold {
+    display: inline-block;
+    background: none;
+    border: none;
+    color: #D4AF37;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 2px solid #D4AF37;
+    transition: 0.3s;
+}
+
+.v-btn-gold:hover {
+    color: #800020;
+    border-color: #800020;
+    padding-left: 5px; /* Subtle "nudge" effect */
+}
+
+/* Responsive Tweak for small phones */
+@media (max-width: 480px) {
+    .vkids-grid {
+        grid-template-columns: 1fr;
+    }
 }
