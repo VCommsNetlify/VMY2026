@@ -196,7 +196,7 @@
                     <div class="char-desc" data-i18n="speakers.dato_bio">
                         A visionary philanthropist and entrepreneur...
                     </div>
-                    <button class="video-invite-btn" onclick="openVideoModal('...')">
+                    <button class="video-invite-btn" onclick="openVideoModal('6378902120112')">
                         <span class="pulse-icon">●</span> <span data-i18n="speakers.watch_invite">WATCH INVITE</span>
                     </button>
                 </div>
@@ -209,7 +209,7 @@
                     <div class="char-desc" data-i18n="speakers.japa_bio">
                         Co-founder of the QI Group, ...
                     </div>
-                    <button class="video-invite-btn" onclick="openVideoModal('...')">
+                    <button class="video-invite-btn" onclick="openVideoModal('6378903700112')">
                         <span class="pulse-icon">●</span> <span data-i18n="speakers.watch_invite">WATCH INVITE</span>
                     </button>
                 </div>
@@ -289,6 +289,21 @@
     <div id="mainTicketBtn" onclick="toggleTicketMenu()">
         <span id="ticketIcon">🎟️</span>
         <span id="ticketText" data-i18n="cta.main_label">GET TICKETS</span>
+    </div>
+</div>
+
+<div id="videoModal" class="modal-overlay" style="display: none;">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeVideoModal()">&times;</span>
+        <div class="video-container">
+            <video-js id="myBrightcovePlayer" 
+                data-account="3745659807001" 
+                data-player="4JJdlFXsg" 
+                data-embed="default" 
+                controls 
+                class="vjs-fluid">
+            </video-js>
+        </div>
     </div>
 </div>
 

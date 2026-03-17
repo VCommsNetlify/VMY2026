@@ -3,7 +3,7 @@ const translations = {
         // Navigation
         "nav.home": "HOME",
         "nav.stories": "STORIES",
-        "nav.speakers": "SPEAKERS",
+        "nav.speakers": "FOUNDERS",
         "nav.gallery": "GALLERY",
         "nav.vkids": "V-KIDS & V-TEENS",
         "nav.faq": "FAQ",
@@ -34,7 +34,7 @@ const translations = {
         "vkids.watch": "WATCH VIDEO",
         "vkids.read": "READ ARTICLE",
 
-        "speakers.title": "V-MALAYSIA 2026 SPEAKERS",
+        "speakers.title": "OUR FOUNDERS",
         "speakers.watch_invite": "WATCH INVITE",
         "speakers.dato_bio": "A visionary philanthropist and entrepreneur, Dato Sri Vijay Eswaran is the Founder and Executive Chairman of the QI Group.",
         "speakers.japa_bio": "Co-founder of the QI Group, Joseph 'Japadas' Bismark's philosophy of 'In the Service of Humanity' drives the core of our mission.",
@@ -49,7 +49,7 @@ const translations = {
     id: {
         "nav.home": "BERANDA",
         "nav.stories": "CERITA",
-        "nav.speakers": "PEMBICARA",
+        "nav.speakers": "PENDIRI",
         "nav.gallery": "GALERI",
         "nav.vkids": "V-KIDS & V-TEENS",
         "nav.faq": "TANYA JAWAB",
@@ -75,7 +75,7 @@ const translations = {
         "gallery.fashion": "FASHION SHOW",
         "gallery.hint": "Geser atau gunakan panah untuk melihat lebih banyak →",
 
-        "speakers.title": "PEMBICARA V-MALAYSIA 2026",
+        "speakers.title": "PARA PENDIRI KAMI",
         "speakers.watch_invite": "TONTON UNDANGAN",
         "speakers.dato_bio": "Seorang dermawan dan pengusaha visioner, Dato Sri Vijay Eswaran adalah Pendiri dan Ketua Eksekutif QI Group.",
         "speakers.japa_bio": "Co-founder of the QI Group, Joseph 'Japadas' Bismark's philosophy of 'In the Service of Humanity' drives the core of our mission.",
@@ -92,7 +92,7 @@ const translations = {
     fr:{
         "nav.home": "ACCUEIL",
         "nav.stories": "HISTOIRES",
-        "nav.speakers": "INTERVENANTS",
+        "nav.speakers": "FONDATEURS",
         "nav.gallery": "GALERIE",
         "nav.vkids": "V-KIDS & V-TEENS",
         "nav.faq": "FAQ",
@@ -118,7 +118,7 @@ const translations = {
         "gallery.fashion": "DÉFILÉ DE MODE",
         "gallery.hint": "Faites glisser ou utilisez les flèches pour en voir plus →",
 
-        "speakers.title": "INTERVENANTS V-MALAYSIA 2026",
+        "speakers.title": "NOS FONDATEURS",
         "speakers.watch_invite": "TONTON UNDANGAN",
         "speakers.dato_bio": "Seorang dermawan dan pengusaha visioner, Dato Sri Vijay Eswaran adalah Pendiri dan Ketua Eksekutif QI Group.",
         "speakers.japa_bio": "Co-founder of the QI Group, Joseph 'Japadas' Bismark's philosophy of 'In the Service of Humanity' drives the core of our mission.",
@@ -135,7 +135,7 @@ const translations = {
     ru:{
         "nav.home": "ГЛАВНАЯ",
         "nav.stories": "ИСТОРИИ",
-        "nav.speakers": "СПИКЕРЫ",
+        "nav.speakers": "ФОНДАТОРЫ",
         "nav.gallery": "ГАЛЕРЕЯ",
         "nav.vkids": "V-KIDS & V-TEENS",
         "nav.faq": "ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ",
@@ -161,7 +161,7 @@ const translations = {
         "gallery.fashion": "ПОКАЗ МОДЫ",
         "gallery.hint": "Проведите пальцем или используйте стрелки, чтобы увидеть больше →",
 
-        "speakers.title": "СПИКЕРЫ V-MALAYSIA 2026",
+        "speakers.title": "НАШИ ФОНДАТОРЫ",
         "speakers.watch_invite": "СМОТРЕТЬ ПРИГЛАШЕНИЕ",
         "speakers.dato_bio": "Видный филантроп и предприниматель, Дато Сри Виджай Эсваран является основателем и исполнительным председателем группы QI.",
         "speakers.japa_bio": "Соучредитель группы QI, философия Джозефа 'Япадаса' Бисмарка 'На службе человечеству' лежит в основе нашей миссии.",
@@ -178,7 +178,7 @@ const translations = {
     tr:{
         "nav.home": "ANASAYFA",
         "nav.stories": "HİKAYELER",
-        "nav.speakers": "KONUŞMACILAR",
+        "nav.speakers": "KURUCU",
         "nav.gallery": "GALERİ",
         "nav.vkids": "V-KIDS & V-TEENS",
         "nav.faq": "SSS",
@@ -204,7 +204,7 @@ const translations = {
         "gallery.fashion": "MODA GÖSTERİSİ",
         "gallery.hint": "Daha fazlasını görmek için kaydırın veya okları kullanın →",
 
-        "speakers.title": "V-MALAYSIA 2026 KONUŞMACILAR",
+        "speakers.title": "KURUCU ORTAKLARIMIZ",
         "speakers.watch_invite": "DAVETİYEYİ İZLE",
         "speakers.dato_bio": "Vizyoner bir hayırsever ve girişimci olan Dato Sri Vijay Eswaran, QI Group'un Kurucusu ve İcra Başkanıdır.",
         "speakers.japa_bio": "QI Group'un kurucu ortağı olan Joseph 'Japadas' Bismark'ın 'İnsani Hizmette' felsefesi, misyonumuzun özünü oluşturur.",
@@ -221,7 +221,7 @@ const translations = {
     ar:{
         "nav.home": "الرئيسية",
         "nav.stories": "القصص",
-        "nav.speakers": "المتحدثون",
+        "nav.speakers": "المؤسسون",
         "nav.gallery": "المعرض",
         "nav.vkids": "V-KIDS & V-TEENS",
         "nav.faq": "الأسئلة الشائعة",
@@ -237,7 +237,7 @@ const translations = {
         "stories.read_btn": "اقرأ المقال",
         "filter.reset": "إعادة تعيين",
 
-        "gallery.title": "المعرض",
+        "gallery.title": "مؤسسونا",
         "gallery.reg": "التسجيل",
         "gallery.day1": "اليوم 1",
         "gallery.day2": "اليوم 2",
@@ -680,26 +680,45 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 //video modal logic
+// Global variable to store the player instance
+let bcp; 
 
-function openVideoModal(brightcoveUrl) {
+// Run this once when the page loads to initialize the player
+document.addEventListener('DOMContentLoaded', () => {
+    // 'myBrightcovePlayer' must match the ID in your HTML
+    videojs.getPlayer('myBrightcovePlayer').ready(function() {
+        bcp = this; 
+    });
+});
+
+function openVideoModal(videoId) {
     const modal = document.getElementById('videoModal');
-    const player = document.getElementById('videoPlayer');
     
-    // Brightcove specific autoplay parameter
-    const separator = brightcoveUrl.includes('?') ? '&' : '?';
-    const finalUrl = `${brightcoveUrl}${separator}autoplay=true`;
-    
-    player.src = finalUrl;
-    modal.style.display = 'flex';
-    document.body.style.overflow = 'hidden';
+    // Check if player is initialized and we have an ID
+    if (bcp && videoId) {
+        // Brightcove's way of switching videos
+        bcp.catalog.getVideo(videoId, function(error, video) {
+            if (error) {
+                console.error("Video ID not found:", videoId);
+                return;
+            }
+            bcp.catalog.load(video);
+            bcp.play();
+        });
+        
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    } else {
+        console.error("Player not ready or Video ID missing");
+    }
 }
 
 function closeVideoModal() {
     const modal = document.getElementById('videoModal');
-    const player = document.getElementById('videoPlayer');
-    
+    if (bcp) {
+        bcp.pause();
+    }
     modal.style.display = 'none';
-    player.src = ""; // This is critical for Brightcove to stop the stream
     document.body.style.overflow = 'auto';
 }
 
