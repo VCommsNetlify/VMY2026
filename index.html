@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The V-Malaysia 2026</title>
+    <title data-i18n="head.title">The V-Malaysia 2026</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://players.brightcove.net/videojs-mobile-ui/3/videojs-mobile-ui.css" rel="stylesheet">
+    <link href="https://players.brightcove.net/3745659807001/4JJdlFXsg_default/index.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
@@ -17,43 +20,46 @@
         
         <div class="nav-container">
             <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" data-i18n="nav.home">Home</a></li>
                 <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn" onclick="toggleAccordion(event, 'storiesMenu')">Greatest Stories ▼</a>
+                    <a href="javascript:void(0)" class="dropbtn" onclick="toggleAccordion(event, 'storiesMenu')">
+                        <span data-i18n="nav.stories_dropdown">GREATEST STORIES</span> ▼
+                    </a>
                     <ul class="dropdown-content accordion-menu" id="storiesMenu">
-                        <li><a href="#video">Videos & Articles</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#video" data-i18n="nav.video">VIDEOS & ARTICLES</a></li>
+                        <li><a href="#gallery" data-i18n="nav.gallery">GALLERY</a></li>
                     </ul>
                 </li>
-                <!-- <li><a href="#game">Game</a></li> -->
-                <li><a href="#venue">Venue Map</a></li>
-                <li><a href="#v-kids">V-Kids & V-Teens</a></li>
-                <li><a href="#speakers">Speakers</a></li>
-                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#venue" data-i18n="nav.venue">VENUE MAP</a></li>
+                <li><a href="#v-kids" data-i18n="nav.vkids">V-KIDS & V-TEENS</a></li>
+                <li><a href="#speakers" data-i18n="nav.speakers">SPEAKERS</a></li>
+                <li><a href="#faqs" data-i18n="nav.faq">FAQ</a></li>
 
                 <li class="dropdown mobile-only">
-                    <a href="javascript:void(0)" class="dropbtn" onclick="toggleAccordion(event, 'langMenuMobile')">Languages ▼</a>
+                    <a href="javascript:void(0)" class="dropbtn" onclick="toggleAccordion(event, 'langMenuMobile')">
+                        <span data-i18n="nav.languages">LANGUAGES</span> ▼
+                    </a>
                     <ul class="dropdown-content accordion-menu" id="langMenuMobile">
-                        <li><a href="#">English</a></li>
-                        <li><a href="#">Arabic</a></li>
-                        <li><a href="#">Bahasa-Indonesia</a></li>
-                        <li><a href="#">French</a></li>
-                        <li><a href="#">Russian</a></li>
-                        <li><a href="#">Turkish</a></li>
+                        <li><a href="javascript:void(0)" onclick="changeLanguage('en')">ENGLISH</a></li>
+                        <li><a href="javascript:void(0)" onclick="changeLanguage('ar')">ARABIC</a></li>
+                        <li><a href="javascript:void(0)" onclick="changeLanguage('id')">BAHASA-INDONESIA</a></li>
+                        <li><a href="javascript:void(0)" onclick="changeLanguage('fr')">FRENCH</a></li>
+                        <li><a href="javascript:void(0)" onclick="changeLanguage('ru')">RUSSIAN</a></li>
+                        <li><a href="javascript:void(0)" onclick="changeLanguage('tr')">TURKISH</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
 
         <div class="lang-dropdown desktop-only">
-            <button class="lang-btn">Languages ▼</button>
+            <button class="lang-btn"><span data-i18n="nav.languages">LANGUAGES</span> ▼</button>
             <div class="lang-content">
-                <a href="#">English</a>
-                <a href="#">Arabic</a>
-                <a href="#">Bahasa-Indonesia</a>
-                <a href="#">French</a>
-                <a href="#">Russian</a>
-                <a href="#">Turkish</a>
+                <a href="javascript:void(0)" onclick="changeLanguage('en')">ENGLISH</a>
+                <a href="javascript:void(0)" onclick="changeLanguage('ar')">ARABIC</a>
+                <a href="javascript:void(0)" onclick="changeLanguage('id')">BAHASA-INDONESIA</a>
+                <a href="javascript:void(0)" onclick="changeLanguage('fr')">FRENCH</a>
+                <a href="javascript:void(0)" onclick="changeLanguage('ru')">RUSSIAN</a>
+                <a href="javascript:void(0)" onclick="changeLanguage('tr')">TURKISH</a>
             </div>
         </div>
 
@@ -67,226 +73,228 @@
     <section id="home" class="hero">
         <div class="logo-emblem">
             <div class="emblem-content">
-                <span class="emblem-word">Conform</span>
-                <span class="emblem-word">Transform</span>
+                <span class="emblem-word" data-i18n="hero.conform">Conform</span>
+                <span class="emblem-word" data-i18n="hero.transform">Transform</span>
                 <div class="emblem-divider"></div>
-                <span class="emblem-word">Reform</span>
-                <span class="emblem-word">Perform</span>
+                <span class="emblem-word" data-i18n="hero.reform">Reform</span>
+                <span class="emblem-word" data-i18n="hero.perform">Perform</span>
             </div>
         </div>
-        <h1 class="main-title">THE V-MALAYSIA 2026</h1>
+        <h1 class="main-title" data-i18n="hero.title">THE V-MALAYSIA 2026</h1>
         <div id="countdown" class="hero-countdown"></div>
     </section>
 
- <section id="video" class="master-section stories-theater">
-    
-    <div style="text-align: center; margin-bottom: 40px; width: 100%;">
-    <h2 class="v-section-heading" data-i18n="stories.title">
-        THE GREATEST STORIES FROM V-MALAYSIA 2026
-    </h2>
-</div>
+    <section id="video" class="master-section stories-theater">
+        <div style="text-align: center; margin-bottom: 40px; width: 100%;">
+            <h2 class="v-section-heading" data-i18n="stories.title">THE GREATEST STORIES FROM V-MALAYSIA 2026</h2>
+        </div>
 
-    <div class="stories-container">
+        <div class="stories-container">
+            <div class="content-stage" id="contentStage">
+                <div id="stageViewport">
+                    <div id="videoPlayerWrap" style="display: none;">
+                        <video-js id="myBrightcovePlayer" data-account="3745659807001" data-player="4JJdlFXsg" data-embed="default" data-video-id="" controls class="vjs-fluid"></video-js>
+                    </div>
+                    <img src="YOUR_IMAGE_URL.jpg" id="stageImage" alt="Stage Preview">
+                </div>
+
+                <div class="stage-info-bar">
+                    <div class="text-group">
+                        <h3 id="stageTitle">...</h3>
+                        <p id="stageDesc">...</p>
+                    </div>
+                    <div class="button-group">
+                        <button id="mainActionButton" class="action-btn" onclick="launchContent()" data-i18n="stories.play_btn">PLAY VIDEO</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stories-playlist">
+                <h4 data-i18n="stories.featured">Featured Stories</h4>
+                <div class="filter-bar">
+                    <select id="filterType" onchange="handleCategoryChange()">
+                        <option value="all" data-i18n="filter.all_media">All Media</option>
+                        <option value="video" data-i18n="filter.videos">Videos</option>
+                        <option value="article" data-i18n="filter.articles">Articles</option>
+                    </select>
+                    <select id="filterSpeaker" onchange="applyFilters()">
+                        <option value="all" data-i18n="filter.all_cats">All Categories</option>
+                        <option value="Dato">Dato Sri Vijay</option>
+                        <option value="Japa">Japa Bismark</option>
+                        <option value="Chief">Chief Pathman</option>
+                        <option value="Highlights" data-i18n="filter.highlights">Highlights</option>
+                    </select>
+                    <select id="filterDay" onchange="applyFilters()">
+                        <option value="all" data-i18n="filter.all_days">All Days</option>
+                        <option value="Registration Day" data-i18n="filter.reg_day">Registration Day</option>
+                        <option value="Day 1" data-i18n="filter.day1">Day 1</option>
+                        <option value="Day 2" data-i18n="filter.day2">Day 2</option>
+                        <option value="Day 3" data-i18n="filter.day3">Day 3</option>
+                        <option value="Day 4" data-i18n="filter.day4">Day 4</option>
+                        <option value="Day 5" data-i18n="filter.day5">Day 5</option>
+                    </select>
+                    <button id="resetFilters" onclick="resetAllFilters()" data-i18n="filter.reset">Reset</button>
+                </div>
+                <div class="playlist-scroll"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-carousel-section" style="padding-top: 60px;">
+        <div style="text-align: center; margin-bottom: 50px; width: 100%;">
+            <h2 class="v-section-heading" data-i18n="gallery.title">V-MALAYSIA 2026 GALLERY</h2>
+        </div>
+        <div class="gallery-nav">
+            <button class="g-btn active" onclick="switchGallery('reg')" data-i18n="gallery.reg">Registration</button>
+            <button class="g-btn" onclick="switchGallery('day1')" data-i18n="gallery.day1">Day 1</button>
+            <button class="g-btn" onclick="switchGallery('day2')" data-i18n="gallery.day2">Day 2</button>
+            <button class="g-btn" onclick="switchGallery('day3')" data-i18n="gallery.day3">Day 3</button>
+            <button class="g-btn" onclick="switchGallery('day4')" data-i18n="gallery.day4">Day 4</button>
+            <button class="g-btn" onclick="switchGallery('day5')" data-i18n="gallery.day5">Day 5</button>
+            <button class="g-btn" onclick="switchGallery('fashion')" data-i18n="gallery.fashion">Fashion Show</button>
+        </div>
+        <div class="gallery-relative-wrapper">
+            <button class="nav-arrow left" onclick="scrollGallery(-1)" aria-label="Scroll Left">&#10094;</button>
+            <div class="gallery-scroll-container" id="galleryStage"></div>
+            <button class="nav-arrow right" onclick="scrollGallery(1)" aria-label="Scroll Right">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="v-venue-section" id="venue" style="background-image: url('assets/first-fold/map-background-sept.webp');">
+        <div class="v-venue-overlay"></div>
+        <div class="v-venue-content">
+            <div class="v-venue-header">
+                <h2 class="v-venue-title" data-i18n="venue.title">EXPLORE WHERE THE MAGIC HAPPENS</h2>
+                <p class="v-venue-desc" data-i18n="venue.desc">
+                    Navigate your way around Setia SPICE Arena and discover all the amazing surprises at 
+                    <span class="v-block-mobile" data-i18n="venue.event_name">V-Malaysia 2026.</span>
+                </p>
+            </div>
+            <div class="v-map-wrapper">
+                <img id="venue-map-img" src="assets/images/05162025 june VMY2025 microsite map v5.webp" alt="Venue Map" class="v-map-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="vkids-section" id="v-kids">
+        <div class="v-section-header">
+            <h2 class="v-gold-title" data-i18n="vkids.section_title">V-KIDS & V-TEENS</h2>
+        </div>
+        <div id="vkids-list" class="vkids-grid"></div>
+    </section>
         
-        <div class="content-stage" id="contentStage">
-        <div id="stageViewport">
-            <div id="videoPlayerWrap" style="display: none;">
-                <video-js id="myBrightcovePlayer" 
-                    data-account="3745659807001" 
-                    data-player="4JJdlFXsg" 
-                    data-embed="default" 
-                    data-video-id="" 
-                    controls 
-                    class="vjs-fluid">
-                </video-js>
-            </div>
-            <img src="YOUR_IMAGE_URL.jpg" id="stageImage" alt="Stage Preview">
+    <section id="speakers" class="speakers-section">
+        <div style="text-align: center; margin-bottom: 50px; width: 100%;">
+            <h2 class="v-section-heading" data-i18n="speakers.title">V-MALAYSIA 2026 SPEAKERS</h2>
         </div>
-
-        <div class="stage-info-bar">
-            <div class="text-group">
-                <h3 id="stageTitle">...</h3>
-                <p id="stageDesc">...</p>
-                <!-- <span id="viewMoreToggle" onclick="toggleDescription()">View More</span> -->
-            </div>
-            <div class="button-group">
-                <button id="mainActionButton" class="action-btn" onclick="launchContent()">
-                    PLAY VIDEO
-                </button>
-            </div>
-        </div>
-    </div>
-
-        <div class="stories-playlist">
-            <h4>Featured Stories</h4>
-            
-            <div class="filter-bar">
-                <select id="filterType" onchange="handleCategoryChange()">
-                    <option value="all">All Media</option>
-                    <option value="video">Videos</option>
-                    <option value="article">Articles</option>
-                </select>
-                <select id="filterSpeaker" onchange="applyFilters()">
-                    <option value="all">All Categories</option>
-                    <option value="Dato">Dato Sri Vijay</option>
-                    <option value="Japa">Japa Bismark</option>
-                    <option value="Chief">Chief Pathman</option>
-                    <option value="Highlights">Highlights</option>
-                </select>
-                <select id="filterDay" onchange="applyFilters()">
-                    <option value="all">All Days</option>
-                    <option value="Registration Day">Registration Day</option>
-                    <option value="Day 1">Day 1</option>
-                    <option value="Day 2">Day 2</option>
-                    <option value="Day 3">Day 3</option>
-                    <option value="Day 4">Day 4</option>
-                    <option value="Day 5">Day 5</option>
-                </select>
-                <button id="resetFilters" onclick="resetAllFilters()">Reset</button>
-            </div>
-
-            <div class="playlist-scroll">
+        <div class="speakers-grid">
+            <div class="character-card">
+                <div class="card-inner-border"></div>
+                <img src="assets/speakers/vmp-dato-sri-vijay-eswaran.png" alt="Dato Sri Vijay Eswaran">
+                <div class="card-overlay">
+                    <h3 class="char-name">Dato Sri Vijay Eswaran</h3>
+                    <div class="char-desc" data-i18n="speakers.dato_bio">
+                        A visionary philanthropist and entrepreneur...
+                    </div>
+                    <button class="video-invite-btn" onclick="openVideoModal('...')">
+                        <span class="pulse-icon">●</span> <span data-i18n="speakers.watch_invite">WATCH INVITE</span>
+                    </button>
                 </div>
-        </div>
-    </div>
-</section>
-    
-
-<section id="gallery" class="gallery-carousel-section" style="padding-top: 60px;">
-    
-    <div style="text-align: center; margin-bottom: 50px; width: 100%;">
-        <h2 class="v-section-heading" data-i18n="gallery.title">V-MALAYSIA 2025 GALLERY</h2>
-    </div>
-    <div class="gallery-nav">
-        <button class="g-btn active" onclick="switchGallery('reg')" data-i18n="gallery.reg">Registration</button>
-        <button class="g-btn" onclick="switchGallery('day1')" data-i18n="gallery.day1">Day 1</button>
-        <button class="g-btn" onclick="switchGallery('day2')" data-i18n="gallery.day2">Day 2</button>
-        <button class="g-btn" onclick="switchGallery('day3')" data-i18n="gallery.day3">Day 3</button>
-        <button class="g-btn" onclick="switchGallery('day4')" data-i18n="gallery.day4">Day 4</button>
-        <button class="g-btn" onclick="switchGallery('day5')" data-i18n="gallery.day5">Day 5</button>
-        <button class="g-btn" onclick="switchGallery('fashion')" data-i18n="gallery.fashion">Fashion Show</button>
-    </div>
-
-    <div class="gallery-relative-wrapper">
-        <button class="nav-arrow left" onclick="scrollGallery(-1)" aria-label="Scroll Left">&#10094;</button>
-        
-        <div class="gallery-scroll-container" id="galleryStage">
             </div>
-
-        <button class="nav-arrow right" onclick="scrollGallery(1)" aria-label="Scroll Right">&#10095;</button>
-    </div>
-    
-    <p class="scroll-hint" data-i18n="gallery.hint">Swipe or use arrows to see more →</p>
-</section>
-
-
-    <!-- <section id="game" class="master-section"><h2>GAME SECTION</h2></section> -->
-    
-<section class="v-venue-section" id="venue" style="background-image: url('assets/first-fold/map-background-sept.webp');">
-  <div class="v-venue-overlay"></div>
-
-  <div class="v-venue-content">
-    <div class="v-venue-header">
-      <h2 class="v-venue-title" data-i18n="venue.title">EXPLORE WHERE THE MAGIC HAPPENS</h2>
-      <p class="v-venue-desc" data-i18n="venue.description">
-        Navigate your way around Setia SPICE Arena and discover all the amazing surprises at 
-        <span class="v-block-mobile">V-Malaysia 2026.</span>
-      </p>
-    </div>
-    
-    <div class="v-map-wrapper">
-      <img id="venue-map-img" src="assets/images/05162025 june VMY2025 microsite map v5.webp" alt="Venue Map" class="v-map-image">
-    </div>
-  </div>
-</section>
-
-<section class="vkids-section" id="v-kids">
-    <div class="v-section-header">
-        <h2 class="v-gold-title">V-KIDS & V-TEENS</h2>
-    </div>
-
-    <div id="vkids-list" class="vkids-grid"></div>
-</section>
-    
-<section id="speakers" class="speakers-section">
-   <div style="text-align: center; margin-bottom: 50px; width: 100%;">
-    <h2 class="v-section-heading" data-i18n="speakers.title">
-        V-MALAYSIA 2026 SPEAKERS
-    </h2>
-</div>
-    
-    <div class="speakers-grid">
-        
-        <div class="character-card">
-            <div class="card-inner-border"></div>
-            <img src="assets/speakers/vmp-dato-sri-vijay-eswaran.png" alt="Dato Sri Vijay Eswaran">
-            <div class="card-overlay">
-                <div class="social-links">
-                    <a href="https://instagram.com/yourhandle" target="_blank" aria-label="Instagram">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                    </a>
+            <div class="character-card">
+                <div class="card-inner-border"></div>
+                <img src="assets/speakers/vfp-joseph-bismark.png" alt="Joseph 'Japadas' Bismark">
+                <div class="card-overlay">
+                    <h3 class="char-name">Joseph 'Japadas' Bismark</h3>
+                    <div class="char-desc" data-i18n="speakers.japa_bio">
+                        Co-founder of the QI Group, ...
+                    </div>
+                    <button class="video-invite-btn" onclick="openVideoModal('...')">
+                        <span class="pulse-icon">●</span> <span data-i18n="speakers.watch_invite">WATCH INVITE</span>
+                    </button>
                 </div>
-                
-                <h3 class="char-name">Dato Sri Vijay Eswaran</h3>
-                <div class="char-desc">
-                    A visionary philanthropist and entrepreneur, Dato Sri Vijay Eswaran is the Founder and Executive Chairman of the QI Group.
-                </div>
-
-                <button class="video-invite-btn" onclick="openVideoModal('https://players.brightcove.net/3745659807001/4JJdlFXsg_default/index.html?videoId=6378902120112')">
-                    <span class="pulse-icon">●</span> WATCH INVITE
-                </button>
             </div>
         </div>
+    </section>
 
-        <div class="character-card">
-            <div class="card-inner-border"></div>
-            <img src="assets/speakers/vfp-joseph-bismark.png" alt="Joseph 'Japadas' Bismark">
-            <div class="card-overlay">
-                <div class="social-links">
-                    <a href="https://instagram.com/yourhandle" target="_blank" aria-label="Instagram">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                    </a>
-                </div>
-                
-                <h3 class="char-name">Joseph 'Japadas' Bismark</h3>
-                <div class="char-desc">
-                    Co-founder of the QI Group, Joseph 'Japadas' Bismark's philosophy of 'In the Service of Humanity' drives the core of our mission.
-                </div>
-
-                <button class="video-invite-btn" onclick="openVideoModal('https://players.brightcove.net/3745659807001/4JJdlFXsg_default/index.html?videoId=6378903700112')">
-                    <span class="pulse-icon">●</span> WATCH INVITE
-                </button>
-            </div>
+    <section class="v-faq-section" id="faqs">
+        <div class="v-faq-container">
+            <h2 id="faq-main-title" class="v-faq-header" data-i18n="faq.title">Frequently Asked Questions</h2>
+            <div id="faq-accordion" class="v-faq-list"></div>
         </div>
-
-        </div>
-</section>
-
-    <!-- FAQ -->
-<section class="v-faq-section" id="faqs">
-    <div class="v-faq-container">
-        <h2 id="faq-main-title" class="v-faq-header">Frequently Asked Questions</h2>
-        
-        <div id="faq-list-wrapper" class="v-faq-list">
-            </div>
-    </div>
-</section>
-
-
+    </section>
 </main>
 
-<a href="#home" id="backToTop">↑</a>
-<script src="https://players.brightcove.net/3745659807001/4JJdlFXsg_default/index.min.js"></script>
-<script src="script.js"></script>
+<footer class="v-main-footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <div class="footer-brand">
+                <div class="logo-placeholder"></div> <h3>V-MALAYSIA 2026</h3>
+            </div>
+            <h4>Newsletter</h4>
+            <p class="footer-about" style="margin-bottom: 15px;">Get the latest updates on V-MALAYSIA 2026.</p>
+            
+            <form class="footer-newsletter" onsubmit="return false;">
+                <input type="email" placeholder="Your Email Address" required>
+                <button type="submit">Join</button>
+            </form>
+        </div>
 
-<div id="videoModal" class="modal-overlay" onclick="closeVideoModal()">
-    <div class="modal-content" onclick="event.stopPropagation()">
-        <span class="close-modal" onclick="closeVideoModal()">&times;</span>
-        <div class="video-container">
-            <iframe id="videoPlayer" src="" frameborder="0" allowfullscreen></iframe>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#stories">Greatest Stories</a></li>
+                <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Follow The Magic</h4>
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/share/18Fvu8mmbE/" target="_blank" class="social-icon" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/thev_official/" target="_blank" class="social-icon" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://x.com/thev_official" target="_blank" class="social-icon" aria-label="X (Twitter)">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+            </div>
+            <p class="footer-contact">support@vtube.net</p>
         </div>
     </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2026 V-MALAYSIA. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<a href="#home" id="backToTop" onclick="handleBackToTopClick(event)">↑</a>
+
+<div id="ticketHub" class="attention-pulse">
+    <button class="hub-dismiss-btn" onclick="dismissEntireHub(event)">✕</button>
+
+    <div id="ticketOptions" class="hub-options-list" style="display: none;">
+        <a href="https://vshoppe.vtube.net/promo/code/VMYJUNE2026" target="_blank" class="ticket-link">
+            <span data-i18n="cta.vmy_title">VMY 2026 Tickets</span>
+        </a>
+        <a href="https://vshoppe.vtube.net/promo/code/VKIDSTEENS26" target="_blank" class="ticket-link">
+            <span data-i18n="cta.kids_title">V-Kids & V-Teens 2026</span>
+        </a>
+    </div>
+
+    <div id="mainTicketBtn" onclick="toggleTicketMenu()">
+        <span id="ticketIcon">🎟️</span>
+        <span id="ticketText" data-i18n="cta.main_label">GET TICKETS</span>
+    </div>
 </div>
+
+<script src="https://players.brightcove.net/3745659807001/4JJdlFXsg_default/index.min.js"></script>
+
+<script src="script.js"></script>
 
 </body>
 </html>

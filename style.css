@@ -399,7 +399,26 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
 
 /* --- 7. UTILITIES --- */
 .master-section { height: 100vh; width: 100%; display: flex; align-items: center; justify-content: center; text-align: center; }
-#backToTop { position: fixed; bottom: 30px; right: 30px; width: 50px; height: 50px; background: #D4AF37; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; opacity: 0; visibility: hidden; transition: 0.3s; z-index: 5000; }
+#backToTop { 
+    position: fixed; 
+    /* Default position: Sitting above the CTA */
+    bottom: 110px; 
+    right: 30px; 
+    width: 50px; 
+    height: 50px; 
+    background: #D4AF37; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-decoration: none; 
+    opacity: 0; 
+    visibility: hidden; 
+    /* This makes the "drop" look smooth when the CTA is closed */
+    transition: opacity 0.3s, visibility 0.3s, bottom 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+    z-index: 5000; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
 #backToTop.visible { opacity: 1; visibility: visible; }
 
 
@@ -490,19 +509,19 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
     padding: 20px 0;
 }
 .gallery-scroll-container {
-    min-height: 500px; /* Adjust this to match your 2-row height */
-    background: rgba(255,255,255,0.05); /* Very subtle hint that something is there */
     display: grid !important;
-    /* Adjust '40vh' to make the whole gallery taller or shorter */
-    grid-template-rows: repeat(2, 35vh) !important; 
+    /* Two rows of fixed height */
+    grid-template-rows: repeat(2, 250px) !important; 
+    /* Force horizontal growth only */
     grid-auto-flow: column !important;
-    /* This ensures the columns are wide enough for the photos */
-    grid-auto-columns: min-content !important; 
+    /* Column width: 400px on Desktop, 85% on Mobile for the 'peek' */
+    grid-auto-columns: 400px !important; 
     gap: 20px;
     
-    overflow-x: auto !important;
+    overflow-x: auto !important; /* This handles the simultaneous scroll */
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
+    padding: 10px 10px 30px 10px;
 }
 
 .nav-arrow {
@@ -535,6 +554,31 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
 /* Hide arrows on small touch devices */
 @media (max-width: 768px) {
     .nav-arrow { display: none; }
+
+    gallery-scroll-container {
+        grid-auto-columns: 85% !important; 
+        grid-template-rows: repeat(2, 200px) !important;
+        
+        /* Force scrollbar to stay visible on mobile devices */
+        display: grid !important; 
+    }
+
+    /* Webkit (Chrome/Safari/Edge) Scrollbar Styling */
+    .gallery-scroll-container::-webkit-scrollbar {
+        height: 8px !important;
+        display: block !important; /* Forces it to show */
+    }
+
+}
+
+.gallery-scroll-container::-webkit-scrollbar {
+    height: 8px;
+    background: #f1f1f1;
+}
+
+.gallery-scroll-container::-webkit-scrollbar-thumb {
+    background: #800020; /* Your Maroon */
+    border-radius: 10px;
 }
 
 @media (max-width: 1200px) {
@@ -544,7 +588,7 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
 }
 
 /* Hide scrollbar but keep functionality */
-.gallery-scroll-container::-webkit-scrollbar { display: none; }
+/* .gallery-scroll-container::-webkit-scrollbar { display: none; } */
 
 .m-item {
     height: 100%;
@@ -566,7 +610,7 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
 .scroll-hint {
     color: #D4AF37;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-top: 15px;
     opacity: 0.7;
 }
@@ -818,9 +862,10 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
 
 /* ========== FAQ Section ========== */
 /* Section Background */
+/* --- FAQ Section Container --- */
 .v-faq-section {
     padding: 80px 5%;
-    background-color: #ffffff; /* White background for the section */
+    background-color: #ffffff;
 }
 
 .v-faq-container {
@@ -828,88 +873,110 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
     margin: 0 auto;
 }
 
-/* Main Title: Red background, White text */
 .v-faq-header {
     text-align: center;
     color: #ffffff;
-    background-color: #800020; /* Deep Maroon/Red */
+    background-color: #800020;
     display: table;
     margin: 0 auto 50px auto;
     padding: 15px 40px;
     border-radius: 5px;
     font-size: 2.2rem;
-    border-bottom: 4px solid #D4AF37; /* Gold bottom border */
+    border-bottom: 4px solid #D4AF37;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-/* Individual FAQ Item */
-.v-faq-item {
-    margin-bottom: 15px;
-    border: 2px solid #800020; /* Red border */
-    border-radius: 8px;
-    overflow: hidden;
-    background: #fff;
-    transition: box-shadow 0.3s ease;
+/* --- FAQ Item & Entrance Animation --- */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-/* The Question: Red background with Gold Icon */
-.v-faq-question {
+.faq-item {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    background: #fff;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-item:nth-child(1) { animation-delay: 0.1s; }
+.faq-item:nth-child(2) { animation-delay: 0.2s; }
+.faq-item:nth-child(3) { animation-delay: 0.3s; }
+
+.faq-item.active {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* --- Question Bar --- */
+.faq-question {
     width: 100%;
-    padding: 22px 30px;
-    background-color: #800020;
-    color: #ffffff;
+    padding: 20px;
+    background: #800020;
+    color: white;
     border: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     font-weight: bold;
     text-align: left;
+    transition: background 0.3s;
 }
 
-.v-faq-question:hover {
-    background-color: #a00028; /* Slightly lighter red on hover */
+.faq-question:hover {
+    background: #a00028;
 }
 
-/* The Icon: Yellow/Gold */
-.v-faq-icon {
-    font-size: 1.8rem;
-    color: #FFD700; /* Bright Gold/Yellow */
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+/* --- THE SMOOTH REVEAL (Grid Method) --- */
+.faq-answer {
+    display: grid;
+    grid-template-rows: 0fr; /* Collapsed state */
+    transition: grid-template-rows 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
 }
 
-/* The Answer: White background with Red text */
-.v-faq-answer-wrapper {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    background-color: #ffffff;
+.faq-item.active .faq-answer {
+    grid-template-rows: 1fr; /* Expanded state */
+    border-bottom: 1px solid #eee;
 }
 
-.v-faq-answer-content {
-    padding: 30px;
-    line-height: 1.8;
-    color: #333; /* Dark gray for readability on white */
-    border-top: 1px solid #eee;
+.faq-answer-content {
+    overflow: hidden; /* Vital for grid animation */
+    padding: 0 20px;
+    color: #444;
+    line-height: 1.6;
+    opacity: 0;
+    transition: opacity 0.4s ease, padding 0.5s ease;
 }
 
-/* Links inside Answer: Red and Underlined */
-.v-faq-answer-content a {
-    color: #800020;
-    font-weight: bold;
-    text-decoration: underline;
+.faq-item.active .faq-answer-content {
+    padding: 20px;
+    opacity: 1;
 }
 
-/* Active State Styles */
-.v-faq-item.active {
-    box-shadow: 0 10px 25px rgba(128, 0, 32, 0.15);
+/* --- Icon Animation --- */
+.faq-icon {
+    font-size: 1.5rem;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s;
 }
 
-.v-faq-item.active .v-faq-icon {
-    transform: rotate(45deg);
+.faq-item.active .faq-icon {
+    transform: rotate(135deg); /* Professional 'X' shape */
     color: #D4AF37;
+}
+
+/* --- RTL Support --- */
+[dir="rtl"] .faq-question {
+    text-align: right;
+    flex-direction: row-reverse;
 }
 
 /* VENUE MAP SECTION */
@@ -1028,6 +1095,22 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
         font-size: 1.5rem;
         padding: 10px 25px;
     }
+
+    .vkids-card {
+        flex: 0 0 85%; /* Shows 85% of one card + 15% of the next */
+    }
+    
+    /* Force the scrollbar to always stay visible on mobile */
+    .vkids-grid {
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin; /* Firefox */
+    }
+    
+    /* Make the scrollbar more prominent on Mobile Chrome/Safari */
+    .vkids-grid::-webkit-scrollbar {
+        display: block;
+        height: 6px;
+    }
 }
 
 .vkids-grid {
@@ -1075,10 +1158,31 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
     background: #000;
 }
 
-.vkids-image-box img {
+.vkids-banner {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 200px; /* Set this to a smaller value like 120px or 150px */
+    background: #f9f9f9; /* Light background so you see the edges */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px; /* Optional: adds a little white space around the art */
+}
+
+/* 2. Force the image to stay inside that height */
+.vkids-banner img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important; /* Forces the whole image to show */
+    display: block;
+}
+
+.vkids-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Use 250px for smaller cards */
+    gap: 20px;
 }
 
 /* Type Badge (Video/Article) */
@@ -1115,26 +1219,44 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
 }
 
 /* Gold Button Style */
+
 .v-btn-gold {
     display: inline-block;
-    background: none;
-    border: none;
-    color: #D4AF37;
-    font-weight: 800;
+    margin-top: auto; 
+    padding: 8px 0; /* Changed 16px to 0 to align with the text above it */
+    color: #D4AF37 !important;
+    background: none !important;  /* Add this to remove the gray box */
+    border: none !important;      /* Add this to remove the button border */
+    font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 12px;
-    padding: 0;
-    cursor: pointer;
+    font-size: 13px;
     text-decoration: none;
-    border-bottom: 2px solid #D4AF37;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    outline: none;                /* Removes the blue ring when clicked */
 }
 
+/* Hover Effect: Underline growth and subtle glow */
 .v-btn-gold:hover {
-    color: #800020;
-    border-color: #800020;
-    padding-left: 5px; /* Subtle "nudge" effect */
+    color: #800020 !important; 
+    text-decoration: underline;
+    background: none !important;  /* Ensures no background appears on hover */
+    transform: translateX(5px); 
+}
+
+/* RTL Hover: Moves slightly to the left instead */
+[dir="rtl"] .v-btn-gold:hover {
+    transform: translateX(-5px);
+}
+
+/* Optional: Card "Lift" effect */
+.vkids-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vkids-card:hover {
+    transform: translateY(-10px); /* Card lifts up slightly */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
 /* Responsive Tweak for small phones */
@@ -1142,4 +1264,408 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
     .vkids-grid {
         grid-template-columns: 1fr;
     }
+}
+
+
+/* TICKETs */
+
+#ticketOptions {
+    animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#ticketOptions a:hover {
+    background-color: #f9f9f9 !important;
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+
+#mainTicketBtn:hover {
+    background-color: #a00028 !important;
+    color: #fff !important;
+}
+
+/* Brighter pulse and mobile-stable shake */
+.attention-pulse {
+    /* GPU acceleration trigger */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    perspective: 1000px;
+    
+    /* The Animation */
+    animation: mobileAttention 4s infinite ease-in-out;
+}
+
+@keyframes mobileAttention {
+    0%, 80%, 100% { 
+        transform: scale(1); 
+        filter: drop-shadow(0 0 0px rgba(212, 175, 55, 0));
+    }
+    85% { 
+        transform: scale(1.05) rotate(-3deg); 
+        filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.6));
+    }
+    90% { 
+        transform: scale(1.05) rotate(3deg); 
+    }
+    95% { 
+        transform: scale(1.05) rotate(0deg); 
+    }
+}
+
+/* Container - Forces everything to stack properly */
+#ticketHub {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    transition: all 0.4s ease;
+}
+
+/* Close button - Anchored to the Main Button area */
+.hub-dismiss-btn {
+    position: absolute;
+    bottom: 35px; /* Sits right above the main pill */
+    left: -15px;
+    width: 26px;
+    height: 26px;
+    background: #333;
+    color: #D4AF37;
+    border: 2px solid #D4AF37;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+/* The Menu List */
+.hub-options-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+    width: 240px;
+}
+
+/* The Links - Fixing the blue underline/color */
+.ticket-link {
+    background: white;
+    color: #800020 !important;
+    text-decoration: none !important;
+    padding: 12px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-left: 5px solid #D4AF37;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.ticket-link:hover {
+    transform: scale(1.03);
+}
+
+/* Main Button */
+#mainTicketBtn {
+    background: #800020;
+    color: #D4AF37;
+    padding: 12px 25px;
+    border-radius: 50px;
+    border: 2px solid #D4AF37;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    white-space: nowrap;
+}
+
+/* Ensure the stop-animation class is strong */
+.stop-animation {
+    animation: none !important;
+    transform: scale(1) !important;
+    filter: none !important;
+}
+
+@media (max-width: 768px) {
+    #backToTop {
+        bottom: 90px; /* Slightly lower on mobile to stay in the thumb zone */
+        right: 20px;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* Fix for Desktop Language Dropdown in RTL */
+[dir="rtl"] .lang-dropdown {
+    direction: rtl;
+}
+
+[dir="rtl"] .lang-content {
+    right: auto !important; /* Reset the right alignment */
+    left: 0 !important;      /* Align to the left edge of the button in RTL */
+    text-align: right;       /* Keep text aligned right for Arabic readers */
+}
+
+/* Fix for the Navbar items order */
+[dir="rtl"] .nav-links {
+    flex-direction: row-reverse;
+}
+
+/* Fix for the Dropdown Arrows */
+[dir="rtl"] .dropbtn::after {
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+[dir="rtl"] #ticketHub {
+    right: auto !important;
+    left: 30px !important;
+    align-items: flex-start;
+}
+
+[dir="rtl"] .hub-dismiss-btn {
+    left: auto !important;
+    right: -10px !important; /* Flip X to other side for Arabic */
+}
+
+[dir="rtl"] #mainTicketBtn {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] #backToTop {
+    right: auto !important;
+    left: 30px !important;
+}
+
+/* 1. Global Override for RTL (Arabic) Mode */
+[dir="rtl"], 
+[dir="rtl"] * {
+    font-family: "Times New Roman", Times, serif !important;
+}
+
+/* 2. Navbar Vertical Centering */
+[dir="rtl"] .nav-links li a,
+[dir="rtl"] .dropbtn,
+[dir="rtl"] .brand-text {
+    padding-top: 12px !important;    /* Added extra top padding */
+    padding-bottom: 8px !important; /* Reduced bottom padding to center it */
+    line-height: 1.2 !important;
+    display: flex;
+    align-items: center;
+}
+
+/* 3. Section Titles & Headings */
+[dir="rtl"] .main-title,
+[dir="rtl"] .v-section-heading,
+[dir="rtl"] .v-gold-title,
+[dir="rtl"] .v-venue-title,
+[dir="rtl"] .v-faq-header {
+    padding-bottom: 15px; /* Creates "breathing room" for descenders */
+    line-height: 1.5 !important;
+    text-transform: none !important;
+    letter-spacing: normal !important;
+}
+
+/* 4. Fix for Mobile Accordion Menus */
+[dir="rtl"] .accordion-menu li a {
+    text-align: right;
+    padding-right: 25px; /* Space for the right-aligned text */
+}
+
+/* 5. Flip the Dropdown Arrow */
+[dir="rtl"] .dropbtn::after {
+    margin-right: 8px;
+    margin-left: 0;
+}
+
+[dir="rtl"] #ticketHub { right: auto; left: 30px; align-items: flex-start; }
+[dir="rtl"] .hub-dismiss-btn { left: auto; right: -15px; }
+[dir="rtl"] .ticket-link { border-left: none; border-right: 5px solid #D4AF37; }
+
+[dir="rtl"] .faq-question {
+    text-align: right;
+    flex-direction: row-reverse; /* Puts the plus icon on the left */
+}
+
+[dir="rtl"] .faq-answer {
+    text-align: right;
+}
+
+[dir="rtl"] .faq-question i {
+    margin-left: 0;
+    margin-right: 15px; /* Adds gap from the right side */
+}
+
+/* Rescue the Brightcove icons from being forced into Times New Roman */
+.video-js .vjs-icon-placeholder::before,
+.video-js [class^="vjs-icon-"],
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+    font-family: VideoJS !important; /* Force the player back to its icon font */
+}
+
+
+.v-main-footer {
+    background-color: #800020; /* Your Brand Maroon */
+    color: #ffffff;
+    padding: 60px 5% 20px;
+    border-top: 4px solid #D4AF37; /* The Gold Accent */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.footer-col h4 {
+    color: #D4AF37;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-about {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+    color: #D4AF37;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #D4AF37;
+    border-radius: 50%;
+    display: inline-flex; /* Changed to inline-flex */
+    align-items: center;
+    justify-content: center;
+    color: #D4AF37;
+    text-decoration: none;
+    font-size: 1.1rem; /* Slightly larger for icons */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon:hover {
+    background: #D4AF37;
+    color: #800020;
+    transform: translateY(-3px); /* Adds a little "bounce" on hover */
+    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+}
+
+/* Force FontAwesome to use its own font family */
+.fab, .fas, .fa-brands, .fa-solid {
+    font-family: "Font Awesome 6 Brands", "Font Awesome 6 Free" !important;
+}
+
+.footer-bottom {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .v-main-footer { text-align: center; }
+    .footer-socials { justify-content: center; }
+}
+
+.footer-newsletter {
+    display: flex;
+    gap: 0; /* Keeps them joined */
+    width: 100%;
+    max-width: 300px;
+}
+
+.footer-newsletter input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #D4AF37;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 0.9rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.footer-newsletter input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-newsletter button {
+    background: #D4AF37;
+    color: #800020;
+    border: 1px solid #D4AF37;
+    padding: 0 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: all 0.3s ease;
+}
+
+.footer-newsletter button:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+}
+
+/* Mobile Alignment */
+@media (max-width: 768px) {
+    .footer-newsletter {
+        margin: 0 auto;
+    }
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.footer-brand h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
