@@ -1207,28 +1207,17 @@ function throttle(func, limit) {
 
 window.addEventListener('scroll', throttle(updateScrollSpy, 100));
 
-function updateMobileStage(storyData) {
-    // 1. Get the elements (Desktop vs Mobile might share these or have unique ones)
-    const titleEl = document.querySelector('.text-group h3');
-    const descEl = document.querySelector('#stageDesc');
-    const imageEl = document.querySelector('#stageImage');
+// This works for any device, one JSON file
+function renderContent(item, lang = 'en') {
+    // 1. The Title
+    // Try current lang -> Try English -> Fallback to "New Story"
+    const title = item?.q?.[lang] || item?.q?.['en'] || "New Story";
 
-    // 2. The Safeguard: Check if storyData and the language key exist
-    // Replace 'en' with your current language variable
-    const currentLang = 'en'; 
+    // 2. The Description
+    // Try current lang -> Try English -> Fallback to empty string
+    const desc = item?.a?.[lang] || item?.a?.['en'] || "";
 
-    if (storyData) {
-        if (titleEl) {
-            titleEl.innerHTML = storyData.q[currentLang] || "Title Missing";
-        }
-        if (descEl) {
-            // Check if 'a' exists (the answer/description field)
-            descEl.innerHTML = storyData.a ? (storyData.a[currentLang] || "") : "";
-        }
-        if (imageEl && storyData.image) {
-            imageEl.src = storyData.image;
-        }
-    } else {
-        console.error("Story data is missing or undefined!");
-    }
+    // Now inject them into the HTML
+    document.getElementById('stageTitle').innerHTML = title;
+    document.getElementById('stageDesc').innerHTML = desc;
 }
