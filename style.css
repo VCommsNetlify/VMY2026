@@ -2206,21 +2206,6 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
 ========================================= */
 @media (max-width: 768px) {
     
-    /* 1. SHRINK THE COUNTDOWN */
-    .v-countdown-container {
-        /* Reduces overall spacing inside the countdown box */
-        padding: 15px 10px !important; 
-        gap: 10px !important; /* Brings the days/hours/mins closer together */
-        
-        /* If you used Flexbox, this forces them to wrap nicely on tiny screens */
-        flex-wrap: wrap; 
-        justify-content: center;
-    }
-    
-    /* Targets the actual numbers/text inside the countdown to make them smaller */
-    .v-countdown-container > * {
-        font-size: 1.2rem !important; /* Adjust this number if it's still too big */
-    }
 
     /* 2. FIX THE GIANT GAP */
     .main-title {
@@ -2241,47 +2226,3 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
     }
 }
 
-/* =========================================
-   MOBILE FIX: BIG NUMBERS, ONE LINE (Stacked)
-========================================= */
-@media (max-width: 768px) {
-
-    .v-countdown-container {
-        display: flex !important;
-        flex-direction: row !important; /* The boxes stay in a row */
-        flex-wrap: nowrap !important;   /* No jumping to the next line */
-        justify-content: space-evenly !important;
-        gap: 5px !important;            /* Tight gap between boxes */
-        width: 100% !important;
-        padding: 10px 0 !important;
-    }
-
-    /* Target the individual boxes */
-    .v-countdown-container > div {
-        display: flex !important;
-        flex-direction: column !important; /* STACK the number over the label */
-        align-items: center !important;
-        flex: 1; 
-        background: rgba(128, 0, 32, 0.1); /* Optional: slight tint to define the boxes */
-        padding: 8px 2px !important;
-        border-radius: 4px;
-    }
-
-    /* THE NUMBERS - Let's make them BIG again */
-    .v-countdown-container span, 
-    .v-countdown-container .number {
-        font-size: 1.6rem !important; /* Much bigger and easier to read */
-        font-weight: 800 !important;
-        line-height: 1 !important;
-        margin-bottom: 2px !important;
-    }
-
-    /* THE LABELS - Keep them small so they don't fight for space */
-    .v-countdown-container label, 
-    .v-countdown-container .label {
-        font-size: 0.55rem !important; 
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        opacity: 0.8;
-    }
-}
