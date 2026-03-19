@@ -2200,3 +2200,43 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
     height: auto;
     display: block;
 }
+
+/* =========================================
+   MOBILE FIXES (Screens smaller than 768px)
+========================================= */
+@media (max-width: 768px) {
+    
+    /* 1. SHRINK THE COUNTDOWN */
+    .v-countdown-container {
+        /* Reduces overall spacing inside the countdown box */
+        padding: 15px 10px !important; 
+        gap: 10px !important; /* Brings the days/hours/mins closer together */
+        
+        /* If you used Flexbox, this forces them to wrap nicely on tiny screens */
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+    
+    /* Targets the actual numbers/text inside the countdown to make them smaller */
+    .v-countdown-container > * {
+        font-size: 1.2rem !important; /* Adjust this number if it's still too big */
+    }
+
+    /* 2. FIX THE GIANT GAP */
+    .main-title {
+        /* Shrinks the "Lorem Ipsum" text slightly so it reads better on mobile */
+        font-size: 1.5rem !important; 
+        
+        /* This is the magic bullet: kills the giant desktop margin underneath it */
+        margin-bottom: 20px !important; 
+    }
+
+    .v-cta-button {
+        /* Removes any top margin that might be pushing the button down */
+        margin-top: 0 !important; 
+        
+        /* Optional: Makes the button a nice, clickable size for thumbs */
+        padding: 12px 30px !important; 
+        font-size: 1rem !important;
+    }
+}
