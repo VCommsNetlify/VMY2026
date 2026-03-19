@@ -374,18 +374,60 @@ window.closeMenu = function() {
     });
 
     // --- 3. COUNTDOWN (STABLE) ---
-    const targetDate = new Date("June 16, 2026 00:00:00").getTime();
-    if (countdownEl) {
-        setInterval(() => {
-            const now = new Date().getTime();
-            const diff = targetDate - now;
-            const d = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            const s = Math.floor((diff % (1000 * 60)) / 1000);
-            countdownEl.innerHTML = `${d}d ${h}h ${m}m ${s}s`;
-        }, 1000);
-    }
+// Target date: June 16, 2026 (Adjust as needed)
+const targetDate = new Date("June 16, 2026 00:00:00").getTime();
+
+function updateCountdown() {
+    const now = new Date().getTime();
+    const diff = targetDate - now;
+
+    if (diff <= 0) return;
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+    handleFlip(document.querySelector("[data-days]"), days);
+    handleFlip(document.querySelector("[data-hours]"), hours);
+    handleFlip(document.querySelector("[data-minutes]"), mins);
+    handleFlip(document.querySelector("[data-seconds]"), secs);
+}
+
+function handleFlip(cardEl, newValue) {
+    const formatted = newValue < 10 ? `0${newValue}` : newValue;
+    const topHalf = cardEl.querySelector(".static-top .number-wrapper");
+
+    if (formatted == topHalf.innerText) return;
+
+    // Update all number wrappers
+    cardEl.querySelectorAll(".number-wrapper").forEach(el => {
+        el.innerText = formatted;
+    });
+
+    cardEl.classList.remove("flipping");
+    void cardEl.offsetWidth; 
+    cardEl.classList.add("flipping");
+
+    setTimeout(() => {
+        cardEl.classList.remove("flipping");
+    }, 600);
+}
+
+setInterval(updateCountdown, 1000);
+updateCountdown();
+
+const navbar = document.querySelector('.navbar');
+
+    // Listen for the user scrolling
+    window.addEventListener('scroll', () => {
+        // If they scroll down more than 50 pixels...
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled'); // Turn on the solid background
+        } else {
+            navbar.classList.remove('scrolled'); // Make it transparent again
+        }
+    });
 });
 
 // --- 4. DYNAMIC STORIES & BRIGHTCOVE LOGIC ---
@@ -1240,3 +1282,5 @@ function renderContent(item, lang = 'en') {
     document.getElementById('stageTitle').innerHTML = title;
     document.getElementById('stageDesc').innerHTML = desc;
 }
+
+// logo

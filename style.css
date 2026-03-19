@@ -3,6 +3,25 @@ html { scroll-behavior: smooth; }
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, sans-serif !important; }
 body { background-color: #f4f4f4; overflow-x: hidden; }
 
+/* =========================================
+   NAVBAR LOGO SIZING
+========================================= */
+.navbar-logo {
+    height: 50px; /* Adjust this to fit your navbar perfectly */
+    width: auto;  /* Keeps the logo proportional */
+    display: block;
+}
+
+.navbar-logo-link {
+    display: inline-block;
+    /* Optional: Adds a nice little hover effect when they mouse over the logo */
+    transition: transform 0.2s ease;
+}
+
+.navbar-logo-link:hover {
+    transform: scale(1.05);
+}
+
 /* --- 2. HEADER & NAVBAR --- */
 header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 3000; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
 .navbar { display: flex; justify-content: space-between; align-items: center; height: 70px; padding: 0 4%; flex-wrap: nowrap; }
@@ -18,6 +37,39 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
 
 #navLinks a.active {
     color: #D4AF37 !important; /* Gold for active */
+}
+
+/* =========================================
+   THE TRANSPARENT TO SOLID NAVBAR
+========================================= */
+
+/* 1. The Base State (At the very top of the page) */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Start fully transparent */
+    background-color: rgba(0, 0, 0, 0); 
+    /* A smooth transition so it fades in elegantly */
+    transition: background-color 0.4s ease, padding 0.4s ease;
+    z-index: 100; /* Keeps it on top of your video and logo */
+    
+    /* Layout styling (adjust padding as needed) */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px 5%; 
+}
+
+/* 2. The Scrolled State (When the user scrolls down) */
+.navbar.scrolled {
+    /* Turns into a sleek, solid dark background (90% opacity) */
+    background-color: rgba(10, 10, 10, 0.95); 
+    /* Optional: Shrink the padding slightly for a tighter, premium feel */
+    padding: 10px 5%; 
+    /* Optional: Add a subtle shadow underneath */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* --- 3. DESKTOP VIEW (> 1024px) --- */
@@ -42,6 +94,7 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
 /* --- 4. STORIES THEATER (PERMANENT) --- */
 .stories-theater { 
     background: #fff !important; 
+    opacity: 0.85 !important;
     padding: 40px 4%; 
     display: flex !important; 
     flex-direction: column !important; /* Forces Banner TOP, Container BOTTOM */
@@ -397,6 +450,39 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
 .main-title { font-size: clamp(2rem, 8vw, 5.5rem); font-weight: 900; margin-bottom: 10px; }
 .hero-countdown { font-size: clamp(1.5rem, 6vw, 4rem); color: #D4AF37; font-weight: bold; font-family: monospace; }
 
+/* --- HERO SECTION SPACING --- */
+.hero-logo {
+    display: block;
+    margin: 0 auto 20px auto; /* Centers the logo and adds space below */
+}
+
+.main-title {
+    margin-bottom: 30px; /* Gives the text room to breathe above the clock */
+}
+
+/* --- THE NEW CTA BUTTON --- */
+.v-cta-button {
+    display: inline-block;
+    margin-top: 40px; /* Pushes the button down below the clock */
+    padding: 15px 40px;
+    background-color: #D4AF37; /* Premium Gold */
+    color: #800020; /* Deep Maroon Text */
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 50px; /* Pill-shaped button */
+    border: 2px solid transparent;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.v-cta-button:hover {
+    transform: translateY(-3px); /* Slight "lift" effect when hovered */
+    background-color: #f1c40f; /* Brighter gold on hover */
+    box-shadow: 0 15px 25px rgba(0,0,0,0.4);
+}
+
 /* --- 7. UTILITIES --- */
 .master-section { height: 100vh; width: 100%; display: flex; align-items: center; justify-content: center; text-align: center; }
 #backToTop { 
@@ -477,6 +563,7 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
 .g-btn {
     background: transparent;
     border: 2px solid #800020;
+    background-color: #fff;
     color: #800020;
     padding: 10px 22px;
     font-size: 14px;
@@ -613,6 +700,13 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
     font-size: 1rem;
     margin-top: 15px;
     opacity: 0.7;
+}
+
+.gallery-carousel-section {
+    width: 100%;
+    padding: 60px 0; 
+    background-color: #f9f6f0; 
+
 }
 
 /* SPEAKER SECTION */
@@ -866,6 +960,7 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
 .v-faq-section {
     padding: 80px 5%;
     background-color: #ffffff;
+    opacity: 0.85;
 }
 
 .v-faq-container {
@@ -1066,6 +1161,7 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
 .vkids-section {
     padding: 60px 5%;
     background-color: #fff;
+    opacity: 0.95;
 }
 
 .v-section-header {
@@ -1668,4 +1764,439 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
     color: #fff;
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+/* COUNTDOWN TIMER NEW */
+.v-countdown-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.flip-card {
+    position: relative;
+    width: 90px;
+    height: 110px;
+    background: #f7f7f7;
+    border-radius: 12px;
+}
+
+.card-half, .card-flap {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50%; /* Strictly half the card (55px) */
+    background: #f7f7f7;
+    color: #331d5e;
+    font-size: 4rem !important; 
+    font-weight: 800;
+    overflow: hidden; /* The Guillotine */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: block; /* NO MORE FLEXBOX HERE */
+}
+
+/* TOP HALF: Anchor text to the bottom of the top half */
+.static-top, .flap-top {
+    top: 0;
+    border-radius: 12px 12px 0 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    align-items: flex-end; /* Pushes number down to the fold */
+}
+
+/* BOTTOM HALF: Anchor text to the top of the bottom half */
+.static-bottom, .flap-bottom {
+    bottom: 0;
+    border-radius: 0 0 12px 12px;
+    align-items: flex-start; /* Pulls number up to the fold */
+}
+
+/* --- THE NUCLEAR ALIGNMENT FIX --- */
+
+/* 1. Make the wrapper the exact size of the FULL card */
+.number-wrapper {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 110px; /* MUST match the .flip-card height */
+    line-height: 110px; /* Centers the text vertically in the 110px box */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. TOP HALF: Pin the 110px wrapper to the top of the 55px box */
+.static-top .number-wrapper, 
+.flap-top .number-wrapper {
+    top: 0;
+}
+
+/* 3. BOTTOM HALF: Pin the 110px wrapper to the bottom of the 55px box */
+.static-bottom .number-wrapper, 
+.flap-bottom .number-wrapper {
+    bottom: 0;
+}
+
+/* --- Animation Logic --- */
+.card-flap {
+    z-index: 10;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.flap-top { transform-origin: bottom; }
+.flap-bottom { transform-origin: top; transform: rotateX(180deg); z-index: 5; }
+.flipping .flap-top { transform: rotateX(-180deg); }
+.flipping .flap-bottom { transform: rotateX(0deg); }
+
+.static-top, .flap-top {
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    box-shadow: inset 0 -10px 10px -10px rgba(0,0,0,0.1);
+}
+
+.static-bottom, .flap-bottom {
+    box-shadow: inset 0 10px 10px -10px rgba(0,0,0,0.1);
+}
+
+.flip-card .label {
+    position: absolute;
+    bottom: -30px; /* Pushes the text below the white card */
+    left: 0;
+    width: 100%;
+    color: #ffffff; /* White text to stand out on dark background */
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+
+
+/* logo */
+/* =========================================
+   SVG LOGO ANIMATIONS
+   Make sure transform-box is set to fill-box 
+   so they spin on their own center points!
+========================================= */
+
+/* 1. SPINNING THE GEARS */
+#gear-left, 
+#gear-right, 
+#gear-bottom,
+#gear-top,
+#circle-border,
+#circle-inner,
+#gear-inner-left-top,
+#gear-inner-left-bottom,
+#gear-inner-right-top,
+#gear-inner-right-bottom {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+/* Make one gear spin clockwise */
+#gear-left,#gear-top,#circle-border,#gear-inner-left-top,#gear-inner-left-bottom {
+    animation: spinRight 10s linear infinite;
+}
+
+/* Make the others spin counter-clockwise */
+#gear-right, 
+#gear-bottom,#circle-inner,#gear-inner-right-top,#gear-inner-right-bottom {
+    animation: spinLeft 10s linear infinite;
+}
+
+@keyframes spinRight { 100% { transform: rotate(360deg); } }
+@keyframes spinLeft { 100% { transform: rotate(-360deg); } }
+
+
+/* 2. THE BREATHING PHOENIX */
+#phoenix {
+    /* Required to animate the SVG shapes on their own center point */
+    transform-box: fill-box;
+    transform-origin: center bottom; /* Pulses up from the base */
+    
+    /* Triggers the "breathe and shine" combo animation */
+    animation: breatheAndShinePhoenix 6s ease-in-out infinite;
+}
+
+@keyframes breatheAndShinePhoenix {
+    /* --- 0%: Neutral/Soft State --- */
+    0%, 100% { 
+        transform: scale(1) translateY(0); 
+        /* Very subtle, soft orange base glow */
+        filter: drop-shadow(0px 0px 5px rgba(255, 100, 0, 0.2)); 
+    }
+    
+    /* --- 50%: peak "SHINE" Moment --- */
+    50% { 
+        /* Floats and expands slightly */
+        transform: scale(1.03) translateY(-4px); 
+        
+        /* Stacked Shadows for the Intense Shine:
+           1. White/Gold Core (0 0 10px): The brightest center of the light.
+           2. Fiery Orange (0 0 30px): The main halo of light.
+           3. Deep Red (0 10px 50px): The ambient light hitting the dark background.
+        */
+        filter: drop-shadow(0 0 10px rgba(255, 255, 200, 0.9)) /* Core Shine (white/gold) */
+                drop-shadow(0 0 30px rgba(255, 140, 0, 0.8))  /* Fiery Halo (orange) */
+                drop-shadow(0 15px 50px rgba(220, 20, 60, 0.5)); /* Base ambient (red) */
+    }
+}
+
+
+/* 3. THE PULSING SUNBURST */
+#path-1,#path-2,#path-3,#path-4 {
+    transform-box: fill-box;
+    transform-origin: center bottom;
+    animation: pulseSun 6s ease-in-out infinite;
+}
+
+@keyframes pulseSun {
+    0%, 100% { opacity: 0.8; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.05); }
+}
+
+/* STARS */
+/* 1. Target EVERY individual shape inside the stars group */
+/* The " > * " means "select every direct child inside this ID" */
+#stars > * {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: twinkleStar 3s ease-in-out infinite;
+}
+
+/* 2. The Magic Trick: Target them one by one to stagger the timing! */
+#stars > *:nth-child(1) { animation-delay: 0s; }
+#stars > *:nth-child(2) { animation-delay: 0.7s; }
+#stars > *:nth-child(3) { animation-delay: 1.4s; }
+#stars > *:nth-child(4) { animation-delay: 2.1s; }
+#stars > *:nth-child(5) { animation-delay: 0.4s; }
+#stars > *:nth-child(6) { animation-delay: 1.1s; }
+/* (You can keep adding lines if you have more than 6 stars) */
+
+/* 3. The Twinkle Keyframes */
+@keyframes twinkleStar {
+    0%, 100% { 
+        opacity: 0.2; 
+        transform: scale(0.8); 
+    }
+    50% { 
+        opacity: 1; 
+        transform: scale(1.2); 
+        filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.9)); 
+    }
+}
+
+/* =========================================
+   THE JUMPING HUMANS (INDIVIDUAL IDs)
+========================================= */
+
+
+#human-1, #human-2, #human-3, #human-4 {
+    transform-box: fill-box;
+    transform-origin: bottom center;
+    animation: jumpHuman 3s ease-in-out infinite;
+}
+
+
+#human-1 { animation-delay: 0s; }
+#human-2 { animation-delay: 0.6s; }
+#human-3 { animation-delay: 1.2s; }
+#human-4 { animation-delay: 0.3s; }
+
+
+@keyframes jumpHuman {
+    0%, 100% { 
+        transform: translateY(0); 
+    }
+    50% { 
+        transform: translateY(-15px); 
+    }
+}
+
+/* =========================================
+   THE GLOWING CENTER LOGO
+========================================= */
+
+#thev-logo {
+    transform-box: fill-box;
+    transform-origin: center;
+    /* 4 seconds keeps it smooth and elegant */
+    animation: pulseGlowLogo 4s ease-in-out infinite; 
+}
+
+@keyframes pulseGlowLogo {
+    /* 0% & 100%: The "Resting" State */
+    0%, 100% { 
+        transform: scale(1);
+        /* A very soft, almost invisible white glow */
+        filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.3)); 
+    }
+    
+    /* 50%: The "Radiating" State */
+    50% { 
+        /* Expands just a tiny bit to emphasize the glow */
+        transform: scale(1.05); 
+        
+        /* Stacked Glow: 
+           1st is a tight, bright white core. 
+           2nd is a wider, softer gold halo. */
+        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.9)) 
+                drop-shadow(0 0 25px rgba(212, 175, 55, 0.7)); 
+    }
+}
+
+/* =========================================
+   THE CTRP TEXT WAVE (The "Shout" Effect)
+========================================= */
+
+/* 1. Base animation setup */
+#CTRP-top > *, 
+#CTRP-bottom > * {
+    /* We add an invisible border to the text that will expand */
+    stroke: #ffffff; /* Matches your white text */
+    stroke-width: 0px; 
+    stroke-linejoin: round; /* Keeps the edges smooth when it shouts */
+    
+    animation: textWaveShout 4s ease-in-out infinite; 
+}
+
+/* 2. Stagger the timing perfectly from Top to Bottom */
+#CTRP-top > *:nth-child(1) { animation-delay: 0s; }    /* CONFORM shouts */
+#CTRP-top > *:nth-child(2) { animation-delay: 0.5s; }  /* TRANSFORM shouts */
+#CTRP-bottom > *:nth-child(1) { animation-delay: 1.0s; } /* REFORM shouts */
+#CTRP-bottom > *:nth-child(2) { animation-delay: 1.5s; } /* PERFORM shouts */
+
+/* 3. The Shout Keyframes */
+@keyframes textWaveShout {
+    /* 0%, 25%, 100%: Normal, quiet state */
+    0%, 25%, 100% { 
+        stroke-width: 0px; 
+        filter: none;
+    }
+    
+    /* 10%: The peak moment. 
+       Dialed back to just 1px for a subtle pulse, with a softer glow. */
+    10% { 
+        stroke-width: 2px; /* Reduced from 3px for a much cleaner look */
+        filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.6)); /* Softer, less blinding glow */
+    }
+}
+
+/* =========================================
+   THE PULSING CENTER TITLE (V-CONVENTION 2026)
+========================================= */
+
+#vcon-2026 {
+    /* Crucial: Keeps the scale anchored to the exact center of the text block */
+    transform-box: fill-box;
+    transform-origin: center;
+    
+    /* A smooth 4-second loop so it feels like a steady, powerful heartbeat */
+    animation: pulseCenterTitle 4s ease-in-out infinite;
+}
+
+/* The Pulse and Shine Keyframes */
+@keyframes pulseCenterTitle {
+    /* 0%, 100%: Normal size, resting state */
+    0%, 100% { 
+        transform: scale(1); 
+        filter: drop-shadow(0 0 0px rgba(255, 255, 255, 0));
+    }
+    
+    /* 50%: The "Bigger and Shiny" moment */
+    50% { 
+        /* Grows by 4%. Change to 1.08 if you want a massive heartbeat! */
+        transform: scale(1.04); 
+        
+        /* The Shiny Effect: 
+           A bright white core layered with a soft icy blue/white outer glow */
+        filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.9)) 
+                drop-shadow(0 0 30px rgba(200, 230, 255, 0.6)); 
+    }
+}
+
+/* =========================================
+   MOBILE TWEAKS (Screens smaller than 768px)
+========================================= */
+@media (max-width: 768px) {
+    
+    /* 1. Tone down the jumping humans for mobile */
+    @keyframes jumpHuman {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-4px); } /* Changed from -8px to -4px */
+    }
+
+    /* 2. Soften the heavy glows on the Phoenix to save mobile battery */
+    @keyframes breatheAndShinePhoenix {
+        0%, 100% { 
+            transform: scale(1) translateY(0); 
+            filter: drop-shadow(0px 0px 2px rgba(255, 100, 0, 0.2)); 
+        }
+        50% { 
+            transform: scale(1.02) translateY(-2px); /* Smaller movement */
+            /* Removed the 3rd heavy shadow, kept the core shine */
+            filter: drop-shadow(0 0 5px rgba(255, 255, 200, 0.8)) 
+                    drop-shadow(0 0 15px rgba(255, 140, 0, 0.6)); 
+        }
+    }
+    
+    /* 3. Tone down the center title pulse */
+    @keyframes pulseCenterTitle {
+        0%, 100% { transform: scale(1); filter: none; }
+        50% { 
+            transform: scale(1.02); /* Smaller heartbeat */
+            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)); /* Single glow instead of double */
+        }
+    }
+}
+
+.hero-logo-animated {
+    width: 100%;
+    max-width: 300px; /* Locks it to 300px on desktop */
+    height: auto;     /* Keeps it perfectly round/proportional */
+    display: block;
+    margin: 0 auto 40px auto; /* Centers it and adds space below */
+}
+
+/* --- Pin Video to the Background --- */
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; 
+    z-index: -2; 
+    pointer-events: none; 
+}
+
+/* --- The Dark Overlay --- */
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6); /* 60% dark tint so the video doesn't overpower the logo */
+    z-index: -1; 
+    pointer-events: none;
+}
+
+/* --- Center the Logo --- */
+.content-wrapper {
+    position: relative;
+    z-index: 1; 
+    width: 100%;
+    min-height: 100vh; /* Makes sure the wrapper is as tall as the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+/* --- The Logo Sizing --- */
+.hero-logo-animated {
+    width: 90%;
+    max-width: 400px; /* Adjust this if you want the logo bigger or smaller on desktop */
+    height: auto;
+    display: block;
 }
