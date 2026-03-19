@@ -2240,3 +2240,43 @@ header { background: #800020; position: sticky; top: 0; width: 100%; z-index: 30
         font-size: 1rem !important;
     }
 }
+
+/* =========================================
+   MOBILE FIX: ONE-LINE COUNTDOWN
+========================================= */
+@media (max-width: 768px) {
+
+    .v-countdown-container {
+        display: flex !important;
+        flex-direction: row !important; /* Forces horizontal */
+        flex-wrap: nowrap !important;   /* Strictly forbids dropping to a second line */
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 8px !important;            /* Tighten the gap between boxes */
+        padding: 10px 5px !important;   /* Slim down the outer padding */
+        width: 100% !important;
+        overflow: hidden;               /* Prevents any weird side-scrolling */
+    }
+
+    /* Target the individual boxes (Days, Hours, etc.) */
+    .v-countdown-container > div {
+        flex: 1;                        /* Makes each box take up equal space */
+        min-width: 0;                   /* Allows them to shrink below their content size */
+        padding: 5px !important;        /* Internal box padding */
+    }
+
+    /* The Numbers (e.g., "24") */
+    .v-countdown-container span, 
+    .v-countdown-container .number {
+        font-size: 1.1rem !important;   /* Dial this down if they still overlap */
+        display: block;
+    }
+
+    /* The Labels (e.g., "Days") */
+    .v-countdown-container label, 
+    .v-countdown-container .label {
+        font-size: 0.6rem !important;   /* Make the labels tiny to save vertical/horizontal space */
+        text-transform: uppercase;
+        letter-spacing: 0px !important;
+    }
+}
