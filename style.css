@@ -47,7 +47,28 @@ header {
 .brand-text { 
     font-weight: bold; 
     font-size: 1.2rem; 
+    font-family: 'Apotek ExtraCond', sans-serif !important;
     white-space: nowrap; 
+}
+
+.vcon-tag {
+    /* Fonts and Color */
+    font-family: 'Apotek ExtraCond', sans-serif !important;
+    color: #d1ff6c !important; 
+    
+    /* THE GRADIENT BACKGROUND: Deep dark red on left -> Bright red on right */
+    background: linear-gradient(to right, #4d0000 0%, #4d0000 30%, #ff0000 80%);
+    
+    /* Layout & Box styling (essential for the look in the screenshot) */
+    display: inline-block;
+    padding: 2px 12px;
+    border-radius: 4px;
+    line-height: 1.2;
+    vertical-align: middle;
+    margin-top: 5px; /* Added slight top margin to better align with the baseline */
+
+    /* Subtler text shadow as seen in the new image to keep letters crisp against bright red */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); 
 }
 
 .logo-placeholder { 
@@ -217,7 +238,7 @@ header {
 .story-meta { flex: 1; display: flex; flex-direction: column; justify-content: center; }
 
 .stage-info-bar { 
-    position: relative !important; /* Remove 'absolute' so it drops below */
+    position: relative !important; 
     bottom: auto !important; 
     width: 100%; 
     display: flex; 
@@ -225,13 +246,49 @@ header {
     align-items: center; 
     justify-content: space-between; 
     padding: 30px; 
-    background-color: #17043d; /* Your custom background */
+    background-color: #17043d;
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('YOUR_IMAGE_HERE.jpg');
     background-size: cover;
     background-position: center;
     z-index: 10;
     gap: 20px; 
+    text-align: left;
 }
+
+@media (max-width: 1024px) {
+    .stage-info-bar {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding: 40px 20px;
+    }
+
+    .text-group {
+        width: 100%;
+        text-align: center;
+    }
+
+    #stageTitle {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #stageDesc {
+        text-align: center;
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .button-group {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
 #viewMoreToggle { color: #17043d !important; font-weight: bold; text-shadow: 1px 1px 3px #000; font-size: 12px; display: block; margin-top: 5px; }
 
 .text-group { font-size: clamp(15px, 0.9vw + 10px, 18px) !important; flex: 1; text-align: left; overflow: visible; }
@@ -676,11 +733,11 @@ header {
 }
 
 /* --- 6. HERO SECTION --- */
-.hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1920x1080'); background-size: cover; color: white; text-align: center; padding: 20px; }
+.hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background-image: url('assets/images/bg-fx.png'); opacity: 90%; background-size: cover; color: white; text-align: center; padding: 20px; }
 .logo-emblem { width: clamp(200px, 30vw, 300px); height: clamp(200px, 30vw, 300px); border: 2px solid #D4AF37; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 30px; background: rgba(212,175,55,0.05); }
 .emblem-word { font-size: clamp(0.8rem, 2vw, 1.1rem); color: #D4AF37; text-transform: uppercase; font-weight: 800; letter-spacing: 2px; }
 .emblem-divider { width: 50px; height: 1px; background: rgba(212, 175, 55, 0.4); margin: 5px auto; }
-.main-title { font-size: clamp(1.8rem, 4vw, 3.5rem); font-weight: 600; margin-bottom: 10px; }
+.main-title { font-size: clamp(1.8rem, 4vw, 3.5rem); font-weight: 600; margin-bottom: 10px;  }
 .hero-countdown { font-size: clamp(1.5rem, 6vw, 4rem); color: #D4AF37; font-weight: bold; font-family: monospace; }
 
 /* --- HERO SECTION SPACING --- */
@@ -690,7 +747,8 @@ header {
 }
 
 .main-title {
-    margin-bottom: 30px; /* Gives the text room to breathe above the clock */
+    margin-bottom: 30px;
+    font-family: 'Apotek ExtraCond', sans-serif !important;
 }
 
 /* --- THE NEW CTA BUTTON --- */
@@ -923,14 +981,39 @@ header {
 }
 
 
+.news-header-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    align-items: center;
+}
+
+.v-section-heading-news-sub {
+    text-align: left;
+}
+
 @media (max-width: 1024px) {
     .news-header-container {
+        display: flex;
+        flex-direction: column;
         grid-template-columns: 1fr;
-        text-align: left;
+        text-align: center;
+        align-items: center;
+        width: 100%;
     }
+
     .v-section-heading-news {
         white-space: normal; 
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .v-section-heading-news-sub {
+        text-align: center;
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
     }
 }
 
@@ -2147,19 +2230,36 @@ html[lang="ar"] #v-kids {
     transform: scale(1.03);
 }
 
-/* Main Button */
 #mainTicketBtn {
-  background: linear-gradient(to right, #300050, #6a00b0);
-    color: #fff;
+    /* 1. Gradient: Bright Lime (#d1ff6c) to a deeper Pear/Lime (#a6e22e) */
+    background: linear-gradient(135deg, #d1ff6c 0%, #a6e22e 100%);
+    
+    /* 2. Dark Purple Text for maximum readability on light background */
+    color: #300050; 
+    
     padding: 12px 25px;
     border-radius: 50px;
-    border: 2px solid #ff8c00;
+    
+    /* 3. Subtle dark border to keep the shape sharp */
+    border: 1px solid rgba(48, 0, 80, 0.2); 
+    
+    /* 4. Stronger shadow to make it "float" above the purple section */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    
     display: flex;
     align-items: center;
     gap: 10px;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     white-space: nowrap;
+    font-weight: 900; /* Extra bold text to make it stand out */
+    text-transform: uppercase;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover/Touch effect */
+#mainTicketBtn:active, #mainTicketBtn:hover {
+    transform: scale(0.98); /* Feels like a real button when pressed */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Ensure the stop-animation class is strong */
@@ -2596,6 +2696,40 @@ html[dir="rtl"] #v-kids .v-gold-title {
 }
 
 
+@media (max-width: 480px) {
+    /* 1. Reduce the gap so cards don't fall off the screen edges */
+    .v-countdown-container {
+        gap: 8px; 
+    }
+
+    /* 2. Scale the card dimensions (Approx 70% of original) */
+    .flip-card {
+        width: 65px;
+        height: 80px;
+        border-radius: 8px;
+    }
+
+    /* 3. Adjust the Number Wrapper to match the NEW height */
+    .number-wrapper {
+        height: 80px; /* MUST match the new .flip-card height */
+        line-height: 80px; /* Centers text in the new 80px box */
+    }
+
+    /* 4. Shrink the Font Size */
+    .card-half, .card-flap {
+        font-size: 2.8rem !important; 
+        font-weight: 700;
+        /* height is handled automatically by the 50% rule in your original CSS */
+    }
+
+    /* 5. Adjust the labels (DAYS, HOURS, etc) */
+    .flip-card .label {
+        bottom: -25px; /* Pull it slightly closer to the smaller card */
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+    }
+}
+
 
 /* logo */
 
@@ -2848,6 +2982,7 @@ html[dir="rtl"] #v-kids .v-gold-title {
     object-fit: cover; 
     z-index: -2; 
     pointer-events: none; 
+    opacity: 40%;
 }
 
 /* --- The Dark Overlay --- */
@@ -2857,7 +2992,7 @@ html[dir="rtl"] #v-kids .v-gold-title {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.6); /* 60% dark tint so the video doesn't overpower the logo */
+    background: rgba(0, 0, 0, 0.8); /* 60% dark tint so the video doesn't overpower the logo */
     z-index: -1; 
     pointer-events: none;
 }

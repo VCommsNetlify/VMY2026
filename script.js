@@ -11,7 +11,7 @@ const translations = {
         "nav.faq": "FAQ",
         "nav.languages":"LANGUAGES",
 
-        "hero.title": "GET READY TO BEGIN A WHOLE NEW<br/> JOURNEY AT <span style='color: #d1ff6c;'>V-CONVENTION 2026</span>!",
+        "hero.title": "GET READY TO BEGIN A WHOLE NEW<br/> JOURNEY AT <span class='vcon-tag'>V-CONVENTION 2026!</span>",
         "hero.cta": "Tickets are available NOW on VShoppe. Use the code: <span>VMYJUNE2026</span>",
 
         "countdown-days":"DAYS",
@@ -95,7 +95,7 @@ const translations = {
         "nav.languages":"BAHASA",
 
         // Hero Section
-        "hero.title": "BERSIAPKAN UNTUK MEMULAI PERJALANAN <br>BARU DI <span class=\"v-highlight\">V-CONVENTION 2026</span>!",
+        "hero.title": "BERSIAPKAN UNTUK MEMULAI PERJALANAN <br>BARU DI <span class='vcon-tag'>V-CONVENTION 2026!</span>",
         "hero.cta": "Tiket tersedia SEKARANG di VShoppe. Gunakan kode: <span>VMYJUNE2026</span>",
 
         "countdown-days":"HARI",
@@ -173,7 +173,7 @@ const translations = {
         "nav.languages":"LANGUES",
 
         // Hero Section
-        "hero.title": "PRÉPAREZ-VOUS À ENTAMER UNE TOUTE NOUVELLE AVENTURE À LA  <span class=\"v-highlight\">V-CONVENTION 2026</span>!",
+        "hero.title": "PRÉPAREZ-VOUS À ENTAMER UNE TOUTE NOUVELLE AVENTURE À LA  <span class='vcon-tag'>V-CONVENTION 2026!</span>",
         "hero.cta": "Les billets sont disponibles DÈS MAINTENANT sur VShoppe. Utilisez le code : <span>VMYJUNE2026</span>",
 
         "countdown-days":"JOURS",
@@ -250,7 +250,7 @@ const translations = {
         "nav.languages":"ЯЗЫКИ",
 
         // Hero Section
-        "hero.title": "ГОТОВЬТЕСЬ К НАЧАЛУ СОВСЕМ НОВОГО ПУТЕШЕСТВИЯ НА <span class=\"v-highlight\">V-CONVENTION 2026</span>!",
+        "hero.title": "ГОТОВЬТЕСЬ К НАЧАЛУ СОВСЕМ НОВОГО ПУТЕШЕСТВИЯ НА <span class='vcon-tag'>V-CONVENTION 2026!</span>",
         "hero.cta": "Билеты уже доступны в  VShoppe. Используйте код: <span>VMYJUNE2026</span>",
 
         "countdown-days":"ДНЕЙ",
@@ -328,7 +328,7 @@ const translations = {
         "nav.languages":"DİLLER",
 
         // Hero Section
-        "hero.title": "<span class=\"v-highlight\">V-CONVENTION 2026</span>’DA YEPYENİ BİR <br>YOLCULUĞA BAŞLAMAYA HAZIR OLUN!",
+        "hero.title": "<span class='vcon-tag'>V-CONVENTION 2026</span>’DA YEPYENİ BİR <br>YOLCULUĞA BAŞLAMAYA HAZIR OLUN!",
         "hero.cta": "Biletler ŞİMDİ VShoppe’ta satışta. Kodu kullanın: <span>VMYJUNE2026</span>",
 
         "countdown-days":"GÜN",
@@ -407,7 +407,7 @@ const translations = {
         "nav.languages":"اللغات",
 
         // Hero Section <span class=\"v-highlight\">
-        "hero.title": "استعدوا لبداية رحلة جديدة كلياً في <span class=\"v-highlight\">V-CONVENTION 2026</span>!",
+        "hero.title": "استعدوا لبداية رحلة جديدة كلياً في <span class='vcon-tag'>V-CONVENTION 2026!</span>",
         "hero.cta": "التذاكر متوفرة الآن على Vshoppe. استخدموا الكود:  <span>VMYJUNE2026</span>",
 
         "countdown-days":"أيام",
