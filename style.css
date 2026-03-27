@@ -287,6 +287,10 @@ header {
         justify-content: center;
         margin-top: 10px;
     }
+
+    .mobile-only-br {
+    display: none;
+}
 }
 
 #viewMoreToggle { color: #17043d !important; font-weight: bold; text-shadow: 1px 1px 3px #000; font-size: 12px; display: block; margin-top: 5px; }

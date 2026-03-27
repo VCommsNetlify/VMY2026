@@ -65,7 +65,7 @@ const translations = {
         
         // Venue Section
         "venue.title": "This Is Where Dreamers Become Doers",
-        "venue.desc": "Every journey needs a map. So, here’s a detailed guide to help you navigate the<br> <span class=\"v-highlight\">Setia SPICE Arena</span> during <span class=\"v-highlight\">V-CONVENTION 2026!</span>",
+        "venue.desc": "Every journey needs a map. So, here’s a detailed guide to help you navigate the<br> <span class=\"v-highlight\">Setia SPICE Arena</span> during <span class=\"v-highlight\"><br class='mobile-only'>V-CONVENTION 2026!</span>",
 
         //FOOTER
         "footer.newsletter.title":"SUBSCRIBE TO THE <span style='color: #d1ff6c;'>V-MALAYSIA 2026</span> NEWSLETTER <u>FOR FREE</u>!",
