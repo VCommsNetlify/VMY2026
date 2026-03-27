@@ -1,6 +1,6 @@
 [
   {
-    "id": "6379962106112",
+    "id": "6391119540112",
     "type": "video",
     "title": {
       "en": "V-Malaysia 2026 Day 5 Highlights: The Best is Yet to Come!",
@@ -21,98 +21,5 @@
     "thumbnail": "assets/images/09232025 VMY2025 SEPT highlights DAY 5 v4 web.webp",
     "speaker": "Highlights",
     "day": "Day 5"
-  },
-  {
-    "id": "6379962106113",
-    "type": "video",
-    "title": {
-      "en": "Day 5: Choose to Be a Warrior by Chief Pathman Senathirajah",
-      "ar": "اليوم الخامس: اختر أن تكون محارباً بقلم تشيف باثمان سيناثيراجا",
-      "id": "Hari ke-5: Pilih Menjadi Pejuang oleh Chief Pathman Senathirajah",
-      "fr": "Jour 5 : Choisissez d'être un guerrier par Chief Pathman Senathirajah",
-      "ru": "День 5: Выберите путь воина — Чиф Патман Сенатираджа",
-      "tr": "5. Gün: Savaşçı Olmayı Seçin - Chief Pathman Senathirajah"
-    },
-    "description": {
-      "en": "Watch Chief Pathman Senathirajah at V-Malaysia September 2026 Day 5!",
-      "ar": "شاهد تشيف باثمان سيناثيراجا في اليوم الخامس من V-Malaysia 2026!",
-      "id": "Saksikan Chief Pathman Senathirajah di V-Malaysia 2026 Hari ke-5!",
-      "fr": "Regardez Chief Pathman Senathirajah lors du jour 5 de V-Malaysia 2026 !",
-      "ru": "Смотрите выступление Чифа Патмана Сенатираджи на 5-м дне V-Malaysia 2026!",
-      "tr": "V-Malaysia 2026 5. Gününde Chief Pathman Senathirajah'ı izleyin!"
-    },
-    "thumbnail": "assets/images/09242025-v-malaysia-2025-day-5-choose-to-be-a-warrior-by-chief-pathman-senathirajah.webp",
-    "speaker": "Chief",
-    "day": "Day 5"
-  },
-  {
-    "id": "6379962106114",
-    "type": "video",
-    "title": {
-      "en": "Day 3: Mastering Change with the Three A’s by Joseph ‘Japadas’ Bismark",
-      "ar": "اليوم الثالث: إتقان التغيير مع الـ 3A بقلم جوزيف «جاباداس» بسمارك",
-      "id": "Hari ke-3: Menguasai Perubahan dengan Tiga A oleh Joseph ‘Japadas’ Bismark",
-      "fr": "Jour 3 : Maîtriser le changement avec les trois « A » par Joseph « Japadas » Bismark",
-      "ru": "День 3: Как справиться с переменами с помощью правила трех «А» — Джозеф «Джападас» Бисмарк",
-      "tr": "3. Gün: Üç A ile Değişime Hükmetmek - Joseph ‘Japadas’ Bismark"
-    },
-    "description": {
-      "en": "Watch Joseph ‘Japadas’ Bismark at V-Malaysia September 2026 Day 3!",
-      "ar": "شاهد جوزيف «جاباداس» بسمارك في اليوم الثالث من V-Malaysia 2026!",
-      "id": "Saksikan Joseph ‘Japadas’ Bismark di V-Malaysia 2026 Hari ke-3!",
-      "fr": "Regardez Joseph « Japadas » Bismark lors du jour 3 de V-Malaysia 2026 !",
-      "ru": "Смотрите выступление Джозефа «Джападаса» Бисмарка на 3-м дне V-Malaysia 2026!",
-      "tr": "V-Malaysia 2026 3. Gününde Joseph ‘Japadas’ Bismark'ı izleyin!"
-    },
-    "thumbnail": "assets/images/09222025-v-malaysia-september-2025-day-3-mastering-change-with-the-three-a-by-joseph-japadas-bismark.webp",
-    "speaker": "Japa",
-    "day": "Day 3"
-  },
-  {
-    "id": "6379962106115",
-    "type": "video",
-    "title": {
-      "en": "Day 1: One Percent at a Time by Dato Sri Vijay Eswaran",
-      "ar": "اليوم الأول: واحد بالمائة في كل مرة بقلم داتو سري فيجاي إسواران",
-      "id": "Hari ke-1: Satu Persen Setiap Saat oleh Dato Sri Vijay Eswaran",
-      "fr": "Jour 1 : Un pour cent à la fois par Dato Sri Vijay Eswaran",
-      "ru": "День 1: Один процент за раз — Дато Шри Виджай Эсваран",
-      "tr": "1. Gün: Her Seferinde Yüzde Bir - Dato Sri Vijay Eswaran"
-    },
-    "description": {
-      "en": "Watch Dato Sri Vijay Eswaran at V-Malaysia September 2026 Day 1!",
-      "ar": "شاهد داتو سري فيجاي إسواران في اليوم الأول من V-Malaysia 2026!",
-      "id": "Saksikan Dato Sri Vijay Eswaran di V-Malaysia 2026 Hari ke-1!",
-      "fr": "Regardez Dato Sri Vijay Eswaran lors du jour 1 de V-Malaysia 2026 !",
-      "ru": "Смотрите выступление Дато Шри Виджая Эсварана на 1-м дне V-Malaysia 2026!",
-      "tr": "V-Malaysia 2026 1. Gününde Dato Sri Vijay Eswaran'ı izleyin!"
-    },
-    "thumbnail": "assets/images/09172025-v-malaysia-september-2025-day-1-one-percent-at-a-time-by-dato-sri-vijay-eswaran.webp",
-    "speaker": "Dato",
-    "day": "Day 1"
-  },
-  {
-    "id": "WRAP_01",
-    "type": "article",
-    "title": {
-      "en": "Grand Finale Wrap-Up",
-      "ar": "ملخص الحفل الختامي الكبير",
-      "id": "Rangkuman Penutupan Besar",
-      "fr": "Résumé de la Grande Finale",
-      "ru": "Итоги грандиозного финала",
-      "tr": "Büyük Final Özeti"
-    },
-    "description": {
-      "en": "Official summary of the closing ceremony.",
-      "ar": "الملخص الرسمي للحفل الختامي.",
-      "id": "Rangkuman resmi upacara penutupan.",
-      "fr": "Résumé officiel de la cérémonie de clôture.",
-      "ru": "Официальный отчет о церемонии закрытия.",
-      "tr": "Kapanış töreninin resmi özeti."
-    },
-    "thumbnail": "assets/images/09122025-v-malaysia-2025-registration-day-today-we-rise (1).webp",
-    "speaker": "Wrap up",
-    "day": "Registration Day",
-    "link": "https://the-v.net/en/news?id=09122025-v-malaysia-2025-registration-day-today-we-rise"
   }
 ]

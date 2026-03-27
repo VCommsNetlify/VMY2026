@@ -3,23 +3,37 @@ const translations = {
         // Navigation
         "nav.home": "HOME",
         "nav.stories": "STORIES",
+        "nav.stories_dropdown":"DREAMERS’ DIARY",
         "nav.speakers": "FOUNDERS",
         "nav.gallery": "GALLERY",
-        "nav.vkids": "V-KIDS & V-TEENS",
+        "nav.venue":"VENUE MAP",
+        "nav.vkids": "V-KIDS & V-TEENS 2026",
         "nav.faq": "FAQ",
-        
-        // Floating CTA
-        "cta.main_label": "GET TICKETS",
-        "cta.choose_type": "CHOOSE TYPE",
-        "cta.vmy_title": "VMY 2026 Tickets",
-        "cta.kids_title": "V-Kids & V-Teens 2026",
+        "nav.languages":"LANGUAGES",
 
+        "hero.title": "GET READY TO BEGIN A WHOLE NEW<br/> JOURNEY AT <span style='color: #d1ff6c;'>V-CONVENTION 2026</span>!",
+        "hero.cta": "Tickets are available NOW on VShoppe. Use the code: <span>VMYJUNE2026</span>",
+
+        "countdown-days":"DAYS",
+        "countdown-hours":"HOURS",
+        "countdown-mins":"MINS",
+        "countdown-secs":"SECS",
+
+
+        // Floating CTA
+        "cta.main_label": "GET TICKETS NOW!",
+        "cta.choose_type": "CHOOSE TYPE",
+        "cta.vmy_title": "V-CONVENTION \n 2026 Tickets",
+        "cta.kids_title": "V-KIDS & V-TEENS \n 2026 Tickets",
+
+        "stories.banner": "EVENT NEWS & UPDATES",
+        "stories.subheader":"Always know what's happening at <br>V-CONVENTION 2026!",
         "stories.play_btn": "PLAY VIDEO",
         "stories.read_btn": "READ ARTICLE",
         "filter.reset": "RESET",
         
         // Gallery Section
-        "gallery.title": "GALLERY",
+        
         "gallery.reg": "REGISTRATION",
         "gallery.day1": "DAY 1",
         "gallery.day2": "DAY 2",
@@ -28,9 +42,14 @@ const translations = {
         "gallery.day5": "DAY 5",
         "gallery.fashion": "FASHION SHOW",
         "gallery.hint": "Swipe or use arrows to see more →",
-        
+
+        "gallery.title": "PHOTO GALLERY",
+       "gallery.subtitle": "Browse through the picture-perfect <br> moments we shared together!",
+
         // V-Kids & V-Teens Section
         "vkids.title": "V-KIDS & V-TEENS",
+        "vkids.section_title": "Shape The Future of <br>Our Global Family <br>with <span style='color: #d1ff6c;'>V-KIDS &</span><br> <span style='color: #d1ff6c;'>V-TEENS</span><br> 2026 this June!",
+        "vkids.section_subtitle":"Stay updated on their own journey here!",
         "vkids.watch": "WATCH VIDEO",
         "vkids.read": "READ ARTICLE",
 
@@ -41,32 +60,64 @@ const translations = {
         
         // FAQ Section
         "faq.title": "FREQUENTLY ASKED QUESTIONS",
+
+
         
         // Venue Section
-        "venue.title": "VENUE MAP",
-        "venue.desc": "Find your way around the arena."
+        "venue.title": "This Is Where Dreamers Become Doers",
+        "venue.desc": "Every journey needs a map. So, here’s a detailed guide to help you navigate the<br> <span class=\"v-highlight\">Setia SPICE Arena</span> during <span class=\"v-highlight\">V-CONVENTION 2026!</span>",
+
+        //FOOTER
+        "footer.newsletter.title":"SUBSCRIBE TO THE <span style='color: #d1ff6c;'>V-MALAYSIA 2026</span> NEWSLETTER <u>FOR FREE</u>!",
+        "footer.newsletter.copy":"Get the latest news and updates via email!",
+
+        "quick.title":"QUICK LINKS",
+        "quick.home":"HOME",
+        "quick.story":"DREAMERS’ DIARY",
+        "quick.map":"VENUE MAP",
+        "quick.vkids":"V-KIDS & V-TEENS 2026",
+        "quick.faq":"FAQ",
+
+        "footer.note":"<strong>TAKE NOTE:</strong> If you’re already receiving newsletters from <strong>The V</strong>, you <strong>DON’T</strong> have to provide your email address anymore.",
+        "footer.newsletter.placeholder":"Your Email Address",
+        "footer.button":"JOIN",
+        "footer.social.title":"Stay connected with us!"
     },
     id: {
-        "nav.home": "BERANDA",
+        "nav.home": "HALAMAN UTAMA",
         "nav.stories": "CERITA",
+        "nav.stories_dropdown":"CATATAN HARIAN PEMIMPI",
         "nav.speakers": "PENDIRI",
         "nav.gallery": "GALERI",
-        "nav.vkids": "V-KIDS & V-TEENS",
+        "nav.venue":"PETA LOKASI",
+        "nav.vkids": "V-KIDS & V-TEENS 2026",
         "nav.faq": "TANYA JAWAB",
-        
-        "cta.main_label": "BELI TIKET",
+        "nav.languages":"BAHASA",
+
+        // Hero Section
+        "hero.title": "BERSIAPKAN UNTUK MEMULAI PERJALANAN <br>BARU DI <span class=\"v-highlight\">V-CONVENTION 2026</span>!",
+        "hero.cta": "Tiket tersedia SEKARANG di VShoppe. Gunakan kode: <span>VMYJUNE2026</span>",
+
+        "countdown-days":"HARI",
+        "countdown-hours":"JAM",
+        "countdown-mins":"MENIT",
+        "countdown-secs":"DETIK",
+
+        "cta.main_label": "DAPATKAN TIKETNYA SEKARANG!",
         "cta.choose_type": "PILIH JENIS",
-        "cta.vmy_title": "Tiket VMY 2026",
+        "cta.vmy_title": "Tiket<br>V-CONVENTION 2026",
         "cta.vmy_sub": "Akses Konvensi Utama",
-        "cta.kids_title": "V-Kids & V-Teens 2026",
+        "cta.kids_title": "Tiket<br>V-KIDS & V-TEENS 2026",
         "cta.kids_sub": "Program Pemimpi Muda",
 
+        "stories.banner": "Update & Berita Acara",
+        "stories.subheader":"Selalu tahu tentang apa yang terjadi di <br>V-CONVENTION 2026!",
         "stories.play_btn": "TONTON VIDEO",
         "stories.read_btn": "BACA ARTIKEL",
         "filter.reset": "RESET",
 
-        "gallery.title": "GALERI",
-        "gallery.reg": "PENDAFTARAN",
+       
+        "gallery.reg": "Hari Pendaftaran",
         "gallery.day1": "HARI 1",
         "gallery.day2": "HARI 2",
         "gallery.day3": "HARI 3",
@@ -75,47 +126,84 @@ const translations = {
         "gallery.fashion": "FASHION SHOW",
         "gallery.hint": "Geser atau gunakan panah untuk melihat lebih banyak →",
 
+        "gallery.title": "GALERI FOTO",
+        "gallery.subtitle": "Telusuri momen-momen indah yang kita bagikan bersama!",
+
         "speakers.title": "PARA PENDIRI KAMI",
         "speakers.watch_invite": "TONTON UNDANGAN",
         "speakers.dato_bio": "Seorang dermawan dan pengusaha visioner, Dato Sri Vijay Eswaran adalah Pendiri dan Ketua Eksekutif QI Group.",
         "speakers.japa_bio": "Co-founder of the QI Group, Joseph 'Japadas' Bismark's philosophy of 'In the Service of Humanity' drives the core of our mission.",
 
-        "vkids.title": "V-KIDS & V-TEENS",
+        "vkids.title": "V-KIDS & V-TEENS 2026",
+        "vkids.section_title": "Bentuk Masa Depan Global Family bersama <span style='color: #d1ff6c;'>V-KIDS &</span><span style='color: #d1ff6c;'>V-TEENS 2026</span><br> bulan Juni ini!",
+        "vkids.section_subtitle":"Ikuti terus perkembangan perjalanan mereka di sini!",
         "vkids.watch": "TONTON VIDEO",
         "vkids.read": "BACA ARTIKEL",
 
         "faq.title": "PERTANYAAN YANG SERING DIAJUKAN",
 
-        "venue.title": "PETA TEMPAT",
-        "venue.desc": "Temukan jalan Anda di sekitar arena."
+        "venue.title": "Di Sini Para Pemimpi Menjadi Pelaku",
+        "venue.desc": "Setiap perjalanan membutuhkan peta. Jadi, berikut panduan detail untuk membantu Anda menavigasi <span class=\"v-highlight\">Setia SPICE Arena</span> selama <span class=\"v-highlight\">V-CONVENTION 2026!</span>",
+        "venue.event_name": "V-Malaysia 2026!",
+
+        "footer.newsletter.title":"BERLANGGANAN NEWSLETTER <br><span style='color: #d1ff6c;'>V-MALAYSIA 2026</span> NEWSLETTER <u>GRATIS</u>!",
+        "footer.newsletter.copy":"Dapatkan berita dan update terbaru melalui email!",
+
+        "quick.title":"LINK CEPAT",
+        "quick.home":"Halaman Utama",
+        "quick.story":"Catatan Harian Pemimpi",
+        "quick.map":"Peta Lokadi",
+        "quick.vkids":"V-KIDS & V-TEENS 2026",
+        "quick.faq":"FAQ",
+
+        "footer.note":"<strong>PERHATIAN:</strong> Jika Anda sudah menerima buletin dari <strong>The V</strong>, Anda <strong>TIDAK</strong> perlu memberikan alamat email Anda lagi.",
+        "footer.newsletter.placeholder":"Email Anda",
+        "footer.button":"GABUNG",
+        "footer.social.title":"Tetap terhubung dengan kami!"
     },
     fr:{
         "nav.home": "ACCUEIL",
         "nav.stories": "HISTOIRES",
+        "nav.stories_dropdown":"CATATAN HARIAN PEMIMPI",
+        "nav.venue":"PLAN DU LIEU",
         "nav.speakers": "FONDATEURS",
         "nav.gallery": "GALERIE",
-        "nav.vkids": "V-KIDS & V-TEENS",
+        "nav.vkids": "V-KIDS & V-TEENS 2026",
         "nav.faq": "FAQ",
+        "nav.languages":"LANGUES",
 
-        "cta.main_label": "OBTENIR DES BILLETS",
+        // Hero Section
+        "hero.title": "PRÉPAREZ-VOUS À ENTAMER UNE TOUTE NOUVELLE AVENTURE À LA  <span class=\"v-highlight\">V-CONVENTION 2026</span>!",
+        "hero.cta": "Les billets sont disponibles DÈS MAINTENANT sur VShoppe. Utilisez le code : <span>VMYJUNE2026</span>",
+
+        "countdown-days":"JOURS",
+        "countdown-hours":"HEURES",
+        "countdown-mins":"MINUTES",
+        "countdown-secs":"SECONDES",
+
+        "cta.main_label": "ACHETEZ VOS BILLETS DÈS MAINTENANT !",
         "cta.choose_type": "CHOISIR LE TYPE",
-        "cta.vmy_title": "Billets VMY 2026",
+        "cta.vmy_title": "Billets pour la<br> V-CONVENTION 2026",
         "cta.vmy_sub": "Accès à la Convention Principale",
-        "cta.kids_title": "V-Kids & V-Teens 2026",
+        "cta.kids_title": "Billets pour<br> V-KIDS & V-TEENS 2026",
         "cta.kids_sub": "Programme des Jeunes Rêveurs",
 
+        "stories.banner": "Actualités et mises à <br>jour sur l'événement",
+        "stories.subheader":"Restez toujours au courant de ce qui se passe à la <br>V-CONVENTION 2026!",
         "stories.play_btn": "JOUER LA VIDÉO",
         "stories.read_btn": "LIRE L'ARTICLE",
         "filter.reset": "RÉINITIALISER",
 
-        "gallery.title": "GALERIE",
-        "gallery.reg": "INSCRIPTION",
+        "gallery.title": "GALERIE PHOTO",
+        "gallery.subtitle": "Parcourez les moments parfaits que nous avons partagés ensemble!",
+
+        "gallery.reg": "Journée d'inscription",
         "gallery.day1": "JOUR 1",
         "gallery.day2": "JOUR 2",
         "gallery.day3": "JOUR 3",
         "gallery.day4": "JOUR 4",
         "gallery.day5": "JOUR 5",
-        "gallery.fashion": "DÉFILÉ DE MODE",
+        "gallery.fashion": "Défilé de mode",
         "gallery.hint": "Faites glisser ou utilisez les flèches pour en voir plus →",
 
         "speakers.title": "NOS FONDATEURS",
@@ -123,42 +211,76 @@ const translations = {
         "speakers.dato_bio": "Seorang dermawan dan pengusaha visioner, Dato Sri Vijay Eswaran adalah Pendiri dan Ketua Eksekutif QI Group.",
         "speakers.japa_bio": "Co-founder of the QI Group, Joseph 'Japadas' Bismark's philosophy of 'In the Service of Humanity' drives the core of our mission.",
 
-        "vkids.title": "V-KIDS & V-TEENS",
+        "vkids.title": "V-KIDS & V-TEENS 2026",
+        "vkids.section_title": "Façonnez l'avenir de notre famille mondiale avec <span style='color: #d1ff6c;'>V-KIDS &</span><span style='color: #d1ff6c;'>V-TEENS 2026</span><br> en juin prochain !",
+        "vkids.section_subtitle":"Suivez leur parcours ici !",
         "vkids.watch": "REGARDER LA VIDÉO",
         "vkids.read": "LIRE L'ARTICLE",
 
         "faq.title": "QUESTIONS FRÉQUENTES",
 
-        "venue.title": "PLAN DU LIEU",
-        "venue.desc": "Trouvez votre chemin autour de l'arène."
+        "venue.title": "C'est ici que les rêveurs deviennent des acteurs",
+        "venue.desc": "Tout voyage nécessite une carte. Voici donc un guide détaillé pour vous aider à vous orienter dans la <span class=\"v-highlight\">Setia SPICE Arena</span> pendant la <span class=\"v-highlight\">V-CONVENTION 2026!</span>",
+        "venue.event_name": "V-Malaysia 2026!",
+
+        "footer.newsletter.title":"ABONNEZ-VOUS <u>GRATUITEMENT</u> À LA NEWSLETTER <span style='color: #d1ff6c;'>V-MALAYSIA 2026</span>!",
+        "footer.newsletter.copy":"Recevez les dernières actualités<br> et mises à jour par e-mail !",
+
+        "quick.title":"LIENS RAPIDES",
+        "quick.home":"Accueil",
+        "quick.story":"Journal des rêveurs",
+        "quick.map":"Plan du lieu",
+        "quick.vkids":"V-KIDS & V-TEENS 2026",
+        "quick.faq":"FAQ",
+
+        "footer.note":"<strong>À NOTER :</strong> Si vous recevez déjà les newsletters de <strong>The V</strong>, vous <strong>N'AVEZ PLUS</strong> besoin de fournir votre adresse e-mail.",
+        "footer.newsletter.placeholder":"Votre adresse e-mail",
+        "footer.button":"REJOIGNEZ-NOUS",
+        "footer.social.title":"Restez en contact avec nous !"
     },
     ru:{
         "nav.home": "ГЛАВНАЯ",
-        "nav.stories": "ИСТОРИИ",
-        "nav.speakers": "ФОНДАТОРЫ",
-        "nav.gallery": "ГАЛЕРЕЯ",
+        "nav.stories": "STORIES",
+        "nav.stories_dropdown":"ДНЕВНИК МЕЧТАТЕЛЕЙ",
+        "nav.speakers": "FOUNDERS",
+        "nav.gallery": "GALLERY",
+        "nav.venue":"КАРТА МЕСТА ПРОВЕДЕНИЯ",
         "nav.vkids": "V-KIDS & V-TEENS",
         "nav.faq": "ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ",
+        "nav.languages":"ЯЗЫКИ",
 
-        "cta.main_label": "ПОЛУЧИТЬ БИЛЕТЫ",
+        // Hero Section
+        "hero.title": "ГОТОВЬТЕСЬ К НАЧАЛУ СОВСЕМ НОВОГО ПУТЕШЕСТВИЯ НА <span class=\"v-highlight\">V-CONVENTION 2026</span>!",
+        "hero.cta": "Билеты уже доступны в  VShoppe. Используйте код: <span>VMYJUNE2026</span>",
+
+        "countdown-days":"ДНЕЙ",
+        "countdown-hours":"ЧАСОВ",
+        "countdown-mins":"МИНУТ",
+        "countdown-secs":"СЕКУНД",
+
+        "cta.main_label": "КУПИТЕ БИЛЕТЫ ПРЯМО СЕЙЧАС!",
         "cta.choose_type": "ВЫБЕРИТЕ ТИП",
-        "cta.vmy_title": "Билеты VMY 2026",
+        "cta.vmy_title": "Билеты на <br>V-CONVENTION 2026",
         "cta.vmy_sub": "Доступ к основной конвенции",
-        "cta.kids_title": "V-Kids & V-Teens 2026",
+        "cta.kids_title": "Билеты на <br>V-KIDS & V-TEENS 2026",
         "cta.kids_sub": "Программа для молодых мечтателей",
 
+        "stories.banner": "События Новости <br>и Обновления",
+        "stories.subheader":"Будьте всегда в курсе происходящего на V-CONVENTION 2026!",
         "stories.play_btn": "СМОТРЕТЬ ВИДЕО",
         "stories.read_btn": "ЧИТАТЬ СТАТЬЮ",
         "filter.reset": "СБРОС",
 
-        "gallery.title": "ГАЛЕРЕЯ",
-        "gallery.reg": "РЕГИСТРАЦИЯ",
+        "gallery.title": "Фотогалерея",
+        "gallery.subtitle": "Просмотрите прекрасные моменты, которыми мы поделились вместе!",
+
+        "gallery.reg": "День регистрации!",
         "gallery.day1": "ДЕНЬ 1",
         "gallery.day2": "ДЕНЬ 2",
         "gallery.day3": "ДЕНЬ 3",
         "gallery.day4": "ДЕНЬ 4",
         "gallery.day5": "ДЕНЬ 5",
-        "gallery.fashion": "ПОКАЗ МОДЫ",
+        "gallery.fashion": "Показ мод",
         "gallery.hint": "Проведите пальцем или используйте стрелки, чтобы увидеть больше →",
 
         "speakers.title": "НАШИ ФОНДАТОРЫ",
@@ -167,35 +289,70 @@ const translations = {
         "speakers.japa_bio": "Соучредитель группы QI, философия Джозефа 'Япадаса' Бисмарка 'На службе человечеству' лежит в основе нашей миссии.",
 
         "vkids.title": "V-KIDS & V-TEENS",
+        "vkids.section_title": "Формируйте будущее нашей глобальной семьи вместе с <br><span style='color: #d1ff6c;'>V-KIDS &</span><span style='color: #d1ff6c;'>V-TEENS 2026</span> в июне <br>этого года!",
+        "vkids.section_subtitle":"Следите за их путешествием здесь!",
         "vkids.watch": "СМОТРЕТЬ ВИДЕО",
         "vkids.read": "ЧИТАТЬ СТАТЬЮ",
 
         "faq.title": "ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ",
 
-        "venue.title": "КАРТА МЕСТА",
-        "venue.desc": "Найдите свой путь по арене."
+        "venue.title": "Здесь мечтатели становятся деятелями",
+        "venue.desc": "Каждому путешествию нужна карта. Итак, вот подробный путеводитель, который поможет вам сориентироваться в <span class=\"v-highlight\">Setia SPICE Arena</span> во время <span class=\"v-highlight\">V-CONVENTION 2026</span>!",
+        "venue.event_name": "V-Malaysia 2026!",
+
+        "footer.newsletter.title":"ПОДПИСЫВАЙТЕСЬ НА БЕСПЛАТНУЮ РАССЫЛКУ <span style='color: #d1ff6c;'>V-MALAYSIA 2026</span>!",
+        "footer.newsletter.copy":"Получайте последние новости и обновления по электронной почте!",
+
+        "quick.title":"ПРЯМЫЕ ССЫЛКИ",
+        "quick.home":"Главная",
+        "quick.story":"Дневник мечтателей",
+        "quick.map":"Карта места проведения",
+        "quick.vkids":"V-KIDS & V-TEENS 2026",
+        "quick.faq":"Часто задаваемые вопросы",
+
+        "footer.note":"<strong>ВНИМАНИЕ:</strong> Если вы уже получаете рассылку от <strong>The V</strong>, вам <strong>НЕ НУЖНО</strong> больше указывать свой адрес электронной почты.",
+        "footer.newsletter.placeholder":"Ваш адрес электронной почты",
+        "footer.button":"ПРИСОЕДИНИТЬСЯ",
+        "footer.social.title":"Оставайтесь на связи с нами!"
     },
     tr:{
-        "nav.home": "ANASAYFA",
-        "nav.stories": "HİKAYELER",
-        "nav.speakers": "KURUCU",
-        "nav.gallery": "GALERİ",
-        "nav.vkids": "V-KIDS & V-TEENS",
-        "nav.faq": "SSS",
+        // Navigation
+        "nav.home": "ANA SAYFA",
+        "nav.stories": "STORIES",
+        "nav.stories_dropdown":"HAYALPERESTLERİN GÜNLÜĞÜ",
+        "nav.speakers": "FOUNDERS",
+        "nav.gallery": "GALLERY",
+        "nav.venue":"MEKAN HARİTASI",
+        "nav.vkids": "V-KIDS & V-TEENS 2026",
+        "nav.faq": "FAQ",
+        "nav.languages":"DİLLER",
 
-        "cta.main_label": "BİLET AL",
+        // Hero Section
+        "hero.title": "<span class=\"v-highlight\">V-CONVENTION 2026</span>’DA YEPYENİ BİR <br>YOLCULUĞA BAŞLAMAYA HAZIR OLUN!",
+        "hero.cta": "Biletler ŞİMDİ VShoppe’ta satışta. Kodu kullanın: <span>VMYJUNE2026</span>",
+
+        "countdown-days":"GÜN",
+        "countdown-hours":"SAAT",
+        "countdown-mins":"DAKİKA",
+        "countdown-secs":"SANİYE",
+
+        "cta.main_label": "BİLETİNİZİ ŞİMDİ ALIN!",
         "cta.choose_type": "TİP SEÇ",
-        "cta.vmy_title": "VMY 2026 Biletleri",
+        "cta.vmy_title": "V-CONVENTION 2026 Biletleri",
         "cta.vmy_sub": "Ana Konvansiyona Erişim",
-        "cta.kids_title": "V-Kids & V-Teens 2026",
+        "cta.kids_title": "V-KIDS & V-TEENS 2026 Biletleri",
         "cta.kids_sub": "Genç Hayalperestler Programı",
 
+        "stories.banner": "Etkinlik Haberleri & Güncellemeleri",
+        "stories.subheader":"<br>V-CONVENTION 2026'da neler olup bittiğinden her zaman haberdar olun!",
         "stories.play_btn": "VİDEOYU OYNAT",
         "stories.read_btn": "MAKALEYİ OKU",
         "filter.reset": "SIFIRLA",
 
-        "gallery.title": "GALERİ",
-        "gallery.reg": "KAYIT",
+        "gallery.title": "Fotoğraf Galerisi",
+        "gallery.subtitle": "Birlikte paylaştığımız o kusursuz anlara göz atın!",
+
+        "gallery.reg": "Kayıt Günü",
         "gallery.day1": "GÜN 1",
         "gallery.day2": "GÜN 2",
         "gallery.day3": "GÜN 3",
@@ -210,40 +367,76 @@ const translations = {
         "speakers.japa_bio": "QI Group'un kurucu ortağı olan Joseph 'Japadas' Bismark'ın 'İnsani Hizmette' felsefesi, misyonumuzun özünü oluşturur.",
 
         "vkids.title": "V-KIDS & V-TEENS",
+        "vkids.section_title": "Küresel Ailemizin Geleceğini Bu Haziran'da <span style='color: #d1ff6c;'>V-KIDS &</span> <span style='color: #d1ff6c;'>V-TEENS</span><br> 2026 ile Şekillendirin!",
+        "vkids.section_subtitle":"Onların kendi yolculuklarından haberdar olmak için burayı takip edin!",
         "vkids.watch": "VİDEOYU İZLE",
         "vkids.read": "MAKALEYİ OKU",
 
         "faq.title": "SIKÇA SORULAN SORULAR",
 
-        "venue.title": "MEKAN HARİTASI",
-        "venue.desc": "Arenada yolunuzu bulun."
+        "venue.title": "Burası Hayalperestlerin Uygulayıcılara Dönüştüğü Yer",
+        "venue.desc": "Her yolculuğun bir haritaya ihtiyacı vardır. İşte <span class=\"v-highlight\">V-CONVENTION 2026</span> süresince <br><span class=\"v-highlight\">Setia SPICE Arena</span>'da yolunuzu bulmanıza yardımcı olacak detaylı bir rehber!",
+        "venue.event_name": "V-Malaysia 2026!",
+
+        //FOOTER
+        "footer.newsletter.title":"<span style='color: #d1ff6c;'>V-MALAYSIA 2026</span> BÜLTENİNE <br><u>ÜCRETSİZ</u> ABONE OLUN!!",
+        "footer.newsletter.copy":"En son haberleri ve güncellemeleri e-posta ile alın!",
+
+        "quick.title":"HIZLI BAĞLANTILAR",
+        "quick.home":"Ana Sayfa",
+        "quick.story":"Hayalperestlerin Günlüğü",
+        "quick.map":"Etkinlik Alanı Haritası",
+        "quick.vkids":"V-KIDS & V-TEENS 2026",
+        "quick.faq":"FAQ",
+
+        "footer.note":"<strong>NOT ALIN:</strong> Eğer zaten <strong>The V</strong>'den bülten alıyorsanız, e-posta adresinizi tekrar vermenize <strong>GEREK YOKTUR</strong>.",
+        "footer.newsletter.placeholder":"E-posta Adresiniz",
+        "footer.button":"KATIL",
+        "footer.social.title":"Bizimle iletişimde kalın!"
     },
     ar:{
+        // Navigation
         "nav.home": "الرئيسية",
-        "nav.stories": "القصص",
-        "nav.speakers": "المؤسسون",
-        "nav.gallery": "المعرض",
-        "nav.vkids": "V-KIDS & V-TEENS",
+        "nav.stories": "STORIES",
+        "nav.stories_dropdown":"مذكرات الحالمين",
+        "nav.speakers": "FOUNDERS",
+        "nav.gallery": "GALLERY",
+        "nav.venue":"خريطة المكان",
+        "nav.vkids": "الـ V-KIDS والـ V-TEENS 2026",
         "nav.faq": "الأسئلة الشائعة",
+        "nav.languages":"اللغات",
 
-        "cta.main_label": "احصل على التذاكر",
+        // Hero Section <span class=\"v-highlight\">
+        "hero.title": "استعدوا لبداية رحلة جديدة كلياً في <span class=\"v-highlight\">V-CONVENTION 2026</span>!",
+        "hero.cta": "التذاكر متوفرة الآن على Vshoppe. استخدموا الكود:  <span>VMYJUNE2026</span>",
+
+        "countdown-days":"أيام",
+        "countdown-hours":"ساعات",
+        "countdown-mins":"دقائق",
+        "countdown-secs":"ثواني",
+
+        "cta.main_label": "احصلوا على التذاكر الآن!",
         "cta.choose_type": "اختر النوع",
-        "cta.vmy_title": "تذاكر VMY 2026",
+        "cta.vmy_title": "تذاكر V-CONVENTION 2026",
         "cta.vmy_sub": "الوصول إلى المؤتمر الرئيسي",
-        "cta.kids_title": "V-Kids & V-Teens 2026",
+        "cta.kids_title": "تذاكر الـ V-KIDS والـ V-TEENS 2026",
         "cta.kids_sub": "برنامج الشباب الحالمين",
 
+        "stories.banner": "أخبار وتحديثات الفعالية",
+        "stories.subheader":"ابقَوا على اطلاع دائم بكل ما يحدث في V-CONVENTION 2026!",
         "stories.play_btn": "شاهد الفيديو",
         "stories.read_btn": "اقرأ المقال",
         "filter.reset": "إعادة تعيين",
 
-        "gallery.title": "مؤسسونا",
-        "gallery.reg": "التسجيل",
-        "gallery.day1": "اليوم 1",
-        "gallery.day2": "اليوم 2",
-        "gallery.day3": "اليوم 3",
-        "gallery.day4": "اليوم 4",
-        "gallery.day5": "اليوم 5",
+        "gallery.title": "معرض الصور",
+        "gallery.subtitle": "تصفحوا أجمل اللحظات التي قضيناها معاً!",
+
+        "gallery.reg": "يوم التسجيل",
+        "gallery.day1": "اليوم الأول",
+        "gallery.day2": "اليوم الثاني",
+        "gallery.day3": "اليوم الثالث",
+        "gallery.day4": "اليوم الرابع",
+        "gallery.day5": "اليوم الخامس",
         "gallery.fashion": "عرض الأزياء",
         "gallery.hint": "اسحب أو استخدم الأسهم لرؤية المزيد →",
 
@@ -253,13 +446,33 @@ const translations = {
         "speakers.japa_bio": "مؤسس مشارك لمجموعة QI، فلسفة جوزيف 'ياباداس' بيسمارك 'في خدمة الإنسانية' تدفع جوهر مهمتنا.",
 
         "vkids.title": "V-KIDS & V-TEENS",
+        "vkids.section_title": "شكّلوا مستقبل عائلتنا العالمية مع <br><span style='color: #d1ff6c;'>الـ V-KIDS</span> <span style='color: #d1ff6c;'>والـ V-TEENS<br></span> 2026 في يونيو القادم!",
+        "vkids.section_subtitle":"تابعوا رحلتهم الخاصة هنا!",
         "vkids.watch": "شاهد الفيديو",
         "vkids.read": "اقرأ المقالة",
 
         "faq.title": "الأسئلة الشائعة",
 
-        "venue.title": "خريطة المكان",
-        "venue.desc": "اعثر على طريقك حول الساحة."
+        "venue.title": "هنا حيث يتحول الحالمون إلى فاعلون",
+        "venue.desc": "كل رحلة تحتاج إلى خريطة. إليكم دليلًا مفصلًا لمساعدتكم في التنقل في ساحة <span class=\"v-highlight\">Setia SPICE</span> خلال <span class=\"v-highlight\">V-CONVENTION 2026</span>!",
+        "venue.event_name": "V-Malaysia 2026!",
+
+         //FOOTER
+        
+        "footer.newsletter.title": "اشتركوا <u>مجانًا</u> في النشرة الإخبارية لـ <span style='color: #d1ff6c;'>V-MALAYSIA 2026</span>!",
+        "footer.newsletter.copy": "احصلوا على آخر الأخبار والتحديثات عبر البريد الإلكتروني!",
+
+        "quick.title":"روابط سريعة",
+        "quick.home":"الرئيسية",
+        "quick.story":"مذكرات الحالمين",
+        "quick.map":"خريطة المكان",
+        "quick.vkids":"الـ V-KIDS والـ V-TEENS 2026",
+        "quick.faq":"الأسئلة الشائعة",
+
+        "footer.note": "<strong>ملاحظة:</strong> إذا كنت تتلقى بالفعل نشرات إخبارية من <strong>The V</strong>، <strong>فلا داعي</strong> لتقديم بريدك الإلكتروني مجددًا.",
+        "footer.newsletter.placeholder":"بريدك الإلكتروني",
+        "footer.button":"انضم الآن",
+        "footer.social.title":"ابقَوا على تواصل معنا!"
     }
 
 };
@@ -446,7 +659,6 @@ async function loadStories() {
     }
 }
 
-// Handles the filter dropdown logic
 window.handleCategoryChange = function() {
     const typeVal = document.getElementById('filterType').value;
     const speakerSelect = document.getElementById('filterSpeaker');
@@ -455,23 +667,50 @@ window.handleCategoryChange = function() {
     speakerSelect.innerHTML = '';
 
     if (typeVal === 'article') {
-        const opt = document.createElement('option');
-        opt.value = 'Wrap up'; opt.innerHTML = 'Wrap up';
-        speakerSelect.appendChild(opt);
-    } else {
-        const options = [
-            { val: 'all', text: 'All Categories' },
-            { val: 'Dato', text: 'Dato Sri Vijay' },
-            { val: 'Japa', text: 'Japa Bismark' },
-            { val: 'Chief', text: 'Chief Pathman' },
-            { val: 'Highlights', text: 'Highlights' }
+        // 1. If they select Articles
+        const articleOptions = [
+            { val: 'all', text: 'All Articles' }, 
+            { val: 'Pre-Event', text: 'Pre-Event Articles' },
+            { val: 'Daily', text: 'Daily Articles' },
+            { val: 'Post-Event', text: 'Post-Event Articles' }
         ];
-        options.forEach(s => {
+        articleOptions.forEach(s => {
+            const opt = document.createElement('option');
+            opt.value = s.val; opt.innerHTML = s.text;
+            speakerSelect.appendChild(opt);
+        });
+
+    } else if (typeVal === 'video') {
+        // 2. If they select Videos (Changed from "else" to strictly "video")
+        const videoOptions = [
+            { val: 'all', text: 'All Videos' }, // Updated text to say All Videos
+            { val: 'Teasers', text: 'Teasers' },
+            { val: 'Invite', text: 'Invite Videos' },
+            { val: 'Campaign', text: 'Campaign Videos' },
+            { val: 'FoundersChief', text: 'Founders & Chief Dailies' },
+            { val: 'Highlights', text: 'Daily Highlights' },
+            { val: 'Post-Event', text: 'Post-Event Videos' }
+        ];
+        videoOptions.forEach(s => {
+            const opt = document.createElement('option');
+            opt.value = s.val; opt.innerHTML = s.text;
+            speakerSelect.appendChild(opt);
+        });
+
+    } else {
+        // 3. If they select "All Media" (typeVal === 'all')
+        // We give them a generic "All Categories" option so the filter shows everything
+        const allOptions = [
+            { val: 'all', text: 'All Categories' }
+        ];
+        allOptions.forEach(s => {
             const opt = document.createElement('option');
             opt.value = s.val; opt.innerHTML = s.text;
             speakerSelect.appendChild(opt);
         });
     }
+    
+    // Now it runs your flawless filter code!
     applyFilters();
 };
 
@@ -558,69 +797,87 @@ window.updatePreview = function(story) {
     const titleEl = document.getElementById('stageTitle');
     const descEl = document.getElementById('stageDesc');
     const btn = document.getElementById('mainActionButton');
-    
+    const playerWrap = document.getElementById('newsPlayerWrap');
+    const stageImg = document.getElementById('stageImage');
 
-    // FIX: Access the specific language inside the title and description objects
-    // We add a fallback to ['en'] just in case a translation is missing
     const translatedTitle = story.title[lang] || story.title['en'];
     const translatedDesc = story.description[lang] || story.description['en'];
-
-    // Pick the correct label based on the story type
-    if (story.type === 'video') {
-        btn.innerText = translations[lang]["stories.play_btn"];
-    } else {
-        btn.innerText = translations[lang]["stories.read_btn"];
-    }
 
     titleEl.innerText = translatedTitle;
     descEl.innerText = translatedDesc;
     
-    // Update image and button as usual
-    document.getElementById('stageImage').src = story.thumbnail;
+    if (stageImg) stageImg.src = story.thumbnail;
     
     const playText = translations[lang]['stories.play_btn'] || 'PLAY VIDEO';
     const readText = translations[lang]['vkids.read'] || 'READ ARTICLE';
     btn.innerHTML = (story.type === 'video') ? `▶ ${playText}` : `📖 ${readText}`;
     
-    // Reset video player visibility
-    document.getElementById('videoPlayerWrap').style.display = 'none';
-    document.getElementById('stageImage').style.display = 'block';
+    // THE FIX: Stop player and clear tracks BEFORE hiding it
+    const myPlayer = videojs.getPlayer('newsBrightcovePlayer');
+    if (myPlayer) {
+        myPlayer.pause();
+        // Manually remove all tracks to prevent the 'kind' error
+        const tracks = myPlayer.remoteTextTracks();
+        if (tracks) {
+            let i = tracks.length;
+            while (i--) {
+                myPlayer.removeRemoteTextTrack(tracks[i]);
+            }
+        }
+    }
+
+    if (playerWrap) playerWrap.style.display = 'none';
+    if (stageImg) stageImg.style.display = 'block';
 };
 
-// FULLSCREEN VIDEO & ARTICLE LAUNCH
 window.launchContent = function() {
     if (!currentStory) return;
     
     if (currentStory.type === 'video') {
-        // CHECK: Is the videojs library ready?
-        if (typeof videojs === 'undefined') {
-            console.error("Brightcove library not loaded yet. Please wait a moment.");
-            alert("Video player is still loading, please try again in a second.");
-            return;
-        }
-
-        const playerWrap = document.getElementById('videoPlayerWrap');
+        const playerWrap = document.getElementById('newsPlayerWrap');
         const stageImg = document.getElementById('stageImage');
         
         playerWrap.style.display = 'block';
         stageImg.style.display = 'none';
 
-        // Now it's safe to call videojs
-        const myPlayer = videojs.getPlayer('myBrightcovePlayer');
+        const myPlayer = videojs.getPlayer('newsBrightcovePlayer');
         
         if (myPlayer) {
-            myPlayer.ready(function() {
-                myPlayer.catalog.getVideo(currentStory.id, function(error, video) {
-                    if (!error) {
-                        myPlayer.catalog.load(video);
-                        myPlayer.play();
-                    }
+            myPlayer.catalog.getVideo(currentStory.id, function(error, video) {
+                if (error) {
+                    console.error("Catalog Error:", error);
+                    return;
+                }
+                myPlayer.catalog.load(video);
+                
+                // Use 'one' to ensure this only fires once per load
+                myPlayer.one('loadedmetadata', function() {
+                    myPlayer.play().catch(e => console.warn("Auto-play blocked"));
+                    myPlayer.trigger('resize');
                 });
             });
         }
-    } else {
-        if (currentStory.link) window.open(currentStory.link, '_blank');
+    } else if (currentStory.link) {
+        window.open(currentStory.link, '_blank');
     }
+};
+
+window.closeVideo = function() {
+    const playerWrap = document.getElementById('newsPlayerWrap');
+    const stageImg = document.getElementById('stageImage');
+    const myPlayer = videojs.getPlayer('newsBrightcovePlayer');
+    
+    if (playerWrap) playerWrap.style.display = 'none';
+    if (stageImg) stageImg.style.display = 'block';
+    if (myPlayer) myPlayer.pause();
+};
+
+window.closeVideoModalVKids = function() {
+    const modal = document.getElementById('videoModal');
+    const myPlayer = videojs.getPlayer('myBrightcovePlayer');
+    
+    if (modal) modal.style.display = 'none';
+    if (myPlayer) myPlayer.pause();
 };
 
 
@@ -788,48 +1045,192 @@ const vFaqData = {
                     "tr": "V-MALAYSIA 2026 Biletleri"
                 },
                 "a": {
-                    "en": "1. Go to <a href='https://vshoppe.vtube.net/'>VShoppe</a><br>2. Enter your email and code: <strong>VMYJUN2026</strong><br>3. Fill out your info and click <strong>Proceed to Payment</strong>.",
-                    "ar": "1. اذهب إلى <a href='https://vshoppe.vtube.net/'>VShoppe</a><br>2. أدخل بريدك الإلكتروني والرمز: <strong>VMYJUN2026</strong><br>3. املأ بياناتك واضغط على <strong>المتابعة للدفع</strong>.",
-                    "id": "1. Buka <a href='https://vshoppe.vtube.net/'>VShoppe</a><br>2. Masukkan email dan kode: <strong>VMYJUN2026</strong><br>3. Isi informasi Anda dan klik <strong>Lanjutkan ke Pembayaran</strong>.",
-                    "fr": "1. Allez sur <a href='https://vshoppe.vtube.net/'>VShoppe</a><br>2. Entrez votre e-mail et le code : <strong>VMYJUN2026</strong><br>3. Remplissez vos informations et cliquez sur <strong>Procéder au paiement</strong>.",
-                    "ru": "1. Перейдите на <a href='https://vshoppe.vtube.net/'>VShoppe</a><br>2. Введите свой email и код: <strong>VMYJUN2026</strong><br>3. Заполните данные и нажмите <strong>Перейти к оплате</strong>.",
-                    "tr": "1. <a href='https://vshoppe.vtube.net/'>VShoppe</a> adresine gidin<br>2. E-postanızı ve şu kodu girin: <strong>VMYJUN2026</strong><br>3. Bilgilerinizi doldurun ve <strong>Ödemeye Devam Et</strong>'e tıklayın."
+                    "en": "1. Go to <a href='https://vshoppe.vtube.net/'>VShoppe</a><br><br>2. Enter your email address and input the code. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V-CONVENTION 2026: <strong><a href='https://vshoppe.vtube.net/promo/code/VMYJUNE2026'>VMYJUN2026</a></strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V-KIDS & V-TEENS 2026: <strong><a href='https://vshoppe.vtube.net/promo/code/VKIDSTEENS26'>VKIDSTEENS26</a></strong><br>3. Fill out your information.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*The token is sent to your email address.<br><br>4. Click <strong>Proceed to Payment</strong>.<br><br>5. Input your credit card information and click <strong>Pay</strong>. Wait for it to process until the green check mark appears. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*If an authentication prompt pops up, please accomplish the steps required. <br><br>6. Your <strong>Payment Receipt</strong> will appear, and a confirmation will be sent to your email address.",
+                    "ar": "",
+                    "id": "",
+                    "fr": "",
+                    "ru": "",
+                    "tr": ""
                 }
             },
             {
                 "q": {
-                    "en": "Ticket Terms and Conditions",
-                    "ar": "شروط وأحكام التذاكر",
-                    "id": "Syarat dan Ketentuan Tiket",
-                    "fr": "Conditions générales des billets",
-                    "ru": "Положения и условия использования билетов",
-                    "tr": "Bilet Şartları ve Koşulları"
+                    "en": "V-CONVENTION 2026 Ticket Terms and Conditions",
+                    "ar": "",
+                    "id": "",
+                    "fr": "",
+                    "ru": "",
+                    "tr": ""
                 },
                 "a": {
-                    "en": "Tickets are strictly non-refundable and non-transferrable except under specific Promoter discretion. Lost tickets will not be replaced.",
-                    "ar": "التذاكر غير قابلة للاسترداد وغير قابلة للتحويل تماماً إلا بموجب تقدير المروج. لن يتم استبدال التذاكر المفقودة.",
-                    "id": "Tiket benar-benar tidak dapat diuangkan kembali dan tidak dapat dipindahtangankan kecuali atas kebijakan Promotor. Tiket yang hilang tidak akan diganti.",
-                    "fr": "Les billets sont strictement non remboursables et non transférables, sauf à la discrétion de l'organisateur. Les billets perdus ne seront pas remplacés.",
-                    "ru": "Билеты строго не подлежат возврату или передаче другим лицам, за исключением случаев, предусмотренных Организатором. Утерянные билеты не восстанавливаются.",
-                    "tr": "Biletler, Organizatörün takdiri haricinde kesinlikle iade edilemez ve devredilemez. Kaybolan biletlerin yenisi verilmeyecektir."
+                    "en": "By purchasing the ticket, you (“Ticket Holder”) agree to be bound by the Terms and Conditions of sale specified herein and any other provision as may be specified from time to time by VShoppe (“Promoter”). The Promoter, their agents or employees, shall not be liable for any death, personal injury (unless caused by negligence of its agents and employees), loss, or damage however caused while in the venue nor are they liable for any complaints, claims, refunds, or exchange for any reason, including without limitation, cancellation or postponement of the event. Booking fees and handling fees shall not be refundable. Any refunds shall be made only at Promoter’s discretion.<br><br>Tickets are sold subject to the following conditions:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Once sale is completed, no refunds will be made except pursuant to event postponement or cancellation and this is subjected to the Promoter's discretion. Lost ticket/s will not be replaced or refunded.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Generally, tickets are non-transferable. However, if the purchase was made by mistake, believed to be done in good faith, the Promoter reserves the right for transfer. Ticket Holder may request to transfer it to the next party, subject to ticket availability. An additional administrative payment of USD 50 must be made by the Ticket Holder to initiate the transfer process. All transfer requests must be sent to <a href=\"mailto:v-regn@the-v.net\" style='color:white; text-decoration: underline white;'>v-regn@the-v.net</a>.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Entry will be refused if tickets have been found to be tampered, counterfeited, and/or not purchased from VShoppe or an official and authorized point of sale.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● The Promoter reserves the right, without refund or compensation, to refuse admission/evict any person(s) whose conduct is disorderly or inappropriate.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● The Promoter may add, withdraw, or substitute artistes and/or vary advertised programmes, event times, seating arrangements, audience capacity without prior notice.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● The Promoter may use the ticket holder’s image or likeness in any live or recorded video display, picture, publicity material or website.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● The Promoter may postpone, cancel, interrupt, or stop the event due to adverse weather, dangerous situations, or any other causes beyond reasonable control.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● The Ticket Holder agrees to submit to any searches for prohibited items including but not limited to weapons, controlled, dangerous and illegal substances.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Ticket Holder agrees for their personal data to be used as Promoter deems necessary in the purchase of the ticket and subsequent processing for the event. These may include, but not limited to, sharing of your personal data to authorised third parties such as government agencies, financial institutions, and vendor suppliers for the said event.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● The Ticket Holder voluntarily assumes all risks and danger incidental to the event whether occurring prior to, during or subsequent to the actual event, including any death, personal injury, loss, damage, or liability. Malaysia law shall govern the sale of all tickets and you agree to submit to the exclusive jurisdiction of the Malaysia Court.<br>",
+                    "ar": "",
+                    "id": "",
+                    "fr": "",
+                    "ru": "",
+                    "tr": ""
                 }
             },
             {
                 "q": {
                     "en": "What pre-departure requirements should we prepare?",
-                    "ar": "ما هي متطلبات ما قبل المغادرة التي يجب علينا تحضيرها؟",
-                    "id": "Persyaratan pra-keberangkatan apa yang harus kami siapkan?",
-                    "fr": "Quelles sont les formalités de pré-départ à préparer ?",
-                    "ru": "Какие предвыездные требования нам нужно подготовить?",
-                    "tr": "Gidiş öncesi hangi gereklilikleri hazırlamalıyız?"
+                    "ar": "",
+                    "id": "",
+                    "fr": "",
+                    "ru": "",
+                    "tr": ""
                 },
                 "a": {
-                    "en": "Ensure you have travel insurance, your <strong>Yellow Fever Certificate</strong> (if applicable), and your flight details submitted to the registration team.",
-                    "ar": "تأكد من حصولك على تأمين السفر، و<strong>شهادة الحمى الصفراء</strong> (إذا كانت مطلوبة)، وإرسال تفاصيل رحلتك إلى فريق التسجيل.",
-                    "id": "Pastikan Anda memiliki asuransi perjalanan, <strong>Sertifikat Demam Kuning</strong> (jika berlaku), dan detail penerbangan Anda dikirimkan ke tim registrasi.",
-                    "fr": "Assurez-vous d'avoir une assurance voyage, votre <strong>certificat de vaccination contre la fièvre jaune</strong> (si applicable) et vos détails de vol transmis à l'équipe d'inscription.",
-                    "ru": "Убедитесь, что у вас есть туристическая страховка, <strong>сертификат о прививке от желтой лихорадки</strong> (если применимо), а данные о рейсе переданы команде регистрации.",
-                    "tr": "Seyahat sigortanızın olduğundan, (varsa) <strong>Sarı Humma Sertifikanızın</strong> hazır olduğundan ve uçuş bilgilerinizin kayıt ekibine iletildiğinden emin olun."
+                    "en": "a. All participants are recommended to purchase travel insurance with a sum insured of at least <strong>USD 10,000</strong>.<br><br>b. Participants coming from African countries are required to apply for <strong>Yellow Fever Vaccination Certificates</strong> at least <strong>10 days</strong> prior to your departure to Malaysia.<br><br>c. If you require an invitation letter for your visa application, kindly fill out the form to submit your request: <a style=\"color:white; text-decoration: underline white; overflow-wrap: break-word;\" href=\"https://vconinvitation.the-v.net/ \">https://vconinvitation.the-v.net/</a> <br><br>d. Provide your flight details, departure, and arrival to <a href=\"mailto:v-regn@the-v.net\" style='color:white; text-decoration: underline white;'>v-regn@the-v.net</a> at least two (2) days prior to your departure.<br><br>e. Prepare your <strong>Malaysia Digital Arrival Card</strong>. Please ensure all the necessary information in the <strong>Malaysia Digital Arrival Card (MDAC)</strong> has been filled up within <strong>three (3) days</strong> prior to your departure: <a href=\"https://imigresen-online.imi.gov.my/mdac/main\" style='color:white; text-decoration: underline white;'>https://imigresen-online.imi.gov.my/mdac/main</a><br><br>f. A participant in need of medications should only bring <strong>enough for the duration of their stay</strong>, as per the <strong>prescription</strong> issued by their doctor.<br><br>g. All arriving travelers must declare dutiable and prohibited goods, as well as currencies or monetary instruments <strong>exceeding USD 10,000</strong>, using <strong>Customs Form No. 7</strong>, available at the RMCD counter. Form submission is required at the RMCD examination checkpoint. False declarations or failure to declare are offenses under Malaysian law.<br>",
+                    "ar": "",
+                    "id": "",
+                    "fr": "",
+                    "ru": "",
+                    "tr": ""
+                }
+            },
+            {
+                "q": {
+                    "en": "What are the travel Visa requirements?",
+                    "ar": "",
+                    "id": "",
+                    "fr": "",
+                    "ru": "",
+                    "tr": ""
+                },
+                "a": {
+                    "en": "a. If you need to apply for a Malaysia visa, please make sure your passport is <strong>VALID</strong> for at least <strong>six (6) months</strong> from the date of travel.<br><br>b. Your passport must have a minimum of <strong>three (3) blank pages</strong>.<br><br>c. Apply for a <strong>Social Visa</strong> indicating your attendance to a convention.<br><br>d. <strong>Return Flight Ticket</strong>: Return dates must be in accordance with the permitted duration of stay.<br><br>e. <strong>Proof of funds</strong>: You should have at least <strong>USD 1,500</strong> cash on hand/bank account statement prepared upon your arrival.<br><br>f. Penang hotel booking confirmation<br>",
+                    "ar": "",
+                    "id": "",
+                    "fr": "",
+                    "ru": "",
+                    "tr": ""
+                }
+            },
+            {
+                "q": {
+                    "en": "What travel documents do we need to have on-hand?",
+                    "ar": "",
+                    "id": "",
+                    "fr": "",
+                    "ru": "",
+                    "tr": ""
+                },
+                "a": {
+                    "en": "a. A printed copy of your <strong>return flight ticket</strong> must be provided, with the return date in accordance with the permitted visa validity. <br><br>b. A printed copy of your <strong>Penang hotel booking confirmation</strong> will serve as proof of your accommodation in Penang throughout your stay in Malaysia.<br><br>c. A printed copy of your visa must be ready at hand for Immigration.<br><br>d. A printed copy of the invitation and/or confirmation letter sent to your email upon registration<br><br>e. A printed copy of <strong>Yellow Fever Vaccination Certificate</strong> is required by the Malaysia Immigration Department for a participant coming from African countries.<br><br>f. A copy of your <strong>Malaysia Digital Arrival Card (MDAC)</strong>.<br>",
+                    "ar": "",
+                    "id": "",
+                    "fr": "",
+                    "ru": "",
+                    "tr": ""
+                }
+            },
+            {
+                "q": {
+                    "en": "When is the Registration for V-CONVENTION 2026 participants?",
+                    "ar": "",
+                    "id": "",
+                    "fr": "",
+                    "ru": "",
+                    "tr": ""
+                },
+                "a": {
+                    "en": "The <strong>V-CONVENTION 2026</strong> registration will be on <strong>16 June 2026</strong>. We highly recommend that you arrive at least <strong>1-2 days before the start of the event</strong>, so you have enough time to get settled in your hotel or place of accommodation.",
+                    "ar": "",
+                    "id": "",
+                    "fr": "",
+                    "ru": "",
+                    "tr": ""
+                }
+            },
+            {
+                "q": {
+                    "en": "What is the registration process for V-CONVENTION 2026 participants?",
+                    "ar": "",
+                    "id": "",
+                    "fr": "",
+                    "ru": "",
+                    "tr": ""
+                },
+                "a": {
+                    "en": "a. You MUST be physically present at the registration and provide a copy of the following saved in your mobile phone to claim your wristband:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i. Passport<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii. V-CONVENTION 2026 e-ticket with QR Code<br><br>b. Collection of wristbands/tickets via representation is <strong>NOT ALLOWED</strong>.<br><br>c. There will be no issuance of a refund, a new ticket, or wristband once they have been deemed collected. You are required to purchase again in cases of loss or replacement.<br>",
+                    "ar": "",
+                    "id": "",
+                    "fr": "",
+                    "ru": "",
+                    "tr": ""
+                }
+            },
+            {
+                "q": {
+                    "en": "What is the refund and transfer policy?",
+                    "ar": "",
+                    "id": "",
+                    "fr": "",
+                    "ru": "",
+                    "tr": ""
+                },
+                "a": {
+                    "en": "<strong>V-CONVENTION 2026</strong> tickets are strictly <strong>non-refundable</strong> and <strong>non-transferrable</strong>.",
+                    "ar": "",
+                    "id": "",
+                    "fr": "",
+                    "ru": "",
+                    "tr": ""
+                }
+            },
+            {
+                "q": {
+                    "en": "What other essentials do I need to prepare for <strong>V-CONVENTION 2026</strong>?",
+                    "ar": "",
+                    "id": "",
+                    "fr": "",
+                    "ru": "",
+                    "tr": ""
+                },
+                "a": {
+                    "en": "a. Bring your own reusable water bottles, utensils, and bags. Single-use plastic is strictly <strong>prohibited</strong> within the premises of Setia SPICE Arena for V-Malaysia 2026.<br><br>b. Make sure you have enough to spend on food, drinks, transportation, V-Malaysia 2026 merchandise from the Limitless Store, souvenirs, etc. We recommend having your money in MYR.<br><br>c. Activate your debit card or local bank card for international transactions before traveling out of your country. AMEX cards are not accepted for purchases.<br><br>d. Pack clothes good for <strong>seven (7) days</strong>. Expect that the air-conditioning inside the arena would be extra cool so bring a jacket or shawl you can easily layer over your comfy clothes.<br>",
+                    "ar": "",
+                    "id": "",
+                    "fr": "",
+                    "ru": "",
+                    "tr": ""
+                }
+            },
+            {
+                "q": {
+                    "en": "How can I avail translation services during the event?",
+                    "ar": "",
+                    "id": "",
+                    "fr": "",
+                    "ru": "",
+                    "tr": ""
+                },
+                "a": {
+                    "en": "For those who will need translation services during the event, translation radio is available for sale starting <strong>Registration Day</strong> on <strong>16 June 2026</strong> and throughout the event at the <strong>Information Counter</strong>.",
+                    "ar": "",
+                    "id": "",
+                    "fr": "",
+                    "ru": "",
+                    "tr": ""
+                }
+            },
+            {
+                "q": {
+                    "en": "V-KIDS & V-TEENS 2026 GUIDELINES",
+                    "ar": "",
+                    "id": "",
+                    "fr": "",
+                    "ru": "",
+                    "tr": ""
+                },
+                "a": {
+                    "en": "To purchase your V-KIDS & V-TEENS 2026 ticket, just go to <a href=\"https://vshoppe.vtube.net/promo/code/VKIDSTEENS26\" style='color:white; text-decoration: underline white;'>VShoppe</a> and input the code: <strong>VKIDSTEENS26</strong><br><br>&nbsp;&nbsp;&nbsp;<em>**NOTE: If you wish to purchase more than one (1) ticket, kindly email <a href=\"mailto:olivia.oscar@the-v.net\" style='color:white; text-decoration: underline white;'>olivia.oscar@the-v.net</a> with the subject: <strong>V-CONVENTION 2026 VKids VTeens Tickets – [add your IR ID]</strong>.</em><br><br>When purchasing your V-Kids & V-Teens tickets:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Prepare the Kid or Teen’s Passport<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Input the correct code on VShoppe.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•After successfully purchasing their tickets, make sure to bring a copy of your receipt and their confirmation letter during the registration day for verification.<br><br>During the Event:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. <u>Dress Code</u>: We recommend comfortable clothes suitable for five (5) days. Bring a jacket or shawl as the event area is air-conditioned.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. <u>Snacks and Lunch</u>: Light snacks and nutritious lunches will be provided during the event. If your child has any specific dietary requirements or allergies, please email us on or before <strong>no date yet</strong>.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. <u>Arrival and Departure</u>: Please ensure that your child arrives at V-KIDS & V-TEENS area before <strong>10:00 AM</strong>. The event is scheduled to conclude at <strong>6:00 PM</strong>, and parents/guardians are kindly requested to pick up their children promptly.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. <u>Verification</u>: Bring a copy of your receipt and this confirmation letter on the registration day.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. <u>Emergency Contact</u>: Should there be any emergency or urgent communication during the event, please contact <strong>Olivia</strong> at <strong>+6012 550 2357</strong>.<br><br>If you have any questions or concerns, please email Olivia at <a href=\"mailto:olivia.oscar@the-v.net\" style='color:white; text-decoration: underline white;'>olivia.oscar@the-v.net</a> with the email subject: <strong>V-CONVENTION 2026 VKids VTeens Tickets – [add your IR ID]</strong>.<br>",
+                    "ar": "",
+                    "id": "",
+                    "fr": "",
+                    "ru": "",
+                    "tr": ""
                 }
             }
         ]
@@ -905,7 +1306,7 @@ const vkidsData = {
                 "ru": "Посмотрите на невероятное путешествие наших самых юных мечтателей.",
                 "tr": "En genç hayalperestlerimizin inanılmaz yolculuğuna tanık olun."
             },
-            "link": "https://players.brightcove.net/3745659807001/4JJdlFXsg_default/index.html?videoId=6374927478112"
+            "videoId": "6374927478112"
         },
         {
             "id": "item2",
@@ -949,7 +1350,7 @@ const vkidsData = {
                 "ru": "Станьте частью опыта V-Kids и V-Teens на V-Malaysia 2026.",
                 "tr": "V-Malaysia 2026'daki V-Kids ve V-Teens deneyiminin bir parçası olun."
             },
-            "link": "https://players.brightcove.net/3745659807001/4JJdlFXsg_default/index.html?videoId=6374927478112"
+            "videoId":"6374927478112"
         },
         {
             "id": "item4",
@@ -971,7 +1372,7 @@ const vkidsData = {
                 "ru": "Посмотрите на невероятное путешествие наших самых юных мечтателей.",
                 "tr": "En genç hayalperestlerimizin inanılmaz yolculuğuna tanık olun."
             },
-            "link": "https://players.brightcove.net/3745659807001/4JJdlFXsg_default/index.html?videoId=6374927478112"
+            "videoId": "6374927478112"
         },
         {
             "id": "item5",
@@ -1015,38 +1416,36 @@ const vkidsData = {
                 "ru": "Станьте частью опыта V-Kids и V-Teens на V-Malaysia 2026.",
                 "tr": "V-Malaysia 2026'daki V-Kids ve V-Teens deneyiminin bir parçası olun."
             },
-            "link": "https://players.brightcove.net/3745659807001/4JJdlFXsg_default/index.html?videoId=6374927478112"
+            "videoId":"6374927478112"
         }
     ]
 };
 
-// 2. THE RENDER FUNCTION
 function renderVKids(lang) {
     const container = document.getElementById('vkids-list');
-    // We always pull from the 'en' array to keep the card count consistent, 
-    // but we use the 'lang' parameter to pick the text.
     const items = vkidsData['en']; 
 
     if (!container) return;
 
     container.innerHTML = items.map(item => {
-        // Accessing the translated strings
         const title = item.title[lang] || item.title['en'];
         const desc = item.desc[lang] || item.desc['en'];
-        const watchText = translations[lang]['vkids.watch'] || 'WATCH VIDEO';
-        const readText = translations[lang]['vkids.read'] || 'READ ARTICLE';
+        
+        // Ensure translations object exists to avoid crashes
+        const watchText = (translations[lang] && translations[lang]['vkids.watch']) || 'WATCH VIDEO';
+        const readText = (translations[lang] && translations[lang]['vkids.read']) || 'READ ARTICLE';
 
         return `
             <div class="vkids-card">
                 <div class="vkids-banner">
-                    <img src="${item.banner}" alt="${title}" onerror="this.src='assets/placeholder.jpg'">
+                    <img src="${item.banner}" alt="${title}">
                 </div>
                 <div class="vkids-content">
                     <h3>${title}</h3>
                     <p>${desc}</p>
                     ${item.type === 'video' 
-                        ? `<button class="v-btn-gold" onclick="openVideoModal('${item.link}')">${watchText}</button>`
-                        : `<a href="${item.link}" class="v-btn-gold" target="_blank">${readText}</a>`
+                        ? `<button class="v-btn-gold" onclick="launchVKidsVideo('${item.videoId}')">▶ ${watchText}</button>`
+                        : `<a href="${item.link}" class="v-btn-gold" target="_blank">📖 ${readText}</a>`
                     }
                 </div>
             </div>
@@ -1054,12 +1453,83 @@ function renderVKids(lang) {
     }).join('');
 }
 
+window.launchVKidsVideo = function(id) {
+    const modal = document.getElementById('videoModal');
+    
+    // 1. Show the modal first (flex helps center the content)
+    if (modal) {
+        modal.style.display = 'flex';
+    }
+
+    // 2. Get the player instance
+    const myPlayer = videojs.getPlayer('vkidsBrightcovePlayer');
+    
+    if (myPlayer) {
+        // Clear any old tracks/sources to prevent errors
+        myPlayer.pause();
+        myPlayer.src([]);
+
+        myPlayer.catalog.getVideo(id, function(error, video) {
+            if (error) {
+                console.error("Brightcove Catalog Error:", error);
+                return;
+            }
+
+            myPlayer.catalog.load(video);
+            
+            myPlayer.ready(function() {
+                myPlayer.play().catch(e => console.warn("Autoplay blocked"));
+                myPlayer.trigger('resize');
+            });
+        });
+    }
+};
+
+window.closeVideoModalVKids = function() {
+    const modal = document.getElementById('videoModal');
+    const myPlayer = videojs.getPlayer('vkidsBrightcovePlayer');
+    
+    if (modal) {
+        modal.style.display = 'none';
+    }
+    
+    if (myPlayer) {
+        myPlayer.pause();
+    }
+};
+
 // 3. RUN IT IMMEDIATELY
 document.addEventListener('DOMContentLoaded', () => {
     renderVKids('en');
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const grid = document.querySelector('.vkids-grid');
 
+    if (!grid) return; // Failsafe in case the grid isn't on the page
+
+    const updateFade = () => {
+        // 1. Check if we have scrolled away from the left edge
+        if (grid.scrollLeft > 0) {
+            grid.classList.add('not-at-start');
+        } else {
+            grid.classList.remove('not-at-start');
+        }
+
+        // 2. Check if we have hit the right edge (using a 1px buffer for safety)
+        if (grid.scrollLeft + grid.clientWidth >= grid.scrollWidth - 1) {
+            grid.classList.add('at-end');
+        } else {
+            grid.classList.remove('at-end');
+        }
+    };
+
+    // Listen for scrolling and update the fades
+    grid.addEventListener('scroll', updateFade);
+    
+    // Run it once right away just in case the content doesn't need to scroll
+    updateFade();
+});
 
 // TICKET MENU
 function toggleTicketMenu() {
@@ -1172,9 +1642,16 @@ function changeLanguage(lang) {
     elements.forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (translations[lang] && translations[lang][key]) {
-            el.innerText = translations[lang][key];
+            el.innerHTML= translations[lang][key];
         }
     });
+
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+    const key = element.getAttribute('data-i18n-placeholder');
+    if (translations[lang][key]) {
+        element.placeholder = translations[lang][key];
+    }
+});
 
     if (typeof applyFilters === "function") {
         applyFilters(); 
@@ -1283,4 +1760,7 @@ function renderContent(item, lang = 'en') {
     document.getElementById('stageDesc').innerHTML = desc;
 }
 
-// logo
+
+
+
+
