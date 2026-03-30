@@ -81,7 +81,21 @@ const translations = {
         "footer.note":"<strong>TAKE NOTE:</strong> If you’re already receiving newsletters from <strong>The V</strong>, you <strong>DON’T</strong> have to provide your email address anymore.",
         "footer.newsletter.placeholder":"Your Email Address",
         "footer.button":"JOIN",
-        "footer.social.title":"Stay connected with us!"
+        "footer.social.title":"Stay connected with us!",
+
+        //CONFESSIONS
+        "confessions": {
+            "title": "GOT CONFESSIONS?",
+            "main_text": "In your journey from dreamer to doer, <span class=\"lime-text\">YOU ARE NEVER ALONE!</span>",
+            "sub_text": "We are always here to listen — so share your confessions here!",
+            "note_title": "Confession of a Dreamer:",
+            "note_content": "This journey is not always easy. Truthfully, I face challenges that discourage me. But when I remember my 'why' I always gain the strength to rise stronger.",
+            "label_name": "Name:",
+            "label_irid": "Independent Distributor ID:",
+            "label_email": "Email:",
+            "label_message": "Confession:",
+            "btn_submit": "Submit"
+        }
     },
     id: {
         "nav.home": "HALAMAN UTAMA",
@@ -588,7 +602,7 @@ window.closeMenu = function() {
 
     // --- 3. COUNTDOWN (STABLE) ---
 // Target date: June 16, 2026 (Adjust as needed)
-const targetDate = new Date("June 16, 2026 00:00:00").getTime();
+const targetDate = new Date("June 17, 2026 00:00:00").getTime();
 
 function updateCountdown() {
     const now = new Date().getTime();

@@ -737,7 +737,7 @@ header {
 }
 
 /* --- 6. HERO SECTION --- */
-.hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background-image: url('assets/images/bg-fx.png'); opacity: 90%; background-size: cover; color: white; text-align: center; padding: 20px; }
+.hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background-image: url('assets/images/bg-fx.png'); opacity: 90%; background-size: cover; color: white; text-align: center; padding-top: 60px; }
 .logo-emblem { width: clamp(200px, 30vw, 300px); height: clamp(200px, 30vw, 300px); border: 2px solid #D4AF37; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 30px; background: rgba(212,175,55,0.05); }
 .emblem-word { font-size: clamp(0.8rem, 2vw, 1.1rem); color: #D4AF37; text-transform: uppercase; font-weight: 800; letter-spacing: 2px; }
 .emblem-divider { width: 50px; height: 1px; background: rgba(212, 175, 55, 0.4); margin: 5px auto; }
@@ -1412,37 +1412,132 @@ header {
 }
 
 /* CONFESSION SECTION */
-/* Container styling */
+
 .confession-section {
-    max-width: 600px;
-    margin: 40px auto; /* Centers the section on the page */
-    padding: 20px;
-    background-color: #ffffff; /* Add a background color if needed */
-    border-radius: 8px;
+    width: 100%;
+    min-height: 80vh;
+    padding: 60px 20px;
+    background-image: url('assets/images/form-bg.png'); /* Your purple texture */
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confession-container {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr; 
+    gap: 60px; 
+    max-width: 1200px; /* Increased max-width */
+    width: 95%;
+    align-items: flex-start;
+    padding: 40px 0;
+    margin-top: -100px;
+
+}
+
+.confession-section {
+    padding-top: 120px; 
+    background-position: bottom center;
 }
 
 /* Header Text Styling */
+.confession-header {
+    color: #ffffff;
+    text-align: left;
+}
 .confession-header h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
+    font-family: 'Apotek ExtraCond', sans-serif !important;
+    font-size: 5.5rem; 
+    color: #d1ff6c;
+    line-height: 0.85; 
+    letter-spacing: -1px;
+    margin-bottom: 25px;
 }
 
-.confession-header p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-/* Form Layout Styling */
-.confession-form .form-group {
+.main-text {
+    font-size: 2.2rem; 
+    font-weight: 800;
+    line-height: 1.2;
     margin-bottom: 20px;
+    color: #ffffff;
 }
 
-.confession-form label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
+.lime-text {
+    color: #d1ff6c;
 }
+
+.sub-text {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    opacity: 0.95;
+    margin-bottom: 40px; 
+}
+
+/* The White Form Card */
+.confession-white-card {
+    background: #f1ecf7; /* Very light purple/grey like the image */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.3);
+}
+
+.confession-white-card label {
+    color: #352288;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.confession-white-card input, 
+.confession-white-card textarea {
+    background: transparent;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 5px;
+    width: 100%;
+    padding: 10px;
+}
+
+/* The Lime Submit Button */
+.confession-submit-btn {
+    background-color: #d1ff6c;
+    color: #17043d;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #9cbd4e; /* Bottom shadow for "3D" look */
+}
+
+@media (max-width: 1100px) {
+    .confession-container {
+        grid-template-columns: 1fr; /* Stack on smaller screens */
+        gap: 40px;
+    }
+    
+    .confession-header h2 {
+        font-size: 4rem;
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+    .confession-container {
+        grid-template-columns: 1fr; /* Stack vertically */
+        text-align: center;
+    }
+    
+    .confession-header {
+        text-align: center;
+    }
+    
+    .confession-header h2 {
+        font-size: 3.5rem;
+    }
+}
+
 
 /* Input Fields Styling */
 .confession-form input[type="text"],
@@ -1453,6 +1548,7 @@ header {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
+    font-family: 'Barlow', sans-serif !important;
     box-sizing: border-box; /* Ensures padding doesn't break 100% width */
 }
 
@@ -1699,6 +1795,73 @@ header {
 @media (max-width: 768px) {
     .v-venue-title { font-size: 1.8rem; padding: 10px 15px; }
     .v-venue-section { padding: 50px 0; }
+}
+
+.v-map-wrapper {
+    overflow: hidden; /* Keeps the zoomed map inside the box */
+    cursor: move;
+    touch-action: none; /* Required for Panzoom mobile support */
+}
+
+.v-map-container {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    border: 2px solid rgba(209, 255, 108, 0.3);
+    border-radius: 15px;
+    overflow: hidden; /* This keeps the map inside the borders */
+    background: #17043d;
+}
+
+.v-map-wrapper {
+    cursor: grab;
+    touch-action: none; /* Required for mobile pan/zoom */
+}
+
+.v-map-wrapper:active {
+    cursor: grabbing;
+}
+
+/* Floating Controls */
+.v-map-controls {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 100;
+}
+
+.v-map-controls button {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background: #d1ff6c; /* Your Lime Green */
+    color: #17043d;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s, background 0.2s;
+}
+
+.v-map-controls button:hover {
+    background: #ffffff;
+    transform: scale(1.1);
+}
+
+.v-map-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* This ensures the zoomed image stays above your overlays */
+.medium-zoom-overlay, .medium-zoom-image--opened {
+    z-index: 9999;
 }
 
 /* VKIDS and VTEENS SECTION */
@@ -2973,7 +3136,29 @@ html[dir="rtl"] #v-kids .v-gold-title {
     max-width: 300px; /* Locks it to 300px on desktop */
     height: auto;     /* Keeps it perfectly round/proportional */
     display: block;
-    margin: 0 auto 40px auto; /* Centers it and adds space below */
+    margin: 0 auto;
+    
+
+    max-width: 450px; 
+    width: 80%; 
+    height: auto;
+
+    margin-top: 5vh; 
+    margin-bottom: 2vh;
+}
+
+@media (max-width: 768px) {
+    .hero-logo-animated {
+        max-width: 280px;
+        margin-top: 3vh; 
+    }
+}
+
+@media (max-height: 700px) {
+    .hero-logo-animated {
+        max-width: 220px;
+        margin-top: 2vh;
+    }
 }
 
 /* --- Pin Video to the Background --- */

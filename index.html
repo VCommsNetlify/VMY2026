@@ -186,32 +186,42 @@
     </section>
 
 <section class="confession-section" id="v-kids-confessions">
-    <div class="confession-header">
-        <h2 data-i18n="confessions.title">Got Confessions?</h2>
-        <p data-i18n="confessions.desc_1">The journey from <strong>dreamer to doer</strong> is full of twists and turns. But remember: <strong>you are never alone!</strong></p>
+    <div class="confession-container">
+        <div class="confession-header">
+            <h2 class="v-apotek" data-i18n="confessions.title">GOT CONFESSIONS?</h2>
+            <p class="main-text" data-i18n="confessions.main_text">
+                In your journey from dreamer to doer, <span class="lime-text">YOU ARE NEVER ALONE!</span>
+            </p>
+            <p class="sub-text" data-i18n="confessions.sub_text">
+                We are always here to listen — so share your confessions here!
+            </p>
+            
+            
+        </div>
+
+       <form id="confession-form" class="confession-white-card">
+            <div class="form-group">
+                <label data-i18n="confessions.label_name">Name:</label>
+                <input type="text" name="name" id="c_name" required>
+            </div>
+            <div class="form-group">
+                <label data-i18n="confessions.label_irid">Independent Distributor ID:</label>
+                <input type="text" name="irid" id="c_irid" required>
+            </div>
+            <div class="form-group">
+                <label data-i18n="confessions.label_email">Email:</label>
+                <input type="email" name="email" id="c_email" required>
+            </div>
+            <div class="form-group">
+                <label data-i18n="confessions.label_message">Confession:</label>
+                <textarea name="confession" id="c_message" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="confession-submit-btn" id="submit-btn" data-i18n="confessions.btn_submit">Submit</button>
+
+            <div id="form-message" style="margin-top: 15px; font-weight: bold; text-align: center;"></div>
+        </form>
     </div>
-
-    <form id="confession-form" class="confession-form">
-        <div class="form-group">
-            <label data-i18n="confessions.label_name">Name</label>
-            <input type="text" name="name" id="c_name" required>
-        </div>
-        <div class="form-group">
-            <label data-i18n="confessions.label_irid">IRID</label>
-            <input type="text" name="irid" id="c_irid" required>
-        </div>
-        <div class="form-group">
-            <label data-i18n="confessions.label_email">Email</label>
-            <input type="email" name="email" id="c_email" required>
-        </div>
-        <div class="form-group">
-            <label data-i18n="confessions.label_message">Confession</label>
-            <textarea name="confession" id="c_message" rows="4" maxlength="180" required></textarea>
-        </div>
-
-        <button type="submit" class="confession-submit-btn" id="submit-btn" data-i18n="confessions.btn_submit">Submit</button>
-        <div id="form-message" style="margin-top: 15px; font-weight: bold; text-align: center;"></div>
-    </form>
 </section>
 
 
@@ -248,8 +258,19 @@
                     Every journey needs a map. So, here’s a detailed guide to help you navigate the <span style="color: #d1ff6c;">Setia SPICE Arena</span> during <span style="color: #d1ff6c;">V-CONVENTION 2026</span>!
                 </p>
             </div>
-            <div class="v-map-wrapper">
-                <img id="venue-map-img" src="assets/images/05162025 june VMY2025 microsite map v5.webp" alt="Venue Map" class="v-map-image">
+            <div class="v-map-container">
+                <div class="v-map-controls">
+                    <button id="zoom-in" title="Zoom In">+</button>
+                    <button id="zoom-out" title="Zoom Out">−</button>
+                    <button id="zoom-reset" title="Reset View">⟲</button>
+                </div>
+
+                <div id="v-panzoom-wrapper" class="v-map-wrapper">
+                    <img id="venue-map-img" 
+                        src="assets/images/03272026-June-2026-V-Convention-Microsite-Venue-Map-static.png" 
+                        alt="Venue Map" 
+                        class="v-map-image">
+                </div>
             </div>
         </div>
     </section>
@@ -432,12 +453,12 @@ document.getElementById('confession-form').addEventListener('submit', function(e
     var currentLang = ['en', 'ar', 'id', 'fr', 'ru', 'tr'].includes(langTag) ? langTag : 'en';
     
     var msgs = {
-        en: { loading: "Checking...", success: "Confession submitted! Next person can now submit.", err_dup: "This IRID/Email has already been used.", err_conn: "Error. Try again." },
-        ar: { loading: "جاري التحقق...", success: "تم الإرسال! يمكن للشخص التالي الإرسال الآن.", err_dup: "هذا الـ IRID أو البريد مستخدم بالفعل.", err_conn: "خطأ. حاول مجدداً." },
-        id: { loading: "Memeriksa...", success: "Berhasil dikirim! Orang berikutnya silakan isi.", err_dup: "IRID/Email ini sudah digunakan.", err_conn: "Kesalahan. Coba lagi." },
-        fr: { loading: "Vérification...", success: "Soumis ! La personne suivante peut maintenant s'inscrire.", err_dup: "Cet IRID/Email est déjà utilisé.", err_conn: "Erreur. Réessayez." },
-        ru: { loading: "Проверка...", success: "Отправлено! Следующий человек может отправить.", err_dup: "Этот IRID/Email уже используется.", err_conn: "Ошибка. Попробуйте еще раз." },
-        tr: { loading: "Kontrol ediliyor...", success: "Gönderildi! Sıradaki kişi şimdi gönderebilir.", err_dup: "Bu IRID/E-posta zaten kullanılmış.", err_conn: "Hata. Tekrar deneyin." }
+        en: { loading: "Checking...", success: "Confession submitted! Next person can now submit.", err_dup: "This Independent Distributor ID/Email has already been used.", err_conn: "Error. Try again." },
+        ar: { loading: "جاري التحقق...", success: "تم الإرسال! يمكن للشخص التالي الإرسال الآن.", err_dup: "هذا الـ Independent Distributor ID أو البريد مستخدم بالفعل.", err_conn: "خطأ. حاول مجدداً." },
+        id: { loading: "Memeriksa...", success: "Berhasil dikirim! Orang berikutnya silakan isi.", err_dup: "Independent Distributor ID/Email ini sudah digunakan.", err_conn: "Kesalahan. Coba lagi." },
+        fr: { loading: "Vérification...", success: "Soumis ! La personne suivante peut maintenant s'inscrire.", err_dup: "Cet Independent Distributor ID/Email est déjà utilisé.", err_conn: "Erreur. Réessayez." },
+        ru: { loading: "Проверка...", success: "Отправлено! Следующий человек может отправить.", err_dup: "Этот Independent Distributor ID/Email уже используется.", err_conn: "Ошибка. Попробуйте еще раз." },
+        tr: { loading: "Kontrol ediliyor...", success: "Gönderildi! Sıradaki kişi şimdi gönderebilir.", err_dup: "Bu Independent Distributor ID/E-posta zaten kullanılmış.", err_conn: "Hata. Tekrar deneyin." }
     };
 
     var langText = msgs[currentLang];
@@ -486,8 +507,31 @@ document.getElementById('confession-form').addEventListener('submit', function(e
 
     document.body.appendChild(script);
 });
+</script>
 
+<script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
 
+<script>
+    const elem = document.getElementById('venue-map-img');
+    const zoomInBtn = document.getElementById('zoom-in');
+    const zoomOutBtn = document.getElementById('zoom-out');
+    const resetBtn = document.getElementById('zoom-reset');
+
+    // Initialize Panzoom
+    const panzoom = Panzoom(elem, {
+        maxScale: 4,      // How far they can zoom in
+        minScale: 1,      // Prevents zooming out smaller than original
+        contain: 'outside', // Keeps map edges from leaving the container
+        step: 0.3         // How much each button click zooms
+    });
+
+    // Button Listeners
+    zoomInBtn.addEventListener('click', panzoom.zoomIn);
+    zoomOutBtn.addEventListener('click', panzoom.zoomOut);
+    resetBtn.addEventListener('click', panzoom.reset);
+
+    // Optional: Enable Mouse Wheel Zooming
+    elem.parentElement.addEventListener('wheel', panzoom.zoomWithWheel);
 </script>
 </body>
 </html>
