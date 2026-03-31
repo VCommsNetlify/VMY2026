@@ -511,7 +511,7 @@ header {
     .desktop-only { display: none !important; }
     .dropdown-content, .lang-content { display: block !important; max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1); background: rgba(0, 0, 0, 0.2); padding: 0 !important; margin: 0; }
     .dropdown-content.show, .lang-content.show { max-height: 500px; padding: 10px 0 !important; }
-    #navLinks { display: flex !important; flex-direction: column; position: fixed; top: 0; right: -100%; width: 100%; height: 100vh; background: #800020; padding: 100px 20px 40px; z-index: 5000; overflow-y: auto; list-style: none !important; text-align: center; transition: right 0.5s cubic-bezier(0.77, 0, 0.175, 1); }
+    #navLinks { display: flex !important; flex-direction: column; position: fixed; top: 0; right: -100%; width: 100%; height: 100vh; background: #240760; padding: 100px 20px 40px; z-index: 5000; overflow-y: auto; list-style: none !important; text-align: center; transition: right 0.5s cubic-bezier(0.77, 0, 0.175, 1); }
     #navLinks.active { display: flex !important; right: 0; }
     #navLinks li { width: 100%; list-style: none !important; margin-bottom: 10px; opacity: 0; transform: translateX(50px); transition: transform 0.4s ease; }
     #navLinks.active li { animation: slideInLeft 0.5s ease forwards; }
@@ -1581,6 +1581,8 @@ header {
 .v-faq-section {
     padding: 80px 5%;
     background-image: url('assets/BG-venue.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     /* height: 100vh; */
     /* background-color: #ffffff;
     opacity: 0.85; */
@@ -1722,6 +1724,7 @@ header {
     padding: 80px 0;
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed; /* Parallax effect for premium feel */
 }
 
@@ -1950,16 +1953,18 @@ html[lang="ar"] #v-kids {
     }
 
     .vkids-card {
-        flex: 0 0 85%; /* Shows 85% of one card + 15% of the next */
+        flex: 0 0 85% !important; 
+        max-width: 85%;
     }
     
-    /* Force the scrollbar to always stay visible on mobile */
     .vkids-grid {
+        padding: 20px 0 60px 20px !important; 
+        gap: 15px;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: thin; /* Firefox */
+        scroll-snap-type: x mandatory;
     }
     
-    /* Make the scrollbar more prominent on Mobile Chrome/Safari */
     .vkids-grid::-webkit-scrollbar {
         display: block;
         height: 6px;
