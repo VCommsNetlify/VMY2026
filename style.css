@@ -1732,6 +1732,8 @@ header {
     position: absolute;
     inset: 0;
     background-image: url(assets/BG-venue.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: 1;
 }
 
