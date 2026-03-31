@@ -9,6 +9,17 @@ html { scroll-behavior: smooth; }
 }}
 body { background-color: #f4f4f4; overflow-x: hidden; }
 
+strong a, 
+b a {
+    font-weight: bold !important;
+}
+
+.faq-answer-content strong, 
+.faq-answer-content b {
+    font-weight: 800 !important; /* Higher number = bolder */
+    display: inline;
+}
+
 /* =========================================
    NAVBAR LOGO SIZING
 ========================================= */
@@ -1583,9 +1594,6 @@ header {
     background-image: url('assets/BG-venue.png');
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 100vh; */
-    /* background-color: #ffffff;
-    opacity: 0.85; */
 }
 
 .v-faq-container {
@@ -2595,6 +2603,26 @@ html[dir="rtl"] #v-kids .v-gold-title {
     margin-right: 15px; /* Adds gap from the right side */
 }
 
+
+
+[dir="rtl"] .footer-newsletter input {
+    /* Swap rounding: Round the right side, flatten the left */
+    border-radius: 0 8px 8px 0; 
+    text-align: right; /* Text starts from the right */
+}
+
+[dir="rtl"] .footer-newsletter button {
+    /* Swap rounding: Round the left side, flatten the right */
+    border-radius: 8px 0 0 8px; 
+}
+
+/* Fix alignment for the status messages below the form */
+[dir="rtl"] #successMessage, 
+[dir="rtl"] #duplicateMessage,
+[dir="rtl"] .footer-about {
+    text-align: right;
+}
+
 /* Rescue the Brightcove icons from being forced into Times New Roman */
 .video-js .vjs-icon-placeholder::before,
 .video-js [class^="vjs-icon-"],
@@ -2632,6 +2660,13 @@ html[dir="rtl"] #v-kids .v-gold-title {
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.footer-newsletter {
+    display: flex;
+    flex-direction: row; /* Input first, Button second */
+    width: 100%;
+    max-width: 500px;
 }
 
 .footer-about {

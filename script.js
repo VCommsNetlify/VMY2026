@@ -68,7 +68,7 @@ const translations = {
         "venue.desc": "Every journey needs a map. So, here’s a detailed guide to help you navigate the<br> <span class=\"v-highlight\">Setia SPICE Arena</span> during <span class=\"v-highlight\"><br class='mobile-only'>V-CONVENTION 2026!</span>",
 
         //FOOTER
-        "footer.newsletter.title":"SUBSCRIBE TO THE <span style='color: #d1ff6c;'>V-MALAYSIA 2026</span> NEWSLETTER <u>FOR FREE</u>!",
+        "footer.newsletter.title":"SUBSCRIBE TO THE <span style='color: #d1ff6c;'>V-CONVENTION 2026</span> NEWSLETTER <u>FOR FREE</u>!",
         "footer.newsletter.copy":"Get the latest news and updates via email!",
 
         "quick.title":"QUICK LINKS",
@@ -82,6 +82,10 @@ const translations = {
         "footer.newsletter.placeholder":"Your Email Address",
         "footer.button":"JOIN",
         "footer.social.title":"Stay connected with us!",
+
+        "footer.newsletter.sending": "Sending...",
+        "footer.newsletter.success": "Thanks for joining!",
+        "footer.newsletter.duplicate": "This email is already registered!",
 
         //CONFESSIONS
         "confessions": {
@@ -173,7 +177,25 @@ const translations = {
         "footer.note":"<strong>PERHATIAN:</strong> Jika Anda sudah menerima buletin dari <strong>The V</strong>, Anda <strong>TIDAK</strong> perlu memberikan alamat email Anda lagi.",
         "footer.newsletter.placeholder":"Email Anda",
         "footer.button":"GABUNG",
-        "footer.social.title":"Tetap terhubung dengan kami!"
+        "footer.social.title":"Tetap terhubung dengan kami!",
+
+        "footer.newsletter.sending": "Mengirim...",
+        "footer.newsletter.success": "Terima kasih telah bergabung!",
+        "footer.newsletter.duplicate": "Email ini sudah terdaftar!",
+
+                //CONFESSIONS
+        "confessions": {
+            "title": "GOT CONFESSIONS?",
+            "main_text": "In your journey from dreamer to doer, <span class=\"lime-text\">YOU ARE NEVER ALONE!</span>",
+            "sub_text": "We are always here to listen — so share your confessions here!",
+            "note_title": "Confession of a Dreamer:",
+            "note_content": "This journey is not always easy. Truthfully, I face challenges that discourage me. But when I remember my 'why' I always gain the strength to rise stronger.",
+            "label_name": "Name:",
+            "label_irid": "Independent Distributor ID:",
+            "label_email": "Email:",
+            "label_message": "Confession:",
+            "btn_submit": "Submit"
+        }
     },
     fr:{
         "nav.home": "ACCUEIL",
@@ -250,7 +272,25 @@ const translations = {
         "footer.note":"<strong>À NOTER :</strong> Si vous recevez déjà les newsletters de <strong>The V</strong>, vous <strong>N'AVEZ PLUS</strong> besoin de fournir votre adresse e-mail.",
         "footer.newsletter.placeholder":"Votre adresse e-mail",
         "footer.button":"REJOIGNEZ-NOUS",
-        "footer.social.title":"Restez en contact avec nous !"
+        "footer.social.title":"Restez en contact avec nous !",
+
+        "footer.newsletter.sending": "Envoi en cours...",
+        "footer.newsletter.success": "Merci de nous avoir rejoint !",
+        "footer.newsletter.duplicate": "Cet e-mail est déjà enregistré !",
+
+                //CONFESSIONS
+        "confessions": {
+            "title": "GOT CONFESSIONS?",
+            "main_text": "In your journey from dreamer to doer, <span class=\"lime-text\">YOU ARE NEVER ALONE!</span>",
+            "sub_text": "We are always here to listen — so share your confessions here!",
+            "note_title": "Confession of a Dreamer:",
+            "note_content": "This journey is not always easy. Truthfully, I face challenges that discourage me. But when I remember my 'why' I always gain the strength to rise stronger.",
+            "label_name": "Name:",
+            "label_irid": "Independent Distributor ID:",
+            "label_email": "Email:",
+            "label_message": "Confession:",
+            "btn_submit": "Submit"
+        }
     },
     ru:{
         "nav.home": "ГЛАВНАЯ",
@@ -327,7 +367,25 @@ const translations = {
         "footer.note":"<strong>ВНИМАНИЕ:</strong> Если вы уже получаете рассылку от <strong>The V</strong>, вам <strong>НЕ НУЖНО</strong> больше указывать свой адрес электронной почты.",
         "footer.newsletter.placeholder":"Ваш адрес электронной почты",
         "footer.button":"ПРИСОЕДИНИТЬСЯ",
-        "footer.social.title":"Оставайтесь на связи с нами!"
+        "footer.social.title":"Оставайтесь на связи с нами!",
+
+        "footer.newsletter.sending": "Отправка...",
+        "footer.newsletter.success": "Спасибо за подписку!",
+        "footer.newsletter.duplicate": "Этот адрес уже зарегистрирован!",
+
+                //CONFESSIONS
+        "confessions": {
+            "title": "GOT CONFESSIONS?",
+            "main_text": "In your journey from dreamer to doer, <span class=\"lime-text\">YOU ARE NEVER ALONE!</span>",
+            "sub_text": "We are always here to listen — so share your confessions here!",
+            "note_title": "Confession of a Dreamer:",
+            "note_content": "This journey is not always easy. Truthfully, I face challenges that discourage me. But when I remember my 'why' I always gain the strength to rise stronger.",
+            "label_name": "Name:",
+            "label_irid": "Independent Distributor ID:",
+            "label_email": "Email:",
+            "label_message": "Confession:",
+            "btn_submit": "Submit"
+        }
     },
     tr:{
         // Navigation
@@ -406,7 +464,25 @@ const translations = {
         "footer.note":"<strong>NOT ALIN:</strong> Eğer zaten <strong>The V</strong>'den bülten alıyorsanız, e-posta adresinizi tekrar vermenize <strong>GEREK YOKTUR</strong>.",
         "footer.newsletter.placeholder":"E-posta Adresiniz",
         "footer.button":"KATIL",
-        "footer.social.title":"Bizimle iletişimde kalın!"
+        "footer.social.title":"Bizimle iletişimde kalın!",
+
+        "footer.newsletter.sending": "Gönderiliyor...",
+        "footer.newsletter.success": "Katıldığınız için teşekkürler!",
+        "footer.newsletter.duplicate": "Bu e-posta zaten kayıtlı!",
+
+                //CONFESSIONS
+        "confessions": {
+            "title": "GOT CONFESSIONS?",
+            "main_text": "In your journey from dreamer to doer, <span class=\"lime-text\">YOU ARE NEVER ALONE!</span>",
+            "sub_text": "We are always here to listen — so share your confessions here!",
+            "note_title": "Confession of a Dreamer:",
+            "note_content": "This journey is not always easy. Truthfully, I face challenges that discourage me. But when I remember my 'why' I always gain the strength to rise stronger.",
+            "label_name": "Name:",
+            "label_irid": "Independent Distributor ID:",
+            "label_email": "Email:",
+            "label_message": "Confession:",
+            "btn_submit": "Submit"
+        }
     },
     ar:{
         // Navigation
@@ -486,7 +562,25 @@ const translations = {
         "footer.note": "<strong>ملاحظة:</strong> إذا كنت تتلقى بالفعل نشرات إخبارية من <strong>The V</strong>، <strong>فلا داعي</strong> لتقديم بريدك الإلكتروني مجددًا.",
         "footer.newsletter.placeholder":"بريدك الإلكتروني",
         "footer.button":"انضم الآن",
-        "footer.social.title":"ابقَوا على تواصل معنا!"
+        "footer.social.title":"ابقَوا على تواصل معنا!",
+
+        "footer.newsletter.sending": "جاري الإرسال...",
+        "footer.newsletter.success": "شكراً لانضمامك إلينا!",
+        "footer.newsletter.duplicate": "هذا البريد الإلكتروني مسجل بالفعل!",
+
+                //CONFESSIONS
+        "confessions": {
+            "title": "GOT CONFESSIONS?",
+            "main_text": "In your journey from dreamer to doer, <span class=\"lime-text\">YOU ARE NEVER ALONE!</span>",
+            "sub_text": "We are always here to listen — so share your confessions here!",
+            "note_title": "Confession of a Dreamer:",
+            "note_content": "This journey is not always easy. Truthfully, I face challenges that discourage me. But when I remember my 'why' I always gain the strength to rise stronger.",
+            "label_name": "Name:",
+            "label_irid": "Independent Distributor ID:",
+            "label_email": "Email:",
+            "label_message": "Confession:",
+            "btn_submit": "Submit"
+        }
     }
 
 };
@@ -1059,7 +1153,7 @@ const vFaqData = {
                     "tr": "V-MALAYSIA 2026 Biletleri"
                 },
                 "a": {
-                    "en": "1. Go to <a href='https://vshoppe.vtube.net/'>VShoppe</a><br><br>2. Enter your email address and input the code. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V-CONVENTION 2026: <strong><a href='https://vshoppe.vtube.net/promo/code/VMYJUNE2026'>VMYJUN2026</a></strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V-KIDS & V-TEENS 2026: <strong><a href='https://vshoppe.vtube.net/promo/code/VKIDSTEENS26'>VKIDSTEENS26</a></strong><br>3. Fill out your information.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*The token is sent to your email address.<br><br>4. Click <strong>Proceed to Payment</strong>.<br><br>5. Input your credit card information and click <strong>Pay</strong>. Wait for it to process until the green check mark appears. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*If an authentication prompt pops up, please accomplish the steps required. <br><br>6. Your <strong>Payment Receipt</strong> will appear, and a confirmation will be sent to your email address.",
+                    "en": "1. Go to <a href='https://vshoppe.vtube.net/'>VShoppe</a><br><br>2. Enter your email address and input the code. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V-CONVENTION 2026: <strong><a href='https://vshoppe.vtube.net/promo/code/VMYJUNE2026'>VMYJUNE2026</a></strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V-KIDS & V-TEENS 2026: <strong><a href='https://vshoppe.vtube.net/promo/code/VKIDSTEENS26'>VKIDSTEENS26</a></strong><br>3. Fill out your information.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*The token is sent to your email address.<br><br>4. Click <strong>Proceed to Payment</strong>.<br><br>5. Input your credit card information and click <strong>Pay</strong>. Wait for it to process until the green check mark appears. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*If an authentication prompt pops up, please accomplish the steps required. <br><br>6. Your <strong>Payment Receipt</strong> will appear, and a confirmation will be sent to your email address.",
                     "ar": "",
                     "id": "",
                     "fr": "",
@@ -1077,7 +1171,7 @@ const vFaqData = {
                     "tr": ""
                 },
                 "a": {
-                    "en": "By purchasing the ticket, you (“Ticket Holder”) agree to be bound by the Terms and Conditions of sale specified herein and any other provision as may be specified from time to time by VShoppe (“Promoter”). The Promoter, their agents or employees, shall not be liable for any death, personal injury (unless caused by negligence of its agents and employees), loss, or damage however caused while in the venue nor are they liable for any complaints, claims, refunds, or exchange for any reason, including without limitation, cancellation or postponement of the event. Booking fees and handling fees shall not be refundable. Any refunds shall be made only at Promoter’s discretion.<br><br>Tickets are sold subject to the following conditions:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Once sale is completed, no refunds will be made except pursuant to event postponement or cancellation and this is subjected to the Promoter's discretion. Lost ticket/s will not be replaced or refunded.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Generally, tickets are non-transferable. However, if the purchase was made by mistake, believed to be done in good faith, the Promoter reserves the right for transfer. Ticket Holder may request to transfer it to the next party, subject to ticket availability. An additional administrative payment of USD 50 must be made by the Ticket Holder to initiate the transfer process. All transfer requests must be sent to <a href=\"mailto:v-regn@the-v.net\" style='color:white; text-decoration: underline white;'>v-regn@the-v.net</a>.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Entry will be refused if tickets have been found to be tampered, counterfeited, and/or not purchased from VShoppe or an official and authorized point of sale.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● The Promoter reserves the right, without refund or compensation, to refuse admission/evict any person(s) whose conduct is disorderly or inappropriate.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● The Promoter may add, withdraw, or substitute artistes and/or vary advertised programmes, event times, seating arrangements, audience capacity without prior notice.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● The Promoter may use the ticket holder’s image or likeness in any live or recorded video display, picture, publicity material or website.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● The Promoter may postpone, cancel, interrupt, or stop the event due to adverse weather, dangerous situations, or any other causes beyond reasonable control.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● The Ticket Holder agrees to submit to any searches for prohibited items including but not limited to weapons, controlled, dangerous and illegal substances.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Ticket Holder agrees for their personal data to be used as Promoter deems necessary in the purchase of the ticket and subsequent processing for the event. These may include, but not limited to, sharing of your personal data to authorised third parties such as government agencies, financial institutions, and vendor suppliers for the said event.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● The Ticket Holder voluntarily assumes all risks and danger incidental to the event whether occurring prior to, during or subsequent to the actual event, including any death, personal injury, loss, damage, or liability. Malaysia law shall govern the sale of all tickets and you agree to submit to the exclusive jurisdiction of the Malaysia Court.<br>",
+                    "en": "By purchasing the ticket, you (“Ticket Holder”) agree to be bound by the Terms and Conditions of sale specified herein and any other provision as may be specified from time to time by VShoppe (“Promoter”). The Promoter, their agents or employees, shall not be liable for any death, personal injury (unless caused by negligence of its agents and employees), loss, or damage however caused while in the venue nor are they liable for any complaints, claims, refunds, or exchange for any reason, including without limitation, cancellation or postponement of the event. Booking fees and handling fees shall not be refundable. Any refunds shall be made only at Promoter’s discretion.<br><br>Tickets are sold subject to the following conditions:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Once sale is completed, no refunds will be made except pursuant to event postponement or cancellation and this is subjected to the Promoter's discretion. Lost ticket/s will not be replaced or refunded.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Generally, tickets are non-transferable. However, if the purchase was made by mistake, believed to be done in good faith, the Promoter reserves the right for transfer. Ticket Holder may request to transfer it to the next party, subject to ticket availability. An additional administrative payment of USD 50 must be made by the Ticket Holder to initiate the transfer process. All transfer requests must be sent to <a href=\"mailto:v-regn@the-v.net\" style='color:white; text-decoration: underline white;'>v-regn@the-v.net</a>.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Entry will be refused if tickets have been found to be tampered, counterfeited, and/or not purchased from VShoppe or an official and authorized point of sale.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● The Promoter reserves the right, without refund or compensation, to refuse admission/evict any person(s) whose conduct is disorderly or inappropriate.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● The Promoter may add, withdraw, or substitute artistes and/or vary advertised programmes, event times, seating arrangements, audience capacity without prior notice.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● The Promoter may use the ticket holder’s image or likeness in any live or recorded video display, picture, publicity material or website.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;●	The Promoter may postpone, cancel, interrupt, or stop the event due to adverse weather, dangerous situations, or any other causes beyond reasonable control.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● The Ticket Holder agrees to submit to any searches for prohibited items including but not limited to weapons, controlled, dangerous and illegal substances.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Ticket Holder agrees for their personal data to be used as Promoter deems necessary in the purchase of the ticket and subsequent processing for the event. These may include, but not limited to, sharing of your personal data to authorised third parties such as government agencies, financial institutions, and vendor suppliers for the said event.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● The Ticket Holder voluntarily assumes all risks and danger incidental to the event whether occurring prior to, during or subsequent to the actual event, including any death, personal injury, loss, damage, or liability. Malaysia law shall govern the sale of all tickets, and you agree to submit to the exclusive jurisdiction of the Malaysia Court.<br>",
                     "ar": "",
                     "id": "",
                     "fr": "",
@@ -1095,7 +1189,7 @@ const vFaqData = {
                     "tr": ""
                 },
                 "a": {
-                    "en": "a. All participants are recommended to purchase travel insurance with a sum insured of at least <strong>USD 10,000</strong>.<br><br>b. Participants coming from African countries are required to apply for <strong>Yellow Fever Vaccination Certificates</strong> at least <strong>10 days</strong> prior to your departure to Malaysia.<br><br>c. If you require an invitation letter for your visa application, kindly fill out the form to submit your request: <a style=\"color:white; text-decoration: underline white; overflow-wrap: break-word;\" href=\"https://vconinvitation.the-v.net/ \">https://vconinvitation.the-v.net/</a> <br><br>d. Provide your flight details, departure, and arrival to <a href=\"mailto:v-regn@the-v.net\" style='color:white; text-decoration: underline white;'>v-regn@the-v.net</a> at least two (2) days prior to your departure.<br><br>e. Prepare your <strong>Malaysia Digital Arrival Card</strong>. Please ensure all the necessary information in the <strong>Malaysia Digital Arrival Card (MDAC)</strong> has been filled up within <strong>three (3) days</strong> prior to your departure: <a href=\"https://imigresen-online.imi.gov.my/mdac/main\" style='color:white; text-decoration: underline white;'>https://imigresen-online.imi.gov.my/mdac/main</a><br><br>f. A participant in need of medications should only bring <strong>enough for the duration of their stay</strong>, as per the <strong>prescription</strong> issued by their doctor.<br><br>g. All arriving travelers must declare dutiable and prohibited goods, as well as currencies or monetary instruments <strong>exceeding USD 10,000</strong>, using <strong>Customs Form No. 7</strong>, available at the RMCD counter. Form submission is required at the RMCD examination checkpoint. False declarations or failure to declare are offenses under Malaysian law.<br>",
+                    "en": "a. All participants are recommended to purchase travel insurance with a sum insured of at least <strong>USD 10,000</strong>.<br><br>b. Participants coming from African countries are required to apply for <strong>Yellow Fever Vaccination Certificates</strong> at least <strong>10 days</strong> prior to your departure to Malaysia.<br><br>c. If you require an invitation letter for your visa application, kindly fill out the form to submit your request: <a style=\"color:white; text-decoration: underline white; overflow-wrap: break-word;\" href=\"https://vconinvitation.the-v.net/\" target=\"_blank\" rel=\"noopener noreferrer \">https://vconinvitation.the-v.net/</a> <br><br>d. Provide your flight details, departure, and arrival to <strong><a href=\"mailto:v-regn@the-v.net\" style='color:white; text-decoration: underline white;'>v-regn@the-v.net</a></strong> at least <strong>two (2) days</strong> prior to your departure.<br><br>e. Prepare your <strong>Malaysia Digital Arrival Card</strong>. Please ensure all the necessary information in the <strong>Malaysia Digital Arrival Card (MDAC)</strong> has been filled out within <strong>three (3) days</strong> prior to your departure: <a href=\"https://imigresen-online.imi.gov.my/mdac/main\" style='color:white; text-decoration: underline white;'>https://imigresen-online.imi.gov.my/mdac/main</a><br><br>f. A participant in need of medications should only bring <strong>enough for the duration of their stay</strong>, as per the <strong>prescription</strong> issued by their doctor.<br><br>g. All arriving travelers must declare dutiable and prohibited goods, as well as currencies or monetary instruments <strong>exceeding USD 10,000</strong>, using <strong>Customs Form No. 7</strong>, available at the RMCD counter. Form submission is required at the RMCD examination checkpoint. False declarations or failure to declare are offenses under Malaysian law.<br>",
                     "ar": "",
                     "id": "",
                     "fr": "",
@@ -1113,7 +1207,7 @@ const vFaqData = {
                     "tr": ""
                 },
                 "a": {
-                    "en": "a. If you need to apply for a Malaysia visa, please make sure your passport is <strong>VALID</strong> for at least <strong>six (6) months</strong> from the date of travel.<br><br>b. Your passport must have a minimum of <strong>three (3) blank pages</strong>.<br><br>c. Apply for a <strong>Social Visa</strong> indicating your attendance to a convention.<br><br>d. <strong>Return Flight Ticket</strong>: Return dates must be in accordance with the permitted duration of stay.<br><br>e. <strong>Proof of funds</strong>: You should have at least <strong>USD 1,500</strong> cash on hand/bank account statement prepared upon your arrival.<br><br>f. Penang hotel booking confirmation<br>",
+                    "en": "a. If you need to apply for a Malaysia visa, please make sure your passport is <strong>VALID</strong> for at least <strong>six (6) months</strong> from the date of travel.<br><br>b. Your passport must have a minimum of <strong>three (3) blank pages</strong>.<br><br>c.	Take note that visa requirements vary by nationality, as determined by the Immigration Department of Malaysia.<br><br>d. Participants will enter the country under a <strong>Short-Term Social Visit Pass</strong>. For more information, refer to the official website: <a href='https://www.imi.gov.my/index.php/en/main-services/pass/visitor-pass/social-visit-pass/short-term-social-visit-pass/'>https://www.imi.gov.my/index.php/en/main-services/pass/visitor-pass/social-visit-pass/short-term-social-visit-pass/</a><br><br>e. <strong>Return Flight Ticket</strong>: Return dates must be in accordance with the permitted duration of stay. <br><br>f. <strong>Proof of funds</strong>: You should have at least <strong>USD 1,500</strong> cash on hand or a bank account statement prepared upon your arrival.<br><br>g. Penang hotel booking confirmation<br>",
                     "ar": "",
                     "id": "",
                     "fr": "",
@@ -1131,7 +1225,7 @@ const vFaqData = {
                     "tr": ""
                 },
                 "a": {
-                    "en": "a. A printed copy of your <strong>return flight ticket</strong> must be provided, with the return date in accordance with the permitted visa validity. <br><br>b. A printed copy of your <strong>Penang hotel booking confirmation</strong> will serve as proof of your accommodation in Penang throughout your stay in Malaysia.<br><br>c. A printed copy of your visa must be ready at hand for Immigration.<br><br>d. A printed copy of the invitation and/or confirmation letter sent to your email upon registration<br><br>e. A printed copy of <strong>Yellow Fever Vaccination Certificate</strong> is required by the Malaysia Immigration Department for a participant coming from African countries.<br><br>f. A copy of your <strong>Malaysia Digital Arrival Card (MDAC)</strong>.<br>",
+                    "en": "a. A printed copy of your <strong>return flight ticket</strong> must be provided, with the return date in accordance with the permitted visa validity. <br><br>b. A printed copy of your <strong>Penang hotel booking confirmation</strong> will serve as proof of your accommodation in Penang throughout your stay in Malaysia.<br><br>c. A printed copy of your visa must be ready at hand for Immigration.<br><br>d. A printed copy of the invitation and/or confirmation letter sent to your email upon registration<br><br>e. A printed copy of <strong>Yellow Fever Vaccination Certificate</strong> is required by the Immigration Department of Malaysia for a participant coming from African countries.<br><br>f. A copy of your <strong>Malaysia Digital Arrival Card (MDAC)</strong>.<br>",
                     "ar": "",
                     "id": "",
                     "fr": "",
@@ -1203,7 +1297,7 @@ const vFaqData = {
                     "tr": ""
                 },
                 "a": {
-                    "en": "a. Bring your own reusable water bottles, utensils, and bags. Single-use plastic is strictly <strong>prohibited</strong> within the premises of Setia SPICE Arena for V-Malaysia 2026.<br><br>b. Make sure you have enough to spend on food, drinks, transportation, V-Malaysia 2026 merchandise from the Limitless Store, souvenirs, etc. We recommend having your money in MYR.<br><br>c. Activate your debit card or local bank card for international transactions before traveling out of your country. AMEX cards are not accepted for purchases.<br><br>d. Pack clothes good for <strong>seven (7) days</strong>. Expect that the air-conditioning inside the arena would be extra cool so bring a jacket or shawl you can easily layer over your comfy clothes.<br>",
+                    "en": "a. Bring your own reusable water bottles, utensils, and bags. Single-use plastic is strictly <strong>prohibited</strong> within the premises of Setia SPICE Arena for V-CONVENTION 2026.<br><br>b. Make sure you have enough to spend on food, drinks, transportation, V-CONVENTION 2026 merchandise from the <strong>Limitless Store</strong>, souvenirs, etc. We recommend having your money in MYR.<br><br>c. Activate your debit card or local bank card for international transactions before traveling out of your country. AMEX cards are not accepted for purchases.<br><br>d. Pack clothes good for <strong>seven (7) days</strong>. Expect that the air-conditioning inside the arena would be extra cool so bring a jacket or shawl you can easily layer over your comfy clothes.<br>",
                     "ar": "",
                     "id": "",
                     "fr": "",
@@ -1239,7 +1333,7 @@ const vFaqData = {
                     "tr": ""
                 },
                 "a": {
-                    "en": "To purchase your V-KIDS & V-TEENS 2026 ticket, just go to <a href=\"https://vshoppe.vtube.net/promo/code/VKIDSTEENS26\" style='color:white; text-decoration: underline white;'>VShoppe</a> and input the code: <strong>VKIDSTEENS26</strong><br><br>&nbsp;&nbsp;&nbsp;<em>**NOTE: If you wish to purchase more than one (1) ticket, kindly email <a href=\"mailto:olivia.oscar@the-v.net\" style='color:white; text-decoration: underline white;'>olivia.oscar@the-v.net</a> with the subject: <strong>V-CONVENTION 2026 VKids VTeens Tickets – [add your IR ID]</strong>.</em><br><br>When purchasing your V-Kids & V-Teens tickets:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Prepare the Kid or Teen’s Passport<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Input the correct code on VShoppe.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•After successfully purchasing their tickets, make sure to bring a copy of your receipt and their confirmation letter during the registration day for verification.<br><br>During the Event:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. <u>Dress Code</u>: We recommend comfortable clothes suitable for five (5) days. Bring a jacket or shawl as the event area is air-conditioned.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. <u>Snacks and Lunch</u>: Light snacks and nutritious lunches will be provided during the event. If your child has any specific dietary requirements or allergies, please email us on or before <strong>no date yet</strong>.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. <u>Arrival and Departure</u>: Please ensure that your child arrives at V-KIDS & V-TEENS area before <strong>10:00 AM</strong>. The event is scheduled to conclude at <strong>6:00 PM</strong>, and parents/guardians are kindly requested to pick up their children promptly.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. <u>Verification</u>: Bring a copy of your receipt and this confirmation letter on the registration day.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. <u>Emergency Contact</u>: Should there be any emergency or urgent communication during the event, please contact <strong>Olivia</strong> at <strong>+6012 550 2357</strong>.<br><br>If you have any questions or concerns, please email Olivia at <a href=\"mailto:olivia.oscar@the-v.net\" style='color:white; text-decoration: underline white;'>olivia.oscar@the-v.net</a> with the email subject: <strong>V-CONVENTION 2026 VKids VTeens Tickets – [add your IR ID]</strong>.<br>",
+                    "en": "To purchase your V-KIDS & V-TEENS 2026 ticket, just go to <a href=\"https://vshoppe.vtube.net/promo/code/VKIDSTEENS26\" style='color:white; text-decoration: underline white;'>VShoppe</a> and input the code: <strong>VKIDSTEENS26</strong><br><br>&nbsp;&nbsp;&nbsp;<em>**NOTE: If you wish to purchase more than one (1) ticket, kindly email <a href=\"mailto:olivia.oscar@the-v.net\" style='color:white; text-decoration: underline white;'>olivia.oscar@the-v.net</a> with the subject: <strong>V-CONVENTION 2026 VKids VTeens Tickets – [add your IR ID]</strong>.</em><br><br>When purchasing your V-KIDS & V-TEENS tickets:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Prepare the Kid or Teen’s Passport<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Input the correct code on VShoppe.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•After successfully purchasing their tickets, make sure to bring a copy of your receipt and their confirmation letter during the registration day for verification.<br><br>During the Event:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. <u>Dress Code</u>: We recommend comfortable clothes suitable for five (5) days. Bring a jacket or shawl as the event area is air-conditioned.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. <u>Snacks and Lunch</u>: Light snacks and nutritious lunches will be provided during the event. If your child has any specific dietary requirements or allergies, please email us on or before <strong>no date yet</strong>.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. <u>Arrival and Departure</u>: Please ensure that your child arrives at V-KIDS & V-TEENS area before <strong>10:00 AM</strong>. The event is scheduled to conclude at <strong>6:00 PM</strong>, and parents/guardians are kindly requested to pick up their children promptly.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. <u>Verification</u>: Bring a copy of your receipt and this confirmation letter on the registration day.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. <u>Emergency Contact</u>: Should there be any emergency or urgent communication during the event, please contact <strong>Olivia</strong> at <strong>+6012 550 2357</strong>.<br><br>If you have any questions or concerns, please email Olivia at <a href=\"mailto:olivia.oscar@the-v.net\" style='color:white; text-decoration: underline white;'>olivia.oscar@the-v.net</a> with the email subject: <strong>V-CONVENTION 2026 VKids VTeens Tickets – [add your IR ID]</strong>.<br>",
                     "ar": "",
                     "id": "",
                     "fr": "",
@@ -1253,28 +1347,32 @@ const vFaqData = {
 
 function renderVFAQs(lang) {
     const container = document.getElementById('faq-accordion');
+    // Ensure we are pulling the right array
     const faqItems = vFaqData['en'].questions;
 
     if (!container) return;
 
-    container.innerHTML = faqItems.map((item, index) => {
+    let faqHTML = '';
+
+    faqItems.forEach((item, index) => {
+        // Get the translated strings
         const question = item.q[lang] || item.q['en'];
         const answer = item.a[lang] || item.a['en'];
 
-        return `
+        faqHTML += `
             <div class="faq-item" id="faq-item-${index}">
                 <button class="faq-question" aria-expanded="false" onclick="toggleFaq(${index})">
                     <span>${question}</span>
                     <span class="faq-icon">+</span>
                 </button>
                 <div class="faq-answer">
-                    <div class="faq-answer-content">
-                        <p>${answer}</p>
-                    </div>
+                    <div class="faq-answer-content">${answer}</div>
                 </div>
             </div>
         `;
-    }).join('');
+    });
+
+    container.innerHTML = faqHTML;
 }
 
 function toggleFaq(index) {
@@ -1698,7 +1796,7 @@ function changeLanguage(lang) {
 }
 
 const footerData = {
-    email: "thev@vtube.net",
+    email: "Email us: thev@vtube.net",
     facebook: "https://www.facebook.com/share/18Fvu8mmbE/",
     twitter: "https://x.com/thev_official",
     instagram: "https://www.instagram.com/thev_official/"

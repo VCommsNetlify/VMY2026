@@ -317,10 +317,10 @@
     <div class="footer-container">
         <div class="footer-col">
             <div class="footer-brand">
-                <img class="logo-placeholder" src="assets/images/06092026 v-convention 2026 logo.webp"> <h3>V-MALAYSIA 2026</h3>
+                <img class="logo-placeholder" src="assets/images/06092026 v-convention 2026 logo.webp"> <h3>V-CONVENTION 2026</h3>
             </div>
-            <h4 data-i18n="footer.newsletter.title">SUBSCRIBE TO THE V-MALAYSIA 2026 NEWSLETTER <u>FOR FREE</u>!</h4>
-            <p class="footer-about" style="margin-bottom: 15px;" data-i18n="footer.newsletter.copy">Get the latest updates on V-MALAYSIA 2026.</p>
+            <h4 data-i18n="footer.newsletter.title">SUBSCRIBE TO THE V-CONVENTION 2026 NEWSLETTER <u>FOR FREE</u>!</h4>
+            <p class="footer-about" style="margin-bottom: 15px;" data-i18n="footer.newsletter.copy">Get the latest updates on V-CONVENTION 2026.</p>
             
             <form id="newsletterForm" class="footer-newsletter">
                 <input type="email" name="Email" data-i18n-placeholder="footer.newsletter.placeholder" placeholder="Your Email Address" required>
@@ -364,12 +364,12 @@
                     <i class="fab fa-x-twitter"></i>
                 </a>
             </div>
-            <p class="footer-contact">support@vtube.net</p>
+            <p class="footer-contact"><a href="https://the-v.net/en/">the-v.net</a></p>
         </div>
     </div>
     
     <div class="footer-bottom">
-        <p>&copy; 2026 V-MALAYSIA. All Rights Reserved.</p>
+        <p>&copy; 2026 V-CONVENTION. All Rights Reserved.</p>
     </div>
 </footer>
 
@@ -399,46 +399,69 @@
 
 <script src="script.js"></script>
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const form = document.getElementById('newsletterForm');
-        const successMessage = document.getElementById('successMessage');
-        const duplicateMessage = document.getElementById('duplicateMessage'); // New!
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('newsletterForm');
+    const successMsg = document.getElementById('successMessage');
+    const duplicateMsg = document.getElementById('duplicateMessage');
 
-        if (form) {
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbxgaFVh2TNmpEF8juCXeuej7A8CCWq_fSjHbg51NZEGRueS3eGJurh42e0VWu1B_3P4/exec';
+    if (form) {
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxgaFVh2TNmpEF8juCXeuej7A8CCWq_fSjHbg51NZEGRueS3eGJurh42e0VWu1B_3P4/exec';
 
-            form.addEventListener('submit', e => {
-                e.preventDefault(); 
+        // Custom Helper to get text directly from your translations object
+        const getManualTranslation = (key, fallback) => {
+            try {
+                // 1. Figure out current language (check <html> tag or default to 'en')
+                const lang = document.documentElement.lang || 'en';
                 
-                const btn = form.querySelector('button');
-                const originalText = btn.innerHTML;
-                btn.innerHTML = 'Sending...';
+                // 2. Look up the key in your translations constant
+                if (translations && translations[lang] && translations[lang][key]) {
+                    return translations[lang][key];
+                }
+                
+                // 3. Fallback to English if the current lang doesn't have it
+                if (translations && translations['en'] && translations['en'][key]) {
+                    return translations['en'][key];
+                }
+            } catch (e) {
+                console.error("Translation lookup failed", e);
+            }
+            return fallback;
+        };
 
-                // Hide old messages when they try again
-                successMessage.style.display = 'none';
-                duplicateMessage.style.display = 'none';
+        form.addEventListener('submit', e => {
+            e.preventDefault(); 
+            
+            const btn = form.querySelector('button');
+            const originalText = getManualTranslation('footer.button', 'JOIN');
+            const sendingText = getManualTranslation('footer.newsletter.sending', 'Sending...');
 
-                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                    .then(response => response.text()) // <-- Tells JS to read Google's text response
-                    .then(text => {
-                        if (text === "Duplicate") {
-                            // What happens if it's a duplicate
-                            duplicateMessage.style.display = 'block';
-                            btn.innerHTML = originalText; // Reset button so they can try a different email
-                        } else {
-                            // What happens if it's successful
-                            form.style.display = 'none'; 
-                            successMessage.style.display = 'block'; 
-                        }
-                    })
-                    .catch(error => {
-                        console.error('Error!', error.message);
+            // Change button immediately
+            btn.innerHTML = sendingText;
+
+            successMsg.style.display = 'none';
+            duplicateMsg.style.display = 'none';
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => response.text())
+                .then(text => {
+                    const result = text.trim();
+                    if (result === "Duplicate") {
+                        duplicateMsg.innerHTML = getManualTranslation('footer.newsletter.duplicate', 'This email is already registered!');
+                        duplicateMsg.style.display = 'block';
                         btn.innerHTML = originalText; 
-                        alert("Something went wrong. Please try again.");
-                    });
-            });
-        }
-    });
+                    } else {
+                        form.style.display = 'none'; 
+                        successMsg.innerHTML = getManualTranslation('footer.newsletter.success', 'Thanks for joining!');
+                        successMsg.style.display = 'block'; 
+                    }
+                })
+                .catch(error => {
+                    console.error('Submission Error:', error);
+                    btn.innerHTML = originalText; 
+                });
+        });
+    }
+});
 
 document.getElementById('confession-form').addEventListener('submit', function(e) {
     e.preventDefault();
