@@ -852,6 +852,7 @@ window.applyFilters = function() {
 
 function renderFilteredPlaylist(data) {
     const container = document.querySelector('.playlist-scroll');
+    // Important: Keep language detection consistent
     const lang = localStorage.getItem('selectedLanguage') || 'en';
     
     if (!container) return;
@@ -859,11 +860,11 @@ function renderFilteredPlaylist(data) {
     container.innerHTML = data.map((story, index) => {
         const displayTitle = story.title[lang] || story.title['en'];
         
-        // Instead of passing the whole object as a string, we pass the INDEX
         return `
             <div class="story-item" onclick="updatePreviewByIndex(${index})">
                 <div class="thumb-wrap">
                     <img src="${story.thumbnail}" alt="${displayTitle}">
+                    ${story.type === 'video' ? '<div class="mini-play-icon">▶</div>' : ''}
                 </div>
                 <div class="story-meta">
                     <span class="story-title">${displayTitle}</span>
@@ -900,6 +901,7 @@ window.updatePreviewByObject = function(storyStr) {
 // MASTER FUNCTION: Updates the stage content
 window.updatePreview = function(story) {
     currentStory = story;
+    // Use your logic to get the current language
     const lang = localStorage.getItem('selectedLanguage') || 'en';
     
     const titleEl = document.getElementById('stageTitle');
@@ -916,31 +918,52 @@ window.updatePreview = function(story) {
     
     if (stageImg) stageImg.src = story.thumbnail;
     
-    const playText = translations[lang]['stories.play_btn'] || 'PLAY VIDEO';
-    const readText = translations[lang]['vkids.read'] || 'READ ARTICLE';
+    // --- TRANSLATION FIX FOR BUTTONS ---
+    // Use your manual translation helper to get button text
+
+    window.getManualTranslation = function(key, fallback) {
+    try {
+        const lang = localStorage.getItem('selectedLanguage') || 'en';
+        if (translations && translations[lang] && translations[lang][key]) {
+            return translations[lang][key];
+        }
+        if (translations && translations['en'] && translations['en'][key]) {
+            return translations['en'][key];
+        }
+    } catch (e) {
+        console.error("Translation lookup failed", e);
+    }
+    return fallback;
+};
+
+    const playText = getManualTranslation('stories.play_btn', 'PLAY VIDEO');
+    const readText = getManualTranslation('stories.read_btn', 'READ ARTICLE');
+    
     btn.innerHTML = (story.type === 'video') ? `▶ ${playText}` : `📖 ${readText}`;
     
-    // THE FIX: Stop player and clear tracks BEFORE hiding it
+    // VideoJS Cleanup (Existing logic)
     const myPlayer = videojs.getPlayer('newsBrightcovePlayer');
     if (myPlayer) {
         myPlayer.pause();
-        // Manually remove all tracks to prevent the 'kind' error
         const tracks = myPlayer.remoteTextTracks();
         if (tracks) {
             let i = tracks.length;
-            while (i--) {
-                myPlayer.removeRemoteTextTrack(tracks[i]);
-            }
+            while (i--) { myPlayer.removeRemoteTextTrack(tracks[i]); }
         }
     }
 
     if (playerWrap) playerWrap.style.display = 'none';
     if (stageImg) stageImg.style.display = 'block';
+    
+    // Run your font size adjuster
+    adjustTitleSize();
 };
 
 window.launchContent = function() {
     if (!currentStory) return;
     
+    const lang = localStorage.getItem('selectedLanguage') || 'en';
+
     if (currentStory.type === 'video') {
         const playerWrap = document.getElementById('newsPlayerWrap');
         const stageImg = document.getElementById('stageImage');
@@ -952,13 +975,8 @@ window.launchContent = function() {
         
         if (myPlayer) {
             myPlayer.catalog.getVideo(currentStory.id, function(error, video) {
-                if (error) {
-                    console.error("Catalog Error:", error);
-                    return;
-                }
+                if (error) return;
                 myPlayer.catalog.load(video);
-                
-                // Use 'one' to ensure this only fires once per load
                 myPlayer.one('loadedmetadata', function() {
                     myPlayer.play().catch(e => console.warn("Auto-play blocked"));
                     myPlayer.trigger('resize');
@@ -966,7 +984,10 @@ window.launchContent = function() {
             });
         }
     } else if (currentStory.link) {
-        window.open(currentStory.link, '_blank');
+        // --- DYNAMIC LINK FIX ---
+        // Replace the placeholder {{lang}} with the current language (e.g., 'ar')
+        const finalLink = currentStory.link.replace('{{lang}}', lang);
+        window.open(finalLink, '_blank');
     }
 };
 
@@ -1796,7 +1817,7 @@ function changeLanguage(lang) {
 }
 
 const footerData = {
-    email: "Email us: thev@vtube.net",
+    email: "visit <a href='https://the-v.net/'>The V Website</a>",
     facebook: "https://www.facebook.com/share/18Fvu8mmbE/",
     twitter: "https://x.com/thev_official",
     instagram: "https://www.instagram.com/thev_official/"
@@ -1840,6 +1861,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // 4. Load external JSON data
     loadStories();
 });
+
+// Function to populate the footer link
+function renderFooterLinks() {
+    const emailEl = document.getElementById('footer-email-link'); // Make sure this ID exists in your HTML
+    if (emailEl) {
+        // IMPORTANT: Use .innerHTML to make the <a> tag work!
+        emailEl.innerHTML = footerData.email; 
+    }
+}
+
+// Call it when the page loads
+renderFooterLinks();
 
 // The Throttle Helper
 function throttle(func, limit) {

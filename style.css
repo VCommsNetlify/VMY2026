@@ -1804,6 +1804,29 @@ header {
     transform: scale(1.02); /* Subtle zoom on the map */
 }
 
+/* This targets the Arabic version specifically */
+[dir="rtl"] .faq-question {
+    display: flex !important;
+    flex-direction: row-reverse !important; /* Forces the swap */
+    justify-content: space-between !important;
+    text-align: right !important;
+    padding: 15px 20px !important;
+}
+
+/* Ensure the text is on the right */
+[dir="rtl"] .faq-question span:first-child {
+    flex: 1;
+    order: 2; /* Puts text on the right */
+    margin-right: 10px;
+}
+
+/* Ensure the + is on the left */
+[dir="rtl"] .faq-question span.faq-icon {
+    order: 1; /* Puts icon on the left */
+    margin-right: 0;
+    margin-left: 10px;
+}
+
 /* Mobile Adjustments */
 @media (max-width: 768px) {
     .v-venue-title { font-size: 1.8rem; padding: 10px 15px; }

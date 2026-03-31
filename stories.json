@@ -113,7 +113,7 @@
     "thumbnail": "assets/images/09122025-v-malaysia-2025-registration-day-today-we-rise (1).webp",
     "speaker": "Wrap up",
     "day": "Registration Day",
-    "link": "https://the-v.net/en/news?id=09122025-v-malaysia-2025-registration-day-today-we-rise"
+    "link": "https://the-v.net/{{lang}}/news?id=09122025-v-malaysia-2025-registration-day-today-we-rise"
   },
   {
     "id": "6391119540112",
@@ -208,10 +208,10 @@
     "day": "Day 1"
   },
   {
-    "id": "WRAP_01",
+    "id": "WRAP_02",
     "type": "article",
     "title": {
-      "en": "Grand Finale Wrap-Up",
+      "en": "Grand Finale Wrap-Up -2",
       "ar": "ملخص الحفل الختامي الكبير",
       "id": "Rangkuman Penutupan Besar",
       "fr": "Résumé de la Grande Finale",
@@ -229,6 +229,6 @@
     "thumbnail": "assets/images/09122025-v-malaysia-2025-registration-day-today-we-rise (1).webp",
     "speaker": "Wrap up",
     "day": "Registration Day",
-    "link": "https://the-v.net/en/news?id=09122025-v-malaysia-2025-registration-day-today-we-rise"
+    "link": "https://the-v.net/{{lang}}/news?id=09122025-v-malaysia-2025-registration-day-today-we-rise"
   }
 ]
