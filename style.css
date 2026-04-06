@@ -736,7 +736,7 @@ header {
         padding: 0 15px !important; 
         
         margin-top: 15px !important;
-        margin-bottom: 25px !important; /* Clean gap before the Play button */
+        /* margin-bottom: 25px !important; Clean gap before the Play button */
         
         /* Ensure no old "View More" limits are stuck here */
         max-height: none !important;
