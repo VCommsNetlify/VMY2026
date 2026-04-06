@@ -16,7 +16,7 @@ b a {
 
 .faq-answer-content strong, 
 .faq-answer-content b {
-    font-weight: 800 !important; /* Higher number = bolder */
+    font-weight: 800 !important;
     display: inline;
 }
 
@@ -63,22 +63,16 @@ header {
 }
 
 .vcon-tag {
-    /* Fonts and Color */
+
     font-family: 'Apotek ExtraCond', sans-serif !important;
     color: #d1ff6c !important; 
-    
-    /* THE GRADIENT BACKGROUND: Deep dark red on left -> Bright red on right */
     background: linear-gradient(to right, #4d0000 0%, #4d0000 30%, #ff0000 80%);
-    
-    /* Layout & Box styling (essential for the look in the screenshot) */
     display: inline-block;
     padding: 2px 12px;
     border-radius: 4px;
     line-height: 1.2;
     vertical-align: middle;
-    margin-top: 5px; /* Added slight top margin to better align with the baseline */
-
-    /* Subtler text shadow as seen in the new image to keep letters crisp against bright red */
+    margin-top: 5px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); 
 }
 
@@ -201,31 +195,82 @@ header {
     letter-spacing: 1px;
 }
 
-/* This container handles the side-by-side Video and Playlist */
-.stories-container { 
-    display: flex; 
-    flex-direction: row;
-    gap: 20px; 
-    width: 100%; 
-    align-items: flex-start;
+/* 1. The Container: Force the stretch */
+.stories-container {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: stretch !important; /* This forces equal height */
+    gap: 20px;
+    width: 100%;
 }
 
-.content-stage { 
-    flex: 7; 
-    background: #fff; 
-    border-radius: 8px; 
-    overflow: hidden; 
-    display: flex;
-    flex-direction: column;
+/* 2. The Left Stage (Video + Info Bar) */
+#contentStage {
+    flex: 0 0 60% !important; /* Keeps your width lock */
+    max-width: 60% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    /* Remove any fixed heights here */
+    height: auto !important; 
 }
 
-#stageDesc {
-    display: -webkit-box;
-    -webkit-line-clamp: 2; 
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    max-height: 50px; 
+/* 1. FIND THIS IN YOUR CSS AND REMOVE THE PIXEL HEIGHT */
+.stories-playlist {
+    /* DELETE OR COMMENT OUT THESE LINES: */
+    /* max-height: 560px !important; */
+    /* height: 500px; */
+
+    /* ADD THESE INSTEAD: */
+    height: auto !important; 
+    align-self: stretch !important; 
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    background-color: #F4F3ED !important;
+}
+
+/* 2. ENSURE THE SCROLL AREA CAN EXPAND */
+.playlist-scroll {
+    flex-grow: 1 !important; 
+    min-height: 0 !important;
+    overflow-y: auto !important;
+}
+
+/* 3. THE PARENT CONTAINER MUST STRETCH */
+.stories-container {
+    display: flex !important;
+    align-items: stretch !important; /* This is the "Glue" */
+    height: auto !important;
+}
+
+/* 5. Cleanup for the Info Bar */
+.stage-info-bar {
+    margin-top: auto; /* Pushes the bar to the bottom of the stage div */
+    margin-bottom: 0 !important;
+}
+
+/* 4. PREVENT TEXT FROM PUSHING THE BOX */
+#stageTitle, #stageDesc {
+    width: 100%;
+    white-space: normal !important; /* Forces wrap to next line */
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+}
+
+/* 5. MOBILE FIX (Keep this separate) */
+@media (max-width: 1024px) {
+    .stories-container {
+        flex-direction: column !important;
+    }
+    .content-stage {
+        flex: 0 0 auto !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    .stories-playlist {
+        max-height: 460px !important; /* <--- THIS WILL BREAK THE STRETCH */
+    }
 }
 
 
@@ -1423,14 +1468,14 @@ header {
 }
 
 /* CONFESSION SECTION */
-
 .confession-section {
     width: 100%;
     min-height: 80vh;
-    padding: 60px 20px;
-    background-image: url('assets/images/form-bg.png'); /* Your purple texture */
+    padding: 60px 20px; 
+    background-image: url('assets/images/form-bg.jpg');
     background-size: cover;
-    background-position: bottom;
+    /* Anchors background to bottom so the "Dreamer" text stays visible */
+    background-position: bottom center; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1439,113 +1484,103 @@ header {
 .confession-container {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr; 
-    gap: 60px; 
-    max-width: 1200px; /* Increased max-width */
+    gap: 40px; 
+    max-width: 1200px;
     width: 95%;
-    align-items: flex-start;
-    padding: 40px 0;
-    margin-top: -100px;
-
+    align-items: center; 
+    margin: 0 auto;
 }
 
-.confession-section {
-    padding-top: 120px; 
-    background-position: bottom center;
-}
-
-/* Header Text Styling */
 .confession-header {
-    color: #ffffff;
-    text-align: left;
+    position: relative;
+    top: -80px; /* Moves the header up 80px relative to its original spot */
 }
+
 .confession-header h2 {
     font-family: 'Apotek ExtraCond', sans-serif !important;
-    font-size: 5.5rem; 
+    font-size: clamp(3.5rem, 6vw, 5.5rem);
     color: #d1ff6c;
     line-height: 0.85; 
     letter-spacing: -1px;
-    margin-bottom: 25px;
-}
-
-.main-text {
-    font-size: 2.2rem; 
-    font-weight: 800;
-    line-height: 1.2;
     margin-bottom: 20px;
-    color: #ffffff;
 }
 
-.lime-text {
-    color: #d1ff6c;
-}
+.main-text { font-size: 2.2rem; font-weight: 800; color: #ffffff; margin-bottom: 15px; }
+.sub-text { font-size: 1.3rem; opacity: 0.95; color: #ffffff; }
 
-.sub-text {
-    font-size: 1.6rem;
-    line-height: 1.4;
-    opacity: 0.95;
-    margin-bottom: 40px; 
-}
-
-/* The White Form Card */
+/* THE WHITE FORM CARD */
 .confession-white-card {
-    background: #f1ecf7; /* Very light purple/grey like the image */
+    background: #f1ecf7; 
     padding: 40px;
     border-radius: 15px;
     box-shadow: 10px 10px 30px rgba(0,0,0,0.3);
 }
 
 .confession-white-card label {
+    display: block;
     color: #352288;
     font-weight: bold;
     font-size: 0.9rem;
+    margin-bottom: 5px;
 }
 
 .confession-white-card input, 
 .confession-white-card textarea {
-    background: transparent;
+    background: #ffffff;
     border: 1px solid #ccc;
     border-radius: 8px;
-    margin-top: 5px;
+    margin-bottom: 20px;
     width: 100%;
-    padding: 10px;
+    padding: 12px;
+    box-sizing: border-box;
 }
 
-/* The Lime Submit Button */
 .confession-submit-btn {
     background-color: #d1ff6c;
     color: #17043d;
     border-radius: 8px;
     border: none;
-    padding: 10px 30px;
-    font-weight: bold;
+    padding: 15px 35px;
+    font-weight: 900;
+    text-transform: uppercase;
     cursor: pointer;
-    box-shadow: 0 4px 0 #9cbd4e; /* Bottom shadow for "3D" look */
+    box-shadow: 0 4px 0 #9cbd4e; 
+    width: 100%;
 }
 
-@media (max-width: 1100px) {
-    .confession-container {
-        grid-template-columns: 1fr; /* Stack on smaller screens */
-        gap: 40px;
-    }
-    
-    .confession-header h2 {
-        font-size: 4rem;
-    }
-}
+/* =========================================
+   MOBILE SPACING ADJUSTMENT
+========================================= */
 
-/* Mobile Responsiveness */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
+    .confession-section {
+        /* Keep top padding reasonable, but BOOST bottom padding */
+        /* This creates the gap for the background text to show through */
+        padding-top: 40px !important;
+        padding-bottom: 130px !important; 
+        
+        /* Ensures the background stays put at the bottom */
+        background-position: bottom center;
+    }
+
+    .confession-header{
+        top: 0px;
+    }
+
     .confession-container {
-        grid-template-columns: 1fr; /* Stack vertically */
+        grid-template-columns: 1fr;
         text-align: center;
+        gap: 20px;
     }
+
     
-    .confession-header {
-        text-align: center;
-    }
-    
+
     .confession-header h2 {
-        font-size: 3.5rem;
+        font-size: 3rem;
+    }
+
+    .confession-white-card {
+        padding: 25px;
     }
 }
 
@@ -2645,6 +2680,140 @@ html[dir="rtl"] #v-kids .v-gold-title {
 [dir="rtl"] .footer-about {
     text-align: right;
 }
+
+/* 1. Tell the container to flow from right to left */
+[dir="rtl"] #vkids-list, 
+[dir="rtl"] .vkids-grid {
+    direction: rtl !important;
+    /* Do NOT add display: flex here if it's already a grid */
+    text-align: right !important;
+}
+
+/* 2. Fix the individual card content WITHOUT breaking width */
+[dir="rtl"] .vkids-card {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* 3. This is the "Magic" line: It pushes text to the right 
+      without changing the display mode */
+[dir="rtl"] .vkids-text-content,
+[dir="rtl"] .vkids-card-title,
+[dir="rtl"] .vkids-card-desc {
+    text-align: right !important;
+    margin-right: 0 !important;
+    margin-left: auto !important;
+    display: block !important; 
+    width: auto !important; /* Prevents the 100% stretch */
+}
+
+[dir="rtl"] .vkids-play-btn {
+    display: inline-flex !important;
+    flex-direction: row-reverse !important; 
+    gap: 8px;
+    align-items: center;
+}
+
+/* Flip the arrow icon specifically if it's an <i> tag or character */
+[dir="rtl"] .vkids-play-btn span, 
+[dir="rtl"] .vkids-play-btn i {
+    transform: scaleX(-1); 
+}
+
+/* Ensure the text inside the card aligns right */
+[dir="rtl"] .vkids-content {
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+/* Fix the title and description specifically */
+[dir="rtl"] .vkids-content h3, 
+[dir="rtl"] .vkids-content p {
+    text-align: right !important;
+    margin-right: 0 !important;
+    margin-left: auto !important;
+}
+
+/* Fix the button icon and text order for Arabic */
+[dir="rtl"] .v-btn-gold {
+    display: inline-flex !important;
+    flex-direction: row-reverse !important; /* This swaps the icon and text position */
+    align-items: center;
+    gap: 10px; /* Gives space between the triangle and the words */
+}
+
+/* Optional: Mirror the icon if you want it to point 'into' the layout */
+[dir="rtl"] .v-btn-gold::before,
+[dir="rtl"] .v-btn-gold i {
+    transform: scaleX(-1);
+}
+
+/* Flip the play/read icon so it points the right way */
+[dir="rtl"] .v-btn-gold span, 
+[dir="rtl"] .v-btn-gold i {
+    transform: scaleX(-1);
+}
+
+/* This targets the button containing the text icon */
+[dir="rtl"] .v-btn-gold {
+    display: inline-flex !important;
+    flex-direction: row-reverse !important; /* Swaps [Icon][Text] to [Text][Icon] */
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    direction: ltr !important; /* Forces the text character to point correctly */
+    unicode-bidi: isolate; /* Prevents Arabic context from flipping the symbol */
+}
+
+
+/* Target the story rows to swap image and text positions */
+[dir="rtl"] .story-item, 
+[dir="rtl"] .featured-stories-list-item {
+    display: flex !important;
+    flex-direction: row !important; /* Starts from right in RTL */
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+/* Ensure the text container fills the space and aligns right */
+[dir="rtl"] .story-meta,
+[dir="rtl"] .story-content-wrapper {
+    flex: 1;
+    text-align: right !important;
+    padding-right: 20px; /* Gap from the image on the right */
+    padding-left: 0;
+}
+
+[dir="rtl"] .story-title,
+[dir="rtl"] .story-subtitle,
+[dir="rtl"] .story-details {
+    text-align: right !important;
+    display: block;
+    width: 100%;
+}
+
+[dir="rtl"] .filter-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 15px;
+}
+
+[dir="rtl"] .filter-select-button {
+    direction: rtl !important;
+    text-align: right !important;
+    padding-right: 15px;
+    padding-left: 35px; /* Space for arrow on the left */
+}
+
+/* Move the dropdown arrow to the left */
+[dir="rtl"] .filter-select-button::after {
+    left: 15px;
+    right: auto;
+}
+
+
+
 
 /* Rescue the Brightcove icons from being forced into Times New Roman */
 .video-js .vjs-icon-placeholder::before,
