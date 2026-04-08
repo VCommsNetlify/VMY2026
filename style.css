@@ -736,7 +736,7 @@ header {
         padding: 0 15px !important; 
         
         margin-top: 15px !important;
-        /* margin-bottom: 25px !important; Clean gap before the Play button */
+        margin-bottom: 25px !important; /* Clean gap before the Play button */
         
         /* Ensure no old "View More" limits are stuck here */
         max-height: none !important;
@@ -790,6 +790,53 @@ header {
         z-index: 10;
     }
     
+}
+
+@media (max-width: 767px) {
+    /* 1. Force the container to stop expanding */
+    .stage-info-bar {
+        display: block !important; /* Switch from flex to block to stack naturally */
+        height: auto !important; 
+        min-height: 0 !important;
+        padding: 20px 15px !important;
+        text-align: center;
+    }
+
+    /* 2. Tighten text margins */
+    .text-group {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+
+    #stageDesc {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    /* 3. Fix the button overlap */
+    .button-group {
+        margin-top: 20px !important;
+        position: relative !important;
+        display: block !important;
+        width: 100%;
+        /* Remove any absolute positioning that might be inherited */
+        bottom: auto !important; 
+        left: auto !important;
+        transform: none !important;
+    }
+
+    #mainActionButton {
+        position: relative !important;
+        display: inline-block !important;
+        width: 80% !important; /* Make it look like a mobile button */
+        margin: 0 auto !important;
+    }
+
+    /* 4. Ensure the White Card section stays below the button */
+    .featured-stories-section {
+        margin-top: 0 !important;
+        clear: both;
+    }
 }
 
 /* --- 6. HERO SECTION --- */
@@ -1755,6 +1802,21 @@ header {
 [dir="rtl"] .faq-question {
     text-align: right;
     flex-direction: row-reverse;
+}
+
+/* Fix for the FAQ/T&C Stretching and Direction */
+[dir="rtl"] .v-faq-list {
+    text-align: justify;
+    text-align-last: right; /* Snaps the last line to the right */
+    direction: rtl !important;
+    unicode-bidi: isolate; /* Helps keep parentheses in the right spot */
+}
+
+/* Ensure no extra spacing is added between Arabic letters */
+[dir="rtl"] .v-faq-list p, 
+[dir="rtl"] #faq-accordion {
+    letter-spacing: 0 !important;
+    word-spacing: normal !important;
 }
 
 /* VENUE MAP SECTION */
