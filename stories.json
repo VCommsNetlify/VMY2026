@@ -19,9 +19,47 @@
       "ru": "ЧТО ВЫ ГОТОВЫ СДЕЛАТЬ РАДИ СВОИХ МЕЧТАНИЙ? ПРИСПОСОБЛЯЙТЕСЬ, ТРАНСФОРМИРУЙТЕСЬ, РЕФОРМИРУЙТЕСЬ И ДЕЙСТВУЙТЕ, чтобы проложить себе путь к невероятному будущему.",
       "tr": "HAYALLERİNİZ İÇİN NELER YAPMAYA HAZIRSINIZ? İnanılmaz bir geleceğe giden yolda; CONFORM, TRANSFORM, REFORM ve PERFORM ederek ilerleyin."
     },
-    "thumbnail": "assets/video-article/03182026-conform-transform-reform-perform-at-v-convention-2026-this-june.jpg",
+    "thumbnail": {
+      "en": "assets/video-article/03182026-conform-transform-reform-perform-at-v-convention-2026-this-june.jpg",
+      "ar": "assets/video-article/03182026-conform-transform-reform-perform-at-v-convention-2026-this-june.jpg",
+      "id": "assets/video-article/03182026-conform-transform-reform-perform-at-v-convention-2026-this-june.jpg",
+      "fr": "assets/video-article/03182026-conform-transform-reform-perform-at-v-convention-2026-this-june.jpg",
+      "ru": "assets/video-article/03182026-conform-transform-reform-perform-at-v-convention-2026-this-june.jpg",
+      "tr": "assets/video-article/03182026-conform-transform-reform-perform-at-v-convention-2026-this-june.jpg"
+    },
     "speaker": "Teasers",
     "day": "all"
+  },
+  {
+    "id": "article#3",
+    "type": "article",
+    "title": {
+      "en": "Serve Above Self as InService at V-Convention 2026 this June!",
+      "ar": "الخدمة بما يتجاوز الذات كـ InService في V-Convention 2026 في شهر يونيو القادم!",
+      "id": "Melayani di Atas Kepentingan Diri Sendiri sebagai InService di V-Convention 2026 bulan Juni ini!",
+      "fr": "Servez les autres en tant qu'InService lors de la V-Convention 2026 en juin prochain !",
+      "ru": "Служите выше себя в качестве InService на V-Convention 2026 в июне этого года!",
+      "tr": "Haziran ayında gerçekleşecek V-Convention 2026’da InService Olarak Kendinden Önce Hizmet Et!"
+    },
+    "description": {
+      "en": "Applications are now open!",
+      "ar": "باب التقديم مفتوح الآن!",
+      "id": "Pendaftaran telah dibuka!",
+      "fr": "Les candidatures sont d&eacute;sormais ouvertes !",
+      "ru": "Прием заявок открыт!",
+      "tr": "Başvurular artık a&ccedil;ık!"
+    },
+    "thumbnail": {
+      "en": "assets/video-article/04102026-serve-above-self-as-inservice-at-v-convention-2026-this-june.jpg",
+      "ar": "assets/video-article/04102026-serve-above-self-as-inservice-at-v-convention-2026-this-june-ar.jpg",
+      "id": "assets/video-article/04102026-serve-above-self-as-inservice-at-v-convention-2026-this-june-id-1.jpg",
+      "fr": "assets/video-article/04102026-serve-above-self-as-inservice-at-v-convention-2026-this-june-fr.jpg",
+      "ru": "assets/video-article/04102026-serve-above-self-as-inservice-at-v-convention-2026-this-june-ru.jpg",
+      "tr": "assets/video-article/04102026-serve-above-self-as-inservice-at-v-convention-2026-this-june-tr.jpg"
+    },
+    "speaker": "Teasers",
+    "day": "all",
+    "link": "https://the-v.net/{{lang}}/news?id=04102026-serve-above-self-as-inservice-at-v-convention-2026-this-june"
   },
   {
     "id": "article#2",
@@ -42,7 +80,14 @@
       "ru": "ЧТО ВЫ ГОТОВЫ СДЕЛАТЬ РАДИ СВОИХ МЕЧТАНИЙ? ПРИСПОСОБЛЯЙТЕСЬ, ТРАНСФОРМИРУЙТЕСЬ, РЕФОРМИРУЙТЕСЬ И ДЕЙСТВУЙТЕ, чтобы проложить себе путь к невероятному будущему.",
       "tr": "HAYALLERİNİZ İÇİN NELER YAPMAYA HAZIRSINIZ? İnanılmaz bir geleceğe giden yolda; CONFORM, TRANSFORM, REFORM ve PERFORM ederek ilerleyin."
     },
-    "thumbnail": "assets/video-article/03182026-conform-transform-reform-perform-at-v-convention-2026-this-june.jpg",
+    "thumbnail": {
+      "en": "assets/video-article/03182026-conform-transform-reform-perform-at-v-convention-2026-this-june.jpg",
+      "ar": "assets/video-article/03182026-conform-transform-reform-perform-at-v-convention-2026-this-june.jpg",
+      "id": "assets/video-article/03182026-conform-transform-reform-perform-at-v-convention-2026-this-june.jpg",
+      "fr": "assets/video-article/03182026-conform-transform-reform-perform-at-v-convention-2026-this-june.jpg",
+      "ru": "assets/video-article/03182026-conform-transform-reform-perform-at-v-convention-2026-this-june.jpg",
+      "tr": "assets/video-article/03182026-conform-transform-reform-perform-at-v-convention-2026-this-june.jpg"
+    },
     "speaker": "Teasers",
     "day": "all",
     "link": "https://the-v.net/{{lang}}/news?id=03182026-conform-transform-reform-perform-at-v-convention-2026-this-june"
@@ -66,7 +111,14 @@
       "ru": "Приготовьтесь к невероятным впечатлениям в июне этого года!",
       "tr": "Bu Haziran ayında inanılmaz bir deneyime hazır olun!"
     },
-    "thumbnail": "assets/video-article/03062026-save-your-seats-for-v-convention-2026.jpg",
+    "thumbnail": {
+      "en": "assets/video-article/03062026-save-your-seats-for-v-convention-2026.jpg",
+      "ar": "assets/video-article/03062026-save-your-seats-for-v-convention-2026.jpg",
+      "id": "assets/video-article/03062026-save-your-seats-for-v-convention-2026.jpg",
+      "fr": "assets/video-article/03062026-save-your-seats-for-v-convention-2026.jpg",
+      "ru": "assets/video-article/03062026-save-your-seats-for-v-convention-2026.jpg",
+      "tr": "assets/video-article/03062026-save-your-seats-for-v-convention-2026.jpg"
+    },
     "speaker": "Pre-Event",
     "day": "all",
     "link": "https://the-v.net/{{lang}}/news?id=03062026-save-your-seats-for-v-convention-2026"

@@ -1023,7 +1023,6 @@ window.applyFilters = function() {
 
 function renderFilteredPlaylist(data) {
     const container = document.querySelector('.playlist-scroll');
-    // Important: Keep language detection consistent
     const lang = localStorage.getItem('selectedLanguage') || 'en';
     
     if (!container) return;
@@ -1031,10 +1030,15 @@ function renderFilteredPlaylist(data) {
     container.innerHTML = data.map((story, index) => {
         const displayTitle = story.title[lang] || story.title['en'];
         
+        // --- ADDED THIS: Safely get the localized thumbnail ---
+        const bannerSrc = typeof story.thumbnail === 'object' 
+            ? (story.thumbnail[lang] || story.thumbnail['en']) 
+            : story.thumbnail;
+        
         return `
             <div class="story-item" onclick="updatePreviewByIndex(${index})">
                 <div class="thumb-wrap">
-                    <img src="${story.thumbnail}" alt="${displayTitle}">
+                    <img src="${bannerSrc}" alt="${displayTitle}">
                     ${story.type === 'video' ? '<div class="mini-play-icon">▶</div>' : ''}
                 </div>
                 <div class="story-meta">
@@ -1078,7 +1082,7 @@ window.updatePreview = function(story) {
     
     const titleEl = document.getElementById('stageTitle');
     const descEl = document.getElementById('stageDesc');
-    const btn = document.getElementById('mainActionButton'); // Ensure this matches your button's ID
+    const btn = document.getElementById('mainActionButton');
     const stageImg = document.getElementById('stageImage');
 
     const translatedTitle = story.title[lang] || story.title['en'];
@@ -1086,12 +1090,17 @@ window.updatePreview = function(story) {
 
     if (titleEl) titleEl.innerText = translatedTitle;
     if (descEl) descEl.innerText = translatedDesc;
-    if (stageImg) stageImg.src = story.thumbnail;
     
-    // --- FIX: Change button text based on content type ---
+    // --- ADDED THIS: Safely get the localized thumbnail for the stage ---
+    if (stageImg) {
+        const bannerSrc = typeof story.thumbnail === 'object' 
+            ? (story.thumbnail[lang] || story.thumbnail['en']) 
+            : story.thumbnail;
+        stageImg.src = bannerSrc;
+    }
+    
     if (btn) {
         if (story.type === 'article') {
-            // Feel free to change 'vkids.read' to whatever translation key you use for the main news section
             const readText = getManualTranslation('vkids.read', 'READ ARTICLE'); 
             btn.innerHTML = `📖 ${readText}`;
         } else {
@@ -1099,7 +1108,7 @@ window.updatePreview = function(story) {
             btn.innerHTML = `▶ ${watchText}`;
         }
     }
-
+    
     if (typeof adjustTitleSize === 'function') adjustTitleSize();
 };
 
@@ -1585,6 +1594,7 @@ function toggleFaq(index) {
     }
 }
 
+//VKIDS SECTION
 
 // 1. DATA (Fixed the rogue comma between items)
 const vkidsData = {
