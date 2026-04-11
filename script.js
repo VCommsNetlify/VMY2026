@@ -1009,6 +1009,8 @@ window.applyFilters = function() {
 
     // 3. Filter the data (using the variables we just defined above)
     const filtered = storiesData.filter(item => {
+        if (item.disabled) return false;
+
         const matchType = (typeVal === 'all' || item.type === typeVal);
         const matchSpeaker = (speakerVal === 'all' || item.speaker === speakerVal);
         const matchDay = (dayVal === 'all' || item.day === dayVal);
@@ -1051,6 +1053,8 @@ window.updatePreviewByIndex = function(index) {
     const dayVal = document.getElementById('filterDay').value;
 
     const filtered = storiesData.filter(item => {
+        if (item.disabled) return false;
+
         const matchType = (typeVal === 'all' || item.type === typeVal);
         const matchSpeaker = (speakerVal === 'all' || item.speaker === speakerVal);
         const matchDay = (dayVal === 'all' || item.day === dayVal);
@@ -1070,27 +1074,33 @@ window.updatePreviewByObject = function(storyStr) {
 // MASTER FUNCTION: Updates the stage content
 window.updatePreview = function(story) {
     currentStory = story;
-    // Use your logic to get the current language
     const lang = localStorage.getItem('selectedLanguage') || 'en';
     
     const titleEl = document.getElementById('stageTitle');
     const descEl = document.getElementById('stageDesc');
-    const btn = document.getElementById('mainActionButton');
-    const playerWrap = document.getElementById('newsPlayerWrap');
+    const btn = document.getElementById('mainActionButton'); // Ensure this matches your button's ID
     const stageImg = document.getElementById('stageImage');
 
     const translatedTitle = story.title[lang] || story.title['en'];
     const translatedDesc = story.description[lang] || story.description['en'];
 
-    titleEl.innerText = translatedTitle;
-    descEl.innerText = translatedDesc;
-    
+    if (titleEl) titleEl.innerText = translatedTitle;
+    if (descEl) descEl.innerText = translatedDesc;
     if (stageImg) stageImg.src = story.thumbnail;
     
-    // --- TRANSLATION FIX FOR BUTTONS ---
-    // Use your manual translation helper to get button text
+    // --- FIX: Change button text based on content type ---
+    if (btn) {
+        if (story.type === 'article') {
+            // Feel free to change 'vkids.read' to whatever translation key you use for the main news section
+            const readText = getManualTranslation('vkids.read', 'READ ARTICLE'); 
+            btn.innerHTML = `📖 ${readText}`;
+        } else {
+            const watchText = getManualTranslation('vkids.watch', 'WATCH VIDEO');
+            btn.innerHTML = `▶ ${watchText}`;
+        }
+    }
 
-    
+    if (typeof adjustTitleSize === 'function') adjustTitleSize();
 };
 
 window.getManualTranslation = function(key, fallback) {
@@ -1128,8 +1138,8 @@ window.launchContent = function() {
         const playerWrap = document.getElementById('newsPlayerWrap');
         const stageImg = document.getElementById('stageImage');
         
-        playerWrap.style.display = 'block';
-        stageImg.style.display = 'none';
+        if (playerWrap) playerWrap.style.display = 'block';
+        if (stageImg) stageImg.style.display = 'none';
 
         const myPlayer = videojs.getPlayer('newsBrightcovePlayer');
         
@@ -1143,10 +1153,12 @@ window.launchContent = function() {
                 });
             });
         }
-    } else if (currentStory.link) {
-        // --- DYNAMIC LINK FIX ---
-        // Replace the placeholder {{lang}} with the current language (e.g., 'ar')
+    } else if (currentStory.type === 'article' && currentStory.link) {
+        // --- FIX: Process the article link and open it ---
+        // Replace the placeholder {{lang}} with the current language (e.g., 'ar', 'fr')
         const finalLink = currentStory.link.replace('{{lang}}', lang);
+        
+        // Open the article in a new tab
         window.open(finalLink, '_blank');
     }
 };
@@ -1574,64 +1586,68 @@ function toggleFaq(index) {
 }
 
 
-// vkids section
-
-// 1. DATA (Make sure paths to your images are correct)
+// 1. DATA (Fixed the rogue comma between items)
 const vkidsData = {
     "en": [
-        {
-    "id": "item1",
-    "type": "video",
-    "banner": {
-        "en": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june.jpg",
-        "ar": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june-ar.jpg",
-        "id": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june-id.jpg",
-        "fr": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june-fr.jpg",
-        "ru": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june-ru.jpg",
-        "tr": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june-tr.jpg"
-    },
-    "title": {
-        "en": "Raise V-Convention 2026 Trailblazers at V-Kids & V-Teens this June!",
-        "ar": "انهضوا في الـ V-Kids والـ V-Teens في V-Convention 2026 أيها الرواد!",
-        "id": "Rayakan V-Convention 2026 Trailblazers di V-Kids & V-Teens bulan Juni ini!",
-        "fr": "Elever les pionniers de la V-Convention 2026 au V-Kids & V-Teens en juin prochain !",
-        "ru": "Развивайте первопроходцев V-Convention 2026 на V-Kids & V-Teens в июне этого года!",
-        "tr": "V-Convention 2026 Öncülerini Bu Haziran'da V-Kids & V-Teens ile Yükseltin!"
-    },
-    "desc": {
-        "en": "You hold the power to raise the next generation of unbelievable leaders who will Conform with confidence, Transform through creativity, Reform their habits, and create a future where they can Perform beyond all limits — and this all starts with V-Kids & V-Teens at V-Convention 2026!",
-        "ar": "أنتم تملكون القدرة على تنشئة جيلٍ جديدٍ من القادة المُلهمين الذين سيتوافقون بثقة، ويتحولون من خلال الإبداع، ويُصلحون عاداتهم، ويأدون بما يتجاوز كل الحدود - ويبدأ كل هذا مع الـ V-Kids والـ V-Teens في V-Convention 2026!",
-        "id": "Anda memegang kekuatan untuk mendidik generasi pemimpin luar biasa berikutnya yang akan Conform dengan percaya diri, Transform melalui kreativitas, Reform kebiasaan mereka, dan menciptakan masa depan di mana mereka dapat Perform melampaui semua batasan — dan semua ini dimulai dengan V-Kids & V-Teens di V-Convention 2026!",
-        "fr": "Vous avez le pouvoir d’élever la prochaine génération de leaders exceptionnels, qui sauront Conform avec assurance, Transform grâce à leur créativité, Reform leurs habitudes et bâtir un avenir où ils pourront Perform au-delà de toutes les limites — et tout cela commence par V-Kids & V-Teens à la V-Convention 2026 !",
-        "ru": "У вас есть сила вырастить следующее поколение невероятных лидеров, которые будут с уверенностью приспосабливаться, трансформироваться через творчество, реформировать свои привычки и создавать будущее, в котором они смогут действовать вне всех ограничений — и все это начинается с V-Kids & V-Teens на V-Convention 2026!",
-        "tr": "Geleceğin inanılmaz lider neslini yetiştirme gücü sizin elinizde: Özgüvenle Conform, Yaratıcılıkla Transform, Alışkanlıklarıyla Reform eden ve sınırların ötesinde Perform sergileyen... Her şey, V-Convention 2026'daki V-Kids & V-Teens ile başlıyor!"
-    },
-    "videoId": "6391837452112"
-},
-        
-        // ,
         // {
-        //     "id": "item2",
-        //     "type": "article",
-        //     "banner": "assets/vkids/05272025-create-an-epic-story-with-v-kids-and-v-teens-at-vmalaysia2025.webp",
+        //     "id": "item1",
+        //     "type": "video",
+        //     "banner": {
+        //         "en": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june.jpg",
+        //         "ar": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june-ar.jpg",
+        //         "id": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june-id.jpg",
+        //         "fr": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june-fr.jpg",
+        //         "ru": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june-ru.jpg",
+        //         "tr": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june-tr.jpg"
+        //     },
         //     "title": {
-        //         "en": "V-Teens Workshop",
-        //         "ar": "ورشة عمل V-Teens",
-        //         "id": "Lokakarya V-Teens",
-        //         "fr": "Atelier V-Teens",
-        //         "ru": "Воркшоп V-Teens",
-        //         "tr": "V-Teens Atölyesi"
+        //         "en": "Raise V-Convention 2026 Trailblazers at V-Kids & V-Teens this June!",
+        //         "ar": "انهضوا في الـ V-Kids والـ V-Teens في V-Convention 2026 أيها الرواد!",
+        //         "id": "Rayakan V-Convention 2026 Trailblazers di V-Kids & V-Teens bulan Juni ini!",
+        //         "fr": "Elever les pionniers de la V-Convention 2026 au V-Kids & V-Teens en juin prochain !",
+        //         "ru": "Развивайте первопроходцев V-Convention 2026 на V-Kids & V-Teens в июне этого года!",
+        //         "tr": "V-Convention 2026 Öncülerini Bu Haziran'da V-Kids & V-Teens ile Yükseltin!"
         //     },
         //     "desc": {
-        //         "en": "Empowering the next generation of entrepreneurs.",
-        //         "ar": "تمكين الجيل القادم من رواد الأعمال.",
-        //         "id": "Memberdayakan generasi pengusaha berikutnya.",
-        //         "fr": "Autonomiser la prochaine génération d'entrepreneurs.",
-        //         "ru": "Расширение возможностей следующего поколения предпринимателей.",
-        //         "tr": "Yeni nesil girişimcileri güçlendirmek."
+        //         "en": "You hold the power to raise the next generation of unbelievable leaders who will Conform with confidence, Transform through creativity, Reform their habits, and create a future where they can Perform beyond all limits — and this all starts with V-Kids & V-Teens at V-Convention 2026!",
+        //         "ar": "أنتم تملكون القدرة على تنشئة جيلٍ جديدٍ من القادة المُلهمين الذين سيتوافقون بثقة، ويتحولون من خلال الإبداع، ويُصلحون عاداتهم، ويأدون بما يتجاوز كل الحدود - ويبدأ كل هذا مع الـ V-Kids والـ V-Teens في V-Convention 2026!",
+        //         "id": "Anda memegang kekuatan untuk mendidik generasi pemimpin luar biasa berikutnya yang akan Conform dengan percaya diri, Transform melalui kreativitas, Reform kebiasaan mereka, dan menciptakan masa depan di mana mereka dapat Perform melampaui semua batasan — dan semua ini dimulai dengan V-Kids & V-Teens di V-Convention 2026!",
+        //         "fr": "Vous avez le pouvoir d’élever la prochaine génération de leaders exceptionnels, qui sauront Conform avec assurance, Transform grâce à leur créativité, Reform leurs habitudes et bâtir un avenir où ils pourront Perform au-delà de toutes les limites — et tout cela commence par V-Kids & V-Teens à la V-Convention 2026 !",
+        //         "ru": "У вас есть сила вырастить следующее поколение невероятных лидеров, которые будут с уверенностью приспосабливаться, трансформироваться через творчество, реформировать свои привычки и создавать будущее, в котором они смогут действовать вне всех ограничений — и все это начинается с V-Kids & V-Teens на V-Convention 2026!",
+        //         "tr": "Geleceğin inanılmaz lider neslini yetiştirme gücü sizin elinizde: Özgüvenle Conform, Yaratıcılıkla Transform, Alışkanlıklarıyla Reform eden ve sınırların ötesinde Perform sergileyen... Her şey, V-Convention 2026'daki V-Kids & V-Teens ile başlıyor!"
         //     },
-        //     "link": "https://the-v.net/en/news?id=04162025-join-the-v-kids-and-v-teens-at-vmalaysia2025"
-        // }
+        //     "videoId": "6391837452112"
+        // },
+        {
+            "id": "item2",
+            "type": "article",
+            "banner": {
+                "en": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june.jpg",
+                "ar": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june-ar.jpg",
+                "id": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june-id.jpg",
+                "fr": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june-fr.jpg",
+                "ru": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june-ru.jpg",
+                "tr": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june-tr.jpg"
+            },
+            "title": {
+                "en": "Raise V-Convention 2026 Trailblazers at V-Kids & V-Teens this June!",
+                "ar": "انهضوا في الـ V-Kids والـ V-Teens في V-Convention 2026 أيها الرواد!",
+                "id": "Rayakan V-Convention 2026 Trailblazers di V-Kids & V-Teens bulan Juni ini!",
+                "fr": "Elever les pionniers de la V-Convention 2026 au V-Kids & V-Teens en juin prochain !",
+                "ru": "Развивайте первопроходцев V-Convention 2026 на V-Kids & V-Teens в июне этого года!",
+                "tr": "V-Convention 2026 Öncülerini Bu Haziran'da V-Kids & V-Teens ile Yükseltin!"
+            },
+            "desc": {
+                "en": "You hold the power to raise the next generation of unbelievable leaders who will Conform with confidence, Transform through creativity, Reform their habits, and create a future where they can Perform beyond all limits — and this all starts with V-Kids & V-Teens at V-Convention 2026!",
+                "ar": "أنتم تملكون القدرة على تنشئة جيلٍ جديدٍ من القادة المُلهمين الذين سيتوافقون بثقة، ويتحولون من خلال الإبداع، ويُصلحون عاداتهم، ويأدون بما يتجاوز كل الحدود - ويبدأ كل هذا مع الـ V-Kids والـ V-Teens في V-Convention 2026!",
+                "id": "Anda memegang kekuatan untuk mendidik generasi pemimpin luar biasa berikutnya yang akan Conform dengan percaya diri, Transform melalui kreativitas, Reform kebiasaan mereka, dan menciptakan masa depan di mana mereka dapat Perform melampaui semua batasan — dan semua ini dimulai dengan V-Kids & V-Teens di V-Convention 2026!",
+                "fr": "Vous avez le pouvoir d’élever la prochaine génération de leaders exceptionnels, qui sauront Conform avec assurance, Transform grâce à leur créativité, Reform leurs habitudes et bâtir un avenir où ils pourront Perform au-delà de toutes les limites — et tout cela commence par V-Kids & V-Teens à la V-Convention 2026 !",
+                "ru": "У вас есть сила вырастить следующее поколение невероятных лидеров, которые будут с уверенностью приспосабливаться, трансформироваться через творчество, реформировать свои привычки и создавать будущее, в котором они смогут действовать вне всех ограничений — и все это начинается с V-Kids & V-Teens на V-Convention 2026!",
+                "tr": "Geleceğin inanılmaz lider neslini yetiştirme gücü sizin elinizde: Özgüvenle Conform, Yaratıcılıkla Transform, Alışkanlıklarıyla Reform eden ve sınırların ötesinde Perform sergileyen... Her şey, V-Convention 2026'daki V-Kids & V-Teens ile başlıyor!"
+            },
+            "link": "https://the-v.net/{{lang}}/news?id=03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june"
+            
+        }
     ]
 };
 
@@ -1656,8 +1672,18 @@ function renderVKids(lang) {
         const desc = item.desc[lang] || item.desc['en'];
         const bannerSrc = item.banner[lang] || item.banner['en'];
         
-        const watchText = (translations[lang] && translations[lang]['vkids.watch']) || 'WATCH VIDEO';
-        const readText = (translations[lang] && translations[lang]['vkids.read']) || 'READ ARTICLE';
+        // Dynamically replace {{lang}} in the URL with the active language
+        let dynamicLink = "#";
+        if (item.link) {
+            // Optional: If you want English to NOT have /en/ in the URL, you could use:
+            // dynamicLink = lang === 'en' ? item.link.replace('/{{lang}}', '') : item.link.replace('{{lang}}', lang);
+            
+            // Standard replacement:
+            dynamicLink = item.link.replace('{{lang}}', lang);
+        }
+        
+        const watchText = (typeof translations !== 'undefined' && translations[lang] && translations[lang]['vkids.watch']) || 'WATCH VIDEO';
+        const readText = (typeof translations !== 'undefined' && translations[lang] && translations[lang]['vkids.read']) || 'READ ARTICLE';
 
         return `
             <div class="vkids-card">
@@ -1670,15 +1696,13 @@ function renderVKids(lang) {
                     <div class="vkids-actions">
                         ${item.type === 'video' 
                             ? `<button class="v-btn-gold" onclick="launchVKidsVideo('${item.videoId}')">▶ ${watchText}</button>`
-                            : `<a href="${item.link}" class="v-btn-gold" target="_blank">📖 ${readText}</a>`
+                            : `<a href="${dynamicLink}" class="v-btn-gold" target="_blank">📖 ${readText}</a>`
                         }
                     </div>
                 </div>
             </div>
         `;
     }).join('');
-
-    
 }
 
 window.launchVKidsVideo = function(id) {
@@ -1737,24 +1761,24 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!grid) return; // Failsafe in case the grid isn't on the page
 
     const updateFade = () => {
-    const isRTL = getComputedStyle(grid).direction === 'rtl';
-    
-    // In RTL, scrollLeft is 0 at the start (right side) 
-    // and becomes negative as you scroll.
-    const scrollPos = Math.abs(grid.scrollLeft);
+        const isRTL = getComputedStyle(grid).direction === 'rtl';
+        
+        // In RTL, scrollLeft is 0 at the start (right side) 
+        // and becomes negative as you scroll.
+        const scrollPos = Math.abs(grid.scrollLeft);
 
-    if (scrollPos > 0) {
-        grid.classList.add('not-at-start');
-    } else {
-        grid.classList.remove('not-at-start');
-    }
+        if (scrollPos > 0) {
+            grid.classList.add('not-at-start');
+        } else {
+            grid.classList.remove('not-at-start');
+        }
 
-    if (scrollPos + grid.clientWidth >= grid.scrollWidth - 1) {
-        grid.classList.add('at-end');
-    } else {
-        grid.classList.remove('at-end');
-    }
-};
+        if (scrollPos + grid.clientWidth >= grid.scrollWidth - 1) {
+            grid.classList.add('at-end');
+        } else {
+            grid.classList.remove('at-end');
+        }
+    };
 
     // Listen for scrolling and update the fades
     grid.addEventListener('scroll', updateFade);

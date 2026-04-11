@@ -1,5 +1,6 @@
 [
   {
+    "disabled": true,
     "id": "6391119540112",
     "type": "video",
     "title": {
@@ -21,6 +22,30 @@
     "thumbnail": "assets/video-article/03182026-conform-transform-reform-perform-at-v-convention-2026-this-june.jpg",
     "speaker": "Teasers",
     "day": "all"
+  },
+  {
+    "id": "article#2",
+    "type": "article",
+    "title": {
+      "en": "CONFORM, TRANSFORM, REFORM, PERFORM at V-Convention 2026 This June!",
+      "ar": "توافقوا، حولوا، أصلحوا، ادوا في V-Convention 2026 في يونيو القادم!",
+      "id": "CONFORM, TRANSFORM, REFORM, PERFORM di V-Convention 2026 Bulan Juni Ini!",
+      "fr": "CONFORM, TRANSFORM, REFORM, PERFORM à la V-Convention 2026 en juin prochain!",
+      "ru": "ПРИСПОСОБЛЯЙТЕСЬ, ТРАНСФОРМИРУЙТЕСЬ, РЕФОРМИРУЙТЕСЬ и ДЕЙСТВУЙТЕ на V-Convention 2026 в июне этого года!",
+      "tr": "Haziran’da V-Convention 2026'da CONFORM, TRANSFORM, REFORM ve PERFORM!"
+    },
+    "description": {
+      "en": "WHAT ARE YOU WILLING TO DO FOR YOUR DREAMS? CONFORM, TRANSFORM, REFORM, and PERFORM your way to an unbelievable future.",
+      "ar": "ما الذي أنتم على استعداد لفعله من أجل أحلامكم؟ توافقوا، حولوا، أصلحوا، ادوا طريقكم، إلى مستقبل لا يصدق.",
+      "id": "APA YANG SIAP ANDA LAKUKAN UNTUK MEWUJUDKAN MIMPI ANDA? CONFORM, TRANSFORM, REFORM, dan PERFORM jalan Anda menuju masa depan yang luar biasa.",
+      "fr": "QU'ÊTES-VOUS PRÊT À FAIRE POUR RÉALISER VOS RÊVES ? CONFORM, TRANSFORM, REFORM, et PERFORM pour vous frayer un chemin vers un avenir incroyable.",
+      "ru": "ЧТО ВЫ ГОТОВЫ СДЕЛАТЬ РАДИ СВОИХ МЕЧТАНИЙ? ПРИСПОСОБЛЯЙТЕСЬ, ТРАНСФОРМИРУЙТЕСЬ, РЕФОРМИРУЙТЕСЬ И ДЕЙСТВУЙТЕ, чтобы проложить себе путь к невероятному будущему.",
+      "tr": "HAYALLERİNİZ İÇİN NELER YAPMAYA HAZIRSINIZ? İnanılmaz bir geleceğe giden yolda; CONFORM, TRANSFORM, REFORM ve PERFORM ederek ilerleyin."
+    },
+    "thumbnail": "assets/video-article/03182026-conform-transform-reform-perform-at-v-convention-2026-this-june.jpg",
+    "speaker": "Teasers",
+    "day": "all",
+    "link": "https://the-v.net/{{lang}}/news?id=03182026-conform-transform-reform-perform-at-v-convention-2026-this-june"
   },
   {
     "id": "article#1",
