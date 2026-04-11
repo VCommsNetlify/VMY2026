@@ -756,6 +756,51 @@ const translations = {
 let storiesData = [];
 let currentStory = null;
 
+// --- Autoplay Variables ---
+let currentStoryIndex = 0;
+let autoplayInterval = null;
+const AUTOPLAY_DELAY = 5000; // 5000ms = 5 seconds between slides
+let isHoveringNews = false; 
+
+// --- Autoplay Functions ---
+window.startAutoplay = function() {
+    stopAutoplay(); 
+    
+    // Do not start the timer if the user's mouse is currently in the section
+    if (isHoveringNews) return; 
+
+    autoplayInterval = setInterval(() => {
+        const typeVal = document.getElementById('filterType').value;
+        const speakerVal = document.getElementById('filterSpeaker').value;
+        const dayVal = document.getElementById('filterDay').value;
+
+        const filtered = storiesData.filter(item => {
+            if (item.disabled) return false; 
+            const matchType = (typeVal === 'all' || item.type === typeVal);
+            const matchSpeaker = (speakerVal === 'all' || item.speaker === speakerVal);
+            const matchDay = (dayVal === 'all' || item.day === dayVal);
+            return matchType && matchSpeaker && matchDay;
+        });
+
+        if (filtered.length <= 1) return; 
+
+        currentStoryIndex++;
+        if (currentStoryIndex >= filtered.length) {
+            currentStoryIndex = 0;
+        }
+
+        updatePreview(filtered[currentStoryIndex]);
+        
+    }, AUTOPLAY_DELAY);
+};
+
+window.stopAutoplay = function() {
+    if (autoplayInterval) {
+        clearInterval(autoplayInterval);
+        autoplayInterval = null;
+    }
+};
+
 document.addEventListener('DOMContentLoaded', () => {
     const nav = document.getElementById("navLinks");
     const icon = document.querySelector(".menu-icon");
@@ -926,10 +971,16 @@ async function loadStories() {
         storiesData = await response.json();
         
         if (document.getElementById('filterType')) {
-            handleCategoryChange(); 
+            handleCategoryChange(); // This triggers applyFilters()
+        } else {
+            // Failsafe if no filters exist
+            const activeStories = storiesData.filter(item => !item.disabled);
+            if (activeStories.length > 0) {
+                updatePreview(activeStories[0]);
+                renderFilteredPlaylist(activeStories);
+                startAutoplay();
+            }
         }
-        // Load the very first story into the stage by default
-        if(storiesData.length > 0) updatePreview(storiesData[0]);
     } catch (error) {
         console.error("Error loading stories:", error);
     }
@@ -967,7 +1018,6 @@ window.handleCategoryChange = function() {
     options.forEach(s => {
         const opt = document.createElement('option');
         opt.value = s.val;
-        // Use your translation helper here!
         opt.innerHTML = getManualTranslation(s.key, s.fallback);
         speakerSelect.appendChild(opt);
     });
@@ -978,10 +1028,8 @@ window.handleCategoryChange = function() {
 window.translateStaticFilters = function() {
     const lang = localStorage.getItem('selectedLanguage') || 'en';
     
-    // 1. Update the static options (All Media, All Days, etc.)
     document.querySelectorAll('select option[data-i18n], button[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
-        // This uses your existing translation helper
         const translatedText = getManualTranslation(key, el.textContent);
         
         if (el.tagName === 'OPTION' || el.tagName === 'BUTTON') {
@@ -992,13 +1040,11 @@ window.translateStaticFilters = function() {
 };
 
 window.applyFilters = function() {
-    // 1. Get the current values from the dropdowns
     const typeVal = document.getElementById('filterType').value;
     const speakerVal = document.getElementById('filterSpeaker').value;
     const dayVal = document.getElementById('filterDay').value;
     const resetBtn = document.getElementById('resetFilters');
 
-    // 2. Handle Reset Button visibility
     if (resetBtn) {
         if (typeVal !== 'all' || speakerVal !== 'all' || dayVal !== 'all') {
             resetBtn.style.display = 'inline-block';
@@ -1007,18 +1053,27 @@ window.applyFilters = function() {
         }
     }
 
-    // 3. Filter the data (using the variables we just defined above)
     const filtered = storiesData.filter(item => {
-        if (item.disabled) return false;
-
+        if (item.disabled) return false; // Hide disabled items
+        
         const matchType = (typeVal === 'all' || item.type === typeVal);
         const matchSpeaker = (speakerVal === 'all' || item.speaker === speakerVal);
         const matchDay = (dayVal === 'all' || item.day === dayVal);
         return matchType && matchSpeaker && matchDay;
     });
 
-    // 4. Update the UI
     renderFilteredPlaylist(filtered);
+    
+    // Reset to the first item and restart autoplay
+    if (filtered.length > 0) {
+        currentStoryIndex = 0;
+        updatePreview(filtered[0]);
+        if (!isHoveringNews) {
+            startAutoplay(); 
+        }
+    } else {
+        stopAutoplay(); 
+    }
 };
 
 function renderFilteredPlaylist(data) {
@@ -1030,7 +1085,7 @@ function renderFilteredPlaylist(data) {
     container.innerHTML = data.map((story, index) => {
         const displayTitle = story.title[lang] || story.title['en'];
         
-        // --- ADDED THIS: Safely get the localized thumbnail ---
+        // Safely get localized thumbnail
         const bannerSrc = typeof story.thumbnail === 'object' 
             ? (story.thumbnail[lang] || story.thumbnail['en']) 
             : story.thumbnail;
@@ -1051,14 +1106,12 @@ function renderFilteredPlaylist(data) {
 }
 
 window.updatePreviewByIndex = function(index) {
-    // We use the current filtered list (you might need to store this globally)
     const typeVal = document.getElementById('filterType').value;
     const speakerVal = document.getElementById('filterSpeaker').value;
     const dayVal = document.getElementById('filterDay').value;
 
     const filtered = storiesData.filter(item => {
-        if (item.disabled) return false;
-
+        if (item.disabled) return false; 
         const matchType = (typeVal === 'all' || item.type === typeVal);
         const matchSpeaker = (speakerVal === 'all' || item.speaker === speakerVal);
         const matchDay = (dayVal === 'all' || item.day === dayVal);
@@ -1066,7 +1119,13 @@ window.updatePreviewByIndex = function(index) {
     });
 
     if (filtered[index]) {
+        currentStoryIndex = index; // Let the tracker know the user picked a specific item
         updatePreview(filtered[index]);
+        
+        stopAutoplay();
+        if (!isHoveringNews) {
+            startAutoplay(); // Restart the timer so it doesn't immediately switch
+        }
     }
 };
 
@@ -1075,7 +1134,7 @@ window.updatePreviewByObject = function(storyStr) {
     updatePreview(story);
 };
 
-// MASTER FUNCTION: Updates the stage content
+// --- UPDATE PREVIEW WITH FADE ANIMATION ---
 window.updatePreview = function(story) {
     currentStory = story;
     const lang = localStorage.getItem('selectedLanguage') || 'en';
@@ -1085,42 +1144,54 @@ window.updatePreview = function(story) {
     const btn = document.getElementById('mainActionButton');
     const stageImg = document.getElementById('stageImage');
 
-    const translatedTitle = story.title[lang] || story.title['en'];
-    const translatedDesc = story.description[lang] || story.description['en'];
+    const elementsToAnimate = [titleEl, descEl, btn, stageImg].filter(el => el !== null);
 
-    if (titleEl) titleEl.innerText = translatedTitle;
-    if (descEl) descEl.innerText = translatedDesc;
-    
-    // --- ADDED THIS: Safely get the localized thumbnail for the stage ---
-    if (stageImg) {
-        const bannerSrc = typeof story.thumbnail === 'object' 
-            ? (story.thumbnail[lang] || story.thumbnail['en']) 
-            : story.thumbnail;
-        stageImg.src = bannerSrc;
-    }
-    
-    if (btn) {
-        if (story.type === 'article') {
-            const readText = getManualTranslation('vkids.read', 'READ ARTICLE'); 
-            btn.innerHTML = `📖 ${readText}`;
-        } else {
-            const watchText = getManualTranslation('vkids.watch', 'WATCH VIDEO');
-            btn.innerHTML = `▶ ${watchText}`;
+    // 1. Trigger the fade out
+    elementsToAnimate.forEach(el => el.classList.add('fade-out-stage'));
+
+    // 2. Wait 300ms for the fade to finish, THEN swap the content and fade back in
+    setTimeout(() => {
+        const translatedTitle = story.title[lang] || story.title['en'];
+        const translatedDesc = story.description[lang] || story.description['en'];
+
+        if (titleEl) titleEl.innerText = translatedTitle;
+        if (descEl) descEl.innerText = translatedDesc;
+        
+        // Localized image mapping
+        if (stageImg) {
+            const bannerSrc = typeof story.thumbnail === 'object' 
+                ? (story.thumbnail[lang] || story.thumbnail['en']) 
+                : story.thumbnail;
+            stageImg.src = bannerSrc;
         }
-    }
-    
-    if (typeof adjustTitleSize === 'function') adjustTitleSize();
+        
+        // Dynamic button mapping
+        if (btn) {
+            if (story.type === 'article') {
+                const readText = getManualTranslation('news.read', 'READ ARTICLE'); 
+                btn.innerHTML = `📖 ${readText}`;
+            } else {
+                const watchText = getManualTranslation('news.watch', 'WATCH VIDEO');
+                btn.innerHTML = `▶ ${watchText}`;
+            }
+        }
+        
+        if (typeof adjustTitleSize === 'function') adjustTitleSize();
+
+        // 3. Remove the fade-out class to trigger the fade-in
+        elementsToAnimate.forEach(el => el.classList.remove('fade-out-stage'));
+
+    }, 300); 
 };
 
 window.getManualTranslation = function(key, fallback) {
     try {
         const lang = localStorage.getItem('selectedLanguage') || 'en';
-        
-        // 1. Split the key (e.g., "filter.all_videos")
+        if (typeof translations === 'undefined') return fallback;
+
         const parts = key.split('.'); 
         let translation = translations[lang];
 
-        // 2. Dig through the JSON levels
         for (const part of parts) {
             if (translation && translation[part]) {
                 translation = translation[part];
@@ -1130,7 +1201,6 @@ window.getManualTranslation = function(key, fallback) {
             }
         }
 
-        // 3. Return the translation if found, otherwise the fallback string
         return translation || fallback;
     } catch (e) {
         console.error("Translation lookup failed for:", key, e);
@@ -1140,15 +1210,14 @@ window.getManualTranslation = function(key, fallback) {
 
 window.launchContent = function() {
     if (!currentStory) return;
-    
     const lang = localStorage.getItem('selectedLanguage') || 'en';
 
     if (currentStory.type === 'video') {
         const playerWrap = document.getElementById('newsPlayerWrap');
         const stageImg = document.getElementById('stageImage');
         
-        if (playerWrap) playerWrap.style.display = 'block';
-        if (stageImg) stageImg.style.display = 'none';
+        if(playerWrap) playerWrap.style.display = 'block';
+        if(stageImg) stageImg.style.display = 'none';
 
         const myPlayer = videojs.getPlayer('newsBrightcovePlayer');
         
@@ -1163,11 +1232,10 @@ window.launchContent = function() {
             });
         }
     } else if (currentStory.type === 'article' && currentStory.link) {
-        // --- FIX: Process the article link and open it ---
-        // Replace the placeholder {{lang}} with the current language (e.g., 'ar', 'fr')
-        const finalLink = currentStory.link.replace('{{lang}}', lang);
-        
-        // Open the article in a new tab
+        let finalLink = currentStory.link;
+        if (finalLink.includes('{{lang}}')) {
+             finalLink = finalLink.replace('{{lang}}', lang);
+        }
         window.open(finalLink, '_blank');
     }
 };
@@ -1214,10 +1282,28 @@ window.resetAllFilters = function() {
     if(typeof handleCategoryChange === "function") handleCategoryChange();
     
     document.getElementById('filterSpeaker').value = 'all';
-    
-    // This will hide the button again because all are back to 'all'
     applyFilters(); 
 };
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Target the specific wrapper that holds the stage and the playlist
+    const newsSection = document.querySelector('.stories-container'); 
+    
+    if (newsSection) {
+        newsSection.addEventListener('mouseenter', () => {
+            isHoveringNews = true;
+            stopAutoplay();
+        });
+        
+        newsSection.addEventListener('mouseleave', () => {
+            isHoveringNews = false;
+            startAutoplay();
+        });
+    }
+});
+
+// Start the process
+loadStories();
 
 // GALLERY
 

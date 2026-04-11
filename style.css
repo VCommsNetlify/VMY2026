@@ -449,6 +449,20 @@ header {
 .story-meta { display: flex; flex-direction: column; justify-content: center; /* Centers title/subtitle within the text area */ flex: 1; text-align: left; /* Keeps text left-aligned but the block itself is centered */ }
 .story-item:not(:has(.thumb-wrap)) .story-meta { text-align: center; /* If no thumbnail, center the text entirely */ padding-left: 0; }
 
+/* Smooth transition for the stage elements */
+#stageTitle, 
+#stageDesc, 
+#mainActionButton, 
+#stageImage {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* The temporary class we will apply via JavaScript */
+.fade-out-stage {
+    opacity: 0 !important;
+    transform: translateY(10px); 
+}
+
 /* --- DESCRIPTION TOGGLE SYSTEM --- */
 .text-content p.expanded, .text-group p.expanded {
     -webkit-line-clamp: unset !important; 
