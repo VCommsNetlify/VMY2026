@@ -857,7 +857,7 @@ function updateScrollSpy() {
         else btt.classList.remove("visible");
     });
 
-    updateScrollSpy();
+    window.addEventListener('scroll', throttle(updateScrollSpy, 100));
 
     // --- 2. MENU LOGIC (STABLE) ---
 window.closeMenu = function() {
@@ -2146,7 +2146,7 @@ function throttle(func, limit) {
     }
 }
 
-window.addEventListener('scroll', throttle(updateScrollSpy, 100));
+
 
 // This works for any device, one JSON file
 function renderContent(item, lang = 'en') {
