@@ -31,6 +31,36 @@
     "day": "all"
   },
   {
+    "id": "6392948728112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention 2026: Home is Where Your Journey Begins",
+      "ar": "V-Convention 2026: Home is Where Your Journey Begins",
+      "id": "V-Convention 2026: Home is Where Your Journey Begins",
+      "fr": "V-Convention 2026: Home is Where Your Journey Begins",
+      "ru": "V-Convention 2026: дом — там, где начинается ваше путешествие",
+      "tr": "V-Convention 2026: Home is Where Your Journey Begins"
+    },
+    "description": {
+      "en": "No place like HOME, no journey like YOURS!",
+      "ar": "لا يوجد مكان مثل الوطن، ولا رحلة مثل رحلتك!",
+      "id": "Tidak ada tempat seperti RUMAH, tidak ada perjalanan seperti PERJALANAN ANDA!",
+      "fr": "Rien ne vaut la maison, rien ne vaut votre voyage!",
+      "ru": "Нет места лучше ДОМА, нет путешествия лучше ВАШЕГО!",
+      "tr": "YUVANIZ gibi bir yer, SİZİNKİ gibi bir yolculuk yok!"
+    },
+    "thumbnail": {
+      "en": "assets/video-article/04122026-v-convention-2026-home-is-where-your-journey-begins.jpg",
+      "ar": "assets/video-article/04122026-v-convention-2026-home-is-where-your-journey-begins.jpg",
+      "id": "assets/video-article/04122026-v-convention-2026-home-is-where-your-journey-begins.jpg",
+      "fr": "assets/video-article/04122026-v-convention-2026-home-is-where-your-journey-begins.jpg",
+      "ru": "assets/video-article/04122026-v-convention-2026-home-is-where-your-journey-begins.jpg",
+      "tr": "assets/video-article/04122026-v-convention-2026-home-is-where-your-journey-begins.jpg"
+    },
+    "speaker": "Teasers",
+    "day": "all"
+  },
+  {
     "id": "article#3",
     "type": "article",
     "title": {
