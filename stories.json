@@ -31,6 +31,36 @@
     "day": "all"
   },
   {
+    "id": "6393621030112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention 2026: Uncover the Confessions of a Dreamer",
+      "ar": " مؤتمر V-Convention 2026: اكتشف اعترافات حالم. استمع إلى",
+      "id": "V-Convention 2026: Temukan pengakuan seorang pemimpi",
+      "fr": "Convention V 2026 : Découvrez les confessions d’un rêveur.",
+      "ru": "Конвенция V 2026: Откройте для себя признания мечтателя.",
+      "tr": "V-Kongresi 2026: Bir Hayalperestin İtiraflarını Keşfedin"
+    },
+    "description": {
+      "en": "Find out how dreamers became doers.",
+      "ar": "على كيف أصبح الحالمون فاعلين.",
+      "id": "Pelajari bagaimana para pemimpi menjadi agen perubahan.",
+      "fr": "Apprenez comment les rêveurs deviennent des acteurs du changement.",
+      "ru": "Узнайте, как мечтатели становятся проводниками перемен.",
+      "tr": "Hayalperestlerin nasıl eylemciye dönüştüğünü öğrenin."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/04222026-v-convention-2026-uncover-the-confessions-of-a-dreamer.jpg",
+      "ar": "assets/video-article/04222026-v-convention-2026-uncover-the-confessions-of-a-dreamer.jpg",
+      "id": "assets/video-article/04222026-v-convention-2026-uncover-the-confessions-of-a-dreamer.jpg",
+      "fr": "assets/video-article/04222026-v-convention-2026-uncover-the-confessions-of-a-dreamer.jpg",
+      "ru": "assets/video-article/04222026-v-convention-2026-uncover-the-confessions-of-a-dreamer.jpg",
+      "tr": "assets/video-article/04222026-v-convention-2026-uncover-the-confessions-of-a-dreamer.jpg"
+    },
+    "speaker": "Campaign",
+    "day": "all"
+  },
+  {
     "id": "6392948728112",
     "type": "video",
     "title": {
