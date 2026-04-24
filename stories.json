@@ -35,7 +35,6 @@
     "type": "video",
     "title": {
       "en": "V-Convention 2026: Uncover the Confessions of a Dreamer",
-<<<<<<< HEAD
       "ar": "مؤتمر V-Convention 2026: اكتشف اعترافات حالم",
       "id": "V-Convention 2026: Mengungkap Pengakuan Seorang Pemimpi",
       "fr": "V Convention 2026 : Découvrez les confessions d'un rêveur",
@@ -49,21 +48,6 @@
       "fr": "Écoutez leurs histoires inédites. Tirez des leçons de chaque souvenir. Commencez votre propre voyage.",
       "ru": "Прислушайтесь к их нерассказанным историям. Учитесь на каждом воспоминании. Начните свой собственный путь.",
       "tr": "Anlatılmamış hikâyelerini dinleyin. Her anıdan ders çıkarın. Kendi yolculuğunuza başlayın."
-=======
-      "ar": " مؤتمر V-Convention 2026: اكتشف اعترافات حالم. استمع إلى",
-      "id": "V-Convention 2026: Temukan pengakuan seorang pemimpi",
-      "fr": "Convention V 2026 : Découvrez les confessions d’un rêveur.",
-      "ru": "Конвенция V 2026: Откройте для себя признания мечтателя.",
-      "tr": "V-Kongresi 2026: Bir Hayalperestin İtiraflarını Keşfedin"
-    },
-    "description": {
-      "en": "Find out how dreamers became doers.",
-      "ar": "على كيف أصبح الحالمون فاعلين.",
-      "id": "Pelajari bagaimana para pemimpi menjadi agen perubahan.",
-      "fr": "Apprenez comment les rêveurs deviennent des acteurs du changement.",
-      "ru": "Узнайте, как мечтатели становятся проводниками перемен.",
-      "tr": "Hayalperestlerin nasıl eylemciye dönüştüğünü öğrenin."
->>>>>>> f7ac2f9269b70499b724156c19d0df577f4b8fe0
     },
     "thumbnail": {
       "en": "assets/video-article/04222026-v-convention-2026-uncover-the-confessions-of-a-dreamer.jpg",
@@ -73,11 +57,7 @@
       "ru": "assets/video-article/04222026-v-convention-2026-uncover-the-confessions-of-a-dreamer.jpg",
       "tr": "assets/video-article/04222026-v-convention-2026-uncover-the-confessions-of-a-dreamer.jpg"
     },
-<<<<<<< HEAD
     "speaker": "Campaign Video",
-=======
-    "speaker": "Campaign",
->>>>>>> f7ac2f9269b70499b724156c19d0df577f4b8fe0
     "day": "all"
   },
   {
@@ -204,7 +184,4 @@
     "link": "https://the-v.net/{{lang}}/news?id=03062026-save-your-seats-for-v-convention-2026"
   }
 ]
-<<<<<<< HEAD
 
-=======
->>>>>>> f7ac2f9269b70499b724156c19d0df577f4b8fe0
