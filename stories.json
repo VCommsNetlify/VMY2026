@@ -31,6 +31,36 @@
     "day": "all"
   },
   {
+    "id": "6393621030112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention 2026: Uncover the Confessions of a Dreamer",
+      "ar": "مؤتمر V-Convention 2026: اكتشف اعترافات حالم",
+      "id": "V-Convention 2026: Mengungkap Pengakuan Seorang Pemimpi",
+      "fr": "V Convention 2026 : Découvrez les confessions d'un rêveur",
+      "ru": "V-Convention 2026: Откройте для себя признания мечтателя.",
+      "tr": "V-Convention 2026: Bir hayalperestin itiraflarını keşfedin"
+    },
+    "description": {
+      "en": "Listen to their untold stories. Learn from each memory. Start your own journey.",
+      "ar": "استمع إلى قصصهم التي لم تُروَ. تعلّم من كل ذكرى. ابدأ رحلتك الخاصة.",
+      "id": "Dengarkan kisah-kisah mereka yang belum terungkap. Belajarlah dari setiap kenangan. Mulailah perjalananmu sendiri.",
+      "fr": "Écoutez leurs histoires inédites. Tirez des leçons de chaque souvenir. Commencez votre propre voyage.",
+      "ru": "Прислушайтесь к их нерассказанным историям. Учитесь на каждом воспоминании. Начните свой собственный путь.",
+      "tr": "Anlatılmamış hikâyelerini dinleyin. Her anıdan ders çıkarın. Kendi yolculuğunuza başlayın."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/04222026-v-convention-2026-uncover-the-confessions-of-a-dreamer.jpg",
+      "ar": "assets/video-article/04222026-v-convention-2026-uncover-the-confessions-of-a-dreamer.jpg",
+      "id": "assets/video-article/04222026-v-convention-2026-uncover-the-confessions-of-a-dreamer.jpg",
+      "fr": "assets/video-article/04222026-v-convention-2026-uncover-the-confessions-of-a-dreamer.jpg",
+      "ru": "assets/video-article/04222026-v-convention-2026-uncover-the-confessions-of-a-dreamer.jpg",
+      "tr": "assets/video-article/04222026-v-convention-2026-uncover-the-confessions-of-a-dreamer.jpg"
+    },
+    "speaker": "Campaign Video",
+    "day": "all"
+  },
+  {
     "id": "6392948728112",
     "type": "video",
     "title": {
@@ -154,3 +184,4 @@
     "link": "https://the-v.net/{{lang}}/news?id=03062026-save-your-seats-for-v-convention-2026"
   }
 ]
+

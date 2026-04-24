@@ -1459,7 +1459,7 @@ const vFaqData = {
                     "tr": "V-CONVENTION 2026 Bilet Şartları ve Koşulları"
                 },
                 "a": {
-                    "en": "By purchasing the ticket, you (“Ticket Holder”) agree to be bound by the Terms and Conditions of sale specified herein and any other provision as may be specified from time to time by VShoppe (“Promoter”). The Promoter, their agents or employees, shall not be liable for any death, personal injury (unless caused by negligence of its agents and employees), loss, or damage however caused while in the venue nor are they liable for any complaints, claims, refunds, or exchange for any reason, including without limitation, cancellation or postponement of the event. Booking fees and handling fees shall not be refundable. Any refunds shall be made only at Promoter’s discretion.<br><br>Tickets are sold subject to the following conditions:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Once sale is completed, no refunds will be made except pursuant to event postponement or cancellation and this is subjected to the Promoter's discretion. Lost ticket/s will not be replaced or refunded.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Generally, tickets are non-transferable. However, if the purchase was made by mistake, believed to be done in good faith, the Promoter reserves the right for transfer. Ticket Holder may request to transfer it to the next party, subject to ticket availability. An additional administrative payment of USD 50 must be made by the Ticket Holder to initiate the transfer process. All transfer requests must be sent to <a href=\"mailto:v-regn@the-v.net\" style='color:white; text-decoration: underline white;'>v-regn@the-v.net</a>.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Entry will be refused if tickets have been found to be tampered, counterfeited, and/or not purchased from VShoppe or an official and authorized point of sale.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● The Promoter reserves the right, without refund or compensation, to refuse admission/evict any person(s) whose conduct is disorderly or inappropriate.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● The Promoter may add, withdraw, or substitute artistes and/or vary advertised programmes, event times, seating arrangements, audience capacity without prior notice.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● The Promoter may use the ticket holder’s image or likeness in any live or recorded video display, picture, publicity material or website.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;●	The Promoter may postpone, cancel, interrupt, or stop the event due to adverse weather, dangerous situations, or any other causes beyond reasonable control.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● The Ticket Holder agrees to submit to any searches for prohibited items including but not limited to weapons, controlled, dangerous and illegal substances.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Ticket Holder agrees for their personal data to be used as Promoter deems necessary in the purchase of the ticket and subsequent processing for the event. These may include, but not limited to, sharing of your personal data to authorised third parties such as government agencies, financial institutions, and vendor suppliers for the said event.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● The Ticket Holder voluntarily assumes all risks and danger incidental to the event whether occurring prior to, during or subsequent to the actual event, including any death, personal injury, loss, damage, or liability. Malaysia law shall govern the sale of all tickets, and you agree to submit to the exclusive jurisdiction of the Malaysia Court.<br>",
+                    "en": "By purchasing the ticket, you (“Ticket Holder”) agree to be bound by the Terms and Conditions of sale specified herein and any other provisions as may be specified from time to time by VShoppe (“Promoter”). The Promoter, its agents, or employees shall not be liable for any death, personal injury (unless caused by the negligence of its agents or employees), loss, or damage, however caused, while in the venue, nor shall they be liable for any complaints, claims, refunds, or exchanges for any reason, including but not limited to the cancellation or postponement of the event. Booking fees and handling fees shall not be refundable. Any refunds shall be made only at the Promoter’s discretion.<br><br>Tickets are sold subject to the following conditions:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Once the sale is completed, no exchange of tickets will be allowed. No refunds will be made except in the case of event postponement or cancellation, and at the Promoter's discretion. Lost ticket(s) will not be replaced or refunded.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Your ticket is not transferable.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Entry will be refused if tickets have been found to be tampered with, counterfeited, and/or not purchased from VShoppe or an authorised point of sale.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. The Promoter reserves the right, without refund or compensation, to refuse admission or evict any person(s) whose conduct is disorderly or inappropriate.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. The Promoter may add, withdraw, or substitute artistes and/or vary advertised programmes, event times, seating arrangements, and audience capacity without prior notice.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6. The Promoter may use the ticket holder's image or likeness in any live or recorded video display, picture, publicity material, or website.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7. The Promoter may postpone, cancel, interrupt, or stop the event due to adverse weather, dangerous situations, or any other causes beyond its reasonable control.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8. The Ticket Holder agrees to submit to any searches for prohibited items, including but not limited to weapons and any controlled, dangerous, or illegal substances.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9. The Ticket Holder voluntarily assumes all risks and dangers incidental to the event, whether occurring prior to, during, or after the event, including death, personal injury, loss, damage, or liability.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10. Malaysian law shall govern the sale of all tickets, and the Ticket Holder agrees to submit to the exclusive jurisdiction of the Malaysian courts.<br>",
                     "ar": "بشراء التذكرة، فإنك (\"حامل التذكرة\") توافق على الالتزام بشروط وأحكام البيع المحددة هنا، وأي أحكام أخرى قد يحددها الـ VShoppe (\"الجهة المنظمة\") من وقت لآخر. لا تتحمل الجهة المنظمة، أو وكلاؤها أو موظفوها، أي مسؤولية عن الوفاة أو الإصابة الشخصية (إلا إذا كانت ناجمة عن إهمال من جانب وكلائها وموظفيها)، أو الخسارة، أو الضرر مهما كان سببه أثناء التواجد في مكان الفعالية، كما لا تتحمل أي مسؤولية عن أي شكاوى أو مطالبات أو استرداد أو استبدال لأي سبب كان، بما في ذلك على سبيل المثال لا الحصر، إلغاء الفعالية أو تأجيلها. رسوم الحجز ورسوم المعالجة غير قابلة للاسترداد. أي استرداد يتم وفقًا لتقدير الجهة المنظمة فقط.<br><br>تُباع التذاكر وفقًا للشروط التالية:<br><br>● بمجرد إتمام عملية البيع، لا يتم استرداد أي مبالغ إلا في حالة تأجيل الفعالية أو إلغائها، وهذا يخضع لتقدير الجهة المنظمة. لا يتم استبدال التذاكر المفقودة أو استرداد ثمنها.<br><br>● بشكل عام، التذاكر غير قابلة للتحويل. مع ذلك، إذا تم الشراء عن طريق الخطأ، مع افتراض حسن النية، يحتفظ المنظم بحق نقل التذكرة. يمكن لحامل التذكرة طلب نقلها إلى شخص آخر، وذلك حسب توفر التذاكر. يجب على حامل التذكرة دفع رسوم إدارية إضافية قدرها 50 دولارًا أمريكيًا لبدء عملية النقل. تُرسل جميع طلبات النقل إلى البريد الإلكتروني v-regn@the-v.net.<br><br>● يُمنع الدخول في حال تبين أن التذاكر مُعدّلة أو مزورة أو لم يتم شراؤها من متجر الـ Vshoppe أو من نقطة بيع رسمية ومعتمدة.<br><br>● يحتفظ المنظم بحقه، دون ردّ أو تعويض، في رفض دخول أي شخص أو إخراجه في حال كان سلوكه غير لائق أو مُخلّ بالنظام.<br><br>● يجوز للمنظم إضافة أو سحب أو استبدال الفنانين، و/أو تغيير البرامج المُعلنة، ومواعيد الفعاليات، وترتيبات الجلوس، وسعة الجمهور، دون إشعار مسبق.<br><br>● يجوز للمنظم استخدام صورة حامل التذكرة أو ما يشابهها في أي عرض فيديو مباشر أو مُسجّل، أو صورة فوتوغرافية، أو مواد دعائية، أو موقع إلكتروني.<br><br>● يحق للمنظم تأجيل الفعالية أو إلغاؤها أو إيقافها أو تعليقها بسبب سوء الأحوال الجوية أو الظروف الخطرة أو أي أسباب أخرى خارجة عن سيطرته.<br><br>● يوافق حامل التذكرة على الخضوع لأي تفتيش بحثًا عن المواد الممنوعة، بما في ذلك على سبيل المثال لا الحصر، الأسلحة والمواد الخاضعة للرقابة والمواد الخطرة وغير القانونية.<br><br>● يوافق حامل التذكرة على استخدام بياناته الشخصية حسبما يراه المنظم ضروريًا لشراء التذكرة والمعالجة اللاحقة للفعالية. قد يشمل ذلك، على سبيل المثال لا الحصر، مشاركة بياناتك الشخصية مع جهات خارجية معتمدة، مثل الجهات الحكومية والمؤسسات المالية وموردي الفعاليات.<br><br>● يتحمل حامل التذكرة طواعيةً جميع المخاطر والأضرار العرضية المتعلقة بالفعالية، سواءً حدثت قبل الفعالية أو خلالها أو بعدها، بما في ذلك أي وفاة أو إصابة شخصية أو خسابة أو ضرر أو مسؤولية. يخضع بيع جميع التذاكر للقانون الماليزي، وتوافق على الخضوع للاختصاص القضائي الحصري للمحاكم الماليزية.",
                     "id": "Dengan membeli tiket, Anda (“Pemegang Tiket”) setuju untuk terikat pada Syarat dan Ketentuan penjualan yang tercantum di sini serta ketentuan lain yang dapat ditetapkan dari waktu ke waktu oleh VShoppe (“Penyelenggara”). Penyelenggara, agen, maupun karyawannya tidak bertanggung jawab atas kematian, cedera pribadi (kecuali disebabkan oleh kelalaian agen atau karyawannya), kehilangan, atau kerusakan apa pun yang terjadi selama berada di lokasi acara. Mereka juga tidak bertanggung jawab atas keluhan, klaim, pengembalian dana, atau penukaran dengan alasan apa pun, termasuk namun tidak terbatas pada pembatalan atau penundaan acara. Biaya pemesanan dan biaya penanganan tidak dapat dikembalikan. Setiap pengembalian dana hanya dilakukan atas kebijakan Penyelenggara.<br><br>Tiket dijual dengan ketentuan sebagai berikut:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Setelah pembelian selesai, tidak ada pengembalian dana kecuali jika acara ditunda atau dibatalkan, dan hal ini bergantung pada kebijakan Penyelenggara. Tiket yang hilang tidak akan diganti atau dikembalikan dananya.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Pada umumnya, tiket tidak dapat dipindahtangankan. Namun, jika pembelian dilakukan karena kesalahan dan dianggap dilakukan dengan itikad baik, Penyelenggara berhak mengizinkan pemindahan. Pemegang Tiket dapat mengajukan permohonan untuk memindahkan tiket kepada pihak lain, tergantung ketersediaan tiket. Biaya administrasi tambahan sebesar USD 50 harus dibayarkan untuk memulai proses pemindahan. Semua permintaan pemindahan harus dikirim ke <a href=\"mailto:v-regn@the-v.net\" style='color:white; text-decoration: underline white;'>v-regn@the-v.net</a>.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Masuk akan ditolak jika tiket diketahui telah diubah, dipalsukan, dan/atau tidak dibeli dari VShoppe atau titik penjualan resmi yang berwenang.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Penyelenggara berhak, tanpa pengembalian dana atau kompensasi, untuk menolak masuk atau mengeluarkan siapa pun yang berperilaku tidak tertib atau tidak pantas.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Penyelenggara dapat menambah, mengurangi, atau mengganti artis dan/atau mengubah program acara, waktu acara, pengaturan tempat duduk, serta kapasitas penonton tanpa pemberitahuan sebelumnya.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Penyelenggara dapat menggunakan gambar atau kemiripan Pemegang Tiket dalam siaran langsung, rekaman video, foto, materi publikasi, atau situs web.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Penyelenggara dapat menunda, membatalkan, menghentikan sementara, atau menghentikan acara karena cuaca buruk, situasi berbahaya, atau sebab lain di luar kendali yang wajar.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Pemegang Tiket setuju untuk menjalani pemeriksaan terhadap barang terlarang, termasuk namun tidak terbatas pada senjata, zat terlarang, berbahaya, dan ilegal.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Pemegang Tiket setuju bahwa data pribadi mereka dapat digunakan oleh Penyelenggara sebagaimana diperlukan dalam proses pembelian tiket dan pelaksanaan acara. Hal ini termasuk, namun tidak terbatas pada, pembagian data kepada pihak ketiga yang berwenang seperti instansi pemerintah, lembaga keuangan, dan vendor terkait acara.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Pemegang Tiket secara sukarela menanggung seluruh risiko yang berkaitan dengan acara, baik sebelum, selama, maupun setelah acara berlangsung, termasuk risiko kematian, cedera pribadi, kehilangan, kerusakan, atau tanggung jawab lainnya. Penjualan tiket ini diatur oleh hukum Malaysia, dan Anda setuju untuk tunduk pada yurisdiksi eksklusif pengadilan Malaysia.<br>",
                     "fr": "En achetant ce billet, vous (« le détenteur du billet ») acceptez d'être lié par les conditions générales de vente spécifiées dans le présent document et par toute autre disposition pouvant être spécifiée de temps à autre par VShoppe (« l'organisateur »). L'Organisateur, ses agents ou ses employés ne peuvent être tenus responsables de tout décès, blessure corporelle (sauf si causée par la négligence de ses agents et employés), perte ou dommage, quelle qu'en soit la cause, survenant sur le lieu de l'événement ; ils ne peuvent pas non plus être tenus responsables de toute réclamation, demande de remboursement ou d'échange pour quelque raison que ce soit, y compris, sans s'y limiter, l'annulation ou le report de l'événement. Les frais de réservation et de gestion ne sont pas remboursables. Tout remboursement sera effectué uniquement à la discrétion de l'Organisateur.<br><br>Les billets sont vendus sous réserve des conditions suivantes :<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Une fois la vente effectuée, aucun remboursement ne sera effectué, sauf en cas de report ou d'annulation de l'événement, et ce à la discrétion de l'Organisateur. Les billets perdus ne seront ni remplacés ni remboursés.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;●	En règle générale, les billets ne sont pas transférables. Toutefois, si l'achat a été effectué par erreur, de bonne foi, l'Organisateur se réserve le droit d'autoriser le transfert. Le détenteur du billet peut demander à le transférer à une autre personne, sous réserve de la disponibilité des billets. Des frais administratifs supplémentaires de 50 USD doivent être acquittés par le détenteur du billet pour lancer la procédure de transfert. Toutes les demandes de transfert doivent être envoyées à<a href=\"mailto:v-regn@the-v.net\" style='color:white; text-decoration: underline white;'>v-regn@the-v.net</a>.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● L'entrée sera refusée si les billets s'avèrent avoir été altérés, contrefaits et/ou n'avoir pas été achetés auprès de VShoppe ou d'un point de vente officiel et agréé.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● L'organisateur se réserve le droit, sans remboursement ni compensation, de refuser l'entrée ou d'expulser toute personne dont le comportement est perturbateur ou inapproprié.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;●	L'Organisateur peut ajouter, retirer ou remplacer des artistes et/ou modifier les programmes annoncés, les horaires des événements, la disposition des places et la capacité d'accueil sans préavis.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;●	L'organisateur peut utiliser l'image ou la ressemblance du détenteur du billet dans toute diffusion vidéo en direct ou enregistrée, toute photo, tout support publicitaire ou tout site web.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;●	L'Organisateur peut reporter, annuler, interrompre ou mettre fin à l'événement en raison de conditions météorologiques défavorables, de situations dangereuses ou de toute autre cause échappant à son contrôle raisonnable.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;●	Le détenteur du billet accepte de se soumettre à toute fouille visant à détecter des objets interdits, y compris, mais sans s'y limiter, des armes, des substances contrôlées, dangereuses et illégales.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;●	Le détenteur du billet accepte que ses données personnelles soient utilisées comme l'organisateur le juge nécessaire lors de l'achat du billet et du traitement ultérieur lié à l'événement. Cela peut inclure, sans s'y limiter, le partage de vos données personnelles avec des tiers autorisés tels que des agences gouvernementales, des institutions financières et des fournisseurs pour ledit événement.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;●	Le détenteur du billet assume volontairement tous les risques et dangers liés à l'événement, qu'ils surviennent avant, pendant ou après l'événement proprement dit, y compris tout décès, blessure corporelle, perte, dommage ou responsabilité. La vente de tous les billets est régie par la loi malaisienne, et vous acceptez de vous soumettre à la compétence exclusive des tribunaux malaisiens.<br>",
@@ -1985,71 +1985,54 @@ function changeLanguage(lang) {
     localStorage.setItem('selectedLanguage', lang);
     
     const isRTL = (lang === 'ar');
-    // This is the key that unlocks the CSS rules above
     document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
     document.documentElement.lang = lang;
 
-    // 2. Update all static elements with data-i18n
+    // 1. Update all static elements with data-i18n
     const elements = document.querySelectorAll('[data-i18n]');
     elements.forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (translations[lang] && translations[lang][key]) {
-            el.innerHTML= translations[lang][key];
+            el.innerHTML = translations[lang][key];
         }
     });
 
     document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
-    const key = element.getAttribute('data-i18n-placeholder');
-    if (translations[lang][key]) {
-        element.placeholder = translations[lang][key];
-    }
+        const key = element.getAttribute('data-i18n-placeholder');
+        if (translations[lang][key]) {
+            element.placeholder = translations[lang][key];
+        }
+    });
 
-    if (typeof handleCategoryChange === 'function') {
-    handleCategoryChange();
-}
+    // 2. Update dynamic dropdowns and filters
+    if (typeof handleCategoryChange === 'function') handleCategoryChange();
 
-// This forces the static dropdowns (All Media, All Days) to translate
-document.querySelectorAll('select option[data-i18n]').forEach(opt => {
-    const key = opt.getAttribute('data-i18n');
-    opt.innerHTML = getManualTranslation(key, opt.textContent);
-});
-});
+    document.querySelectorAll('select option[data-i18n]').forEach(opt => {
+        const key = opt.getAttribute('data-i18n');
+        opt.innerHTML = getManualTranslation(key, opt.textContent);
+    });
 
-    if (typeof applyFilters === "function") {
-        applyFilters(); 
-    }
+    if (typeof applyFilters === "function") applyFilters(); 
 
-    // 3. Re-render the big Preview Stage in the new language
-    if (currentStory && typeof updatePreview === "function") {
-        updatePreview(currentStory);
-    }
-    
-    // (If you have VKids or FAQ, call their render functions here too)
+    // 3. Re-render Dynamic Components (Stories, VKids, FAQs, Personality Test)
+    if (currentStory && typeof updatePreview === "function") updatePreview(currentStory);
     if (typeof renderVKids === "function") renderVKids(lang);
     if (typeof renderVFAQs === "function") renderVFAQs(lang);
-
-    // 4. Handle RTL/LTR for Arabic
-    document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
-
-    // 5. Re-render dynamic components
-    if (typeof renderVKids === "function") renderVKids(lang);
-    if (typeof renderVFAQs === "function") renderVFAQs(lang);
-
-    applyFilters(); 
+    if (typeof window.updatePersonalityTranslation === "function") window.updatePersonalityTranslation(lang);
     
-    // Update the main stage if something is currently selected
+    // Update the main stage button text if something is currently selected
     if (currentStory) {
         const btn = document.getElementById('mainActionButton');
-        const key = (currentStory.type === 'video') ? "stories.play_btn" : "stories.read_btn";
-        btn.innerText = translations[lang][key];
+        if (btn) {
+            const key = (currentStory.type === 'video') ? "stories.play_btn" : "stories.read_btn";
+            btn.innerText = translations[lang][key];
+        }
     }
 
+    // 4. Confessions Background Logic
     const confessionSection = document.getElementById('v-kids-confessions');
     if (confessionSection) {
-        // 1. Detect if it's a mobile screen (under 768px)
         const isMobile = window.innerWidth <= 768;
-
-        // 2. The 12-Image Map (Update filenames to match your assets)
         const bgMap = {
             'en': { web: 'form-bg.jpg', mob: 'form-bg-en-mobile.jpg' },
             'ar': { web: 'form-bg-ar.jpg', mob: 'form-bg-ar-mobile.jpg' },
@@ -2059,20 +2042,43 @@ document.querySelectorAll('select option[data-i18n]').forEach(opt => {
             'tr': { web: 'form-bg-tr.jpg', mob: 'form-bg-tr-mobile.jpg' }
         };
 
-        // 3. Get the specific image
-        const selectedBgs = bgMap[lang] || bgMap['en']; // Fallback to English
+        const selectedBgs = bgMap[lang] || bgMap['en']; 
         const finalImage = isMobile ? selectedBgs.mob : selectedBgs.web;
-
-        // 4. Apply the background
         confessionSection.style.backgroundImage = `url('assets/images/${finalImage}')`;
     }
 
-    window.addEventListener('resize', () => {
-    const currentLang = localStorage.getItem('selectedLanguage') || 'en';
-    changeLanguage(currentLang);
-});
+    // ⭐ 5. PROTECT THE FAQS: RE-SPAWN HUNT ITEMS HERE ⭐
+    // Placed at the very end so it runs after all the new HTML is built!
+    if (typeof window.spawnHuntItems === "function") {
+        window.spawnHuntItems();
+    }
 
+    // Update the floating claim button language
+    if (typeof window.checkHuntStatus === "function") window.checkHuntStatus();
 }
+
+// NOTE: Moved the resize listener OUTSIDE the changeLanguage function! 
+// If it's inside, it attaches a new listener every single time they switch languages, causing lag.
+window.addEventListener('resize', () => {
+    const currentLang = localStorage.getItem('selectedLanguage') || 'en';
+    
+    // Only update the background on resize, not the whole language function!
+    const confessionSection = document.getElementById('v-kids-confessions');
+    if (confessionSection) {
+        const isMobile = window.innerWidth <= 768;
+        const bgMap = {
+            'en': { web: 'form-bg.jpg', mob: 'form-bg-en-mobile.jpg' },
+            'ar': { web: 'form-bg-ar.jpg', mob: 'form-bg-ar-mobile.jpg' },
+            'id': { web: 'form-bg-id.jpg', mob: 'form-bg-id-mobile.jpg' },
+            'fr': { web: 'form-bg-fr.jpg', mob: 'form-bg-fr-mobile.jpg' },
+            'ru': { web: 'form-bg-ru.jpg', mob: 'form-bg-ru-mobile.jpg' },
+            'tr': { web: 'form-bg-tr.jpg', mob: 'form-bg-tr-mobile.jpg' }
+        };
+        const selectedBgs = bgMap[currentLang] || bgMap['en']; 
+        const finalImage = isMobile ? selectedBgs.mob : selectedBgs.web;
+        confessionSection.style.backgroundImage = `url('assets/images/${finalImage}')`;
+    }
+});
 
 const footerData = {
     email: "visit <a href='https://the-v.net/'>The V Website</a>",
@@ -2166,4 +2172,215 @@ function renderContent(item, lang = 'en') {
 
 
 
+// --- PERSONALITY TEST LOGIC ---
 
+// 1. Create a global translation function so your website's main menu can talk to the quiz!
+window.personalityTranslations = {};
+window.updatePersonalityTranslation = function(lang) {
+    // Grab the specific language bucket from our saved data
+    const currentTranslations = window.personalityTranslations[lang] || window.personalityTranslations['en'];
+    
+    if (!currentTranslations) return; // Failsafe if data isn't loaded yet
+
+    // 1. FORCE THE QUIZ TO OBEY RTL FOR ARABIC
+    const testContainer = document.getElementById('vPersonalityTest');
+    if (testContainer) {
+        testContainer.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+    }
+
+    // 2. Translate the text
+    const elements = document.querySelectorAll('[data-i18n]');
+    elements.forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (currentTranslations[key]) {
+            el.innerText = currentTranslations[key];
+        }
+    });
+};
+
+// 2. Wrap the quiz logic so it waits for the HTML to load (Fixes the crash!)
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // --- THE DATA ---
+    const resultsData = {
+        A: {
+            titleKey: "ptest_res_conform_title", titleDefault: "👑 CONFORM KING / QUEEN",
+            descKey: "ptest_res_conform_desc", descDefault: "You move with the times… and ahead of them. You understand that success today requires adapting to modern tools, digital platforms, and evolving culture. You plug into what works now and position yourself for what’s next.",
+            powerKey: "ptest_res_conform_power", powerDefault: "Adaptability",
+            moveKey: "ptest_res_conform_move", moveDefault: "Don’t just adopt trends — lead others in using them to grow."
+        },
+        B: {
+            titleKey: "ptest_res_transform_title", titleDefault: "⚡ TRANSFORMATIVE TROOPER",
+            descKey: "ptest_res_transform_desc", descDefault: "You are constantly becoming more! You embrace change, push past limits, and refuse to stay the same person you were yesterday. Every challenge is a chance to evolve into a better version of yourself.",
+            powerKey: "ptest_res_transform_power", powerDefault: "Personal Reinvention",
+            moveKey: "ptest_res_transform_move", moveDefault: "Turn your transformation into a standard your team can follow."
+        },
+        C: {
+            titleKey: "ptest_res_reform_title", titleDefault: "🛠️ REFORM RANGER",
+            descKey: "ptest_res_reform_desc", descDefault: "You keep rebuilding to achieve better results. You see gaps, refine systems, and find better ways to move forward. Guided by a clear vision, you are never afraid of challenging the norms and letting go what no longer works.",
+            powerKey: "ptest_res_reform_power", powerDefault: "Innovation",
+            moveKey: "ptest_res_reform_move", moveDefault: "Scale your systems, so others can succeed with you."
+        },
+        D: {
+            titleKey: "ptest_res_perform_title", titleDefault: "🚀 POWER PERFORMER",
+            descKey: "ptest_res_perform_desc", descDefault: "You turn belief into results. You act with urgency, stay focused, and consistently hit targets. While others take too long to prepare, you execute — and that’s why you stand out.",
+            powerKey: "ptest_res_perform_power", powerDefault: "Decisive Action",
+            moveKey: "ptest_res_perform_move", moveDefault: "Multiply your impact by developing more performers within your team."
+        }
+    };
+
+    const questionsData = [
+        { qKey: "ptest_q1_text", qDef: "1. When presenting the business to a prospect, what’s your best approach?", options: { A: { key: "ptest_q1_a", text: "Maximise the use of available technology and follow what works for others" }, B: { key: "ptest_q1_b", text: "Talk about my personal growth and journey" }, C: { key: "ptest_q1_c", text: "Adjust and improve the presentation based on the prospect" }, D: { key: "ptest_q1_d", text: "Focus on sharing the results you and others have achieved in the business" } } },
+        { qKey: "ptest_q2_text", qDef: "2. When faced with a major challenge…", options: { A: { key: "ptest_q2_a", text: "I adapt and find ways to stay relevant" }, B: { key: "ptest_q2_b", text: "I use it as a chance to grow stronger" }, C: { key: "ptest_q2_c", text: "I rethink the system and improve the process" }, D: { key: "ptest_q2_d", text: "I take action with a sense of urgency and push through fast" } } },
+        { qKey: "ptest_q3_text", qDef: "3. Your approach to learning is:", options: { A: { key: "ptest_q3_a", text: "Seek answers from others, including even the younger generation" }, B: { key: "ptest_q3_b", text: "Focus on mindset and self-development" }, C: { key: "ptest_q3_c", text: "Improve systems and strategies" }, D: { key: "ptest_q3_d", text: "Learn what works, then execute immediately" } } },
+        { qKey: "ptest_q4_text", qDef: "4. In your team, you are usually the one who:", options: { A: { key: "ptest_q4_a", text: "Introduces new, modern ways to reach and engage prospects" }, B: { key: "ptest_q4_b", text: "Inspires others through growth" }, C: { key: "ptest_q4_c", text: "Fixes and improves how things are done" }, D: { key: "ptest_q4_d", text: "Drives results and pushes performance" } } },
+        { qKey: "ptest_q5_text", qDef: "5. When something isn’t working…", options: { A: { key: "ptest_q5_a", text: "Adjust to what’s currently effective" }, B: { key: "ptest_q5_b", text: "Work on improving myself" }, C: { key: "ptest_q5_c", text: "Change the system completely" }, D: { key: "ptest_q5_d", text: "Push harder and take more action" } } },
+        { qKey: "ptest_q6_text", qDef: "6. What excites you the most?", options: { A: { key: "ptest_q6_a", text: "All the changes happening around the world" }, B: { key: "ptest_q6_b", text: "Becoming a better version of myself" }, C: { key: "ptest_q6_c", text: "Discovering better ways of doing things" }, D: { key: "ptest_q6_d", text: "Achieving targets and winning" } } },
+        { qKey: "ptest_q7_text", qDef: "7. Your biggest strength as a networker is:", options: { A: { key: "ptest_q7_a", text: "Staying relevant and adaptable" }, B: { key: "ptest_q7_b", text: "Continuous personal growth" }, C: { key: "ptest_q7_c", text: "Innovation and improvement" }, D: { key: "ptest_q7_d", text: "Execution and results" } } },
+        { qKey: "ptest_q8_text", qDef: "8. When leading a team…", options: { A: { key: "ptest_q8_a", text: "I guide them to stay updated and relevant" }, B: { key: "ptest_q8_b", text: "I help them grow personally" }, C: { key: "ptest_q8_c", text: "I create better systems for them" }, D: { key: "ptest_q8_d", text: "I push them to perform and deliver" } } },
+        { qKey: "ptest_q9_text", qDef: "9. Your focus for the next 6–12 months is:", options: { A: { key: "ptest_q9_a", text: "Discovering and embracing what works best now" }, B: { key: "ptest_q9_b", text: "Improving myself gradually every day" }, C: { key: "ptest_q9_c", text: "Creating better systems for the team" }, D: { key: "ptest_q9_d", text: "Setting and hitting bigger goals" } } },
+        { qKey: "ptest_q10_text", qDef: "10. Success, to you, means:", options: { A: { key: "ptest_q10_a", text: "Staying relevant in a fast-changing world" }, B: { key: "ptest_q10_b", text: "Unlocking your limitless potential" }, C: { key: "ptest_q10_c", text: "Building something better and sustainable" }, D: { key: "ptest_q10_d", text: "Winning through consistent results" } } }
+    ];
+
+    // --- THE LOGIC ---
+    let currentQuestionIndex = 0;
+    let scores = { A: 0, B: 0, C: 0, D: 0 };
+    let finalResultKey = "A";
+
+    const startScreen = document.getElementById('vTestStartScreen');
+    const questionScreen = document.getElementById('vTestQuestionScreen');
+    const optionsContainer = document.getElementById('vOptionsContainer');
+    const resultPopup = document.getElementById('vTestResultPopup');
+
+    // 3. Fetch the JSON file ONCE and save it.
+    fetch('personality_en.json')
+        .then(response => {
+            if (!response.ok) throw new Error("Translation file not found");
+            return response.json();
+        })
+        .then(data => {
+            window.personalityTranslations = data; 
+            
+            // Look into YOUR website's localStorage for the active language!
+            const savedLang = localStorage.getItem('selectedLanguage') || 'en';
+            window.updatePersonalityTranslation(savedLang); 
+        })
+        .catch(error => console.error("Error loading translations:", error));
+
+    const startBtn = document.getElementById('vStartTestBtn');
+    if (startBtn) {
+        startBtn.addEventListener('click', function() {
+            startScreen.style.display = 'none';
+            questionScreen.style.display = 'block';
+            loadQuestion();
+        });
+    }
+
+    function loadQuestion() {
+        const currentQ = questionsData[currentQuestionIndex];
+        
+        const numNode = document.getElementById('vQuestionCurrentNum');
+        if (numNode) numNode.innerText = currentQuestionIndex + 1;
+        
+        const qTextNode = document.getElementById('vQuestionText');
+        if (qTextNode) {
+            qTextNode.setAttribute('data-i18n', currentQ.qKey);
+            qTextNode.innerText = currentQ.qDef;
+        }
+        
+        if (optionsContainer) optionsContainer.innerHTML = ''; 
+
+        ['A', 'B', 'C', 'D'].forEach(key => {
+            const btn = document.createElement('button');
+            btn.className = 'v-option-btn';
+            btn.setAttribute('data-i18n', currentQ.options[key].key);
+            btn.innerText = currentQ.options[key].text;
+            btn.onclick = () => selectOption(key);
+            optionsContainer.appendChild(btn);
+        });
+
+        // Translate the newly created buttons!
+        const currentLang = localStorage.getItem('selectedLanguage') || 'en';
+        window.updatePersonalityTranslation(currentLang);
+    }
+
+    function selectOption(selectedKey) {
+        scores[selectedKey]++;
+        currentQuestionIndex++;
+
+        if (currentQuestionIndex < questionsData.length) {
+            loadQuestion();
+        } else {
+            calculateAndShowResult();
+        }
+    }
+
+    function calculateAndShowResult() {
+        finalResultKey = Object.keys(scores).reduce((a, b) => scores[a] > scores[b] ? a : b);
+        const result = resultsData[finalResultKey];
+
+        const titleNode = document.getElementById('vResultTitle');
+        if(titleNode) {
+            titleNode.setAttribute('data-i18n', result.titleKey);
+            titleNode.innerText = result.titleDefault;
+        }
+
+        const descNode = document.getElementById('vResultDesc');
+        if(descNode) {
+            descNode.setAttribute('data-i18n', result.descKey);
+            descNode.innerText = result.descDefault;
+        }
+
+        const powerNode = document.getElementById('vResultPower');
+        if(powerNode) {
+            powerNode.setAttribute('data-i18n', result.powerKey);
+            powerNode.innerText = result.powerDefault;
+        }
+
+        const moveNode = document.getElementById('vResultMove');
+        if(moveNode) {
+            moveNode.setAttribute('data-i18n', result.moveKey);
+            moveNode.innerText = result.moveDefault;
+        }
+
+        questionScreen.style.display = 'none';
+        resultPopup.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+
+        const currentLang = localStorage.getItem('selectedLanguage') || 'en';
+        window.updatePersonalityTranslation(currentLang);
+    }
+
+    const closeBtn = document.getElementById('vTestCloseBtn');
+    if (closeBtn) {
+        closeBtn.onclick = function(e) {
+            e.preventDefault();
+            resultPopup.style.display = 'none';
+            document.body.style.overflow = 'auto';
+            
+            currentQuestionIndex = 0;
+            scores = { A: 0, B: 0, C: 0, D: 0 };
+            startScreen.style.display = 'block';
+        };
+    }
+});
+
+// --- SOCIAL MEDIA SHARING LOGIC ---
+window.shareResult = function(platform) {
+    const titleEl = document.getElementById('vResultTitle');
+    const translatedTitle = titleEl ? titleEl.innerText : "My Persona";
+    const baseShareMsg = `I took the V-Convention Personality Test and I am a ${translatedTitle}! Discover your persona here: `;
+    
+    const shareText = encodeURIComponent(baseShareMsg);
+    const pageUrl = encodeURIComponent(window.location.href);
+
+    if (platform === 'facebook') {
+        window.open(`https://www.facebook.com/sharer/sharer.php?u=${pageUrl}&quote=${shareText}`, '_blank');
+    } else if (platform === 'twitter') {
+        window.open(`https://twitter.com/intent/tweet?text=${shareText}&url=${pageUrl}`, '_blank');
+    } else if (platform === 'copy') {
+        navigator.clipboard.writeText(decodeURIComponent(shareText + pageUrl)).then(() => {
+            alert("Result and link copied to clipboard! You can now paste this into Instagram or any message.");
+        });
+    }
+};

@@ -132,6 +132,8 @@
     Tickets are available NOW on VShoppe. Use the code:<span>VMYJUNE2026</span>
 </a>
 
+<!-- <div class="v-hunt-target" data-hunt-id="item-1"></div> -->
+
 </section>
 
     <section id="video" class="master-section stories-theater">
@@ -192,6 +194,8 @@
                 <div class="playlist-scroll"></div>
             </div>
         </div>
+
+<!-- <div class="v-hunt-target" data-hunt-id="item-2"></div> -->
     </section>
 
 <!-- <section class="confession-section" id="v-kids-confessions">
@@ -279,6 +283,7 @@
                 </div>
             </div>
         </div>
+        <!-- <div class="v-hunt-target" data-hunt-id="item-3"></div> -->
     </section>
 
     <section class="vkids-section" id="v-kids">
@@ -293,6 +298,8 @@
         <p class="v-gold-subtitle" data-i18n="vkids.section_subtitle">Stay updated on their own journey here!</p>
     </div>
     <div id="vkids-list" class="vkids-grid"></div>
+
+<!-- <div class="v-hunt-target" data-hunt-id="item-4"></div> -->
 </section>
 
 
@@ -310,12 +317,59 @@
         </div>
     </div>
 </div>
+
+<!-- <section class="vPersonalityTest-section" id="personality-test" style="display: block;">
+ <div id="vPersonalityTest" class="v-test-container">
+    <div id="vTestStartScreen" class="v-test-card text-center">
+        <h2 style="color: #5a0b0b; margin-bottom: 10px;" data-i18n="ptest_start_title">CTRP Squad, ASSEMBLE! Which one are you?</h2>
+        <p style="color: #333; margin-bottom: 25px;" data-i18n="ptest_start_desc">Take this special personality test to find out if you’re a Conform King/Queen, Transformative Trooper, Reform Ranger, or Power Performer!</p>
+        <button id="vStartTestBtn" class="v-btn-primary" data-i18n="ptest_start_btn">Start the Test</button>
+    </div>
+
+    <div id="vTestQuestionScreen" class="v-test-card" style="display: none;">
+        <div class="v-test-header">
+            <span style="font-weight: bold; color: #dfbd38;">
+                <span data-i18n="ptest_q_word">Question</span> 
+                <span id="vQuestionCurrentNum">1</span> 
+                <span data-i18n="ptest_of_word">of 10</span>
+            </span>
+        </div>
+        <h3 id="vQuestionText" style="color: #5a0b0b; margin: 15px 0 25px 0;"></h3>
+        <div id="vOptionsContainer" class="v-options-grid">
+            </div>
+    </div>
+</div>
+
+<div id="vTestResultPopup" class="v-popup-overlay" style="display: none;">
+    <div class="v-popup-content v-result-content">
+        <button type="button" id="vTestCloseBtn" class="v-popup-close">&times;</button>
+        
+        <h4 style="color: #dfbd38; margin: 0; text-transform: uppercase;" data-i18n="ptest_result_you_are">You are a...</h4>
+        <h2 id="vResultTitle" style="color: #5a0b0b; margin: 5px 0 15px 0; font-size: 28px;"></h2>
+        <p id="vResultDesc" style="color: #333; margin-bottom: 15px; font-style: italic;"></p>
+        
+        <div style="background-color: #f9f9f9; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: start;">
+            <p><strong data-i18n="ptest_power_label">Your Power:</strong> <span id="vResultPower"></span></p>
+            <p style="margin-bottom: 0;"><strong data-i18n="ptest_move_label">Your Next Move:</strong> <span id="vResultMove"></span></p>
+        </div>
+
+        <p style="font-weight: bold; margin-bottom: 10px;" data-i18n="ptest_share_label">Share your result!</p>
+        <div class="v-social-share">
+            <button onclick="shareResult('facebook')" class="v-share-btn v-fb">Facebook</button>
+            <button onclick="shareResult('twitter')" class="v-share-btn v-x">X (Twitter)</button>
+            <button onclick="shareResult('copy')" class="v-share-btn v-copy" data-i18n="ptest_share_copy">Copy Link (IG/General)</button>
+        </div>
+    </div>
+</div>
+
+</section> -->
         
     <section class="v-faq-section" id="faqs">
         <div class="v-faq-container">
             <h2 id="faq-main-title" class="v-faq-header" data-i18n="faq.title">Frequently Asked Questions</h2>
             <div id="faq-accordion" class="v-faq-list"></div>
         </div>
+<!-- <div class="v-hunt-target" data-hunt-id="item-5"></div> -->
     </section>
 </main>
 
@@ -374,9 +428,8 @@
         </div>
     </div>
     
-    <div class="footer-bottom">
-        <p>&copy; 2026 V-CONVENTION. All Rights Reserved.</p>
-    </div>
+
+            <!-- <div class="v-hunt-target" data-hunt-id="item-6"></div> -->
 </footer>
 
 <a href="#home" id="backToTop" onclick="handleBackToTopClick(event)">↑</a>
@@ -400,6 +453,50 @@
 
 
 
+
+<div id="vHuntToast" class="v-hunt-toast">
+
+    <span data-i18n="hunt_toast_text1">You found </span>
+    <span>⭐ </span>
+    <span id="vHuntCurrent">0</span>
+
+    <span data-i18n="hunt_toast_text2"> / 6 items!</span>
+</div>
+
+<div id="vHuntClaimBtn" class="v-hunt-claim-btn" style="display: none;">
+    🎁 Claim Reward!
+</div>
+
+<div id="vHuntRewardPopup" class="v-popup-overlay" style="display: none;">
+    <div class="v-popup-content v-reward-content">
+        <button type="button" id="vHuntCloseBtn" class="v-popup-close">&times;</button>
+        
+        <h2 style="color: #5a0b0b; margin-top: 0;" data-i18n="hunt_reward_title">🎉 You Found Them All!</h2>
+        <p style="color: #333; text-align: center; margin-bottom: 20px;" data-i18n="hunt_reward_desc">
+            Congratulations! Upload your photo below to generate your exclusive Adventurer profile picture!
+        </p>
+        
+        <div class="v-badge-container" style="text-align: center;">
+            <canvas id="vProfileCanvas" width="1080" height="1080"></canvas>
+            
+        <div id="vCropControls" style="display: none; margin-top: 15px;">
+            <p data-i18n="hunt_crop_hint" style="font-size: 12px; color: #666; margin-bottom: 5px;">Drag photo to reposition • Use slider to zoom</p>
+            <input type="range" id="vZoomSlider" min="0.1" max="3" step="0.02" value="1" style="width: 80%; max-width: 250px;">
+        </div>
+        </div>
+        
+        <div class="v-reward-actions">
+            <input type="file" id="vUploadPhoto" accept="image/png, image/jpeg, image/jpg" style="display: none;" />
+            <label for="vUploadPhoto" class="v-upload-label" data-i18n="hunt_upload_btn">
+                📸 Upload Photo
+            </label>
+            
+            <a id="vDownloadFinalBtn" href="#" download="V-Convention_PFP.jpg" class="v-reward-btn" data-i18n="hunt_reward_btn" style="display: none;">
+                ⬇️ Download Profile Frame
+            </a>
+        </div>
+    </div>
+</div>
 
 <script src="https://players.brightcove.net/3745659807001/4JJdlFXsg_default/index.min.js"></script>
 
@@ -562,5 +659,480 @@ document.getElementById('confession-form').addEventListener('submit', function(e
     // Optional: Enable Mouse Wheel Zooming
     elem.parentElement.addEventListener('wheel', panzoom.zoomWithWheel);
 </script>
+
+
+
+<script>
+(function() {
+    // Configuration
+    const TOTAL_ITEMS = 10; //
+    const STORAGE_KEY = 'vcon_hunt_progress';
+    let currentRewardFrame = ''; // Stores the random frame they won
+    
+    // Get currently found items from local storage
+    let foundItems = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+
+// Function to show the little notification toast (Adjusted for data-i18n HTML)
+    function showToast(count) {
+        const toast = document.getElementById('vHuntToast');
+        const currentCountDisplay = document.getElementById('vHuntCurrent');
+        
+        // Target elements using their data-i18n attributes
+        const text1 = document.querySelector('[data-i18n="hunt_toast_text1"]');
+        const text2 = document.querySelector('[data-i18n="hunt_toast_text2"]');
+        
+        // Detect current language
+        const lang = localStorage.getItem('selectedLanguage') || 'en';
+        
+        // Mini-Dictionary for the Toast
+        const trans1 = { 
+            en: "You found ", 
+            ar: "لقد وجدت ", 
+            id: "Anda menemukan ", 
+            fr: "Vous avez trouvé ", 
+            ru: "Вы нашли ", 
+            tr: "Bulduğunuz: " 
+        };
+        const trans2 = { 
+            en: " / 10 items!", 
+            ar: " / 10 عناصر!", 
+            id: " / 10 item!", 
+            fr: " / 10 objets !", 
+            ru: " / 10 предметов!", 
+            tr: " / 10 eşya!" 
+        };
+
+        if (currentCountDisplay && toast) {
+            // Update the number
+            currentCountDisplay.innerText = count;
+            
+            // Apply the translations
+            if(text1) text1.innerText = trans1[lang] || trans1['en'];
+            if(text2) text2.innerText = trans2[lang] || trans2['en'];
+            
+            // Show the toast
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+    }
+
+function triggerWin() {
+        const lang = localStorage.getItem('selectedLanguage') || 'en';
+        
+        // 1. Randomize the reward frame (These MUST be transparent PNGs!)
+        const rewardImages = [
+            'assets/images/scavengerhunt.png',
+            'assets/images/scavengerhunt2.png',
+            'assets/images/scavengerhunt3.png'
+        ];
+        currentRewardFrame = rewardImages[Math.floor(Math.random() * rewardImages.length)];
+        
+        // 2. Draw the empty frame onto the canvas so they can see what they won
+        const canvas = document.getElementById('vProfileCanvas');
+        if (canvas) {
+            const ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear old data
+            ctx.fillStyle = '#eeeeee'; // Gray background
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            const frameImg = new Image();
+            frameImg.src = currentRewardFrame;
+            frameImg.onload = function() {
+                ctx.drawImage(frameImg, 0, 0, canvas.width, canvas.height);
+            };
+        }
+
+        // 3. Translations
+        const titleEl = document.querySelector('[data-i18n="hunt_reward_title"]');
+        const descEl = document.querySelector('[data-i18n="hunt_reward_desc"]');
+        const uploadBtnEl = document.querySelector('[data-i18n="hunt_upload_btn"]');
+        const dlBtnEl = document.querySelector('[data-i18n="hunt_reward_btn"]');
+        const hintEl = document.querySelector('[data-i18n="hunt_crop_hint"]');
+
+        const titles = { en: "🎉 You Found Them All! 🎉", ar: "🎉 لقد وجدتها كلها! 🎉", id: "🎉 Anda Menemukan Semuanya! 🎉", fr: "🎉 Vous les avez tous trouvés ! 🎉", ru: "🎉 Вы нашли их все! 🎉", tr: "🎉 Hepsini Buldunuz! 🎉" };
+        const descs = {
+            en: "Congratulations! Upload your photo below to generate your exclusive Adventurer profile picture!",
+            ar: "تهانينا! قم بتحميل صورتك أدناه لإنشاء صورة الملف الشخصي الحصرية الخاصة بك!",
+            id: "Selamat! Unggah foto Anda di bawah untuk menghasilkan gambar profil Petualang eksklusif Anda!",
+            fr: "Félicitations ! Téléchargez votre photo ci-dessous pour générer votre photo de profil exclusive !",
+            ru: "Поздравляем! Загрузите свое фото ниже, чтобы создать эксклюзивную фотографию профиля!",
+            tr: "Tebrikler! Özel profil resminizi oluşturmak için fotoğrafınızı aşağıya yükleyin!"
+        };
+
+        const hints = {
+            en: "Drag photo to reposition • Use slider to zoom",
+            ar: "اسحب الصورة لتغيير موضعها • استخدم شريط التمرير للتكبير",
+            id: "Seret foto untuk mengubah posisi • Gunakan penggeser untuk zoom",
+            fr: "Faites glisser la photo pour la repositionner • Utilisez le curseur pour zoomer",
+            ru: "Перетащите фото для изменения положения • Используйте ползунок для масштабирования",
+            tr: "Yeniden konumlandırmak için fotoğrafı sürükleyin • Yakınlaştırmak için kaydırıcıyı kullanın"
+        };
+        const uploadBtns = { en: "📸 Upload Photo", ar: "📸 تحميل الصورة", id: "📸 Unggah Foto", fr: "📸 Télécharger la photo", ru: "📸 Загрузить фото", tr: "📸 Fotoğraf Yükle" };
+        const dlBtns = { en: "⬇️ Download Profile Frame", ar: "⬇️ تحميل إطار الملف الشخصي", id: "⬇️ Unduh Bingkai Profil", fr: "⬇️ Télécharger le cadre", ru: "⬇️ Скачать рамку", tr: "⬇️ Çerçeveyi İndir" };
+
+        if(titleEl) titleEl.innerText = titles[lang] || titles['en'];
+        if(descEl) descEl.innerText = descs[lang] || descs['en'];
+        if(uploadBtnEl) uploadBtnEl.innerText = uploadBtns[lang] || uploadBtns['en'];
+        if(dlBtnEl) dlBtnEl.innerText = dlBtns[lang] || dlBtns['en'];
+        if(hintEl) hintEl.innerText = hints[lang] || hints['en'];
+
+        // Reset the UI (hide download button AND slider until they upload)
+        const dlBtn = document.getElementById('vDownloadFinalBtn');
+        if (dlBtn) dlBtn.style.display = 'none';
+
+        const cropControls = document.getElementById('vCropControls');
+        if (cropControls) cropControls.style.display = 'none';
+
+        // ⭐ THE BUG FIX: Wipe the file input and image memory clean! ⭐
+        const fileInputTarget = document.getElementById('vUploadPhoto');
+        if (fileInputTarget) fileInputTarget.value = ''; 
+        pfpUserImg = null;
+
+        setTimeout(() => {
+            const rewardPopup = document.getElementById('vHuntRewardPopup');
+            if (rewardPopup) {
+                rewardPopup.style.display = 'flex';
+                document.body.style.overflow = 'hidden'; 
+                
+                // Hide the claim button while they are looking at the popup
+                if (typeof window.checkHuntStatus === "function") window.checkHuntStatus();
+            }
+        }, 1500);
+    }
+
+    // --- ADVANCED CANVAS MERGING LOGIC (DRAG & ZOOM) ---
+    let pfpUserImg = null;
+    let pfpFrameImg = new Image();
+    let pfpScale = 1;
+    let pfpOffsetX = 0;
+    let pfpOffsetY = 0;
+    let isDragging = false;
+    let startX, startY;
+
+    // 1. Core Drawing Function (Paints the image, applies zoom/drag, paints frame on top)
+    function drawMergedProfile() {
+        const canvas = document.getElementById('vProfileCanvas');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+
+        // Clear and fill background
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = '#eeeeee';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        // Draw User Photo
+        if (pfpUserImg) {
+            const drawW = pfpUserImg.width * pfpScale;
+            const drawH = pfpUserImg.height * pfpScale;
+            
+            // Calculate center point + user drag offset
+            const x = (canvas.width / 2) - (drawW / 2) + pfpOffsetX;
+            const y = (canvas.height / 2) - (drawH / 2) + pfpOffsetY;
+
+            ctx.drawImage(pfpUserImg, x, y, drawW, drawH);
+        }
+
+        // Draw Frame OVER the photo
+        pfpFrameImg.src = currentRewardFrame; // Grab the random frame
+        if (pfpFrameImg.complete) {
+            ctx.drawImage(pfpFrameImg, 0, 0, canvas.width, canvas.height);
+            
+            // Update the Download Link with the new adjusted image!
+            if (pfpUserImg) {
+                const finalImageURL = canvas.toDataURL("image/jpeg", 0.9);
+                document.getElementById('vDownloadFinalBtn').href = finalImageURL;
+            }
+        } else {
+            pfpFrameImg.onload = () => drawMergedProfile(); // Redraw if frame isn't loaded yet
+        }
+    }
+
+    // 2. Handle the Photo Upload
+    const fileInput = document.getElementById('vUploadPhoto');
+    if (fileInput) {
+        fileInput.addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                pfpUserImg = new Image();
+                pfpUserImg.src = event.target.result;
+                
+                pfpUserImg.onload = function() {
+                    const canvas = document.getElementById('vProfileCanvas');
+                    
+                    // Reset variables for the new photo
+                    pfpOffsetX = 0;
+                    pfpOffsetY = 0;
+                    
+                    // Set initial scale to "cover" the canvas nicely
+                    pfpScale = Math.max(canvas.width / pfpUserImg.width, canvas.height / pfpUserImg.height);
+                    
+                    // Update slider to match starting scale
+                    const slider = document.getElementById('vZoomSlider');
+                    if(slider) slider.value = pfpScale;
+
+                    // Show controls & buttons
+                    document.getElementById('vCropControls').style.display = 'block';
+                    document.getElementById('vDownloadFinalBtn').style.display = 'inline-block';
+                    
+                    drawMergedProfile();
+                };
+            };
+            reader.readAsDataURL(file);
+        });
+    }
+
+    // 3. Handle Zoom Slider
+    const zoomSlider = document.getElementById('vZoomSlider');
+    if (zoomSlider) {
+        zoomSlider.addEventListener('input', function(e) {
+            pfpScale = parseFloat(e.target.value);
+            drawMergedProfile();
+        });
+    }
+
+    // 4. Handle Dragging (Mouse & Touch)
+    const canvas = document.getElementById('vProfileCanvas');
+    if (canvas) {
+        // Multiplier to match visual dragging speed to the 1080p canvas size
+        const dragSpeed = 1080 / 300; 
+
+        const startDrag = (e) => {
+            if (!pfpUserImg) return;
+            isDragging = true;
+            startX = e.touches ? e.touches[0].clientX : e.clientX;
+            startY = e.touches ? e.touches[0].clientY : e.clientY;
+        };
+
+        const moveDrag = (e) => {
+            if (!isDragging) return;
+            e.preventDefault(); // Stop page scrolling on mobile while dragging
+            
+            const currentX = e.touches ? e.touches[0].clientX : e.clientX;
+            const currentY = e.touches ? e.touches[0].clientY : e.clientY;
+            
+            pfpOffsetX += (currentX - startX) * dragSpeed;
+            pfpOffsetY += (currentY - startY) * dragSpeed;
+            
+            startX = currentX;
+            startY = currentY;
+            
+            drawMergedProfile(); // Redraw in real-time!
+        };
+
+        const endDrag = () => { isDragging = false; };
+
+        // Mouse Events
+        canvas.addEventListener('mousedown', startDrag);
+        window.addEventListener('mousemove', moveDrag);
+        window.addEventListener('mouseup', endDrag);
+
+        // Touch Events (Mobile)
+        canvas.addEventListener('touchstart', startDrag, { passive: false });
+        window.addEventListener('touchmove', moveDrag, { passive: false });
+        window.addEventListener('touchend', endDrag);
+    }
+
+    // Bulletproof click handling for closing the popup
+    document.addEventListener('click', function(e) {
+        // 1. Close if they click the "X"
+        if (e.target && e.target.id === 'vHuntCloseBtn') {
+            e.preventDefault();
+            const rewardPopup = document.getElementById('vHuntRewardPopup');
+            if (rewardPopup) {
+                rewardPopup.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Restore scrolling
+            }
+        }
+        
+        // 2. Close if they click the dark background overlay
+        if (e.target && e.target.id === 'vHuntRewardPopup') {
+            e.target.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+
+
+
+    // 1. THE BULLETPROOF RANDOM SPAWNER FUNCTION
+    window.spawnHuntItems = function() {
+        // Clean up any old items on the screen (important for language switching)
+        document.querySelectorAll('.v-hunt-wrapper').forEach(el => el.remove());
+
+        // Calculate how many they still need to find
+        let itemsNeeded = TOTAL_ITEMS - foundItems.length;
+        if (itemsNeeded <= 0) return; // They already won!
+
+        // Grab a massive list of safe containers across the entire site
+        let rawSpots = document.querySelectorAll('.hero-section, section, .faq-item, .vkids-card, .story-item, footer, .speaker-bio, .gallery-scroll-container, .navbar');
+        
+        let hidingSpots = [];
+        
+        // Filter the spots: Only keep elements that are actually visible and big enough
+        rawSpots.forEach(el => {
+            if (el.offsetHeight > 80 && el.offsetWidth > 80) {
+                hidingSpots.push(el);
+            }
+        });
+
+        // Shuffle the spots completely randomly like a deck of cards!
+        hidingSpots = hidingSpots.sort(() => 0.5 - Math.random());
+
+        // Spawn the items!
+        for (let i = 0; i < itemsNeeded; i++) {
+            // The '%' guarantees we never run out of spots, even if the list is short
+            const targetSpot = hidingSpots[i % hidingSpots.length];
+            
+            // Critical: make the container relative so the item stays inside it
+            targetSpot.style.position = 'relative'; 
+
+            const itemHTML = document.createElement('div');
+            itemHTML.className = 'v-hunt-wrapper';
+            
+            // Give it a random ID so we can track clicks uniquely
+            itemHTML.setAttribute('data-hunt-id', 'hunt_' + Math.random().toString(36).substr(2, 9));
+            
+            // Randomize position INSIDE the box (between 10% and 80% to avoid clipping the edges)
+            const randomTop = Math.floor(Math.random() * 70) + 10;
+            const randomLeft = Math.floor(Math.random() * 70) + 10;
+            
+            itemHTML.style.cssText = `
+                position: absolute; 
+                z-index: 9999; 
+                cursor: pointer; 
+                transition: transform 0.3s, opacity 0.3s; 
+                top: ${randomTop}%; 
+                left: ${randomLeft}%;
+            `;
+            
+            // Added a drop-shadow so the image stands out no matter what background it spawns on!
+            itemHTML.innerHTML = `<img src="assets/images/vhunt.png" alt="Hunt Item" class="v-hunt-animated-item" style="width: 45px; height: 45px; filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.4)); " />`;
+
+            // Inject it into the site
+            targetSpot.appendChild(itemHTML);
+        }
+    };
+
+// --- CHECK STATUS & SHOW FLOATING BUTTON ---
+    window.checkHuntStatus = function() {
+        const claimBtn = document.getElementById('vHuntClaimBtn');
+        const rewardPopup = document.getElementById('vHuntRewardPopup');
+        if (!claimBtn) return;
+
+        // Is the popup currently open on the screen?
+        const isPopupOpen = rewardPopup && rewardPopup.style.display === 'flex';
+
+        // ONLY show the button if they have 10 items AND the popup is closed
+        if (foundItems.length >= TOTAL_ITEMS && !isPopupOpen) {
+            claimBtn.style.display = 'block';
+            
+            const lang = localStorage.getItem('selectedLanguage') || 'en';
+            const btnTexts = {
+                en: "🎁 Claim Reward!", ar: "🎁 احصل على المكافأة!", id: "🎁 Klaim Hadiah!",
+                fr: "🎁 Réclamer la récompense !", ru: "🎁 Забрать награду!", tr: "🎁 Ödülü Al!"
+            };
+            claimBtn.innerText = btnTexts[lang] || btnTexts['en'];
+        } else {
+            // Hide it if they haven't won, or if they are currently looking at the popup
+            claimBtn.style.display = 'none';
+        }
+    };
+
+    // Run this immediately when the page loads
+    checkHuntStatus();
+
+    // Run the spawner immediately on load
+    spawnHuntItems();
+
+    // 2. THE MASTER CLICK LISTENER (Handles items, claim buttons, downloads, and closing!)
+    document.body.addEventListener('click', function(e) {
+        
+        // --- SCENARIO 1: They click a hidden Scavenger Hunt Item ---
+        const clickedItem = e.target.closest('.v-hunt-wrapper');
+        if (clickedItem) {
+            e.stopPropagation(); 
+            const huntId = clickedItem.getAttribute('data-hunt-id');
+
+            if (!foundItems.includes(huntId)) {
+                clickedItem.style.transform = 'scale(0) rotate(180deg)';
+                clickedItem.style.opacity = '0';
+                setTimeout(() => clickedItem.remove(), 300);
+
+                foundItems.push(huntId);
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(foundItems));
+
+                if (typeof showToast === "function") showToast(foundItems.length);
+
+                if (foundItems.length >= TOTAL_ITEMS) {
+                    if (typeof triggerWin === "function") triggerWin();
+                }
+            }
+            return; 
+        }
+
+        // --- SCENARIO 2: They click the Floating "Claim Reward" Button ---
+        if (e.target.closest('#vHuntClaimBtn')) {
+            e.preventDefault();
+            // Hide the button instantly as soon as they click it
+            document.getElementById('vHuntClaimBtn').style.display = 'none';
+            if (typeof triggerWin === "function") triggerWin();
+            return;
+        }
+
+        // --- SCENARIO 3: They click the Download Button to get their picture ---
+        if (e.target.closest('#vDownloadFinalBtn') || e.target.closest('[data-i18n="hunt_reward_btn"]')) {
+            setTimeout(() => {
+                foundItems = [];
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(foundItems));
+                
+                const rewardPopup = document.getElementById('vHuntRewardPopup');
+                if (rewardPopup) rewardPopup.style.display = 'none';
+                document.body.style.overflow = 'auto';
+
+                if (typeof window.spawnHuntItems === "function") window.spawnHuntItems();
+                if (typeof window.checkHuntStatus === "function") window.checkHuntStatus();
+            }, 500);
+            return;
+        }
+
+        // --- SCENARIO 4: They CLOSE the popup WITHOUT downloading ---
+        if (e.target.closest('#vHuntCloseBtn') || e.target.id === 'vHuntRewardPopup') {
+            e.preventDefault();
+            const rewardPopup = document.getElementById('vHuntRewardPopup');
+            if (rewardPopup) {
+                rewardPopup.style.display = 'none';
+                document.body.style.overflow = 'auto'; 
+            }
+            
+            // Now that the popup is closed, check the status! 
+            // (Because they have 10 items, this will instantly SHOW the floating button)
+            if (typeof window.checkHuntStatus === "function") window.checkHuntStatus();
+            return;
+        }
+    });
+
+    // Check if they ALREADY won before setting up the observer
+    if (foundItems.length >= TOTAL_ITEMS) {
+        // Do nothing on page reload! They already won, so we just stay quiet.
+        console.log("Scavenger hunt already completed.");
+    } else {
+        // Otherwise, start observing the hidden targets
+        setTimeout(() => {
+            const targets = document.querySelectorAll('.v-hunt-target');
+            targets.forEach(target => {
+                const huntId = target.getAttribute('data-hunt-id');
+                if (!foundItems.includes(huntId)) {
+                    observer.observe(target);
+                }
+            });
+        }, 500); 
+    }
+})();
+</script>
+
 </body>
 </html>

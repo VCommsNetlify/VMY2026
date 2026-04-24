@@ -1,0 +1,569 @@
+{
+  "en": 
+    {
+    "ptest_start_title": "CTRP Squad, ASSEMBLE! Which one are you?",
+    "ptest_start_desc": "Take this special personality test to find out if you’re a Conform King/Queen, Transformative Trooper, Reform Ranger, or Power Performer!",
+    "ptest_start_btn": "Start the Test",
+    
+    "ptest_q_word": "Question",
+    "ptest_of_word": "of 10",
+    
+    "ptest_result_you_are": "You are a...",
+    "ptest_power_label": "Your Power:",
+    "ptest_move_label": "Your Next Move:",
+    "ptest_share_label": "Share your result!",
+    "ptest_share_copy": "Copy Link (IG/General)",
+
+    "ptest_res_conform_title": "👑 CONFORM KING / QUEEN",
+    "ptest_res_conform_desc": "You move with the times… and ahead of them. You understand that success today requires adapting to modern tools, digital platforms, and evolving culture. You plug into what works now and position yourself for what’s next.",
+    "ptest_res_conform_power": "Adaptability",
+    "ptest_res_conform_move": "Don’t just adopt trends — lead others in using them to grow.",
+
+    "ptest_res_transform_title": "⚡ TRANSFORMATIVE TROOPER",
+    "ptest_res_transform_desc": "You are constantly becoming more! You embrace change, push past limits, and refuse to stay the same person you were yesterday. Every challenge is a chance to evolve into a better version of yourself.",
+    "ptest_res_transform_power": "Personal Reinvention",
+    "ptest_res_transform_move": "Turn your transformation into a standard your team can follow.",
+
+    "ptest_res_reform_title": "🛠️ REFORM RANGER",
+    "ptest_res_reform_desc": "You keep rebuilding to achieve better results. You see gaps, refine systems, and find better ways to move forward. Guided by a clear vision, you are never afraid of challenging the norms and letting go what no longer works.",
+    "ptest_res_reform_power": "Innovation",
+    "ptest_res_reform_move": "Scale your systems, so others can succeed with you.",
+
+    "ptest_res_perform_title": "🚀 POWER PERFORMER",
+    "ptest_res_perform_desc": "You turn belief into results. You act with urgency, stay focused, and consistently hit targets. While others take too long to prepare, you execute — and that’s why you stand out.",
+    "ptest_res_perform_power": "Decisive Action",
+    "ptest_res_perform_move": "Multiply your impact by developing more performers within your team.",
+
+    "ptest_q1_text": "1. When presenting the business to a prospect, what’s your best approach?",
+    "ptest_q1_a": "Maximise the use of available technology and follow what works for others",
+    "ptest_q1_b": "Talk about my personal growth and journey",
+    "ptest_q1_c": "Adjust and improve the presentation based on the prospect",
+    "ptest_q1_d": "Focus on sharing the results you and others have achieved in the business",
+
+    "ptest_q2_text": "2. When faced with a major challenge…",
+    "ptest_q2_a": "I adapt and find ways to stay relevant",
+    "ptest_q2_b": "I use it as a chance to grow stronger",
+    "ptest_q2_c": "I rethink the system and improve the process",
+    "ptest_q2_d": "I take action with a sense of urgency and push through fast",
+
+    "ptest_q3_text": "3. Your approach to learning is:",
+    "ptest_q3_a": "Seek answers from others, including even the younger generation",
+    "ptest_q3_b": "Focus on mindset and self-development",
+    "ptest_q3_c": "Improve systems and strategies",
+    "ptest_q3_d": "Learn what works, then execute immediately",
+
+    "ptest_q4_text": "4. In your team, you are usually the one who:",
+    "ptest_q4_a": "Introduces new, modern ways to reach and engage prospects",
+    "ptest_q4_b": "Inspires others through growth",
+    "ptest_q4_c": "Fixes and improves how things are done",
+    "ptest_q4_d": "Drives results and pushes performance",
+
+    "ptest_q5_text": "5. When something isn’t working…",
+    "ptest_q5_a": "Adjust to what’s currently effective",
+    "ptest_q5_b": "Work on improving myself",
+    "ptest_q5_c": "Change the system completely",
+    "ptest_q5_d": "Push harder and take more action",
+
+    "ptest_q6_text": "6. What excites you the most?",
+    "ptest_q6_a": "All the changes happening around the world",
+    "ptest_q6_b": "Becoming a better version of myself",
+    "ptest_q6_c": "Discovering better ways of doing things",
+    "ptest_q6_d": "Achieving targets and winning",
+
+    "ptest_q7_text": "7. Your biggest strength as a networker is:",
+    "ptest_q7_a": "Staying relevant and adaptable",
+    "ptest_q7_b": "Continuous personal growth",
+    "ptest_q7_c": "Innovation and improvement",
+    "ptest_q7_d": "Execution and results",
+
+    "ptest_q8_text": "8. When leading a team…",
+    "ptest_q8_a": "I guide them to stay updated and relevant",
+    "ptest_q8_b": "I help them grow personally",
+    "ptest_q8_c": "I create better systems for them",
+    "ptest_q8_d": "I push them to perform and deliver",
+
+    "ptest_q9_text": "9. Your focus for the next 6–12 months is:",
+    "ptest_q9_a": "Discovering and embracing what works best now",
+    "ptest_q9_b": "Improving myself gradually every day",
+    "ptest_q9_c": "Creating better systems for the team",
+    "ptest_q9_d": "Setting and hitting bigger goals",
+
+    "ptest_q10_text": "10. Success, to you, means:",
+    "ptest_q10_a": "Staying relevant in a fast-changing world",
+    "ptest_q10_b": "Unlocking your limitless potential",
+    "ptest_q10_c": "Building something better and sustainable",
+    "ptest_q10_d": "Winning through consistent results"
+
+  },
+  "ar": {
+    "ptest_start_title": "يا فرقة CTRP، استعدوا! أي واحد منكم؟",
+    "ptest_start_desc": "أجرِ اختبار الشخصية الخاص هذا لمعرفة ما إذا كنت ملك/ملكة مطيع/ة، أو جنديًا متحولًا، أو حارسًا إصلاحيًا، أو مؤديًا قويًا!",
+    "ptest_start_btn": "ابدأ الاختبار",
+    
+    "ptest_q_word": "السؤال",
+    "ptest_of_word": "من 10",
+    
+    "ptest_result_you_are": "هل أنتم...",
+    "ptest_power_label": "قوتكم:",
+    "ptest_move_label": "خطوتكم التالية:",
+    "ptest_share_label": "شارك نتيجتك!",
+    "ptest_share_copy": "نسخ الرابط (انستغرام/عام)",
+
+    "ptest_res_conform_title": "👑 ملكوك/ملكات التوافق",
+    "ptest_res_conform_desc": "أنتم تواكبون العصر... بل وتسبقونه. تدركون أن النجاح اليوم يتطلب التكيف مع الأدوات الحديثة، والمنصات الرقمية، والثقافة المتطورة. تستفيدون مما ينجح الآن، وتُهيئون أنفسكم لما هو قادم.",
+    "ptest_res_conform_power": "القدرة على التكيف.",
+    "ptest_res_conform_move": "لا تكتفون بمواكبة الصيحات - بل تكونوا قدوة للآخرين في استخدامها لتحقيق النمو.",
+
+    "ptest_res_transform_title": "⚡ جنود متحولين",
+    "ptest_res_transform_desc": "أنتم في تطور مستمر! تتقبلون التغيير، وتتجاوزون حدودكم، وترفضون البقاء على حالكم. كل تحدٍّ فرصةٌ لتطوير أنفسكم إلى نسخة أفضل.",
+    "ptest_res_transform_power": "التطور الذاتي",
+    "ptest_res_transform_move": "جعل تحوّلكم نموذجًا يحتذى به لفريقكم.",
+
+    "ptest_res_reform_title": "🛠️ حراس الإصلاح",
+    "ptest_res_reform_desc": "أنتم تُواصلون إعادة البناء لتحقيق نتائج أفضل. تُلاحظون الثغرات، وتُحسّنون أنظمة العمل، وتجدون طرقًا أفضل للمضي قدمًا. مسترشدين برؤية واضحة، لا تخشون أبدًا تحدّي المألوف والتخلّي عمّا لم يعد يُجدي نفعًا.",
+    "ptest_res_reform_power": "الابتكار",
+    "ptest_res_reform_move": "توسيع نطاق أنظمة عملكم، ليتمكّن الآخرون من النجاح معكم.",
+
+    "ptest_res_perform_title": "🚀 مُؤدٍّين متميزين",
+    "ptest_res_perform_desc": "أنتم تُحوّلون الإيمان إلى نتائج. تتصرفون بسرعة، وتحافظون على تركيزكم، وتُحققون أهدافكم باستمرار. بينما يُضيّع الآخرون وقتًا طويلًا في التحضير، أنتم تُنفّذون – وهذا ما يُميّزكم.",
+    "ptest_res_perform_power": "العمل الحاسم",
+    "ptest_res_perform_move": "مضاعفة تأثيركم من خلال تطوير المزيد من المُؤدّين المتميزين داخل فريقكم.",
+
+    "ptest_q1_text": "1. عند عرض العمل على عميل محتمل، ما هي أفضل طريقة لكم؟",
+    "ptest_q1_a": "الاستفادة القصوى من التكنولوجيا المتاحة واتباع الأساليب الناجحة للآخرين",
+    "ptest_q1_b": "الحديث عن التطور الشخصي لي ورحلتي",
+    "ptest_q1_c": "تعديل عرض العمل وتحسينه بما يتناسب مع العميل المحتمل",
+    "ptest_q1_d": "التركيز على مشاركة النتائج التي حققتها أنا والآخرون في المشروع",
+
+    "ptest_q2_text": "2. عند مواجهة تحدٍّ كبير...",
+    "ptest_q2_a": "أتأقلم وأجد طرقًا للبقاء على صلة بالموضوع.",
+    "ptest_q2_b": "أستغلّه كفرصة لأصبح أقوى.",
+    "ptest_q2_c": "أعيد النظر في النظام وأحسّن العملية.",
+    "ptest_q2_d": "أتخذ إجراءً سريعًا وأنجز المهمة على وجه السرعة.",
+
+    "ptest_q3_text": "3. منهجكم في التعلم هو:",
+    "ptest_q3_a": "البحث عن إجابات من الآخرين، بما في ذلك الجيل الأصغر سنًا",
+    "ptest_q3_b": "التركيز على العقلية والتطوير الذاتي",
+    "ptest_q3_c": "تحسين أنظمة العمل والاستراتيجيات",
+    "ptest_q3_d": "تعلم ما ينجح، ثم تطبيقه فورًا",
+
+    "ptest_q4_text": "4. في فريقك، أنت عادةً الشخص الذي:",
+    "ptest_q4_a": "يُقدّم أساليب جديدة وعصرية للتواصل مع العملاء المحتملين والتفاعل معهم",
+    "ptest_q4_b": "يُلهم الآخرين من خلال النمو",
+    "ptest_q4_c": "يُصلح ويُحسّن أساليب العمل",
+    "ptest_q4_d": "يُحقق النتائج ويُعزز الأداء",
+
+    "ptest_q5_text": "5. عندما لا تسير الأمور على ما يرام...",
+    "ptest_q5_a": "اتكيف مع ما هو فعال حاليًا",
+    "ptest_q5_b": "اعمل على تطوير الذات",
+    "ptest_q5_c": "أقوم بتغيير نظام العمل بالكامل",
+    "ptest_q5_d": "بذل المزيد من الجهد واتخاذ المزيد من الإجراءات",
+
+    "ptest_q6_text": "6. ما الذي يُثير حماسك أكثر؟",
+    "ptest_q6_a": "جميع التغييرات التي تحدث حول العالم",
+    "ptest_q6_b": "أن أصبح نسخة أفضل من نفسي",
+    "ptest_q6_c": "اكتشاف طرق أفضل لإنجاز الأمور",
+    "ptest_q6_d": "تحقيق الأهداف والفوز",
+
+    "ptest_q7_text": "7. أبرز نقاط قوتك رائد بيع مباشر هي:",
+    "ptest_q7_a": "مواكبة التطورات والتكيف معها",
+    "ptest_q7_b": "النمو الشخصي المستمر",
+    "ptest_q7_c": "الابتكار والتطوير",
+    "ptest_q7_d": "التنفيذ وتحقيق النتائج",
+
+    "ptest_q8_text": "8. عند قيادة فريق...",
+    "ptest_q8_a": "أوجههم للبقاء على اطلاع دائم ومواكبة التطورات",
+    "ptest_q8_b": "أساعدهم على النمو الشخصي",
+    "ptest_q8_c": "أبتكر لهم أنظمة عمل أفضل",
+    "ptest_q8_d": "أحفزهم على الأداء والإنجاز",
+
+    "ptest_q9_text": "9. سيكون تركيزك خلال الأشهر الستة إلى الاثني عشر القادمة على؟",
+    "ptest_q9_a": "اكتشاف أفضل الممارسات الحالية وتطبيقها",
+    "ptest_q9_b": "تطوير الذات تدريجيًا يوميًا",
+    "ptest_q9_c": "بناء أنظمة عمل أفضل للفريق",
+    "ptest_q9_d": "وضع أهداف أكبر وتحقيقها",
+
+    "ptest_q10_text": "10. النجاح، بالنسبة لك، يعني:",
+    "ptest_q10_a": "مواكبة التطورات في عالم سريع التغير",
+    "ptest_q10_b": "إطلاق العنان لإمكاناتك التي بلا حدود",
+    "ptest_q10_c": "بناء شيء أفضل ومستدام",
+    "ptest_q10_d": "تحقيق النجاح من خلال نتائج مستمرة"
+  },
+  "id":{
+    "ptest_start_title": "Pasukan CTRP, BERKUMPUL! Kamu yang mana?",
+    "ptest_start_desc": "Ikuti tes kepribadian khusus ini untuk mengetahui apakah Anda seorang Raja/Ratu Konformis, Prajurit Transformatif, Penjaga Reformasi, atau Penampil Unggulan!",
+    "ptest_start_btn": "Mulai Tes",
+    
+    "ptest_q_word": "Pertanyaan",
+    "ptest_of_word": "dari 10",
+    
+    "ptest_result_you_are": "Anda adalah seorang...",
+    "ptest_power_label": "Kekuatan Anda:",
+    "ptest_move_label": "Langkah Anda selanjutnya: ",
+    "ptest_share_label": "Bagikan hasil Anda!",
+    "ptest_share_copy": "Salin Tautan (IG/Umum)",
+
+    "ptest_res_conform_title": "👑 RAJA/RATU YANG BERADAPTASI",
+    "ptest_res_conform_desc": "Anda bergerak seiring waktu… dan bahkan mendahuluinya. Anda memahami bahwa kesuksesan saat ini membutuhkan adaptasi terhadap alat-alat modern, platform digital, dan budaya yang terus berkembang. Anda memanfaatkan apa yang berhasil saat ini dan memposisikan diri untuk masa depan.",
+    "ptest_res_conform_power": "Kemampuan beradaptasi",
+    "ptest_res_conform_move": "Jangan hanya mengadopsi tren — pimpin orang lain untuk menggunakannya demi pertumbuhan.",
+
+    "ptest_res_transform_title": "⚡ PASUKAN YANG BERTRANSFORMASI",
+    "ptest_res_transform_desc": "Anda terus-menerus menjadi lebih baik! Anda merangkul perubahan, melampaui batasan, dan menolak untuk tetap menjadi orang yang sama seperti kemarin. Setiap tantangan adalah kesempatan untuk berevolusi menjadi versi diri Anda yang lebih baik.",
+    "ptest_res_transform_power": "Penemuan Kembali Diri",
+    "ptest_res_transform_move": "Jadikan transformasi Anda sebagai standar yang dapat diikuti tim Anda.",
+
+    "ptest_res_reform_title": "🛠️ PASUKAN REFORMASI",
+    "ptest_res_reform_desc": "Anda terus membangun kembali untuk mencapai hasil yang lebih baik. Anda melihat celah, memperbaiki sistem, dan menemukan cara yang lebih baik untuk maju. Dipandu oleh visi yang jelas, Anda tidak pernah takut untuk menantang norma dan melepaskan apa yang tidak lagi berfungsi.",
+    "ptest_res_reform_power": "Inovasi",
+    "ptest_res_reform_move": "Meningkatkan skala sistem Anda, sehingga orang lain dapat berhasil bersama Anda.",
+
+    "ptest_res_perform_title": "🚀 EKSEKUTOR YANG KUAT",
+    "ptest_res_perform_desc": "Anda mengubah keyakinan menjadi hasil. Anda bertindak dengan sigap, tetap fokus, dan secara konsisten mencapai target. Sementara yang lain terlalu lama mempersiapkan diri, Anda mengeksekusi — dan itulah mengapa Anda menonjol.",
+    "ptest_res_perform_power": "Tindakan Tegas",
+    "ptest_res_perform_move": "Lipat gandakan dampak Anda dengan mengembangkan lebih banyak individu berkinerja tinggi dalam tim Anda.",
+
+    "ptest_q1_text": "1. Saat mempresentasikan bisnis kepada calon prospek, pendekatan terbaik Anda adalah:",
+    "ptest_q1_a": "Memaksimalkan penggunaan teknologi yang tersedia dan mengikuti apa yang berhasil bagi orang lain",
+    "ptest_q1_b": "Menceritakan pertumbuhan dan perjalanan pribadiku",
+    "ptest_q1_c": "Menyesuaikan dan meningkatkan presentasi berdasarkan prospek",
+    "ptest_q1_d": "Fokus membagikan hasil yang sudah kamu dan orang lain capai dalam bisnis ini",
+
+    "ptest_q2_text": "2. Saat menghadapi tantangan besar…",
+    "ptest_q2_a": "Saya beradaptasi dan mencari cara untuk tetap relevan",
+    "ptest_q2_b": "Saya menggunakannya sebagai kesempatan untuk menjadi lebih kuat",
+    "ptest_q2_c": "Saya memikirkan ulang sistem dan memperbaiki proses",
+    "ptest_q2_d": "Saya bertindak dengan cepat dan mendorong diri untuk terus maju",
+
+    "ptest_q3_text": "3. Pendekatan Anda dalam belajar adalah:",
+    "ptest_q3_a": "Mencari jawaban dari orang lain, termasuk generasi yang lebih muda",
+    "ptest_q3_b": "Fokus pada mindset dan pengembangan diri",
+    "ptest_q3_c": "Meningkatkan sistem dan strategi",
+    "ptest_q3_d": "Mempelajari apa yang berhasil, lalu langsung mengeksekusi",
+
+    "ptest_q4_text": "4. Dalam tim Anda, Anda biasanya adalah orang yang:",
+    "ptest_q4_a": "Memperkenalkan cara-cara baru dan modern untuk menjangkau prospek",
+    "ptest_q4_b": "Menginspirasi orang lain melalui pertumbuhan diri",
+    "ptest_q4_c": "Memperbaiki dan meningkatkan cara kerja",
+    "ptest_q4_d": "Mendorong hasil dan performa",
+
+    "ptest_q5_text": "5. Saat sesuatu tidak berjalan dengan baik…",
+    "ptest_q5_a": "Menyesuaikan dengan apa yang saat ini efektif",
+    "ptest_q5_b": "Fokus memperbaiki diri sendiri",
+    "ptest_q5_c": "Mengubah sistem secara keseluruhan",
+    "ptest_q5_d": "Mendorong lebih keras dan mengambil lebih banyak tindakan",
+
+    "ptest_q6_text": "6. Apa yang paling membuat Anda bersemangat?",
+    "ptest_q6_a": "Semua perubahan yang terjadi di dunia",
+    "ptest_q6_b": "Menjadi versi diri yang lebih baik",
+    "ptest_q6_c": "Menemukan cara yang lebih baik dalam melakukan sesuatu",
+    "ptest_q6_d": "Mencapai target dan meraih kemenangan",
+
+    "ptest_q7_text": "7. Kekuatan terbesar Anda sebagai networker adalah:",
+    "ptest_q7_a": "Tetap relevan dan mudah beradaptasi",
+    "ptest_q7_b": "Pertumbuhan diri yang berkelanjutan ",
+    "ptest_q7_c": "Inovasi dan perbaikan",
+    "ptest_q7_d": "Eksekusi dan hasil",
+
+    "ptest_q8_text": "8. Saat memimpin tim…",
+    "ptest_q8_a": "Saya membimbing mereka agar tetap up-to-date dan relevan",
+    "ptest_q8_b": "Saya membantu mereka berkembang secara pribadi",
+    "ptest_q8_c": "Saya menciptakan sistem yang lebih baik untuk mereka",
+    "ptest_q8_d": "Saya mendorong mereka untuk berperforma dan menghasilkan",
+
+    "ptest_q9_text": "9. Fokus Anda untuk 6–12 bulan ke depan adalah:",
+    "ptest_q9_a": "Menemukan dan mengikuti apa yang paling efektif saat ini",
+    "ptest_q9_b": "Meningkatkan diri secara bertahap setiap hari",
+    "ptest_q9_c": "Menciptakan sistem yang lebih baik untuk tim",
+    "ptest_q9_d": "Menetapkan dan mencapai target yang lebih besar",
+
+    "ptest_q10_text": "10. Bagi Anda, kesuksesan berarti:",
+    "ptest_q10_a": "Tetap relevan di dunia yang berubah cepat",
+    "ptest_q10_b": "Membuka potensi tanpa batas dalam diri",
+    "ptest_q10_c": "Membangun sesuatu yang lebih baik dan berkelanjutan",
+    "ptest_q10_d": "Menang melalui hasil yang konsisten"
+  },
+  "fr":{
+    "ptest_start_title": "Escouade CTRP, RASSEMBLEMENT ! Lequel êtes-vous ?",
+    "ptest_start_desc": "Répondez à ce test de personnalité spécial pour découvrir si vous êtes un Roi/Reine Conformiste, un Soldat Transformateur, un Ranger Réformateur ou un Performeur de Puissance !",
+    "ptest_start_btn": "Commencer le test",
+    
+    "ptest_q_word": "Question",
+    "ptest_of_word": "sur 10",
+    
+    "ptest_result_you_are": "Vous êtes un…",
+    "ptest_power_label": "Votre force ?",
+    "ptest_move_label": "Votre prochaine étape ?",
+    "ptest_share_label": "Partagez votre résultat !",
+    "ptest_share_copy": "Copier le lien (IG/Général)",
+
+    "ptest_res_conform_title": "👑 ROI / REINE CONFORME",
+    "ptest_res_conform_desc": "Vous évoluez avec le temps.. et vous le devancez. Vous comprenez que, pour réussir aujourd’hui, il faut s’adapter aux outils modernes, aux plateformes numériques et à une culture en constante évolution. Vous tirez parti de ce qui fonctionne aujourd’hui et vous vous préparez pour l’avenir.",
+    "ptest_res_conform_power": "La capacité d'adaptation",
+    "ptest_res_conform_move": "Ne vous contentez pas de suivre les tendances : encouragez les autres à les exploiter pour se développer.",
+
+    "ptest_res_transform_title": "⚡ SOLDAT TRANSFORMATEUR",
+    "ptest_res_transform_desc": "Vous vous améliorez constamment ! Vous accueillez le changement à bras ouverts, repoussez vos limites et refusez de rester la même personne que vous étiez hier. Chaque défi est une occasion de devenir une meilleure version de vous-même.",
+    "ptest_res_transform_power": "La réinvention personnelle",
+    "ptest_res_transform_move": "Faites de votre transformation un modèle que votre équipe pourra suivre.",
+
+    "ptest_res_reform_title": "🛠️ RANGER DE LA RÉFORME",
+    "ptest_res_reform_desc": "Vous ne cessez de vous réinventer pour obtenir de meilleurs résultats. Vous identifiez les lacunes, affinez vos systèmes et trouvez de meilleures façons d’avancer. Guidé par une vision claire, vous n’hésitez jamais à remettre en question les normes et à abandonner ce qui ne fonctionne plus.",
+    "ptest_res_reform_power": "L’innovation",
+    "ptest_res_reform_move": "Développez vos systèmes, afin que d’autres puissent réussir à vos côtés.",
+
+    "ptest_res_perform_title": "🚀 PERFORMEUR PUISSANT",
+    "ptest_res_perform_desc": "Vous transformez vos convictions en résultats. Vous agissez avec rapidité, restez concentré et atteignez systématiquement vos objectifs. Alors que d’autres passent trop de temps à se préparer, vous passez à l’action — et c’est ce qui vous distingue.",
+    "ptest_res_perform_power": "L’action decisive",
+    "ptest_res_perform_move": "Multipliez votre impact en formant davantage de performeurs au sein de votre équipe.",
+
+    "ptest_q1_text": "1. Lorsque vous présentez l’activité à un prospect, quelle est la meilleure approche à adopter ?",
+    "ptest_q1_a": "Tirer pleinement parti des technologies disponibles et suivre ce qui fonctionne pour les autres",
+    "ptest_q1_b": "Parler de mon évolution personnelle et de mon parcours",
+    "ptest_q1_c": "Adapter et améliorer la présentation en fonction du prospect",
+    "ptest_q1_d": "Mettre l'accent sur le partage des résultats que vous et d'autres avez obtenus dans le cadre de cette activité",
+
+    "ptest_q2_text": "2. Lorsqu'on est confronté à un défi de taille…",
+    "ptest_q2_a": "Je m'adapte et je trouve des moyens de rester dans la course",
+    "ptest_q2_b": "J'en profite pour devenir plus fort",
+    "ptest_q2_c": "Je repense le système et j'améliore le processus",
+    "ptest_q2_d": "J'agis avec un sentiment d'urgence et je vais de l'avant rapidement",
+
+    "ptest_q3_text": "3. Votre approche de l'apprentissage consiste à:",
+    "ptest_q3_a": "Chercher des réponses auprès des autres, y compris auprès de la jeune generation",
+    "ptest_q3_b": "Vous concentrer sur l'état d'esprit et le développement personnel",
+    "ptest_q3_c": "Améliorer les systèmes et les strategies",
+    "ptest_q3_d": "Apprendre ce qui fonctionne, puis passer immédiatement à l'action",
+
+    "ptest_q4_text": "4. Au sein de votre équipe, vous êtes généralement celui ou celle qui :",
+    "ptest_q4_a": "Propose de nouvelles méthodes modernes pour atteindre et susciter l'intérêt des prospects",
+    "ptest_q4_b": "Inspire les autres par son évolution",
+    "ptest_q4_c": "Corrige et améliore les méthodes de travail",
+    "ptest_q4_d": "Obtient des résultats et stimule la performance",
+
+    "ptest_q5_text": "5. Quand quelque chose ne fonctionne pas…",
+    "ptest_q5_a": "Je m'adapte à ce qui fonctionne actuellement",
+    "ptest_q5_b": "Je m'efforce de m'améliorer",
+    "ptest_q5_c": "Je change complètement le système",
+    "ptest_q5_d": "Je redouble d'efforts et j'agis davantage",
+
+    "ptest_q6_text": "6. Qu'est-ce qui vous passionne le plus ?",
+    "ptest_q6_a": "Tous les changements qui se produisent à travers le monde",
+    "ptest_q6_b": "Devenir une meilleure version de moi-même",
+    "ptest_q6_c": "Découvrir de meilleures façons de faire les choses",
+    "ptest_q6_d": "Atteindre mes objectifs et gagner",
+
+    "ptest_q7_text": "7. Votre plus grande force en tant que networker est :",
+    "ptest_q7_a": "Rester à la page et faire preuve d'adaptabilité",
+    "ptest_q7_b": "Le développement personnel continu",
+    "ptest_q7_c": "L'innovation et l'amélioration",
+    "ptest_q7_d": "La mise en œuvre et les résultats",
+
+    "ptest_q8_text": "8. Lorsque je dirige une équipe…",
+    "ptest_q8_a": "Je veille à ce qu’elle reste à la page et pertinente.",
+    "ptest_q8_b": "Je l’aide à se développer personnellement.",
+    "ptest_q8_c": "Je mets en place de meilleurs systèmes pour elle.",
+    "ptest_q8_d": "Je la pousse à être performante et à produire des résultats.",
+
+    "ptest_q9_text": "9. Votre objectif pour les 6 à 12 prochains mois est :",
+    "ptest_q9_a": "Découvrir et adopter ce qui fonctionne le mieux actuellement",
+    "ptest_q9_b": "M'améliorer progressivement chaque jour",
+    "ptest_q9_c": "Mettre en place de meilleurs systèmes pour l'équipe",
+    "ptest_q9_d": "Fixer et atteindre des objectifs plus ambitieux",
+
+    "ptest_q10_text": "10. Pour vous, le succès signifie :",
+    "ptest_q10_a": "Rester dans la course dans un monde en constante évolution",
+    "ptest_q10_b": "Libérer votre potentiel sans limites",
+    "ptest_q10_c": "Construire quelque chose de meilleur et de durable",
+    "ptest_q10_d": "Gagner grâce à des résultats constants"
+  },
+  "ru":{
+    "ptest_start_title": "Отряд CTRP, собирайтесь! К какому типу вы относитесь?",
+    "ptest_start_desc": "Пройдите этот специальный тест на определение типа личности, чтобы узнать, являетесь ли вы Королём/Королевой Конформизма, Трансформатором, Рейнджером Реформаций или Мощным Исполнительницей!",
+    "ptest_start_btn": "Начать тест",
+    
+    "ptest_q_word": "Вопрос",
+    "ptest_of_word": "из 10",
+    
+    "ptest_result_you_are": "Вы —…",
+    "ptest_power_label": "Ваша сила?",
+    "ptest_move_label": "Ваш следующий шаг?",
+    "ptest_share_label": "Поделитесь своим результатом!",
+    "ptest_share_copy": "Скопировать ссылку (IG/Общее)",
+
+    "ptest_res_conform_title": "👑 КОРОЛЬ/КОРОЛЕВА АДАПТАЦИИ",
+    "ptest_res_conform_desc": "Вы идёте в ногу со временем… и опережаете его. Вы понимаете, что успех сегодня требует адаптации к современным инструментам, цифровым платформам и меняющейся культуре. Вы используете то, что работает сейчас, и готовитесь к тому, что будет завтра.",
+    "ptest_res_conform_power": "Приспособляемость",
+    "ptest_res_conform_move": "Не просто следуйте тенденциям — ведите других, помогая им использовать эти тенденции для роста.",
+
+    "ptest_res_transform_title": "⚡ ВОИН-ТРАНСФОРМАТОР",
+    "ptest_res_transform_desc": "Вы постоянно становитесь лучше! Вы принимаете изменения, преодолеваете пределы и отказываетесь оставаться тем же человеком, которым были вчера. Каждый вызов — это шанс превратиться в лучшую версию себя.",
+    "ptest_res_transform_power": "Личное переосмысление",
+    "ptest_res_transform_move": "Превратите свою трансформацию в стандарт, которому может следовать ваша команда.",
+
+    "ptest_res_reform_title": "🛠️ ИНИЦИАТОР РЕФОРМ",
+    "ptest_res_reform_desc": "Вы постоянно перестраиваетесь, чтобы достигать лучших результатов. Вы видите пробелы, совершенствуете системы и находите лучшие пути для продвижения вперед. Руководствуясь четким видением, вы никогда не боитесь бросить вызов нормам и отказаться от того, что больше не работаетs.",
+    "ptest_res_reform_power": "Инновации",
+    "ptest_res_reform_move": "Расширьте свои системы, чтобы другие могли добиваться успеха вместе с вами.",
+
+    "ptest_res_perform_title": "🚀 МОЩНЫЙ ИСПОЛНИТЕЛЬ",
+    "ptest_res_perform_desc": "Вы превращаете веру в результаты. Вы действуете оперативно, остаетесь сосредоточенными и стабильно достигаете целей. Пока другие слишком долго готовятся, вы действуете — и именно поэтому вы выделяетесь.",
+    "ptest_res_perform_power": "Решительные действия",
+    "ptest_res_perform_move": "Увеличьте свое влияние, развивая больше исполнителей в своей команде.",
+
+    "ptest_q1_text": "1. Какой подход вы предпочитаете при презентации бизнеса проспекту?",
+    "ptest_q1_a": "Максимально использовать доступные технологии и следовать тому, что работает у других",
+    "ptest_q1_b": "Рассказывать о своем личном росте и пути",
+    "ptest_q1_c": "Адаптировать и улучшать презентацию с учетом особенностей проспекта",
+    "ptest_q1_d": "Сосредоточиться на том, чтобы поделиться результатами, которых вы и другие достигли в этом бизнесе",
+
+    "ptest_q2_text": "2. Столкнувшись с серьезной проблемой…",
+    "ptest_q2_a": "Я адаптируюсь и нахожу способы оставаться востребованным",
+    "ptest_q2_b": "Я использую это как шанс стать сильнее",
+    "ptest_q2_c": "Я переосмысливаю систему и улучшаю процесс",
+    "ptest_q2_d": "Я действую с чувством срочности и быстро продвигаюсь вперед",
+
+    "ptest_q3_text": "3. Ваш подход к обучению:",
+    "ptest_q3_a": "Искать ответы у других, включая даже молодое поколение",
+    "ptest_q3_b": "Сосредоточиться на мышлении и саморазвитии",
+    "ptest_q3_c": "Улучшать системы и стратегии",
+    "ptest_q3_d": "Узнавать, что работает, а затем немедленно применять это на практике",
+
+    "ptest_q4_text": "4. В своей команде вы обычно тот, кто:",
+    "ptest_q4_a": "Внедряет новые, современные способы привлечения и взаимодействия с проспектами",
+    "ptest_q4_b": "Вдохновляет других своим ростом",
+    "ptest_q4_c": "Исправляет и улучшает то, как делаются вещи",
+    "ptest_q4_d": "Добивается результатов и повышает эффективность",
+
+    "ptest_q5_text": "5. Когда что-то не работает…",
+    "ptest_q5_a": "Приспосабливаюсь к тому, что сейчас эффективно",
+    "ptest_q5_b": "Работаю над самосовершенствованием",
+    "ptest_q5_c": "Полностью меняю систему",
+    "ptest_q5_d": "Стараюсь еще больше и предпринимаю больше действий",
+
+    "ptest_q6_text": "6. Что вас воодушевляет больше всего?",
+    "ptest_q6_a": "Все изменения, происходящие в мире",
+    "ptest_q6_b": "Стать лучшей версией себя",
+    "ptest_q6_c": "Находить улучшенные способы выполнения задач",
+    "ptest_q6_d": "Достигать целей и побеждать",
+
+    "ptest_q7_text": "7. Ваша главная сильная сторона как нетворкера:",
+    "ptest_q7_a": "Оставаться востребованным и адаптируемым",
+    "ptest_q7_b": "Непрерывный личностный рост",
+    "ptest_q7_c": "Инновации и совершенствование",
+    "ptest_q7_d": "Реализация и результаты",
+
+    "ptest_q8_text": "8. Когда я руковожу командой…",
+    "ptest_q8_a": "Я помогаю им оставаться в курсе событий и оставаться востребованным",
+    "ptest_q8_b": "Я помогаю им расти личностно",
+    "ptest_q8_c": "Я создаю для них более эффективные системы",
+    "ptest_q8_d": "Я подталкиваю их к результатам и выполнению задач",
+
+    "ptest_q9_text": "9. Ваша приоритетная задача на ближайшие 6–12 месяцев:",
+    "ptest_q9_a": "Поиск и внедрение того, что работает лучше всего сейчас",
+    "ptest_q9_b": "Постепенное самосовершенствование каждый день",
+    "ptest_q9_c": "Создание более эффективных систем для команды",
+    "ptest_q9_d": "Постановка и достижение более амбициозных целей",
+
+    "ptest_q10_text": "10. Успех для вас означает:",
+    "ptest_q10_a": "Сохранение востребованности в быстро меняющемся мире",
+    "ptest_q10_b": "Раскрытие своего безграничного потенциала",
+    "ptest_q10_c": "Создание чего-то лучшего и стабильного",
+    "ptest_q10_d": "Победа благодаря стабильным результатам"
+  },
+  "tr":{
+    "ptest_start_title": "CTRP Ekibi, TOPLANIN! Siz hangisiniz?",
+    "ptest_start_desc": "Bu özel kişilik testini çözerek Uyumcu Kral/Kraliçe, Dönüşümcü Asker, Islahçı Korucu veya Güçlü Performansçı olup olmadığınızı öğrenin!",
+    "ptest_start_btn": "Teste Başla",
+    
+    "ptest_q_word": "Soru",
+    "ptest_of_word": "/ 10",
+    
+    "ptest_result_you_are": "Siz bir...",
+    "ptest_power_label": "Gücünüz:",
+    "ptest_move_label": "Sıradaki hamleniz:",
+    "ptest_share_label": "Sonucunuzu paylaşın!",
+    "ptest_share_copy": "Bağlantıyı Kopyala (IG/Genel)",
+
+    "ptest_res_conform_title": "👑 CONFORM KING / QUEEN (UYUMUN KRALI / KRALİÇESİ)",
+    "ptest_res_conform_desc": "Siz zamana ayak uydurur... hatta zamanın ötesinde hareket edersiniz. Günümüzde başarının; modern araçlara, dijital platformlara ve gelişen kültüre uyum sağlamaktan geçtiğini biliyorsunuz. Şu an işe yarayan sistemlere dahil oluyor ve kendinizi gelecek olana göre konumlandırıyorsunuz.",
+    "ptest_res_conform_power": "Adaptasyon yeteneğiniz.",
+    "ptest_res_conform_move": "Trendleri sadece takip etmekle kalmayın; bu trendleri büyümek için kullanma konusunda başkalarına liderlik edin.",
+
+    "ptest_res_transform_title": "⚡ TRANSFORMATIVE TROOPER (DÖNÜŞTÜRÜCÜ SAVAŞÇI)",
+    "ptest_res_transform_desc": "Siz sürekli daha fazlasına dönüşüyorsunuz! Değişimi kucaklıyor, sınırları zorluyor ve dün olduğunuz kişiyle aynı kalmayı reddediyorsunuz. Karşılaştığınız her zorluk, kendinizin daha iyi bir versiyonuna evrilmek için bir fırsattır.",
+    "ptest_res_transform_power": "Kendini Yeniden İnşa Etmek.",
+    "ptest_res_transform_move": "Kendi dönüşümünüzü, ekibinizin takip edebileceği bir standart haline getirin.",
+
+    "ptest_res_reform_title": "🛠️ REFORM RANGER (REFORM ÖNCÜSÜ)",
+    "ptest_res_reform_desc": "Daha iyi sonuçlar elde etmek için durmadan yeniden inşa ediyorsunuz. Eksikleri görüyor, sistemleri geliştiriyor ve ilerlemek için daha iyi yollar buluyorsunuz. Net bir vizyonun rehberliğinde, normlara meydan okumaktan ve artık işe yaramayan şeyleri geride bırakmaktan asla korkmuyorsunuz.",
+    "ptest_res_reform_power": "İnovasyon.",
+    "ptest_res_reform_move": "Sistemlerinizi ölçeklendirin, böylece başkaları da sizinle başarıya ulaşabilsin.",
+
+    "ptest_res_perform_title": "🚀 POWER PERFORMER  ( GÜÇLÜ PERFORMANS USTASI)",
+    "ptest_res_perform_desc": "Siz inancı sonuçlara dönüştürürsünüz. Aciliyet duygusuyla hareket eder, odaklanır ve hedeflerinizi tutarlı bir şekilde yakalarsınız. Diğerleri hazırlık yapmakla çok fazla vakit kaybederken, siz hayata geçirirsiniz; sizi öne çıkaran da budur.",
+    "ptest_res_perform_power": "Kararlı Eylem.",
+    "ptest_res_perform_move": "Ekibiniz içinde daha fazla performans ustası yetiştirerek etkinizi katlayın.",
+
+    "ptest_q1_text": "1. Bir adayınıza işi sunarken en iyi yaklaşımınız hangisidir?",
+    "ptest_q1_a": "Mevcut teknolojiyi maksimum düzeyde kullanmak ve başkaları için işe yarayanları takip etmek.",
+    "ptest_q1_b": "Kişisel gelişimimden ve yolculuğumdan bahsetmek.",
+    "ptest_q1_c": "Sunumu adaya göre uyarlamak ve geliştirmek.",
+    "ptest_q1_d": "Benim ve başkalarının bu işte elde ettiği sonuçları paylaşmaya odaklanmak.",
+
+    "ptest_q2_text": "2. Büyük bir zorlukla karşılaştığınızda...",
+    "ptest_q2_a": "Uyum sağlar ve güncel kalmanın yollarını bulurum.",
+    "ptest_q2_b": "Bunu daha da güçlenmek için bir fırsat olarak görürüm.",
+    "ptest_q2_c": "Sistemi yeniden düşünür ve süreci iyileştiririm.",
+    "ptest_q2_d": "Aciliyet duygusuyla harekete geçer ve hızla ilerlerim.",
+
+    "ptest_q3_text": "3. Öğrenmeye yaklaşımınız şöyledir:",
+    "ptest_q3_a": "Genç nesil de dahil olmak üzere başkalarından cevaplar aramak.",
+    "ptest_q3_b": "Zihniyet ve kişisel gelişime odaklanmak.",
+    "ptest_q3_c": "Sistemleri ve stratejileri geliştirmek.",
+    "ptest_q3_d": "Nelerin işe yaradığını öğrenmek ve hemen uygulamak.",
+
+    "ptest_q4_text": "4. Ekibinizde genellikle şunları yapan kişisinizdir:",
+    "ptest_q4_a": "Adaylara ulaşmak ve etkileşim kurmak için yeni, modern yollar sunan.",
+    "ptest_q4_b": "Gelişimiyle başkalarına ilham veren.",
+    "ptest_q4_c": "İşlerin yapılış şeklini düzelten ve iyileştiren.",
+    "ptest_q4_d": "Sonuçları tetikleyen ve performansı zorlayan.",
+
+    "ptest_q5_text": "5. Bir şeyler yolunda gitmediğinde...",
+    "ptest_q5_a": "Şu an etkili olan neyse ona uyum sağlarım.",
+    "ptest_q5_b": "Kendimi geliştirmek üzerine çalışırım.",
+    "ptest_q5_c": "Sistemi tamamen değiştiririm.",
+    "ptest_q5_d": "Daha fazla bastırır ve daha çok aksiyon alırım.",
+
+    "ptest_q6_text": "6. Sizi en çok ne heyecanlandırır?",
+    "ptest_q6_a": "Dünyada olup biten tüm değişimler.",
+    "ptest_q6_b": "Kendimin daha iyi bir versiyonu haline gelmek.",
+    "ptest_q6_c": "İşleri yapmanın daha iyi yollarını keşfetmek.",
+    "ptest_q6_d": "Hedeflere ulaşmak ve kazanmak.",
+
+    "ptest_q7_text": "7. Bir networker olarak en büyük gücünüz:",
+    "ptest_q7_a": "Güncel ve uyumlu kalmak.",
+    "ptest_q7_b": "Sürekli kişisel gelişim.",
+    "ptest_q7_c": "İnovasyon ve iyileştirme.",
+    "ptest_q7_d": "Uygulama ve sonuçlar.",
+
+    "ptest_q8_text": "8. Bir ekibe liderlik ederken...",
+    "ptest_q8_a": "Onlara güncel ve modern kalmaları için rehberlik ederim.",
+    "ptest_q8_b": "Kişisel olarak büyümelerine yardımcı olurum.",
+    "ptest_q8_c": "Onlar için daha iyi sistemler oluştururum.",
+    "ptest_q8_d": "Performans göstermeleri ve sonuç almaları için onları teşvik ederim.",
+
+    "ptest_q9_text": "9. Önümüzdeki 6–12 ay için odağınız:",
+    "ptest_q9_a": "Şu an en iyi neyin işe yaradığını keşfetmek ve benimsemek.",
+    "ptest_q9_b": "Her gün kendimi adım adım geliştirmek.",
+    "ptest_q9_c": "Ekip için daha iyi sistemler kurmak.",
+    "ptest_q9_d": "Daha büyük hedefler belirlemek ve onlara ulaşmak.",
+
+    "ptest_q10_text": "10. Sizin için başarı şu anlama gelir:",
+    "ptest_q10_a": "Hızla değişen bir dünyada güncelliğini korumak.",
+    "ptest_q10_b": "Sınırsız potansiyelinizin kilidini açmak.",
+    "ptest_q10_c": "Daha iyi ve sürdürülebilir bir şey inşa etmek.",
+    "ptest_q10_d": "İstikrarlı sonuçlar aracılığıyla kazanmak."
+  }
+
+}
