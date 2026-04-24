@@ -464,7 +464,7 @@
 </div>
 
 <div id="vHuntClaimBtn" class="v-hunt-claim-btn" style="display: none;">
-    🎁 Claim Reward!
+    🎁 Claim your surprise!
 </div>
 
 <div id="vHuntRewardPopup" class="v-popup-overlay" style="display: none;">
@@ -1032,8 +1032,12 @@ function triggerWin() {
             
             const lang = localStorage.getItem('selectedLanguage') || 'en';
             const btnTexts = {
-                en: "🎁 Claim Reward!", ar: "🎁 احصل على المكافأة!", id: "🎁 Klaim Hadiah!",
-                fr: "🎁 Réclamer la récompense !", ru: "🎁 Забрать награду!", tr: "🎁 Ödülü Al!"
+                en: "🎁 Claim your surprise!", 
+                ar: "🎁 احصل على مفاجأتك!", 
+                id: "🎁 Klaim kejutanmu!",
+                fr: "🎁 Réclamez votre surprise !", 
+                ru: "🎁 Забери свой сюрприз!", 
+                tr: "🎁 Sürprizini al!"
             };
             claimBtn.innerText = btnTexts[lang] || btnTexts['en'];
         } else {
