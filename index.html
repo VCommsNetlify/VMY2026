@@ -275,11 +275,15 @@
                     <button id="zoom-reset" title="Reset View">⟲</button>
                 </div>
 
-                <div id="v-panzoom-wrapper" class="v-map-wrapper">
-                    <img id="venue-map-img" 
-                        src="assets/images/03272026-June-2026-V-Convention-Microsite-Venue-Map-static.png" 
-                        alt="Venue Map" 
-                        class="v-map-image">
+               <div id="v-panzoom-wrapper" class="v-map-wrapper">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="assets/images/03272026-June-2026-V-Convention-Microsite-Venue-Map-static-square-v2.png">
+                        
+                        <img id="venue-map-img" 
+                            src="assets/images/03272026-June-2026-V-Convention-Microsite-Venue-Map-static-v2.png" 
+                            alt="Venue Map" 
+                            class="v-map-image">
+                    </picture>
                 </div>
             </div>
         </div>
