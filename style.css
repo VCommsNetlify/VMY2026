@@ -3889,6 +3889,32 @@ html[dir="rtl"] #v-kids .v-gold-title {
     padding-right: 25px;
 }
 
+/* --- 10. MOBILE RESPONSIVENESS FIXES --- */
+@media (max-width: 600px) {
+    .v-result-image {
+        max-height: 45vh; /* Shrinks the image so it doesn't eat the whole screen */
+    }
+    
+    .v-share-card {
+        padding: 16px; /* Tightens the frosted glass box */
+    }
+    
+    .v-share-btn {
+        font-size: 14px; /* Slightly smaller text */
+        padding: 10px 12px;
+        flex: 1 1 40%; /* Allows buttons to wrap and share space nicely */
+    }
+    
+    .v-popup-close-anchored {
+        /* Nudge the X slightly for mobile screens */
+        top: 6%; 
+        right: 2%;
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+    }
+}
+
 
 /* When the site is in RTL (Arabic), move the toast to the right! */
 [dir="rtl"] #vHuntToast {
