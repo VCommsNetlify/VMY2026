@@ -15,6 +15,13 @@ body.v-popup-open {
     -ms-touch-action: none;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* This kills the horizontal scroll */
+    margin: 0;
+    padding: 0;
+}
+
 strong a, 
 b a {
     font-weight: bold !important;
@@ -871,6 +878,7 @@ header {
 .hero-logo {
     display: block;
     margin: 0 auto 20px auto; /* Centers the logo and adds space below */
+    width: 300px;
 }
 
 .main-title {
