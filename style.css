@@ -3766,10 +3766,11 @@ html[dir="rtl"] #v-kids .v-gold-title {
     background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(4px);
     display: flex;
-    align-items: center;
     justify-content: center;
+    /* REMOVED align-items: center because it causes the screen clipping */
     z-index: 1000;
-    padding: 20px;
+    padding: 40px 20px; /* Added top/bottom breathing room */
+    overflow-y: auto;   /* THE MAGIC FIX: Allows the user to scroll if it's too tall! */
 }
 
 /* --- 6. Isolated Result Wrapper --- */
@@ -3777,6 +3778,7 @@ html[dir="rtl"] #v-kids .v-gold-title {
     position: relative;
     width: 100%;
     max-width: 500px;
+    margin: auto; /* THIS re-centers it perfectly without breaking the scroll */
     text-align: center;
     background: transparent; 
     padding: 0;
