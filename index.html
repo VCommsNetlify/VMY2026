@@ -322,51 +322,49 @@
     </div>
 </div>
 
-<!-- <section class="vPersonalityTest-section" id="personality-test" style="display: block;">
- <div id="vPersonalityTest" class="v-test-container">
-    <div id="vTestStartScreen" class="v-test-card text-center">
-        <h2 style="color: #5a0b0b; margin-bottom: 10px;" data-i18n="ptest_start_title">CTRP Squad, ASSEMBLE! Which one are you?</h2>
-        <p style="color: #333; margin-bottom: 25px;" data-i18n="ptest_start_desc">Take this special personality test to find out if you’re a Conform King/Queen, Transformative Trooper, Reform Ranger, or Power Performer!</p>
-        <button id="vStartTestBtn" class="v-btn-primary" data-i18n="ptest_start_btn">Start the Test</button>
-    </div>
-
-    <div id="vTestQuestionScreen" class="v-test-card" style="display: none;">
-        <div class="v-test-header">
-            <span style="font-weight: bold; color: #dfbd38;">
-                <span data-i18n="ptest_q_word">Question</span> 
-                <span id="vQuestionCurrentNum">1</span> 
-                <span data-i18n="ptest_of_word">of 10</span>
-            </span>
+<section class="vPersonalityTest-section" id="personality-test">
+    <div id="vPersonalityTest" class="v-test-container">
+        
+        <div id="vTestStartScreen" class="v-test-card text-center">
+            <h2 class="v-title-main" data-i18n="ptest_start_title">RTP Squad, ASSEMBLE! Which one are you?</h2>
+            <p class="v-desc-main" data-i18n="ptest_start_desc">Take this special personality test to find out if you’re a Conform King/Queen, Transformative Trooper, Reform Ranger, or Power Performer!</p>
+            <button id="vStartTestBtn" class="v-btn-primary" data-i18n="ptest_start_btn">Start the Test</button>
         </div>
-        <h3 id="vQuestionText" style="color: #5a0b0b; margin: 15px 0 25px 0;"></h3>
-        <div id="vOptionsContainer" class="v-options-grid">
+
+        <div id="vTestQuestionScreen" class="v-test-card" style="display: none;">
+            <div class="v-test-header">
+                <span class="v-question-counter">
+                    <span data-i18n="ptest_q_word">Question</span> 
+                    <span id="vQuestionCurrentNum">1</span> 
+                    <span data-i18n="ptest_of_word">of 10</span>
+                </span>
             </div>
-    </div>
-</div>
-
-<div id="vTestResultPopup" class="v-popup-overlay" style="display: none;">
-    <div class="v-popup-content v-result-content">
-        <button type="button" id="vTestCloseBtn" class="v-popup-close">&times;</button>
-        
-        <h4 style="color: #dfbd38; margin: 0; text-transform: uppercase;" data-i18n="ptest_result_you_are">You are a...</h4>
-        <h2 id="vResultTitle" style="color: #5a0b0b; margin: 5px 0 15px 0; font-size: 28px;"></h2>
-        <p id="vResultDesc" style="color: #333; margin-bottom: 15px; font-style: italic;"></p>
-        
-        <div style="background-color: #f9f9f9; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: start;">
-            <p><strong data-i18n="ptest_power_label">Your Power:</strong> <span id="vResultPower"></span></p>
-            <p style="margin-bottom: 0;"><strong data-i18n="ptest_move_label">Your Next Move:</strong> <span id="vResultMove"></span></p>
-        </div>
-
-        <p style="font-weight: bold; margin-bottom: 10px;" data-i18n="ptest_share_label">Share your result!</p>
-        <div class="v-social-share">
-            <button onclick="shareResult('facebook')" class="v-share-btn v-fb">Facebook</button>
-            <button onclick="shareResult('twitter')" class="v-share-btn v-x">X (Twitter)</button>
-            <button onclick="shareResult('copy')" class="v-share-btn v-copy" data-i18n="ptest_share_copy">Copy Link (IG/General)</button>
+            <h3 id="vQuestionText" class="v-question-text"></h3>
+            <div id="vOptionsContainer" class="v-options-grid"></div>
         </div>
     </div>
-</div>
 
-</section> -->
+    <div id="vTestResultPopup" class="v-popup-overlay" style="display: none;">
+        <div class="v-ptest-result-wrapper">
+            <a id="vShareLink" href="#" style="display:none;"></a>
+            <div class="v-image-wrapper">
+                <img id="vResultImage" src="" alt="Your Personality Result" class="v-result-image" />
+                <button type="button" id="vTestCloseBtn" class="v-popup-close-anchored">&times;</button>
+            </div>
+
+            <div class="v-share-card">
+                <p class="v-share-label" data-i18n="ptest_share_label">Share your result!</p>
+                <div class="v-social-share">
+                    <button onclick="shareResult('facebook')" class="v-share-btn v-fb">Share on Facebook</button>
+                    <button onclick="shareResult('twitter')" class="v-share-btn v-x">Share on X</button>
+                    <!-- <button onclick="shareResult('copy')" class="v-share-btn v-copy">More Options</button> -->
+                    <button id="vDownloadBtn" class="v-share-btn v-dlimg" style="background-color: #E1306C;">Download for Instagram</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
         
     <section class="v-faq-section" id="faqs">
         <div class="v-faq-container">

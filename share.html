@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const result = params.get('result') || 'transform';
+    const lang = params.get('lang') || 'en';
+
+    const imageUrl = `https://vconvention2026.the-v.net/assets/images/${result}_${lang}.png`;
+
+    document.write(`
+        <meta property="og:title" content="My V-Convention Personality Result">
+        <meta property="og:description" content="Discover your personality!">
+        <meta property="og:image" content="${imageUrl}">
+        <meta property="og:url" content="${window.location.href}">
+        <meta property="og:type" content="website">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="${imageUrl}">
+    `);
+
+    // Redirect user back to main page after preview is read
+    setTimeout(() => {
+        window.location.href = "/";
+    }, 1000);
+</script>
+</head>
+<body></body>
+</html>

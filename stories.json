@@ -30,6 +30,67 @@
     "speaker": "Teasers",
     "day": "all"
   },
+   {
+    "id": "article#4",
+    "type": "article",
+    "title": {
+      "en": "Reform, Transform, and Perform LIMITLESSLY!",
+      "ar": "الإصلاح والتحول والأداء بلا حدود!",
+      "id": "Reform, Transform, dan Perform TANPA BATAS!",
+      "fr": "Reform, Transform, et Perform SANS LIMITES !",
+      "ru": "Reform, Transform и Perform БЕЗ ОГРАНИЧЕНИЙ!",
+      "tr": "SINIRSIZCA Reform, Transform, ve Perform!"
+    },
+    "description": {
+      "en": "Get ready for our newest collection! ",
+      "ar": "استعدوا لأحدث تشكيلاتنا!",
+      "id": "Bersiaplah untuk koleksi terbaru kami!",
+      "fr": "Préparez-vous pour notre toute nouvelle collection!",
+      "ru": "Приготовьтесь к нашей новой коллекции!",
+      "tr": "En yeni koleksiyonumuz için hazır olun!"
+    },
+    "thumbnail": {
+      "en": "assets/video-article/04302026-reform-transform-and-perform-limitlessly.jpg",
+      "ar": "assets/video-article/04302026-reform-transform-and-perform-limitlessly.jpg",
+      "id": "assets/video-article/04302026-reform-transform-and-perform-limitlessly.jpg",
+      "fr": "assets/video-article/04302026-reform-transform-and-perform-limitlessly.jpg",
+      "ru": "assets/video-article/04302026-reform-transform-and-perform-limitlessly.jpg",
+      "tr": "assets/video-article/04302026-reform-transform-and-perform-limitlessly.jpg"
+    },
+    "speaker": "Pre-Event Article",
+    "day": "all",
+    "link": "https://the-v.net/{{lang}}/news?id=04302026-reform-transform-and-perform-limitlessly"
+  },
+  {
+    "id": "6394161365112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention 2026: VP Kavita Sugandh’s Untold Stories",
+      "ar": "V-Convention 2026: قصص VP Kavita Sugandh التي لم تُروى من قبل",
+      "id": "V-Convention 2026: VP Kavita Sugandh’s Untold Stories",
+      "fr": "V-Convention 2026: Les histoires inédites de VP Kavita Sugandh",
+      "ru": "V-Convention 2026:Нерассказанные истории VP Kavita Sugandh",
+      "tr": "V-Convention 2026: VP Kavita Sugandh’ın Anlatılmamış Hikayeleri"
+    },
+    "description": {
+      "en": "The journey from dreamer to doer gets easier when we learn from one another.",
+      "ar": "تصبح الرحلة من حالم إلى فاعل أسهل عندما نتعلم من بعضنا البعض.",
+      "id": "Perjalanan dari seorang pemimpi menjadi seorang yang melakukan akan lebih mudah ketika kita belajar dari satu sama lain.",
+      "fr": "Le passage de rêveur à acteur devient plus facile lorsque nous apprenons les uns des autres.",
+      "ru": "Путь от мечтателя к деятелю становится легче, когда мы учимся друг у друга.",
+      "tr": "Hayal kuran birinden, hayallerini gerçekleştiren birine olan yolculuk, birbirimizden öğrendiğimizde kolaylaşır."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/04302026-v-convention-2026-vp-kavita-sugandhs-untold-stories.jpg",
+      "ar": "assets/video-article/04302026-v-convention-2026-vp-kavita-sugandhs-untold-stories.jpg",
+      "id": "assets/video-article/04302026-v-convention-2026-vp-kavita-sugandhs-untold-stories.jpg",
+      "fr": "assets/video-article/04302026-v-convention-2026-vp-kavita-sugandhs-untold-stories.jpg",
+      "ru": "assets/video-article/04302026-v-convention-2026-vp-kavita-sugandhs-untold-stories.jpg",
+      "tr": "assets/video-article/04302026-v-convention-2026-vp-kavita-sugandhs-untold-stories.jpg"
+    },
+    "speaker": "Invite Video",
+    "day": "all"
+  },
   {
     "id": "6393621030112",
     "type": "video",

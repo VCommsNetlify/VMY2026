@@ -3652,105 +3652,237 @@ html[dir="rtl"] #v-kids .v-gold-title {
 
 /* PERSONALITY TEST SECTION */
 
+#personality-test {
+    width: 100%;
+    min-height: 80vh;
+    padding: 60px 20px; 
+    background-image: url('assets/images/personality-bg.png');
+    background-size: cover;
+    /* Anchors background to bottom so the "Dreamer" text stays visible */
+    background-position: bottom center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========================================
+   MODERN FROSTED GLASS PERSONALITY TEST 
+   ========================================= */
+
+/* --- 1. Layout & Center Alignment --- */
+.vPersonalityTest-section {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    min-height: 80vh;        
+    padding: 20px;           
+}
+
 .v-test-container {
-        max-width: 600px;
-        margin: 40px auto;
-        font-family: Arial, sans-serif;
-    }
+    width: 100%;
+    max-width: 600px;
+    margin: 0; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1f2937;
+}
 
-    .v-test-card {
-        background: #ffffff;
-        padding: 40px 30px;
-        border-radius: 15px;
-        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-        border-top: 5px solid #dfbd38;
-    }
+/* --- 2. Main Form Card (Frosted Glass) --- */
+.v-test-card {
+    background: rgba(255, 255, 255, 0.85); 
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px); 
+    padding: 48px 40px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.6); 
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(223, 189, 56, 0.15);
+}
 
-    .text-center { text-align: center; }
+.text-center { text-align: center; }
 
-    .v-btn-primary {
-        background-color: #5a0b0b;
-        color: #fff;
-        border: none;
-        padding: 15px 40px;
-        font-size: 18px;
-        font-weight: bold;
-        border-radius: 30px;
-        cursor: pointer;
-        transition: background-color 0.2s, transform 0.2s;
-    }
+/* --- 3. Typography --- */
+.v-title-main { color: #5a0b0b; margin-bottom: 12px; font-weight: 700; }
+.v-desc-main { color: #4b5563; margin-bottom: 32px; line-height: 1.5; }
+.v-question-counter { font-weight: 700; color: #dfbd38; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; }
+.v-question-text { color: #5a0b0b; margin: 16px 0 24px 0; font-size: 22px; line-height: 1.3; }
 
-    .v-btn-primary:hover {
-        background-color: #7a1212;
-        transform: scale(1.05);
-    }
+/* --- 4. Form Buttons & Options --- */
+.v-btn-primary {
+    background-color: #5a0b0b;
+    color: #fff;
+    border: none;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600; 
+    border-radius: 8px; 
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 12px rgba(90, 11, 11, 0.2); 
+}
 
-    .v-options-grid {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-    }
+.v-btn-primary:hover {
+    background-color: #7a1212;
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 16px rgba(90, 11, 11, 0.3);
+}
 
-    .v-option-btn {
-        background-color: #f4f4f4;
-        border: 2px solid transparent;
-        padding: 15px 20px;
-        font-size: 16px;
-        border-radius: 10px;
-        text-align: left;
-        cursor: pointer;
-        transition: all 0.2s ease;
-        color: #333;
-    }
+.v-btn-primary:active { transform: translateY(0); }
 
-    .v-option-btn:hover {
-        background-color: #fff;
-        border-color: #dfbd38;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
+.v-options-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; 
+    margin-top: 24px;
+}
 
-    .v-result-content {
-        background-color: #ffffff;
-        background-image: none;
-        text-align: center;
-        max-width: 500px;
-        padding: 40px;
-    }
+.v-option-btn {
+    background-color: rgba(255, 255, 255, 0.6); 
+    border: 1px solid rgba(223, 189, 56, 0.3); 
+    padding: 16px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #374151;
+}
 
-    /* Social Buttons */
-    .v-social-share {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        flex-wrap: wrap;
-    }
+.v-option-btn:hover {
+    border-color: #dfbd38; 
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 12px rgba(223, 189, 56, 0.15);
+    transform: translateX(4px); 
+}
 
-    .v-share-btn {
-        padding: 10px 15px;
-        border: none;
-        border-radius: 5px;
-        color: white;
-        font-weight: bold;
-        cursor: pointer;
-        transition: opacity 0.2s;
-    }
+/* --- 5. Popup Overlay --- */
+.v-popup-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+}
 
-    .v-share-btn:hover { opacity: 0.8; }
-    .v-fb { background-color: #1877F2; }
-    .v-x { background-color: #000000; }
-    .v-copy { background-color: #833AB4; }
+/* --- 6. Isolated Result Wrapper --- */
+.v-ptest-result-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    background: transparent; 
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 
-    /* Force text to align Left in English, and Right in Arabic */
+@keyframes popIn {
+    0% { transform: scale(0.9); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* --- 7. Result Image & Anchored Close Button --- */
+.v-image-wrapper {
+    position: relative; 
+    display: inline-block; /* Shrink-wraps around the image */
+    margin-bottom: 20px;   
+}
+
+.v-result-image {
+    max-width: 100%;  
+    max-height: 65vh; /* Prevents the image from exploding on large screens */
+    width: auto;      
+    display: block;
+    border-radius: 12px; 
+}
+
+.v-popup-close-anchored {
+    position: absolute; 
+    top: 8%;   /* Adjust to sit inside the PNG's transparent border */
+    right: 5%; 
+    background: rgba(0, 0, 0, 0.4); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; 
+    color: #ffffff; 
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    line-height: 0; 
+    z-index: 10;
+}
+
+.v-popup-close-anchored:hover {
+    transform: scale(1.1);
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* --- 8. Social Share Section (Frosted Card) --- */
+.v-share-card {
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 24px;
+    border-radius: 16px;
+    margin-top: -10px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.v-share-label {
+    margin-top: 0; 
+    margin-bottom: 16px;
+    color: #ffffff; 
+    font-weight: 700;
+    font-size: 18px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.4); 
+}
+
+.v-social-share {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.v-share-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px; 
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.v-share-btn:hover { 
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+.v-fb { background-color: #1877F2; }
+.v-x { background-color: #000000; }
+.v-copy { background-color: #833AB4; }
+/* .v-dlimg {color:#000;} */
+
+/* --- 9. RTL & Alignment Hooks --- */
 #vTestQuestionText,
 .v-test-header,
 .v-option-btn {
     text-align: start !important;
 }
 
-/* Ensure the Arabic text sits cleanly inside the buttons */
 [dir="rtl"] .v-option-btn {
     padding-right: 25px;
 }
+
 
 /* When the site is in RTL (Arabic), move the toast to the right! */
 [dir="rtl"] #vHuntToast {

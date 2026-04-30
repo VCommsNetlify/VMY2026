@@ -1007,7 +1007,7 @@ window.handleCategoryChange = function() {
             { val: 'Teasers', key: 'filter.teasers', fallback: 'Teasers' },
             { val: 'Invite', key: 'filter.invite', fallback: 'Invite Videos' },
             { val: 'Campaign', key: 'filter.campaign', fallback: 'Campaign Videos' },
-            { val: 'FoundersChief', key: 'filter.founders', fallback: 'Founders & Chief Dailies' },
+            { val: 'FoundersChief', key: 'filter.founders', fallback: 'Founders Dailies' },
             { val: 'Highlights', key: 'filter.highlights', fallback: 'Daily Highlights' },
             { val: 'Post-Event', key: 'filter.post_video', fallback: 'Post-Event Videos' }
         ];
@@ -2174,21 +2174,16 @@ function renderContent(item, lang = 'en') {
 
 // --- PERSONALITY TEST LOGIC ---
 
-// 1. Create a global translation function so your website's main menu can talk to the quiz!
 window.personalityTranslations = {};
 window.updatePersonalityTranslation = function(lang) {
-    // Grab the specific language bucket from our saved data
     const currentTranslations = window.personalityTranslations[lang] || window.personalityTranslations['en'];
-    
-    if (!currentTranslations) return; // Failsafe if data isn't loaded yet
+    if (!currentTranslations) return; 
 
-    // 1. FORCE THE QUIZ TO OBEY RTL FOR ARABIC
     const testContainer = document.getElementById('vPersonalityTest');
     if (testContainer) {
         testContainer.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
     }
 
-    // 2. Translate the text
     const elements = document.querySelectorAll('[data-i18n]');
     elements.forEach(el => {
         const key = el.getAttribute('data-i18n');
@@ -2198,61 +2193,35 @@ window.updatePersonalityTranslation = function(lang) {
     });
 };
 
-// 2. Wrap the quiz logic so it waits for the HTML to load (Fixes the crash!)
 document.addEventListener('DOMContentLoaded', function() {
     
-    // --- THE DATA ---
     const resultsData = {
-        A: {
-            titleKey: "ptest_res_conform_title", titleDefault: "👑 CONFORM KING / QUEEN",
-            descKey: "ptest_res_conform_desc", descDefault: "You move with the times… and ahead of them. You understand that success today requires adapting to modern tools, digital platforms, and evolving culture. You plug into what works now and position yourself for what’s next.",
-            powerKey: "ptest_res_conform_power", powerDefault: "Adaptability",
-            moveKey: "ptest_res_conform_move", moveDefault: "Don’t just adopt trends — lead others in using them to grow."
-        },
-        B: {
-            titleKey: "ptest_res_transform_title", titleDefault: "⚡ TRANSFORMATIVE TROOPER",
-            descKey: "ptest_res_transform_desc", descDefault: "You are constantly becoming more! You embrace change, push past limits, and refuse to stay the same person you were yesterday. Every challenge is a chance to evolve into a better version of yourself.",
-            powerKey: "ptest_res_transform_power", powerDefault: "Personal Reinvention",
-            moveKey: "ptest_res_transform_move", moveDefault: "Turn your transformation into a standard your team can follow."
-        },
-        C: {
-            titleKey: "ptest_res_reform_title", titleDefault: "🛠️ REFORM RANGER",
-            descKey: "ptest_res_reform_desc", descDefault: "You keep rebuilding to achieve better results. You see gaps, refine systems, and find better ways to move forward. Guided by a clear vision, you are never afraid of challenging the norms and letting go what no longer works.",
-            powerKey: "ptest_res_reform_power", powerDefault: "Innovation",
-            moveKey: "ptest_res_reform_move", moveDefault: "Scale your systems, so others can succeed with you."
-        },
-        D: {
-            titleKey: "ptest_res_perform_title", titleDefault: "🚀 POWER PERFORMER",
-            descKey: "ptest_res_perform_desc", descDefault: "You turn belief into results. You act with urgency, stay focused, and consistently hit targets. While others take too long to prepare, you execute — and that’s why you stand out.",
-            powerKey: "ptest_res_perform_power", powerDefault: "Decisive Action",
-            moveKey: "ptest_res_perform_move", moveDefault: "Multiply your impact by developing more performers within your team."
-        }
+        B: { imgBaseName: "transform", shareTitleKey: "ptest_res_transform_title" },
+        C: { imgBaseName: "reform", shareTitleKey: "ptest_res_reform_title" },
+        D: { imgBaseName: "perform", shareTitleKey: "ptest_res_perform_title" }
     };
 
     const questionsData = [
-        { qKey: "ptest_q1_text", qDef: "1. When presenting the business to a prospect, what’s your best approach?", options: { A: { key: "ptest_q1_a", text: "Maximise the use of available technology and follow what works for others" }, B: { key: "ptest_q1_b", text: "Talk about my personal growth and journey" }, C: { key: "ptest_q1_c", text: "Adjust and improve the presentation based on the prospect" }, D: { key: "ptest_q1_d", text: "Focus on sharing the results you and others have achieved in the business" } } },
-        { qKey: "ptest_q2_text", qDef: "2. When faced with a major challenge…", options: { A: { key: "ptest_q2_a", text: "I adapt and find ways to stay relevant" }, B: { key: "ptest_q2_b", text: "I use it as a chance to grow stronger" }, C: { key: "ptest_q2_c", text: "I rethink the system and improve the process" }, D: { key: "ptest_q2_d", text: "I take action with a sense of urgency and push through fast" } } },
-        { qKey: "ptest_q3_text", qDef: "3. Your approach to learning is:", options: { A: { key: "ptest_q3_a", text: "Seek answers from others, including even the younger generation" }, B: { key: "ptest_q3_b", text: "Focus on mindset and self-development" }, C: { key: "ptest_q3_c", text: "Improve systems and strategies" }, D: { key: "ptest_q3_d", text: "Learn what works, then execute immediately" } } },
-        { qKey: "ptest_q4_text", qDef: "4. In your team, you are usually the one who:", options: { A: { key: "ptest_q4_a", text: "Introduces new, modern ways to reach and engage prospects" }, B: { key: "ptest_q4_b", text: "Inspires others through growth" }, C: { key: "ptest_q4_c", text: "Fixes and improves how things are done" }, D: { key: "ptest_q4_d", text: "Drives results and pushes performance" } } },
-        { qKey: "ptest_q5_text", qDef: "5. When something isn’t working…", options: { A: { key: "ptest_q5_a", text: "Adjust to what’s currently effective" }, B: { key: "ptest_q5_b", text: "Work on improving myself" }, C: { key: "ptest_q5_c", text: "Change the system completely" }, D: { key: "ptest_q5_d", text: "Push harder and take more action" } } },
-        { qKey: "ptest_q6_text", qDef: "6. What excites you the most?", options: { A: { key: "ptest_q6_a", text: "All the changes happening around the world" }, B: { key: "ptest_q6_b", text: "Becoming a better version of myself" }, C: { key: "ptest_q6_c", text: "Discovering better ways of doing things" }, D: { key: "ptest_q6_d", text: "Achieving targets and winning" } } },
-        { qKey: "ptest_q7_text", qDef: "7. Your biggest strength as a networker is:", options: { A: { key: "ptest_q7_a", text: "Staying relevant and adaptable" }, B: { key: "ptest_q7_b", text: "Continuous personal growth" }, C: { key: "ptest_q7_c", text: "Innovation and improvement" }, D: { key: "ptest_q7_d", text: "Execution and results" } } },
-        { qKey: "ptest_q8_text", qDef: "8. When leading a team…", options: { A: { key: "ptest_q8_a", text: "I guide them to stay updated and relevant" }, B: { key: "ptest_q8_b", text: "I help them grow personally" }, C: { key: "ptest_q8_c", text: "I create better systems for them" }, D: { key: "ptest_q8_d", text: "I push them to perform and deliver" } } },
-        { qKey: "ptest_q9_text", qDef: "9. Your focus for the next 6–12 months is:", options: { A: { key: "ptest_q9_a", text: "Discovering and embracing what works best now" }, B: { key: "ptest_q9_b", text: "Improving myself gradually every day" }, C: { key: "ptest_q9_c", text: "Creating better systems for the team" }, D: { key: "ptest_q9_d", text: "Setting and hitting bigger goals" } } },
-        { qKey: "ptest_q10_text", qDef: "10. Success, to you, means:", options: { A: { key: "ptest_q10_a", text: "Staying relevant in a fast-changing world" }, B: { key: "ptest_q10_b", text: "Unlocking your limitless potential" }, C: { key: "ptest_q10_c", text: "Building something better and sustainable" }, D: { key: "ptest_q10_d", text: "Winning through consistent results" } } }
+        { qKey: "ptest_q1_text", qDef: "1. When presenting the business to a prospect, what’s your best approach?", options: { B: { key: "ptest_q1_b", text: "Talk about my personal growth and journey" }, C: { key: "ptest_q1_c", text: "Adjust and improve the presentation based on the prospect" }, D: { key: "ptest_q1_d", text: "Focus on sharing the results you and others have achieved in the business" } } },
+        { qKey: "ptest_q2_text", qDef: "2. When faced with a major challenge…", options: { B: { key: "ptest_q2_b", text: "I use it as a chance to grow stronger" }, C: { key: "ptest_q2_c", text: "I rethink the system and improve the process" }, D: { key: "ptest_q2_d", text: "I take action with a sense of urgency and push through fast" } } },
+        { qKey: "ptest_q3_text", qDef: "3. Your approach to learning is:", options: { B: { key: "ptest_q3_b", text: "Focus on mindset and self-development" }, C: { key: "ptest_q3_c", text: "Improve systems and strategies" }, D: { key: "ptest_q3_d", text: "Learn what works, then execute immediately" } } },
+        { qKey: "ptest_q4_text", qDef: "4. In your team, you are usually the one who:", options: { B: { key: "ptest_q4_b", text: "Inspires others through growth" }, C: { key: "ptest_q4_c", text: "Fixes and improves how things are done" }, D: { key: "ptest_q4_d", text: "Drives results and pushes performance" } } },
+        { qKey: "ptest_q5_text", qDef: "5. When something isn’t working…", options: { B: { key: "ptest_q5_b", text: "Work on improving myself" }, C: { key: "ptest_q5_c", text: "Change the system completely" }, D: { key: "ptest_q5_d", text: "Push harder and take more action" } } },
+        { qKey: "ptest_q6_text", qDef: "6. What excites you the most?", options: { B: { key: "ptest_q6_b", text: "Becoming a better version of myself" }, C: { key: "ptest_q6_c", text: "Discovering better ways of doing things" }, D: { key: "ptest_q6_d", text: "Achieving targets and winning" } } },
+        { qKey: "ptest_q7_text", qDef: "7. Your biggest strength as a networker is:", options: { B: { key: "ptest_q7_b", text: "Continuous personal growth" }, C: { key: "ptest_q7_c", text: "Innovation and improvement" }, D: { key: "ptest_q7_d", text: "Execution and results" } } },
+        { qKey: "ptest_q8_text", qDef: "8. When leading a team…", options: { B: { key: "ptest_q8_b", text: "I help them grow personally" }, C: { key: "ptest_q8_c", text: "I create better systems for them" }, D: { key: "ptest_q8_d", text: "I push them to perform and deliver" } } },
+        { qKey: "ptest_q9_text", qDef: "9. Your focus for the next 6–12 months is:", options: { B: { key: "ptest_q9_b", text: "Improving myself gradually every day" }, C: { key: "ptest_q9_c", text: "Creating better systems for the team" }, D: { key: "ptest_q9_d", text: "Setting and hitting bigger goals" } } },
+        { qKey: "ptest_q10_text", qDef: "10. Success, to you, means:", options: { B: { key: "ptest_q10_b", text: "Unlocking your limitless potential" }, C: { key: "ptest_q10_c", text: "Building something better and sustainable" }, D: { key: "ptest_q10_d", text: "Winning through consistent results" } } }
     ];
 
-    // --- THE LOGIC ---
     let currentQuestionIndex = 0;
-    let scores = { A: 0, B: 0, C: 0, D: 0 };
-    let finalResultKey = "A";
+    let scores = { B: 0, C: 0, D: 0 }; 
 
     const startScreen = document.getElementById('vTestStartScreen');
     const questionScreen = document.getElementById('vTestQuestionScreen');
     const optionsContainer = document.getElementById('vOptionsContainer');
     const resultPopup = document.getElementById('vTestResultPopup');
 
-    // 3. Fetch the JSON file ONCE and save it.
     fetch('personality_en.json')
         .then(response => {
             if (!response.ok) throw new Error("Translation file not found");
@@ -2260,8 +2229,6 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .then(data => {
             window.personalityTranslations = data; 
-            
-            // Look into YOUR website's localStorage for the active language!
             const savedLang = localStorage.getItem('selectedLanguage') || 'en';
             window.updatePersonalityTranslation(savedLang); 
         })
@@ -2290,16 +2257,19 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (optionsContainer) optionsContainer.innerHTML = ''; 
 
-        ['A', 'B', 'C', 'D'].forEach(key => {
+        const logicOrder = ['C', 'B', 'D'];
+        const visualLabels = ['A', 'B', 'C'];
+
+        logicOrder.forEach((key, index) => {
             const btn = document.createElement('button');
             btn.className = 'v-option-btn';
-            btn.setAttribute('data-i18n', currentQ.options[key].key);
-            btn.innerText = currentQ.options[key].text;
+            
+            btn.innerHTML = `<strong style="margin: 0 8px;">${visualLabels[index]}.</strong> <span data-i18n="${currentQ.options[key].key}">${currentQ.options[key].text}</span>`;
+            
             btn.onclick = () => selectOption(key);
             optionsContainer.appendChild(btn);
         });
 
-        // Translate the newly created buttons!
         const currentLang = localStorage.getItem('selectedLanguage') || 'en';
         window.updatePersonalityTranslation(currentLang);
     }
@@ -2316,39 +2286,42 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function calculateAndShowResult() {
-        finalResultKey = Object.keys(scores).reduce((a, b) => scores[a] > scores[b] ? a : b);
+        const finalResultKey = Object.keys(scores).reduce((a, b) => scores[a] > scores[b] ? a : b);
         const result = resultsData[finalResultKey];
+        const currentLang = localStorage.getItem('selectedLanguage') || 'en';
+        
+        window.currentWinningKey = finalResultKey; 
 
-        const titleNode = document.getElementById('vResultTitle');
-        if(titleNode) {
-            titleNode.setAttribute('data-i18n', result.titleKey);
-            titleNode.innerText = result.titleDefault;
-        }
-
-        const descNode = document.getElementById('vResultDesc');
-        if(descNode) {
-            descNode.setAttribute('data-i18n', result.descKey);
-            descNode.innerText = result.descDefault;
-        }
-
-        const powerNode = document.getElementById('vResultPower');
-        if(powerNode) {
-            powerNode.setAttribute('data-i18n', result.powerKey);
-            powerNode.innerText = result.powerDefault;
-        }
-
-        const moveNode = document.getElementById('vResultMove');
-        if(moveNode) {
-            moveNode.setAttribute('data-i18n', result.moveKey);
-            moveNode.innerText = result.moveDefault;
+        const resultImageEl = document.getElementById('vResultImage');
+        if(resultImageEl) {
+            resultImageEl.src = `assets/images/${result.imgBaseName}_${currentLang}.png`;
         }
 
         questionScreen.style.display = 'none';
         resultPopup.style.display = 'flex';
+        
+        // --- THE FIX: Calculate scrollbar width and add padding BEFORE hiding overflow ---
+        const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+        document.body.style.paddingRight = `${scrollbarWidth}px`;
         document.body.style.overflow = 'hidden';
 
-        const currentLang = localStorage.getItem('selectedLanguage') || 'en';
         window.updatePersonalityTranslation(currentLang);
+    }
+
+    // FIX: Safer Download Logic for all browsers
+    const downloadBtn = document.getElementById('vDownloadBtn');
+    if (downloadBtn) {
+        downloadBtn.onclick = function() {
+            const img = document.getElementById('vResultImage').src;
+            const link = document.createElement('a');
+            link.href = img;
+            // Name the file based on the user's result key
+            link.download = `my-personality-result-${window.currentWinningKey}.png`;
+            
+            document.body.appendChild(link); // Required for Firefox support
+            link.click();
+            document.body.removeChild(link); // Clean up after clicking
+        };
     }
 
     const closeBtn = document.getElementById('vTestCloseBtn');
@@ -2356,31 +2329,85 @@ document.addEventListener('DOMContentLoaded', function() {
         closeBtn.onclick = function(e) {
             e.preventDefault();
             resultPopup.style.display = 'none';
-            document.body.style.overflow = 'auto';
+            
+            // --- THE FIX: Remove the padding and restore overflow ---
+            document.body.style.paddingRight = '0px';
+            document.body.style.overflow = ''; // Leaving this blank resets it to your CSS default
             
             currentQuestionIndex = 0;
-            scores = { A: 0, B: 0, C: 0, D: 0 };
+            scores = { B: 0, C: 0, D: 0 };
             startScreen.style.display = 'block';
         };
     }
 });
 
-// --- SOCIAL MEDIA SHARING LOGIC ---
-window.shareResult = function(platform) {
-    const titleEl = document.getElementById('vResultTitle');
-    const translatedTitle = titleEl ? titleEl.innerText : "My Persona";
-    const baseShareMsg = `I took the V-Convention Personality Test and I am a ${translatedTitle}! Discover your persona here: `;
+// --- UPGRADED SOCIAL MEDIA SHARING LOGIC ---
+window.shareResult = async function(platform) {
+    const lang = localStorage.getItem('selectedLanguage') || 'en';
+    const translations = window.personalityTranslations[lang] || window.personalityTranslations['en'];
     
-    const shareText = encodeURIComponent(baseShareMsg);
-    const pageUrl = encodeURIComponent(window.location.href);
+    const resultMap = {
+        B: "ptest_res_transform_title",
+        C: "ptest_res_reform_title",
+        D: "ptest_res_perform_title"
+    };
+    
+    const winningKey = window.currentWinningKey || "B";
+    const titleKey = resultMap[winningKey];
+    const translatedTitle = translations[titleKey] || "My Persona";
+    
+    const rawMessage = `I took the V-Convention Personality Test and I am a ${translatedTitle}! Discover your persona here:`;
+    
+    // FIX: Define resultType based on the winning key BEFORE building the URL
+    const resultTypeMap = { B: "transform", C: "reform", D: "perform" };
+    const resultType = resultTypeMap[winningKey];
+    
+    // FIX: Build the shareUrl BEFORE trying to use it
+    const shareUrl = `${window.location.origin}/share.html?result=${resultType}&lang=${lang}&v=${Date.now()}`;
+    
+    // Now it is safe to assign the URL to the hidden link element
+    const shareLinkEl = document.getElementById('vShareLink');
+    if(shareLinkEl) {
+        shareLinkEl.href = shareUrl;
+    }
+    
+    const shareText = encodeURIComponent(rawMessage);
+    const encodedUrl = encodeURIComponent(shareUrl);
 
     if (platform === 'facebook') {
-        window.open(`https://www.facebook.com/sharer/sharer.php?u=${pageUrl}&quote=${shareText}`, '_blank');
+        window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`, '_blank');
+        
     } else if (platform === 'twitter') {
-        window.open(`https://twitter.com/intent/tweet?text=${shareText}&url=${pageUrl}`, '_blank');
+        window.open(`https://twitter.com/intent/tweet?text=${shareText}&url=${encodedUrl}`, '_blank');
+        
     } else if (platform === 'copy') {
-        navigator.clipboard.writeText(decodeURIComponent(shareText + pageUrl)).then(() => {
-            alert("Result and link copied to clipboard! You can now paste this into Instagram or any message.");
+        if (navigator.share) {
+            try {
+                await navigator.share({
+                    title: 'V-Convention Personality Test',
+                    text: rawMessage,
+                    url: shareUrl
+                });
+                return; 
+            } catch (err) {
+                console.log('Native share cancelled or failed, falling back to copy.');
+            }
+        }
+
+        navigator.clipboard.writeText(`${rawMessage} ${shareUrl}`).then(() => {
+            const copyBtn = document.querySelector('.v-copy');
+            if (copyBtn) {
+                const originalText = copyBtn.innerText;
+                copyBtn.innerText = "✅ Copied to Clipboard!";
+                copyBtn.style.backgroundColor = "#10B981"; 
+                
+                setTimeout(() => {
+                    copyBtn.innerText = originalText;
+                    copyBtn.style.backgroundColor = ""; 
+                }, 2500);
+            }
+        }).catch(err => {
+            console.error("Failed to copy text: ", err);
         });
     }
 };

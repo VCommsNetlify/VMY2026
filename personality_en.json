@@ -1,8 +1,8 @@
 {
   "en": 
     {
-    "ptest_start_title": "CTRP Squad, ASSEMBLE! Which one are you?",
-    "ptest_start_desc": "Take this special personality test to find out if you’re a Conform King/Queen, Transformative Trooper, Reform Ranger, or Power Performer!",
+    "ptest_start_title": "RTP Squad, ASSEMBLE! Which one are you?",
+    "ptest_start_desc": "Take this special personality test to find out if you’re a  Reform Ranger, Transformative Trooper, or Power Performer!",
     "ptest_start_btn": "Start the Test",
     
     "ptest_q_word": "Question",
@@ -96,7 +96,7 @@
 
   },
   "ar": {
-    "ptest_start_title": "يا فرقة CTRP، استعدوا! أي واحد منكم؟",
+    "ptest_start_title": "يا فرقة RTP استعدوا! أي واحد منكم؟",
     "ptest_start_desc": "أجرِ اختبار الشخصية الخاص هذا لمعرفة ما إذا كنت ملك/ملكة مطيع/ة، أو جنديًا متحولًا، أو حارسًا إصلاحيًا، أو مؤديًا قويًا!",
     "ptest_start_btn": "ابدأ الاختبار",
     
@@ -190,7 +190,7 @@
     "ptest_q10_d": "تحقيق النجاح من خلال نتائج مستمرة"
   },
   "id":{
-    "ptest_start_title": "Pasukan CTRP, BERKUMPUL! Kamu yang mana?",
+    "ptest_start_title": "Pasukan RTP, BERKUMPUL! Kamu yang mana?",
     "ptest_start_desc": "Ikuti tes kepribadian khusus ini untuk mengetahui apakah Anda seorang Raja/Ratu Konformis, Prajurit Transformatif, Penjaga Reformasi, atau Penampil Unggulan!",
     "ptest_start_btn": "Mulai Tes",
     
@@ -284,7 +284,7 @@
     "ptest_q10_d": "Menang melalui hasil yang konsisten"
   },
   "fr":{
-    "ptest_start_title": "Escouade CTRP, RASSEMBLEMENT ! Lequel êtes-vous ?",
+    "ptest_start_title": "Escouade RTP, RASSEMBLEMENT ! Lequel êtes-vous ?",
     "ptest_start_desc": "Répondez à ce test de personnalité spécial pour découvrir si vous êtes un Roi/Reine Conformiste, un Soldat Transformateur, un Ranger Réformateur ou un Performeur de Puissance !",
     "ptest_start_btn": "Commencer le test",
     
@@ -378,7 +378,7 @@
     "ptest_q10_d": "Gagner grâce à des résultats constants"
   },
   "ru":{
-    "ptest_start_title": "Отряд CTRP, собирайтесь! К какому типу вы относитесь?",
+    "ptest_start_title": "Отряд RTP, собирайтесь! К какому типу вы относитесь?",
     "ptest_start_desc": "Пройдите этот специальный тест на определение типа личности, чтобы узнать, являетесь ли вы Королём/Королевой Конформизма, Трансформатором, Рейнджером Реформаций или Мощным Исполнительницей!",
     "ptest_start_btn": "Начать тест",
     
@@ -472,7 +472,7 @@
     "ptest_q10_d": "Победа благодаря стабильным результатам"
   },
   "tr":{
-    "ptest_start_title": "CTRP Ekibi, TOPLANIN! Siz hangisiniz?",
+    "ptest_start_title": "RTP Ekibi, TOPLANIN! Siz hangisiniz?",
     "ptest_start_desc": "Bu özel kişilik testini çözerek Uyumcu Kral/Kraliçe, Dönüşümcü Asker, Islahçı Korucu veya Güçlü Performansçı olup olmadığınızı öğrenin!",
     "ptest_start_btn": "Teste Başla",
     
