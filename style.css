@@ -1,5 +1,5 @@
 /* --- 1. GLOBAL SETUP --- */
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scrollbar-gutter: stable;}
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, sans-serif;
 
 @font-face {
@@ -8,6 +8,12 @@ html { scroll-behavior: smooth; }
     src: local('Font Awesome 5 Brands'); 
 }}
 body { background-color: #f4f4f4; overflow-x: hidden; }
+
+body.v-popup-open {
+    overflow: hidden;
+    touch-action: none; 
+    -ms-touch-action: none;
+}
 
 strong a, 
 b a {
