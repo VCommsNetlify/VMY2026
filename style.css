@@ -3910,7 +3910,7 @@ html[dir="rtl"] #v-kids .v-gold-title {
 /* --- 10. MOBILE RESPONSIVENESS FIXES --- */
 @media (max-width: 768px) {
     .v-result-image {
-        max-height: 30vh; /* Shrinks the image so it doesn't eat the whole screen */
+        max-height: 45vh; /* Shrinks the image so it doesn't eat the whole screen */
     }
     
     .v-share-card {
