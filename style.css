@@ -3469,12 +3469,20 @@ html[dir="rtl"] #v-kids .v-gold-title {
         max-width: 280px;
         margin-top: 3vh; 
     }
+    .hero-logo {
+        max-width: 280px;
+        margin-top: 3vh; 
+    }
 }
 
 @media (max-height: 700px) {
     .hero-logo-animated {
         max-width: 220px;
         margin-top: 2vh;
+    }
+    .hero-logo {
+        max-width: 220px;
+        margin-top: 2vh; 
     }
 }
 
