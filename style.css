@@ -3678,10 +3678,10 @@ html[dir="rtl"] #v-kids .v-gold-title {
     width: 100%;
     min-height: 80vh;
     padding: 60px 20px; 
-    background-image: url('assets/images/personality-bg.png');
+    background-image: url('assets/images/personality-bg-2.jpg');
     background-size: cover;
     /* Anchors background to bottom so the "Dreamer" text stays visible */
-    background-position: bottom center; 
+    background-position: top center; 
     display: flex;
     justify-content: center;
     align-items: center;
