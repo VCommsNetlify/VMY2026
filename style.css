@@ -3676,16 +3676,56 @@ html[dir="rtl"] #v-kids .v-gold-title {
 
 #personality-test {
     width: 100%;
-    min-height: 80vh;
+    min-height: 100vh;
     padding: 60px 20px; 
     /* background-image: url('assets/images/personality-bg-2.jpg'); */
-    background-image: url('assets/images/personality-bg.png');
-    background-size: cover;
-    /* Anchors background to bottom so the "Dreamer" text stays visible */
-    background-position: top center; 
+    /* background-image: url('assets/images/personality-bg.png'); */
+    
+    /* ⭐ THE MISSING MAGIC LINES ⭐ */
+    position: relative; /* TRAPS the absolute images inside this section */
+    overflow: hidden;   /* STOPS them from bleeding out when they zoom */
+    z-index: 1;         /* FORCES this section to sit above the absolute images */
+    
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* =========================================
+   6-FRAME ANIMATED BACKGROUND LAYERS
+   ========================================= */
+
+.v-section-bg-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    opacity: 0; 
+    z-index: -1; 
+    
+    /* 6 images * 2 seconds each = 12 seconds total loop */
+    animation: sectionCrossFade 12s infinite; 
+}
+
+/* Attach your 6 images and stagger their start times by 2 seconds! */
+.bg-frame-1 { background-image: url('assets/images/personality-bg-1.png'); animation-delay: 0s; }
+.bg-frame-2 { background-image: url('assets/images/personality-bg-2.png'); animation-delay: 2s; }
+.bg-frame-3 { background-image: url('assets/images/personality-bg-3.png'); animation-delay: 4s; }
+.bg-frame-4 { background-image: url('assets/images/personality-bg-4.png'); animation-delay: 6s; }
+.bg-frame-5 { background-image: url('assets/images/personality-bg-5.png'); animation-delay: 8s; }
+.bg-frame-6 { background-image: url('assets/images/personality-bg-6.png'); animation-delay: 10s; }
+
+/* The Math for a 6-Image Fade (100% / 6 images = roughly 16.6% per phase) */
+@keyframes sectionCrossFade {
+    0%   { opacity: 0; transform: scale(1); }
+    3%   { opacity: 1; }  /* Very quick fade in */
+    14%  { opacity: 1; }  /* Hold it on screen clearly */
+    20%  { opacity: 0; }  /* Smoothly fade out as the next one appears */
+    100% { opacity: 0; transform: scale(1.05); } /* Slow zoom while hidden */
 }
 
 /* =========================================
