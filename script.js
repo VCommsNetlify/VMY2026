@@ -1743,6 +1743,35 @@ const vkidsData = {
             },
             "link": "https://the-v.net/{{lang}}/news?id=03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june"
             
+        },
+        {
+            "id": "item1",
+            "type": "video",
+            "banner": {
+                "en": "assets/video-article/05192026-v-kids-v-teens-at-v-convention-2026-ready-to-begin-the-quest.jpg",
+                "ar": "assets/video-article/05192026-v-kids-v-teens-at-v-convention-2026-ready-to-begin-the-quest.jpg",
+                "id": "assets/video-article/05192026-v-kids-v-teens-at-v-convention-2026-ready-to-begin-the-quest.jpg",
+                "fr": "assets/video-article/05192026-v-kids-v-teens-at-v-convention-2026-ready-to-begin-the-quest.jpg",
+                "ru": "assets/video-article/05192026-v-kids-v-teens-at-v-convention-2026-ready-to-begin-the-quest.jpg",
+                "tr": "assets/video-article/05192026-v-kids-v-teens-at-v-convention-2026-ready-to-begin-the-quest.jpg"
+            },
+            "title": {
+                "en": "V-Kids & V-Teens at V-Convention 2026: Ready to Begin the Quest?",
+                "ar": "الـ V-Kids والـ V-Teens في V-Convention 2026: هل أنتم مستعد لبدء الرحلة؟",
+                "id": "V-Kids & V-Teens di V-Convention 2026: Siap memulai petualangan?",
+                "fr": "V-Kids & V-Teens à la V-Convention 2026: prêts à débuter l’aventure ?",
+                "ru": "V-Kids & V-Teens на V-Convention 2026: готовы начать квест?",
+                "tr": "V-Convention 2026'da V-Kids & V-Teens: Göreve Başlamaya Hazır Mısınız?"
+            },
+            "desc": {
+                "en": "Gear up for our grand adventure with V-Kids & V-Teens at V-Convention 2026! Happening from 17 to 21 June at the Setia SPICE Arena, the young minds of The V are in for awesome core-memory experiences! ",
+                "ar": "استعدوا لمغامرتنا الكبرى مع الـ V-Kids والـ V-Teens في V-Convention 2026! في الفترة من 17 إلى 21 يونيو في ساحة Setia SPICE، حيث ينتظر العقول الشابة في The V تجارب رائعة ستُخلّد في ذاكرتهم!",
+                "id": "Bersiaplah untuk petualangan besar kita bersama V-Kids &V-Teens di V-Convention 2026! Berlangsung dari tanggal 17 hingga 21 Juni di Setia SPICE Arena, para generasi muda The V akan mendapatkan pengalaman yang tak terlupakan!",
+                "fr": "Préparez-vous pour notre grande aventure avec V-Kids & V-Teens à la V-Convention 2026 ! Du 17 au 21 juin à la Setia SPICE Arena, les jeunes esprits de The V vont vivre des expériences inoubliables !",
+                "ru": "Приготовьтесь к грандиозному приключению с V-Kids и V-Teens на V-Convention 2026! С 17 по 21 июня в Setia SPICE Arena молодые умы The V получат потрясающие впечатления, которые останутся в памяти на всю жизнь!",
+                "tr": "V-Convention 2026'da V-Kids & V-Teens ile büyük maceramıza hazır olun! 17-21 Haziran tarihleri arasında Setia SPICE Arena'da gerçekleşecek bu etkinlikte, The V'nin genç beyinlerini unutulmaz ve harika deneyimler bekliyor!"
+            },
+            "videoId": "6396037796112"
         }
     ]
 };
