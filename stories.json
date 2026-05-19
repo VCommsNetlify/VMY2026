@@ -31,6 +31,36 @@
     "day": "all"
   },
   {
+    "id": "6396034929112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention 2026: VPN Digvijay Singh’s Untold Stories",
+      "ar": "V-Convention 2026: قصص VPN Digvijay Singh التي لم تُروى من قبل",
+      "id": "V-Convention 2026: Kisah-kisah VPN Digvijay Singh yang Belum Terungkap",
+      "fr": "V-Convention 2026: Les histoires inédites de VPN Digvijay Singh",
+      "ru": "V-Convention 2026: Нерассказанные истории VPN Digvijay Singh",
+      "tr": "V-Convention 2026: VPN Digvijay Singh’in Anlatılmamış Hikayeleri"
+    },
+    "description": {
+      "en": "Your journey from dreamer to doer starts from looking within yourself.",
+      "ar": "رحلتكم من حالم إلى فاعل تبدأ من داخلكم.",
+      "id": "Perjalanan Anda dari seorang pemimpi menjadi seorang yang melakukan dimulai dari introspeksi diri.",
+      "fr": "Votre parcours, de rêveur à homme d'action, commence par une introspection.",
+      "ru": "Ваш путь от мечтателя к деятелю начинается с того, что вы заглянете в себя.",
+      "tr": "Hayal kuran birinden, hayallerini gerçekleştiren birine olan yolculuğunuz, kendi içinize bakmakla başlar."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/05192026-v-convention-2026-vpn-digvijay-singhs-untold-stories.jpg",
+      "ar": "assets/video-article/05192026-v-convention-2026-vpn-digvijay-singhs-untold-stories.jpg",
+      "id": "assets/video-article/05192026-v-convention-2026-vpn-digvijay-singhs-untold-stories.jpg",
+      "fr": "assets/video-article/05192026-v-convention-2026-vpn-digvijay-singhs-untold-stories.jpg",
+      "ru": "assets/video-article/05192026-v-convention-2026-vpn-digvijay-singhs-untold-stories.jpg",
+      "tr": "assets/video-article/05192026-v-convention-2026-vpn-digvijay-singhs-untold-stories.jpg"
+    },
+    "speaker": "Invite Video",
+    "day": "all"
+  },
+  {
     "id": "6395412043112",
     "type": "video",
     "title": {
