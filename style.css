@@ -4145,29 +4145,30 @@ html[dir="rtl"] #v-kids .v-gold-title {
 }
 
 /* =========================================
-   CLOSE BUTTON (Glass effect + Tab styling)
+   CLOSE BUTTON (Hanging Below the Image)
    ========================================= */
 #close-promo-btn {
-  position: absolute;
-  bottom: 0;
-  right: 0; /* Default position for Desktop */
-  top: auto; 
+  /* 1. Remove absolute positioning so it drops beneath the image */
+  position: relative; 
   
+  /* 2. Push it to the right side for Desktop */
+  margin-left: auto; 
+  margin-right: 0;
+  
+  /* 3. Flip the border-radius so the BOTTOM corners are rounded */
+  border-radius: 0 0 12px 12px; 
+  
+  /* Glass effect & sizing */
   background: rgba(0, 0, 0, 0.6); 
   backdrop-filter: blur(4px); 
   color: white;
   border: none;
-  
-  /* Top-left rounded corner for Desktop */
-  border-radius: 12px 0 0 0; 
-  
-  width: 45px;
+  width: 50px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 10000;
   transition: background 0.3s ease;
 }
 
@@ -4180,10 +4181,11 @@ html[dir="rtl"] #v-kids .v-gold-title {
    ========================================= */
 @media (max-width: 767px) {
   #close-promo-btn {
-    right: auto; /* Remove right alignment */
-    left: 0;     /* Move to the left side */
+    /* Move it to the left side for mobile */
+    margin-left: 0;
+    margin-right: auto;
     
-    /* Flip the rounded corner to the Top-Right */
-    border-radius: 0 12px 0 0; 
+    /* Keep both bottom corners rounded so it looks like a clean tab */
+    border-radius: 0 0 12px 12px; 
   }
 }
