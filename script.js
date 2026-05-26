@@ -2440,3 +2440,4 @@ window.shareResult = async function(platform) {
         });
     }
 };
+

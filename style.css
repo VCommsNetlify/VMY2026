@@ -4116,3 +4116,74 @@ html[dir="rtl"] #v-kids .v-gold-title {
         bottom: 15px; 
     }
 }
+
+/* =========================================
+   BANNER WRAPPER (Unified for Desktop & Mobile)
+   ========================================= */
+#promo-banner-wrapper {
+  position: relative; /* Puts it in the normal flow under your nav */
+  width: 100%;
+  background-color: transparent; 
+  overflow: hidden;
+  
+  /* Starts collapsed at 0 height */
+  max-height: 0; 
+  transition: max-height 0.6s ease-in-out;
+  z-index: 900;
+}
+
+/* The class JS adds to trigger the slide-down */
+#promo-banner-wrapper.slide-in {
+  /* Make sure this is slightly taller than your banner image on mobile */
+  max-height: 800px; 
+}
+
+#promo-banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================================
+   CLOSE BUTTON (Glass effect + Tab styling)
+   ========================================= */
+#close-promo-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0; /* Default position for Desktop */
+  top: auto; 
+  
+  background: rgba(0, 0, 0, 0.6); 
+  backdrop-filter: blur(4px); 
+  color: white;
+  border: none;
+  
+  /* Top-left rounded corner for Desktop */
+  border-radius: 12px 0 0 0; 
+  
+  width: 45px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10000;
+  transition: background 0.3s ease;
+}
+
+#close-promo-btn:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/* =========================================
+   MOBILE OVERRIDE FOR THE BUTTON
+   ========================================= */
+@media (max-width: 767px) {
+  #close-promo-btn {
+    right: auto; /* Remove right alignment */
+    left: 0;     /* Move to the left side */
+    
+    /* Flip the rounded corner to the Top-Right */
+    border-radius: 0 12px 0 0; 
+  }
+}
