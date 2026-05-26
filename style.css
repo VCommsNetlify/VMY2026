@@ -4146,21 +4146,52 @@ html[dir="rtl"] #v-kids .v-gold-title {
 }
 
 /* =========================================
+   BANNER WRAPPER
+   ========================================= */
+#promo-banner-wrapper {
+  position: relative; 
+  width: 100%;
+  background-color: transparent; 
+  overflow: hidden;
+  
+  /* Flexbox automatically stacks the image and button */
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-end; /* Aligns the button to the RIGHT on desktop */
+  
+  max-height: 0; 
+  transition: max-height 0.6s ease-in-out;
+  z-index: 900;
+}
+
+#promo-banner-wrapper.slide-in {
+  max-height: 800px; 
+}
+
+#promo-banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================================
    CLOSE BUTTON (Hanging Below)
    ========================================= */
 #close-promo-btn {
-  position: relative; /* Keeps it in the normal flow */
-  margin-top: -1px;   /* Pulls it up 1px to prevent tiny white gaps */
+  /* The !important tags force it to stop floating over the image */
+  position: relative !important; 
+  top: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
   
-  /* Push to the right for Desktop */
-  margin-left: auto; 
-  margin-right: 0;
+  margin: 0; /* Clears any lingering margins */
+  margin-top: -1px; /* Prevents a tiny white pixel gap */
   
-  /* Round the bottom corners */
+  /* Rounds both bottom corners so it looks like a pull-tab */
   border-radius: 0 0 12px 12px; 
   
-  /* Styling */
-  background: rgba(0, 0, 0, 0.6); 
+  background: rgba(0, 0, 0, 0.7); 
   backdrop-filter: blur(4px); 
   color: white;
   border: none;
@@ -4170,6 +4201,7 @@ html[dir="rtl"] #v-kids .v-gold-title {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  z-index: 10000;
   transition: background 0.3s ease;
 }
 
@@ -4181,15 +4213,8 @@ html[dir="rtl"] #v-kids .v-gold-title {
    MOBILE OVERRIDE
    ========================================= */
 @media (max-width: 767px) {
-  #close-promo-btn {
-    /* Push to the left for Mobile */
-    margin-left: 0;
-    margin-right: auto;
-    
-    /* Explicitly clear any old positioning rules just in case */
-    top: auto;
-    bottom: auto;
-    left: auto;
-    right: auto;
+  #promo-banner-wrapper {
+    /* Instantly pushes the button to the LEFT side on mobile */
+    align-items: flex-start; 
   }
 }
