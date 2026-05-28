@@ -31,6 +31,36 @@
     "day": "all"
   },
   {
+    "id": "6396648498112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention 2026: VP Donna Imson-Lecaroz’s Untold Stories",
+      "ar": "V-Convention 2026: قصص VP Donna Imson-Lecaroz التي لم تُروى من قبل",
+      "id": "V-Convention 2026: Kisah-kisah yang Belum Terungkap VP Donna Imson-Lecaroz",
+      "fr": "V-Convention 2026: Les histoires inédites de VP Donna Imson-Lecarozh",
+      "ru": "V-Convention 2026: Нерассказанные истории VP Donna Imson-Lecaroz",
+      "tr": "V-Convention 2026: VP Donna Imson-Lecaroz’un Anlatılmamış Hikayeleri"
+    },
+    "description": {
+      "en": "Let belief and commitment define your journey from dreamer to doer.",
+      "ar": "دعوا الإيمان والالتزام يحددان مساركم من حالمين إلى فاعلين.",
+      "id": "Biarkan keyakinan dan komitmen menentukan perjalanan Anda dari seorang pemimpi menjadi seorang pelaku.",
+      "fr": "Laissez la croyance et l’engagement définir votre parcours.",
+      "ru": "Пусть вера и преданность определяют ваш путь от мечтателя к деятелю.",
+      "tr": "Hayalperestlikten eyleme geçmeye uzanan yolculuğunuzu, inancınız ve bağlılığınız belirlesin."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/05272026-v-convention-2026-vel-donna-imson-lecarozs-untold-stories.jpg",
+      "ar": "assets/video-article/05272026-v-convention-2026-vel-donna-imson-lecarozs-untold-stories.jpg",
+      "id": "assets/video-article/05272026-v-convention-2026-vel-donna-imson-lecarozs-untold-stories.jpg",
+      "fr": "assets/video-article/05272026-v-convention-2026-vel-donna-imson-lecarozs-untold-stories.jpg",
+      "ru": "assets/video-article/05272026-v-convention-2026-vel-donna-imson-lecarozs-untold-stories.jpg",
+      "tr": "assets/video-article/05272026-v-convention-2026-vel-donna-imson-lecarozs-untold-stories.jpg"
+    },
+    "speaker": "Invite Video",
+    "day": "all"
+  },
+  {
     "id": "6396034929112",
     "type": "video",
     "title": {
