@@ -31,6 +31,36 @@
     "day": "all"
   },
   {
+    "id": "6396928505112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention 2026: VC Midhulaj’s Untold Stories",
+      "ar": "V-Convention 2026: قصص VC Midhulaj التي لم تُروى من قبل",
+      "id": "V-Convention 2026: Kisah-kisah yang Belum Terungkap VC Midhulaj",
+      "fr": "V-Convention 2026: VC Midhulaj’s Histoires méconnues",
+      "ru": "V-Convention 2026: Нерассказанные истории VC Midhulaj",
+      "tr": "V-Convention 2026: VC Midhulaj’ın Anlatılmamış Hikayeleri"
+    },
+    "description": {
+      "en": "The journey from dreamer to doer is one of unlearning and relearning.",
+      "ar": "إنّ رحلة التحوّل من حالم إلى فاعل هي رحلةٌ من إلغاء تعلم بعض المفاهيم القديمة وتعلم مفاهيم جديدة.",
+      "id": "Perjalanan dari seorang pemimpi menjadi seorang pelaku adalah perjalanan melupakan dan mempelajari kembali hal-hal yang sudah dipelajari.",
+      "fr": "Le parcours qui mène du rêveur à l'acteur est un processus qui consiste à désapprendre et à réapprendre.",
+      "ru": "Путь от мечтателя к деятелю — это путь переучивания и отучения.",
+      "tr": "Hayalperestlikten eyleme geçmeye uzanan yolculuk; eski kalıpları yıkma, bildiklerini unutma ve yeniden öğrenme sürecidir."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/05292026-v-convention-2026-vc-midhulajs-untold-stories.jpg",
+      "ar": "assets/video-article/05292026-v-convention-2026-vc-midhulajs-untold-stories.jpg",
+      "id": "assets/video-article/05292026-v-convention-2026-vc-midhulajs-untold-stories.jpg",
+      "fr": "assets/video-article/05292026-v-convention-2026-vc-midhulajs-untold-stories.jpg",
+      "ru": "assets/video-article/05292026-v-convention-2026-vc-midhulajs-untold-stories.jpg",
+      "tr": "assets/video-article/05292026-v-convention-2026-vc-midhulajs-untold-stories.jpg"
+    },
+    "speaker": "Invite Video",
+    "day": "all"
+  },
+  {
     "id": "6396648498112",
     "type": "video",
     "title": {
