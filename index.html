@@ -1165,20 +1165,39 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeBtn = document.getElementById('close-promo-btn');
   const bannerImg = document.getElementById('promo-banner-img');
 
-  // 1. Define your translated images here (update paths as needed)
-  const localizedBanners = {
-'en': 'assets/images/05222026-vcon2026-microsite-scavenger-hunt-header-en.png', // English
-    'ar': 'assets/images/05222026-vcon2026-microsite-scavenger-hunt-header-ar.png', // Arabic
-    'id': 'assets/images/05222026-vcon2026-microsite-scavenger-hunt-header-id.png', // Indonesian
-    'fr': 'assets/images/05222026-vcon2026-microsite-scavenger-hunt-header-fr.png', // French
-    'ru': 'assets/images/05222026-vcon2026-microsite-scavenger-hunt-header-ru.png', // Russian
-    'tr': 'assets/images/05222026-vcon2026-microsite-scavenger-hunt-header-tr.png'  // Turkish
+  // 1. Define your translated images for BOTH Web and Mobile
+  const banners = {
+    web: {
+      'en': 'assets/images/05222026-vcon2026-microsite-scavenger-hunt-header-en.png',
+      'ar': 'assets/images/05222026-vcon2026-microsite-scavenger-hunt-header-ar.png',
+      'id': 'assets/images/05222026-vcon2026-microsite-scavenger-hunt-header-id.png',
+      'fr': 'assets/images/05222026-vcon2026-microsite-scavenger-hunt-header-fr.png',
+      'ru': 'assets/images/05222026-vcon2026-microsite-scavenger-hunt-header-ru.png',
+      'tr': 'assets/images/05222026-vcon2026-microsite-scavenger-hunt-header-tr.png'
+    },
+    mobile: {
+      // IMPORTANT: Replace these with your actual mobile image file paths!
+      'en': 'assets/images/05282026-vcon2026-microsite-scavenger-hunt-header-mobile-en.png',
+      'ar': 'assets/images/05282026-vcon2026-microsite-scavenger-hunt-header-mobile-ar.png',
+      'id': 'assets/images/05282026-vcon2026-microsite-scavenger-hunt-header-mobile-id.png',
+      'fr': 'assets/images/05282026-vcon2026-microsite-scavenger-hunt-header-mobile-fr.png',
+      'ru': 'assets/images/05282026-vcon2026-microsite-scavenger-hunt-header-mobile-ru.png',
+      'tr': 'assets/images/05282026-vcon2026-microsite-scavenger-hunt-header-mobile-tr.png'
+    }
   };
 
-  // 2. The function that updates the image source
-  function updateBannerImage(langCode) {
-    // If the lang code exists in our dictionary, use it. Otherwise, default to English.
-    const newSrc = localizedBanners[langCode] || localizedBanners['en'];
+  // 2. The function that updates the image source based on language AND screen size
+  function updateBannerImage() {
+    const currentLang = document.documentElement.lang || 'en';
+    
+    // Check if the screen is mobile-sized (matches our CSS max-width: 767px)
+    const isMobile = window.innerWidth <= 767;
+    
+    // Pick the appropriate image group (web or mobile)
+    const activeBanners = isMobile ? banners.mobile : banners.web;
+    
+    // Get the final image URL based on language
+    const newSrc = activeBanners[currentLang] || activeBanners['en'];
     
     // Only update if the image is actually different to prevent flickering
     if (bannerImg.src.indexOf(newSrc) === -1) {
@@ -1187,28 +1206,30 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // 3. Set the correct image immediately on page load
-  updateBannerImage(document.documentElement.lang || 'en');
+  updateBannerImage();
 
-  // 4. WATCH FOR LANGUAGE CHANGES (The fix!)
-  // This watches the <html> tag. When your i18n library changes lang="en" to lang="ar", this triggers.
+  // 4. WATCH FOR LANGUAGE CHANGES
   const observer = new MutationObserver((mutations) => {
     mutations.forEach((mutation) => {
       if (mutation.attributeName === "lang") {
-        const currentLang = document.documentElement.lang;
-        updateBannerImage(currentLang);
+        updateBannerImage();
       }
     });
   });
-
-  // Start watching the <html> tag
   observer.observe(document.documentElement, { attributes: true });
 
-  // 5. Trigger the slide down after 2.5 seconds
+  // 5. WATCH FOR SCREEN RESIZE
+  // If a user resizes their window from desktop to mobile (or rotates their phone), this instantly swaps the image.
+  window.addEventListener('resize', () => {
+    updateBannerImage();
+  });
+
+  // 6. Trigger the slide down after 2.5 seconds
   setTimeout(() => {
     bannerWrapper.classList.add('slide-in');
   }, 2500);
 
-  // 6. Collapse the banner when the arrow is clicked
+  // 7. Collapse the banner when the arrow is clicked
   closeBtn.addEventListener('click', () => {
     bannerWrapper.classList.remove('slide-in');
   });
