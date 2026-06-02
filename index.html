@@ -550,75 +550,70 @@
         "Keep an eye out for our surprise keynote speakers!"
     ];
 
-    // TWEAK TIMINGS HERE: Added "displayTime" (in milliseconds) to control each one individually
     const volts = [
         { 
             container: document.getElementById('volt-assistant-bottom'), 
             bubble: document.getElementById('volt-bubble-bottom'), 
             media: document.getElementById('volt-media-bottom'),
             src: "assets/volt-animation.webp",
-            displayTime: 7000 // Stays for 7 seconds
+            displayTime: 7000 
         },
         { 
             container: document.getElementById('volt-assistant-left'), 
             bubble: document.getElementById('volt-bubble-left'), 
             media: document.getElementById('volt-media-left'),
             src: "assets/volt-animation-left.webp",
-            displayTime: 5000 // CHANGED: Stays for only 5 seconds to fix the lingering issue!
+            displayTime: 5000 
         },
         { 
             container: document.getElementById('volt-assistant-right'), 
             bubble: document.getElementById('volt-bubble-right'), 
             media: document.getElementById('volt-media-right'),
             src: "assets/volt-animation-right.webp",
-            displayTime: 7000 // Stays for 7 seconds
+            displayTime: 7000 
         }
     ];
     
     let currentVoltIndex = 0; 
 
     function triggerVoltCycle() {
-        // Master Failsafe: Clean the slate. Force-hide ALL volts and bubbles instantly 
-        // so no leftover animations can ever get stuck on screen together.
         volts.forEach(v => {
             if (v.container) v.container.classList.remove('volt-show');
             if (v.bubble) v.bubble.classList.remove('bubble-show');
         });
 
         const activeVolt = volts[currentVoltIndex];
+
         if (!activeVolt.container || !activeVolt.media || !activeVolt.bubble) return;
 
-        // Pick a random sentence
+        activeVolt.bubble.classList.remove('bubble-show');
+
         const chosenText = sentencesPool[Math.floor(Math.random() * sentencesPool.length)];
         activeVolt.bubble.textContent = chosenText;
 
-        // Reset the unique cache path
+        activeVolt.media.onload = function() {
+            setTimeout(() => {
+                activeVolt.container.classList.add('volt-show');
+            }, 50);
+
+            setTimeout(() => {
+                activeVolt.bubble.classList.add('bubble-show');
+            }, 800);
+
+            setTimeout(() => {
+                activeVolt.bubble.classList.remove('bubble-show');
+                activeVolt.container.classList.remove('volt-show');
+            }, activeVolt.displayTime);
+
+            activeVolt.media.onload = null;
+        };
+
         activeVolt.media.src = activeVolt.src + "?t=" + new Date().getTime();
 
-        // Slide into view
-        setTimeout(() => {
-            activeVolt.container.classList.add('volt-show');
-        }, 50);
-
-        // Pop up the speech bubble after waving (800ms)
-        setTimeout(() => {
-            activeVolt.bubble.classList.add('bubble-show');
-        }, 800);
-
-        // Slide away using this specific Volt's custom displayTime
-        setTimeout(() => {
-            activeVolt.bubble.classList.remove('bubble-show');
-            activeVolt.container.classList.remove('volt-show');
-        }, activeVolt.displayTime);
-
-        // Move to the next index
         currentVoltIndex = (currentVoltIndex + 1) % volts.length;
     }
 
-    // First appearance (Bottom) at 4 seconds
     setTimeout(triggerVoltCycle, 4000);
-
-    // Loop rotation every 2 minutes
     setInterval(triggerVoltCycle, 120000); 
 });
 
