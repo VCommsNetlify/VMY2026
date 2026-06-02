@@ -540,15 +540,62 @@
 <script src="script.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-    const sentencesPool = [
-        "Hello, I'm Volt! Welcome to The V-Convention Microsite!",
-        "Be part of the biggest event of the year! Get your tickets now!",
-        "Want some cool frames for your photos? Find and click all V logos floating across the page!",
-        "Find out what kind of dreamer-turned-doer you are with our special personality test!",
-        "Got questions about V-Convention 2026? Get answers at the bottom part of the microsite!",
-        "Welcome attendees! Let's make this V-Convention unforgettable!",
-        "Keep an eye out for our surprise keynote speakers!"
-    ];
+    const localizationPool = {
+        en: [
+            "Hello, I'm Volt! Welcome to The V-Convention Microsite!",
+            "Be part of the biggest event of the year! Get your tickets now!",
+            "Want some cool frames for your photos? Find and click all V logos floating across the page!",
+            "Find out what kind of dreamer-turned-doer you are with our special personality test!",
+            "Got questions about V-Convention 2026? Get answers at the bottom part of the microsite!",
+            "Welcome attendees! Let's make this V-Convention unforgettable!",
+            "Keep an eye out for our surprise keynote speakers!"
+        ],
+        ar: [
+            "مرحباً، أنا فولت! أهلاً بكم في الموقع الإلكتروني المصغر لمؤتمر V-Convention!",
+            "كن جزءاً من الحدث الأكبر هذا العام! احصل على تذاكرك الآن!",
+            "هل تريد بعض الإطارات الرائعة لصورك؟ ابحث واضغط على جميع شعارات V العائمة في الصفحة!",
+            "اكتشف أي نوع من الحالمين الذين أصبحوا فاعلين أنت، من خلال اختبار الشخصية الخاص بنا!",
+            "هل لديك أسئلة حول مؤتمر V-Convention 2026؟ احصل على الإجابات في الجزء السفلي من الموقع المصغر!",
+            "أهلاً بالحضور! دعونا نجعل مؤتمر V-Convention هذا حدثاً لا يُنسى!",
+            "ابقوا أعينكم مفتوحة ترقباً لمتحدثينا الرئيسيين المفاجئين!"
+        ],
+        id: [
+            "Halo, saya Volt! Selamat datang di Microsite V-Convention!",
+            "Jadilah bagian dari acara terbesar tahun ini! Dapatkan tiketmu sekarang!",
+            "Ingin bingkai foto yang keren? Cari dan klik semua logo V yang melayang di halaman ini!",
+            "Cari tahu tipe pemimpi yang menjadi pelaku seperti apa Anda dengan tes kepribadian khusus kami!",
+            "Punya pertanyaan tentang V-Convention 2026? Dapatkan jawabannya di bagian bawah microsite!",
+            "Selamat datang para peserta! Mari kita buat V-Convention ini tidak terlupakan!",
+            "Nantikan pembicara utama kejutan kami!"
+        ],
+        fr: [
+            "Bonjour, je suis Volt ! Bienvenue sur le microsite de la V-Convention !",
+            "Faites partie du plus grand événement de l'année ! Achetez vos billets dès maintenant !",
+            "Vous voulez de superbes cadres pour vos photos ? Trouvez et cliquez sur tous les logos V qui flottent sur la page !",
+            "Découvrez quel genre de rêveur devenu fonceur vous êtes grâce à notre test de personnalité spécial !",
+            "Vous avez des questions sur la V-Convention 2026 ? Obtenez des réponses en bas du microsite !",
+            "Bienvenue aux participants ! Rendons cette V-Convention inoubliable !",
+            "Gardez un œil ouvert pour découvrir nos conférenciers d'honneur surprises !"
+        ],
+        ru: [
+            "Привет, я Вольт! Добро пожаловать на микросайт V-Convention!",
+            "Станьте частью главного события года! Получите свои билеты прямо сейчас!",
+            "Хотите крутые рамки для ваших фото? Найдите и кликните на все логотипы V, плавающие по странице!",
+            "Узнайте, какой вы тип мечтателя, ставшего деятелем, с помощью нашего специального теста личности!",
+            "Есть вопросы о V-Convention 2026? Получите ответы в нижней части микросайта!",
+            "Добро пожаловать, участники! Давайте сделаем эту конвенцию V-Convention навсегда запоминающейся!",
+            "Следите за нашими неожиданными главными спикерами!"
+        ],
+        tr: [
+            "Merhaba, ben Volt! V-Convention Mikrositesine hoş geldiniz!",
+            "Yılın en büyük etkinliğinin bir parçası olun! Biletlerinizi şimdi edin!",
+            "Fotoğraflarınız için harika çerçeveler ister misiniz? Sayfada yüzen tüm V logolarını bulun ve tıklayın!",
+            "Özel kişilik testimizle ne tür bir hayalperestten uygulayıcıya dönüştüğünüzü öğrenin!",
+            "V-Convention 2026 hakkında sorularınız mı var? Cevapları mikrositenin alt kısmında bulun!",
+            "Katılımcılar hoş geldiniz! Bu V-Convention'ı unutulmaz kılalım!",
+            "Sürpriz konuk konuşmacılarımız için gözünüzü dört açın!"
+        ]
+    };
 
     const volts = [
         { 
@@ -575,6 +622,32 @@
     ];
     
     let currentVoltIndex = 0; 
+    let currentTextIndex = 0; 
+
+    function detectActiveLanguage() {
+        const i18nKeys = ['i18nextLng', 'language', 'lang', 'locale', 'lng'];
+        for (let key of i18nKeys) {
+            let value = localStorage.getItem(key) || sessionStorage.getItem(key);
+            if (value) {
+                let code = value.toLowerCase().split(/[-_]/)[0];
+                if (localizationPool[code]) return code;
+            }
+        }
+
+        const select = document.querySelector('select');
+        if (select && select.value) {
+            let code = select.value.toLowerCase().split(/[-_]/)[0];
+            if (localizationPool[code]) return code;
+        }
+
+        const htmlLang = document.documentElement.lang;
+        if (htmlLang) {
+            let code = htmlLang.toLowerCase().split(/[-_]/)[0];
+            if (localizationPool[code]) return code;
+        }
+
+        return "en";
+    }
 
     function triggerVoltCycle() {
         volts.forEach(v => {
@@ -583,13 +656,15 @@
         });
 
         const activeVolt = volts[currentVoltIndex];
-
         if (!activeVolt.container || !activeVolt.media || !activeVolt.bubble) return;
 
         activeVolt.bubble.classList.remove('bubble-show');
 
-        const chosenText = sentencesPool[Math.floor(Math.random() * sentencesPool.length)];
-        activeVolt.bubble.textContent = chosenText;
+        let currentLang = detectActiveLanguage();
+        const activePool = localizationPool[currentLang];
+        
+        currentTextIndex = Math.floor(Math.random() * activePool.length);
+        activeVolt.bubble.textContent = activePool[currentTextIndex];
 
         activeVolt.media.onload = function() {
             setTimeout(() => {
@@ -609,9 +684,20 @@
         };
 
         activeVolt.media.src = activeVolt.src + "?t=" + new Date().getTime();
-
         currentVoltIndex = (currentVoltIndex + 1) % volts.length;
     }
+
+    document.addEventListener('click', function() {
+        setTimeout(() => {
+            let newLang = detectActiveLanguage();
+            const lastVoltIndex = currentVoltIndex === 0 ? volts.length - 1 : currentVoltIndex - 1;
+            const activeVolt = volts[lastVoltIndex];
+            
+            if (activeVolt && activeVolt.container && activeVolt.container.classList.contains('volt-show')) {
+                activeVolt.bubble.textContent = localizationPool[newLang][currentTextIndex];
+            }
+        }, 150);
+    });
 
     setTimeout(triggerVoltCycle, 4000);
     setInterval(triggerVoltCycle, 120000); 
