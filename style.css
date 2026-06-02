@@ -22,6 +22,21 @@ html, body {
     padding: 0;
 }
 
+.event-date {
+    /* font-family: 'Arial', sans-serif;  */
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    padding: 8px 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle transparent background */
+    border-radius: 30px; /* Gives it a nice pill shape */
+    display: inline-block;
+}
+
 strong a, 
 b a {
     font-weight: bold !important;
@@ -4210,11 +4225,104 @@ html[dir="rtl"] #v-kids .v-gold-title {
 }
 
 /* =========================================
-   MOBILE OVERRIDE
+   VOLT MULTI-ASSISTANT SYSTEM
    ========================================= */
-@media (max-width: 767px) {
-  #promo-banner-wrapper {
-    /* Instantly pushes the button to the LEFT side on mobile */
-    align-items: flex-start; 
-  }
+
+.volt-assistant-container {
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+              opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.volt-assistant-container.volt-show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* =========================================
+   UPDATED SIDE POSITIONS (WALL HUGGING + BUBBLE BUFFER)
+   ========================================= */
+
+/* 2. Left Side Position */
+.pos-left {
+  bottom: 15%;
+  left: -15px; /* Negative margin pulls the transparent asset gap off-screen */
+  transform: translateX(-200%);
+  align-items: flex-start; 
+}
+.pos-left.volt-show {
+  transform: translateX(0);
+}
+/* Gives the left speech bubble a buffer so it doesn't touch the screen edge */
+.pos-left .volt-speech-bubble {
+  margin-left: 25px; 
+}
+/* Shifts the pointer arrow to line up over Volt's head */
+.pos-left .volt-speech-bubble::after {
+  left: 40px; 
+  transform: none;
+}
+
+/* 3. Right Side Position */
+.pos-right {
+  bottom: 15%;
+  right: -15px; /* Negative margin pulls the transparent asset gap off-screen */
+  transform: translateX(200%);
+  align-items: flex-end; 
+}
+.pos-right.volt-show {
+  transform: translateX(0);
+}
+/* Gives the right speech bubble a buffer so it doesn't touch the screen edge */
+.pos-right .volt-speech-bubble {
+  margin-right: 25px; 
+}
+/* Shifts the pointer arrow to line up over Volt's head */
+.pos-right .volt-speech-bubble::after {
+  left: auto;
+  right: 40px;
+  transform: none;
+}
+
+/* Styling the Speech Bubbles */
+.volt-speech-bubble {
+  background-color: #ffffff;
+  border: 2px solid #0056b3;
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-bottom: 15px;
+  max-width: 220px;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  color: #333;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
+  position: relative;
+  text-align: center;
+  opacity: 0; 
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.volt-speech-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 8px 8px 0;
+  border-style: solid;
+  border-color: #ffffff transparent;
+  display: block;
+  width: 0;
+}
+
+.volt-speech-bubble.bubble-show {
+  opacity: 1;
+  pointer-events: auto;
 }

@@ -103,7 +103,7 @@
         </button>
         </div>
     <img src="assets/images/04272026-Vconvention2026-Malaysia-Logo-v2-1.png" alt="V-Malaysia 2026" class="hero-logo" style="max-width:450px; margin-bottom: 10px;">
-        
+        <p class="event-date">June 17 - 21 2026</p>
 
     <div class="v-countdown-container" style="margin-bottom: 30px;">
         <div class="flip-card" data-days>
@@ -392,6 +392,22 @@
         </div>
 <!-- <div class="v-hunt-target" data-hunt-id="item-5"></div> -->
     </section>
+
+<!-- <div id="volt-assistant-bottom" class="volt-assistant-container pos-bottom">
+    <div id="volt-bubble-bottom" class="volt-speech-bubble"></div>
+    <img id="volt-media-bottom" src="assets/volt-animation.gif" width="200" alt="Volt Assistant">
+</div>
+
+<div id="volt-assistant-left" class="volt-assistant-container pos-left">
+    <div id="volt-bubble-left" class="volt-speech-bubble"></div>
+    <img id="volt-media-left" src="assets/volt-animation-left.webp" width="200" alt="Volt Assistant">
+</div>
+
+<div id="volt-assistant-right" class="volt-assistant-container pos-right">
+    <div id="volt-bubble-right" class="volt-speech-bubble"></div>
+    <img id="volt-media-right" src="assets/volt-animation-right.gif" width="200" alt="Volt Assistant">
+</div> -->
+
 </main>
 
 <footer class="v-main-footer">
@@ -523,6 +539,84 @@
 
 <script src="script.js"></script>
 <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    // 1. Official V-Convention 2026 Sentence Pool
+    const sentencesPool = [
+        "Hello, I'm Volt! Welcome to The V-Convention Microsite!",
+        "Be part of the biggest event of the year! Get your tickets now!",
+        "Want some cool frames for your photos? Find and click all V logos floating across the page!",
+        "Find out what kind of dreamer-turned-doer you are with our special personality test!",
+        "Got questions about V-Convention 2026? Get answers at the bottom part of the microsite!",
+        "Welcome attendees! Let's make this V-Convention unforgettable!",
+        "Keep an eye out for our surprise keynote speakers!"
+    ];
+
+    // 2. Track the 3 Volt setups WITH their specific unique asset files
+    const volts = [
+        { 
+            container: document.getElementById('volt-assistant-bottom'), 
+            bubble: document.getElementById('volt-bubble-bottom'), 
+            media: document.getElementById('volt-media-bottom'),
+            src: "assets/volt-animation.gif" // Default bottom file
+        },
+        { 
+            container: document.getElementById('volt-assistant-left'), 
+            bubble: document.getElementById('volt-bubble-left'), 
+            media: document.getElementById('volt-media-left'),
+            src: "assets/volt-animation-left.webp" // Left-specific file
+        },
+        { 
+            container: document.getElementById('volt-assistant-right'), 
+            bubble: document.getElementById('volt-bubble-right'), 
+            media: document.getElementById('volt-media-right'),
+            src: "assets/volt-animation-right.gif" // Right-specific file
+        }
+    ];
+    
+    let currentVoltIndex = 0; 
+
+    function triggerVoltCycle() {
+        const activeVolt = volts[currentVoltIndex];
+
+        if (!activeVolt.container || !activeVolt.media || !activeVolt.bubble) return;
+
+        // Hide text bubble before sliding in
+        activeVolt.bubble.classList.remove('bubble-show');
+
+        // Pick a random sentence
+        const chosenText = sentencesPool[Math.floor(Math.random() * sentencesPool.length)];
+        activeVolt.bubble.textContent = chosenText;
+
+        // Reset the SPECIFIC file cache for this position
+        activeVolt.media.src = activeVolt.src + "?t=" + new Date().getTime();
+
+        // Slide the active Volt into view
+        setTimeout(() => {
+            activeVolt.container.classList.add('volt-show');
+        }, 50);
+
+        // Pop up the speech bubble after 800ms
+        setTimeout(() => {
+            activeVolt.bubble.classList.add('bubble-show');
+        }, 800);
+
+        // Stay on screen for 7 seconds, then slide away
+        setTimeout(() => {
+            activeVolt.bubble.classList.remove('bubble-show');
+            activeVolt.container.classList.remove('volt-show');
+        }, 7000);
+
+        // Advance to next position index
+        currentVoltIndex = (currentVoltIndex + 1) % volts.length;
+    }
+
+    // First appearance (Bottom) at 4 seconds
+    setTimeout(triggerVoltCycle, 4000);
+
+    // Loop rotation every 2 minutes
+    setInterval(triggerVoltCycle, 8000); 
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('newsletterForm');
     const successMsg = document.getElementById('successMessage');
