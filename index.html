@@ -393,7 +393,7 @@
 <!-- <div class="v-hunt-target" data-hunt-id="item-5"></div> -->
     </section>
 
-<!-- <div id="volt-assistant-bottom" class="volt-assistant-container pos-bottom">
+<div id="volt-assistant-bottom" class="volt-assistant-container pos-bottom">
     <div id="volt-bubble-bottom" class="volt-speech-bubble"></div>
     <img id="volt-media-bottom" src="assets/volt-animation.gif" width="200" alt="Volt Assistant">
 </div>
@@ -406,7 +406,7 @@
 <div id="volt-assistant-right" class="volt-assistant-container pos-right">
     <div id="volt-bubble-right" class="volt-speech-bubble"></div>
     <img id="volt-media-right" src="assets/volt-animation-right.gif" width="200" alt="Volt Assistant">
-</div> -->
+</div>
 
 </main>
 
@@ -540,7 +540,6 @@
 <script src="script.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-    // 1. Official V-Convention 2026 Sentence Pool
     const sentencesPool = [
         "Hello, I'm Volt! Welcome to The V-Convention Microsite!",
         "Be part of the biggest event of the year! Get your tickets now!",
@@ -551,62 +550,68 @@
         "Keep an eye out for our surprise keynote speakers!"
     ];
 
-    // 2. Track the 3 Volt setups WITH their specific unique asset files
+    // TWEAK TIMINGS HERE: Added "displayTime" (in milliseconds) to control each one individually
     const volts = [
         { 
             container: document.getElementById('volt-assistant-bottom'), 
             bubble: document.getElementById('volt-bubble-bottom'), 
             media: document.getElementById('volt-media-bottom'),
-            src: "assets/volt-animation.gif" // Default bottom file
+            src: "assets/volt-animation.gif",
+            displayTime: 7000 // Stays for 7 seconds
         },
         { 
             container: document.getElementById('volt-assistant-left'), 
             bubble: document.getElementById('volt-bubble-left'), 
             media: document.getElementById('volt-media-left'),
-            src: "assets/volt-animation-left.webp" // Left-specific file
+            src: "assets/volt-animation-left.webp",
+            displayTime: 5000 // CHANGED: Stays for only 5 seconds to fix the lingering issue!
         },
         { 
             container: document.getElementById('volt-assistant-right'), 
             bubble: document.getElementById('volt-bubble-right'), 
             media: document.getElementById('volt-media-right'),
-            src: "assets/volt-animation-right.gif" // Right-specific file
+            src: "assets/volt-animation-right.gif",
+            displayTime: 7000 // Stays for 7 seconds
         }
     ];
     
     let currentVoltIndex = 0; 
 
     function triggerVoltCycle() {
+        // Master Failsafe: Clean the slate. Force-hide ALL volts and bubbles instantly 
+        // so no leftover animations can ever get stuck on screen together.
+        volts.forEach(v => {
+            if (v.container) v.container.classList.remove('volt-show');
+            if (v.bubble) v.bubble.classList.remove('bubble-show');
+        });
+
         const activeVolt = volts[currentVoltIndex];
-
         if (!activeVolt.container || !activeVolt.media || !activeVolt.bubble) return;
-
-        // Hide text bubble before sliding in
-        activeVolt.bubble.classList.remove('bubble-show');
 
         // Pick a random sentence
         const chosenText = sentencesPool[Math.floor(Math.random() * sentencesPool.length)];
         activeVolt.bubble.textContent = chosenText;
 
-        // Reset the SPECIFIC file cache for this position
+        // Reset the unique cache path
         activeVolt.media.src = activeVolt.src + "?t=" + new Date().getTime();
 
-        // Slide the active Volt into view
+        // Slide into view
         setTimeout(() => {
             activeVolt.container.classList.add('volt-show');
         }, 50);
 
-        // Pop up the speech bubble after 800ms
+        // Pop up the speech bubble after waving (800ms)
         setTimeout(() => {
             activeVolt.bubble.classList.add('bubble-show');
         }, 800);
 
-        // Stay on screen for 7 seconds, then slide away
+        // Slide away using this specific Volt's custom displayTime
         setTimeout(() => {
             activeVolt.bubble.classList.remove('bubble-show');
             activeVolt.container.classList.remove('volt-show');
-        }, 7000);
+        }, activeVolt.displayTime);
 
-        // Advance to next position index
+        // Move to the next index
         currentVoltIndex = (currentVoltIndex + 1) % volts.length;
     }
 
@@ -614,7 +619,7 @@
     setTimeout(triggerVoltCycle, 4000);
 
     // Loop rotation every 2 minutes
-    setInterval(triggerVoltCycle, 8000); 
+    setInterval(triggerVoltCycle, 120000); 
 });
 
 document.addEventListener('DOMContentLoaded', () => {
