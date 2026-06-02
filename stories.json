@@ -31,6 +31,36 @@
     "day": "all"
   },
   {
+    "id": "6397203689112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention 2026: VEL Manikantaa Kumar’s Untold Stories",
+      "ar": "V-Convention 2026: قصص VEL Manikantaa Kumar التي لم تُروى من قبل",
+      "id": "V-Convention 2026: Kisah-kisah yang Belum Terungkap VEL Manikantaa Kumar",
+      "fr": "V-Convention 2026: VEL Manikantaa Kumar’s Histoires méconnues",
+      "ru": "V-Convention 2026: Нерассказанные истории VEL Manikantaa Kumar",
+      "tr": "V-Convention 2026: VEL Manikantaa Kumar’ın Anlatılmamış Hikayeleri"
+    },
+    "description": {
+      "en": "The journey from dreamer to doer is one of unlearning and relearning.",
+      "ar": "إنّ رحلة التحوّل من حالم إلى فاعل تتطلب الانضباط.",
+      "id": "Perjalanan dari seorang pemimpi menjadi seorang pelaku membutuhkan disiplin.",
+      "fr": "La transition du rêveur à l'acteur exige de la discipline.",
+      "ru": "Путь от мечтателя к деятелю требует дисциплины.",
+      "tr": "Hayalperestlikten eyleme geçen bir lider olmaya uzanan yolculuk disiplin gerektirir."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/06012026-v-convention-2026-vel-manikantaa-kumars-untold-stories.jpg",
+      "ar": "assets/video-article/06012026-v-convention-2026-vel-manikantaa-kumars-untold-stories.jpg",
+      "id": "assets/video-article/06012026-v-convention-2026-vel-manikantaa-kumars-untold-stories.jpg",
+      "fr": "assets/video-article/06012026-v-convention-2026-vel-manikantaa-kumars-untold-stories.jpg",
+      "ru": "assets/video-article/06012026-v-convention-2026-vel-manikantaa-kumars-untold-stories.jpg",
+      "tr": "assets/video-article/06012026-v-convention-2026-vel-manikantaa-kumars-untold-stories.jpg"
+    },
+    "speaker": "Invite Video",
+    "day": "all"
+  },
+  {
     "id": "6396928505112",
     "type": "video",
     "title": {
