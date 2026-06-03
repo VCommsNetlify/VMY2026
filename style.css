@@ -892,7 +892,7 @@ header {
 /* --- HERO SECTION SPACING --- */
 .hero-logo {
     display: block;
-    margin: 0 auto 20px auto; /* Centers the logo and adds space below */
+    margin: 0 auto 0 auto; /* Centers the logo and adds space below */
     width: 300px;
 }
 

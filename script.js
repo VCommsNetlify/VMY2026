@@ -18,6 +18,7 @@ const translations = {
         "countdown-hours":"HOURS",
         "countdown-mins":"MINS",
         "countdown-secs":"SECS",
+        "event_date":"JUNE 17 - 21 2026",
 
 
         // Floating CTA
@@ -148,6 +149,7 @@ const translations = {
         "countdown-hours":"JAM",
         "countdown-mins":"MENIT",
         "countdown-secs":"DETIK",
+        "event_date": "17 - 21 Juni 2026",
 
         "cta.main_label": "DAPATKAN TIKETNYA SEKARANG!",
         "cta.choose_type": "PILIH JENIS",
@@ -272,6 +274,7 @@ const translations = {
         "countdown-hours":"HEURES",
         "countdown-mins":"MINUTES",
         "countdown-secs":"SECONDES",
+        "event_date": "17 - 21 juin 2026",
 
         "cta.main_label": "ACHETEZ VOS BILLETS DÈS MAINTENANT !",
         "cta.choose_type": "CHOISIR LE TYPE",
@@ -395,6 +398,7 @@ const translations = {
         "countdown-hours":"ЧАСОВ",
         "countdown-mins":"МИНУТ",
         "countdown-secs":"СЕКУНД",
+        "event_date": "17 - 21 июня 2026",
 
         "cta.main_label": "КУПИТЕ БИЛЕТЫ ПРЯМО СЕЙЧАС!",
         "cta.choose_type": "ВЫБЕРИТЕ ТИП",
@@ -519,6 +523,7 @@ const translations = {
         "countdown-hours":"SAAT",
         "countdown-mins":"DAKİKA",
         "countdown-secs":"SANİYE",
+        "event_date": "17 - 21 Haziran 2026",
 
         "cta.main_label": "BİLETİNİZİ ŞİMDİ ALIN!",
         "cta.choose_type": "TİP SEÇ",
@@ -644,6 +649,7 @@ const translations = {
         "countdown-hours":"ساعات",
         "countdown-mins":"دقائق",
         "countdown-secs":"ثواني",
+        "event_date": "17 - 21 يونيو 2026",
 
         "cta.main_label": "احصلوا على التذاكر الآن!",
         "cta.choose_type": "اختر النوع",

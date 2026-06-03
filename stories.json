@@ -31,6 +31,36 @@
     "day": "all"
   },
   {
+    "id": "6397409473112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention 2026: A Better You Awaits",
+      "ar": "V-Convention 2026: نسخة أفضل تنتظركم.",
+      "id": "V-Convention 2026: A Better You Awaits",
+      "fr": "V-Convention 2026: A Better You Awaits",
+      "ru": "V-Convention 2026: A Better You Awaits",
+      "tr": "V-Convention 2026: Daha İyi Bir Sen Seni Bekliyor"
+    },
+    "description": {
+      "en": "For almost three decades, this grand stage has changed lives, shaped leaders, and inspired dreamers to become more.",
+      "ar": "على مدى ثلاثة عقود تقريبًا، غيّرت هذه المنصة العظيمة حياة الكثيرين، وصقلت قادةً، وألهمت الحالمين لتحقيق المزيد.",
+      "id": "Selama hampir tiga dekade, panggung megah ini telah mengubah hidup, membentuk para pemimpin, dan menginspirasi para pemimpi untuk menjadi lebih baik.",
+      "fr": "Depuis près de trois décennies, cette grande scène transforme des vies, façonne des leaders et inspire des rêveurs à devenir plus.",
+      "ru": "На протяжении почти трех десятилетий эта грандиозная сцена меняла жизни, формировала лидеров и вдохновляла мечтателей на новые свершения.",
+      "tr": "Yaklaşık otuz yıldır bu büyük sahne hayatları değiştirdi, liderleri şekillendirdi ve hayalperestlere daha fazlası olmaları için ilham verdi."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/06032026-v-convention-2026-a-better-you-awaits.jpg",
+      "ar": "assets/video-article/06032026-v-convention-2026-a-better-you-awaits.jpg",
+      "id": "assets/video-article/06032026-v-convention-2026-a-better-you-awaits.jpg",
+      "fr": "assets/video-article/06032026-v-convention-2026-a-better-you-awaits.jpg",
+      "ru": "assets/video-article/06032026-v-convention-2026-a-better-you-awaits.jpg",
+      "tr": "assets/video-article/06032026-v-convention-2026-a-better-you-awaits.jpg"
+    },
+    "speaker": "Teasers",
+    "day": "all"
+  },
+  {
     "id": "6397203689112",
     "type": "video",
     "title": {
