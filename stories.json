@@ -30,6 +30,36 @@
     "speaker": "Teasers",
     "day": "all"
   },
+   {
+    "id": "6397421346112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention 2026: VEL Dr. Dodi Sidarta Halim & VEL Dr. Maria Marissa’s Untold Stories",
+      "ar": "V-Convention 2026: قصص VEL Dr. Dodi Sidarta Halim وVEL Dr. Maria Marissa التي لم تُروى من قبل",
+      "id": "V-Convention 2026: Kisah-kisah VEL Dr. Dodi Sidarta Halim & VEL Dr. Maria Marissa yang Belum Terungkap",
+      "fr": "V-Convention 2026: Les histoires inédites du VEL Dr. Dodi Sidarta Halim et de la VEL Dr. Maria Marissa",
+      "ru": "V-Convention 2026: Нерассказанные истории VEL д-ра Dodi Sidarta Halim и VEL д-ра Maria Marissa",
+      "tr": "V-Convention 2026: VEL Dr. Dodi Sidarta Halim ve VEL Dr. Maria Marissa’nın Anlatılmamış Hikayeleri"
+    },
+    "description": {
+      "en": "The journey from dreamer to doer is all about change. ",
+      "ar": "رحلة التحوّل من حالم إلى فاعل هي رحلة تدور حول التغيير.",
+      "id": "Perjalanan dari seorang pemimpi menjadi seorang pelaku adalah tentang perubahan.",
+      "fr": "Le parcours qui mène du rêveur à l'acteur est une question de changement. ",
+      "ru": "Путь от мечтателя к деятелю — это путь перемен. ",
+      "tr": "Hayalperestlikten eyleme geçmeye uzanan o yolculuk, tamamen değişimle ilgilidir."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/06032026-v-convention-2026-vel-dr-dodi-sidarta-halim-vel-dr-maria-marissas-untold-stories.jpg",
+      "ar": "assets/video-article/06032026-v-convention-2026-vel-dr-dodi-sidarta-halim-vel-dr-maria-marissas-untold-stories.jpg",
+      "id": "assets/video-article/06032026-v-convention-2026-vel-dr-dodi-sidarta-halim-vel-dr-maria-marissas-untold-stories.jpg",
+      "fr": "assets/video-article/06032026-v-convention-2026-vel-dr-dodi-sidarta-halim-vel-dr-maria-marissas-untold-stories.jpg",
+      "ru": "assets/video-article/06032026-v-convention-2026-vel-dr-dodi-sidarta-halim-vel-dr-maria-marissas-untold-stories.jpg",
+      "tr": "assets/video-article/06032026-v-convention-2026-vel-dr-dodi-sidarta-halim-vel-dr-maria-marissas-untold-stories.jpg"
+    },
+    "speaker": "Invite Video",
+    "day": "all"
+  },
   {
     "id": "6397409473112",
     "type": "video",
