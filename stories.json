@@ -30,6 +30,36 @@
     "speaker": "Teasers",
     "day": "all"
   },
+  {
+    "id": "6397521365112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention 2026: AVP Balajee Kumar’s Untold Stories",
+      "ar": "V-Convention 2026: قصص AVP Balajee Kumar التي لم تُروى من قبل",
+      "id": "V-Convention 2026: Kisah-kisah AVP Balajee Kumar yang Belum Terungkap",
+      "fr": "V-Convention 2026: Les histoires méconnues de AVP Balajee Kumar",
+      "ru": "V-Convention 2026: Нерассказанные истории AVP Balajee Kumar",
+      "tr": "V-Convention 2026: AVP Balajee Kumar’ın Anlatılmamış Hikayeleri"
+    },
+    "description": {
+      "en": "The journey from dreamer to doer goes beyond personal success.",
+      "ar": "إنّ رحلة التحوّل من حالم إلى فاعل تتجاوز النجاح الشخصي.",
+      "id": "Perjalanan dari seorang pemimpi menjadi seorang pelaku melampaui kesuksesan pribadi.",
+      "fr": "Le passage du rêveur à l'acteur va au-delà de la réussite personnelle.",
+      "ru": "Путь от мечтателя к деятелю выходит за рамки личного успеха.",
+      "tr": "Hayalperestlikten eyleme geçmeye uzanan o yolculuk, kişisel başarının çok daha ötesindedir."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/06042026-v-convention-2026-avp-balajee-kumars-untold-stories.jpg",
+      "ar": "assets/video-article/06042026-v-convention-2026-avp-balajee-kumars-untold-stories.jpg",
+      "id": "assets/video-article/06042026-v-convention-2026-avp-balajee-kumars-untold-stories.jpg",
+      "fr": "assets/video-article/06042026-v-convention-2026-avp-balajee-kumars-untold-stories.jpg",
+      "ru": "assets/video-article/06042026-v-convention-2026-avp-balajee-kumars-untold-stories.jpg",
+      "tr": "assets/video-article/06042026-v-convention-2026-avp-balajee-kumars-untold-stories.jpg"
+    },
+    "speaker": "Invite Video",
+    "day": "all"
+  },
    {
     "id": "6397421346112",
     "type": "video",
@@ -121,6 +151,7 @@
     "day": "all"
   },
   {
+    "disabled": true,
     "id": "6396928505112",
     "type": "video",
     "title": {
