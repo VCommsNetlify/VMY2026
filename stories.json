@@ -31,6 +31,66 @@
     "day": "all"
   },
   {
+    "id": "6397611602112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention 2026: VP Sathi Senathirajah’s Untold Stories",
+      "ar": "V-Convention 2026: قصص VP Sathi Senathirajah التي لم تُروى من قبل",
+      "id": "V-Convention 2026: Kisah-kisah VP Sathi Senathirajah yang Belum Terungkap",
+      "fr": "V-Convention 2026: Les histoires méconnues de VP Sathi Senathirajah",
+      "ru": "V-Convention 2026: Нерассказанные истории VP Sathi Senathirajah",
+      "tr": "V-Convention 2026: VP Sathi Senathirajah’ın Anlatılmamış Hikayeleri"
+    },
+    "description": {
+      "en": "The journey from dreamer to doer is sustained by moments that remind you why you began.",
+      "ar": "إنّ رحلة التحوّل من حالم إلى مُنجز تستمدّ قوتها من لحظات تُذكّركم بسبب بدايتكم.",
+      "id": "Perjalanan dari seorang pemimpi menjadi seorang pelaku didukung oleh momen-momen yang mengingatkan Anda mengapa Anda memulai.",
+      "fr": "Le passage du rêveur à l'homme d'action est nourri par ces moments qui vous rappellent pourquoi vous vous êtes lancé.",
+      "ru": "Путь от мечтателя к деятелю поддерживается моментами, которые напоминают вам, почему вы начали.",
+      "tr": "Hayalperestlikten eyleme geçmeye uzanan o yolculuk, size neden başladığınızı hatırlatan anlarla ayakta kalır."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/06052026-v-convention-2026-vp-sathi-senathirajahs-untold-stories.jpg",
+      "ar": "assets/video-article/06052026-v-convention-2026-vp-sathi-senathirajahs-untold-stories.jpg",
+      "id": "assets/video-article/06052026-v-convention-2026-vp-sathi-senathirajahs-untold-stories.jpg",
+      "fr": "assets/video-article/06052026-v-convention-2026-vp-sathi-senathirajahs-untold-stories.jpg",
+      "ru": "assets/video-article/06052026-v-convention-2026-vp-sathi-senathirajahs-untold-stories.jpg",
+      "tr": "assets/video-article/06052026-v-convention-2026-vp-sathi-senathirajahs-untold-stories.jpg"
+    },
+    "speaker": "Invite Video",
+    "day": "all"
+  },
+  {
+    "id": "6397602375112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention 2026: AVP Suresh Perumal’s Untold Stories",
+      "ar": "V-Convention 2026: قصص AVP Suresh Perumal التي لم تُروى من قبل",
+      "id": "V-Convention 2026: Kisah-kisah AVP Suresh Perumal yang Belum Terungkap",
+      "fr": "V-Convention 2026: Les histoires inédites d’AVP Suresh Perumal",
+      "ru": "V-Convention 2026: Нерассказанные истории AVP Suresh Perumal",
+      "tr": "V-Convention 2026: AVP Suresh Perumal’ın Anlatılmamış Hikayeleri"
+    },
+    "description": {
+      "en": "The journey from dreamer to doer challenges us to stay grounded as we grow.",
+      "ar": "رحلة التحوّل من حالم إلى فاعل تُحفّزنا على التواضع أثناء نمونا.",
+      "id": "Perjalanan dari seorang pemimpi menjadi seorang pelaku menantang kita untuk tetap rendah hati seiring pertumbuhan kita.",
+      "fr": "Le parcours qui mène du rêveur à l'acteur nous met au défi de garder les pieds sur terre à mesure que nous grandissons.",
+      "ru": "Путь от мечтателя к деятелю бросает нам вызов оставаться скромными по мере нашего роста.",
+      "tr": "Hayalperestlikten eyleme geçme yolculuğu, biz büyüdükçe ayaklarımızın yere basması konusunda bizi zorlar."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/06052026-v-convention-2026-avp-suresh-perumals-untold-stories.jpg",
+      "ar": "assets/video-article/06052026-v-convention-2026-avp-suresh-perumals-untold-stories.jpg",
+      "id": "assets/video-article/06052026-v-convention-2026-avp-suresh-perumals-untold-stories.jpg",
+      "fr": "assets/video-article/06052026-v-convention-2026-avp-suresh-perumals-untold-stories.jpg",
+      "ru": "assets/video-article/06052026-v-convention-2026-avp-suresh-perumals-untold-stories.jpg",
+      "tr": "assets/video-article/06052026-v-convention-2026-avp-suresh-perumals-untold-stories.jpg"
+    },
+    "speaker": "Invite Video",
+    "day": "all"
+  },
+  {
     "id": "6397521365112",
     "type": "video",
     "title": {
