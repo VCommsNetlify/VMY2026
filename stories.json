@@ -31,6 +31,36 @@
     "day": "all"
   },
   {
+    "id": "6397868900112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention 2026: VP Kalai Manikam’s Untold Stories",
+      "ar": "V-Convention 2026: قصص VP Kalai Manikam التي لم تُروى من قبل",
+      "id": "V-Convention 2026: Kisah-kisah VP Kalai Manikam yang Belum Terungkap",
+      "fr": "V-Convention 2026: Les histoires méconnues de VP Kalai Manikam",
+      "ru": "V-Convention 2026: Нерассказанные истории VP Kalai Manikam",
+      "tr": "V-Convention 2026: VP Kalai Manikam'ın Anlatılmamış Hikayeleri"
+    },
+    "description": {
+      "en": "The journey from dreamer to doer becomes possible when we learn to build with others.",
+      "ar": "الرحلة من حالم إلى فاعل تصبح ممكنة عندما نتعلم البناء مع الآخرين.",
+      "id": "Perjalanan dari seorang pemimpi menjadi pelaku menjadi mungkin ketika kita belajar membangun bersama orang lain.",
+      "fr": "Le passage du stade de rêveur à celui d'acteur devient possible lorsque nous apprenons à construire avec les autres.",
+      "ru": "Путь от мечтателя к деятелю становится возможным, когда мы учимся строить вместе с другими.",
+      "tr": "Hayalperestlikten eyleme geçiş yolculuğu, başkalarıyla birlikte inşa etmeyi öğrendiğimizde mümkün hale gelir."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/06082026-v-convention-2026-vp-kalai-manikams-untold-stories.jpg",
+      "ar": "assets/video-article/06082026-v-convention-2026-vp-kalai-manikams-untold-stories.jpg",
+      "id": "assets/video-article/06082026-v-convention-2026-vp-kalai-manikams-untold-stories.jpg",
+      "fr": "assets/video-article/06082026-v-convention-2026-vp-kalai-manikams-untold-stories.jpg",
+      "ru": "assets/video-article/06082026-v-convention-2026-vp-kalai-manikams-untold-stories.jpg",
+      "tr": "assets/video-article/06082026-v-convention-2026-vp-kalai-manikams-untold-stories.jpg"
+    },
+    "speaker": "Invite Video",
+    "day": "all"
+  },
+  {
     "id": "6397611602112",
     "type": "video",
     "title": {
