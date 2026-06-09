@@ -896,6 +896,9 @@ header {
     width: 300px;
 }
 
+/* HERO 2 */
+.hero2 { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background-image: url('assets/images/background-proper.png'); opacity: 90%; background-size: cover; color: white; text-align: center; padding-top: 60px; }
+
 .main-title {
     margin-bottom: 30px;
     font-family: 'Apotek ExtraCond', sans-serif !important;
@@ -4375,4 +4378,118 @@ html[dir="rtl"] #v-kids .v-gold-title {
   .pos-bottom {
     right: 15px; 
   }
+}
+
+/* HERO 2 */
+/* Base Layout Configurations */
+.vcon-main-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1100px;
+    width: 100%;
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Wraps cleanly to a stack on smaller screens */
+}
+
+.vcon-logo-col {
+    flex: 1;
+    min-width: 220px;
+    max-width: 280px;
+    display: flex;
+    justify-content: center;
+}
+
+.vcon-logo {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.vcon-text-col {
+    flex: 2;
+    min-width: 300px;
+    text-align: left; /* Aligns left next to the logo on desktop */
+}
+
+/* Typography Styles */
+.vcon-title {
+    color: #cfff67; /* Mockup lime-green */
+    font-family: 'Apotek ExtraCond', 'Impact', sans-serif; /* Fallback heavy fonts if you don't have custom ones */
+    font-size: clamp(8rem, 5vw, 4.8rem);
+    font-weight: 900;
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+.vcon-subtitle {
+    color: #ffffff;
+    font-family: 'Barlow', Arial, sans-serif;
+    font-size: clamp(1.1rem, 2.2vw, 1.8rem);
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+}
+
+.highlight-green {
+    color: #d1ff6c;
+}
+
+/* Social Box Wrapper */
+.vcon-social-box {
+    background: linear-gradient(180deg, #38023b, #220126); /* Dark purple gradient match */
+    border: 2px solid #e25c00; /* Warm amber/orange border glow */
+    border-radius: 25px;
+    padding: 18px 30px;
+    max-width: 750px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+.vcon-social-text {
+    color: #ffffff;
+    font-size: clamp(1.5rem, 1.5vw, 1.05rem);
+    font-family: 'Barlow';
+    margin: 0 0 12px 0;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.vcon-social-handles {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    font-family: 'Helvetica Neue';
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .vcon-main-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .vcon-text-col {
+        text-align: center; /* Center handles better on mobile viewports */
+    }
+    .desktop-only {
+        display: none;
+    }
 }
