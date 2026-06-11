@@ -31,6 +31,36 @@
     "day": "all"
   },
   {
+    "id": "6398124349112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention 2026: Joseph ‘Japadas’ Bismark’s Untold Stories",
+      "ar": "V-Convention 2026: قصص Joseph ‘Japadas’ Bismark التي لم تُروى من قبل",
+      "id": "V-Convention 2026: Kisah-kisah Joseph ‘Japadas’ Bismark yang Belum Terungkap",
+      "fr": "V-Convention 2026: Les histoires inédites de Joseph ‘Japadas’ Bismark",
+      "ru": "V-Convention 2026: Нерассказанные истории Joseph «Japadas» Bismark",
+      "tr": "V-Convention 2026: Joseph ‘Japadas’ Bismark’ın Anlatılmamış Hikayeleri"
+    },
+    "description": {
+      "en": "The journey from dreamer to doer leads to our HOME.",
+      "ar": "رحلة التحوّل من حالم إلى فاعل تقودنا إلى دارنا.",
+      "id": "Perjalanan dari pemimpi menjadi pelaku mengarah ke RUMAH kita.",
+      "fr": "Le chemin qui mène du rêveur à l'acteur nous ramène chez nous.",
+      "ru": "Путь от мечтателя к деятелю ведет к нашему ДОМУ.",
+      "tr": "Hayalperestlikten eyleme geçenlerin yolculuğu bizi EVİMİZE ulaştırır."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/06112026-v-convention-2026-joseph-japadas-bismarks-untold-stories.jpg",
+      "ar": "assets/video-article/06112026-v-convention-2026-joseph-japadas-bismarks-untold-stories.jpg",
+      "id": "assets/video-article/06112026-v-convention-2026-joseph-japadas-bismarks-untold-stories.jpg",
+      "fr": "assets/video-article/06112026-v-convention-2026-joseph-japadas-bismarks-untold-stories.jpg",
+      "ru": "assets/video-article/06112026-v-convention-2026-joseph-japadas-bismarks-untold-stories.jpg",
+      "tr": "assets/video-article/06112026-v-convention-2026-joseph-japadas-bismarks-untold-stories.jpg"
+    },
+    "speaker": "Invite Video",
+    "day": "all"
+  },
+  {
     "id": "6397868900112",
     "type": "video",
     "title": {
