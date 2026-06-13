@@ -31,6 +31,36 @@
     "day": "all"
   },
   {
+    "id": "6398315794112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention 2026: Get Ready for Your Click",
+      "ar": "V-Convention 2026: استعدوا للـ CLICK الخاص بكم",
+      "id": "V-Convention 2026: Get Ready for Your Clicks",
+      "fr": "V-Convention 2026: Get Ready for Your Click",
+      "ru": "V-Convention 2026: Приготовьтесь к своему «клику»",
+      "tr": "V-Convention 2026: Dönüşüm Anınıza Hazır Olun!"
+    },
+    "description": {
+      "en": "Every great leader can point to a moment that changed everything — a lesson, an insight, a realisation that shifted the course of their journey.",
+      "ar": "كل قائد عظيم يمكنه أن يشير إلى لحظةً غيّرت كل شيء - درسًا، أو بصيرة، أو إدراكًا غيّر مسار رحلته.",
+      "id": "Setiap pemimpin hebat pasti memiliki momen yang mengubah segalanya — sebuah pelajaran, wawasan, atau kesadaran yang mengubah arah perjalanan mereka.",
+      "fr": "Tout grand leader peut évoquer un moment qui a tout changé : une leçon, une prise de conscience, une révélation qui a bouleversé le cours de son parcours.",
+      "ru": "На этой неделе переживите тот же момент вместе со своими выдающимися Uplines и вдохновитесь их историями трансформации! Ваш «клик» ждёт вас на V-Convention 2026!",
+      "tr": "Her büyük lider, her şeyi değiştiren bir ana—yolculuklarının gidişatını değiştiren bir derse, bir içgörüye ya da bir farkındalığa işaret edebilir."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/06132026-v-convention-2026-get-ready-for-your-click.jpg",
+      "ar": "assets/video-article/06132026-v-convention-2026-get-ready-for-your-click.jpg",
+      "id": "assets/video-article/06132026-v-convention-2026-get-ready-for-your-click.jpg",
+      "fr": "assets/video-article/06132026-v-convention-2026-get-ready-for-your-click.jpg",
+      "ru": "assets/video-article/06132026-v-convention-2026-get-ready-for-your-click.jpg",
+      "tr": "assets/video-article/06132026-v-convention-2026-get-ready-for-your-click.jpg"
+    },
+    "speaker": "Invite Video",
+    "day": "all"
+  },
+  {
     "id": "6398240237112",
     "type": "video",
     "title": {
