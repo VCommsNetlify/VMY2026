@@ -31,6 +31,37 @@
     "day": "all"
   },
   {
+    "id": "article#5",
+    "type": "article",
+    "title": {
+      "en": "V-Convention June 2026 Registration Day: Welcome to Penang!",
+      "ar": "V-Convention June 2026 Registration Day: Welcome to Penang!",
+      "id": "V-Convention June 2026 Registration Day: Welcome to Penang!",
+      "fr": "V-Convention June 2026 Registration Day: Welcome to Penang!",
+      "ru": "V-Convention June 2026 Registration Day: Welcome to Penang!",
+      "tr": "V-Convention June 2026 Registration Day: Welcome to Penang!"
+    },
+    "description": {
+      "en": "Thousands of journeys intersect with one purpose in mind.",
+      "ar": "Thousands of journeys intersect with one purpose in mind.",
+      "id": "Thousands of journeys intersect with one purpose in mind.",
+      "fr": "Thousands of journeys intersect with one purpose in mind.",
+      "ru": "Thousands of journeys intersect with one purpose in mind.",
+      "tr": "Thousands of journeys intersect with one purpose in mind."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/06162026-v-convention-june-2026-registration-day-welcome-to-penang.jpg",
+      "ar": "assets/video-article/06162026-v-convention-june-2026-registration-day-welcome-to-penang.jpg",
+      "id": "assets/video-article/06162026-v-convention-june-2026-registration-day-welcome-to-penang.jpg",
+      "fr": "assets/video-article/06162026-v-convention-june-2026-registration-day-welcome-to-penang.jpg",
+      "ru": "assets/video-article/06162026-v-convention-june-2026-registration-day-welcome-to-penang.jpg",
+      "tr": "assets/video-article/06162026-v-convention-june-2026-registration-day-welcome-to-penang.jpg"
+    },
+    "speaker": "Wrap up Article",
+    "day": "all",
+    "link": "https://the-v.net/{{lang}}/news?id=06162026-v-convention-june-2026-registration-day-welcome-to-penang"
+  },
+  {
     "id": "6398315794112",
     "type": "video",
     "title": {
