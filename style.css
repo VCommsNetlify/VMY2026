@@ -1228,9 +1228,9 @@ header {
     transform: translateY(-50%);
     width: 45px;
     height: 45px;
-    background: rgba(128, 0, 32, 0.8); /* Maroon with transparency */
-    color: #D4AF37; /* Gold */
-    border: 1px solid #D4AF37;
+    background: rgba(23, 4, 61, 0.8); 
+    color: #d1ff6c; /* Gold */
+    border: 1px solid #17043d;
     border-radius: 50%;
     font-size: 20px;
     cursor: pointer;
@@ -1242,8 +1242,8 @@ header {
 }
 
 .nav-arrow:hover {
-    background: #D4AF37;
-    color: #800020;
+    background: #17043d;
+    color: #d1ff6c;
 }
 
 .nav-arrow.left { left: 15px; }
@@ -1293,12 +1293,13 @@ header {
 }
 
 .m-item img {
-    height: 100%;    /* Fills the row height perfectly */
-    width: auto;      /* Naturally adjusts width to show the full photo */
-    max-width: none;  /* Allows wide photos to stay wide */
-    object-fit: contain; /* Ensures the whole image is visible within its area */
+    height: 90%;    
+    width: auto;     
+    max-width: 100%; 
+    object-fit: contain; 
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    /* background-color: transparent; */
 }
 
 
