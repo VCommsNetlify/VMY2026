@@ -1318,7 +1318,7 @@ const galleryBase = "assets/gallery/";
 // Example: Day 1 has 40 images
 const galleryData = {
     "reg": { folder: "day0", count: 43 },
-    "day1": { folder: "day1", count: 40 },
+    "day1": { folder: "day1", count: 58 },
     "day2": { folder: "day2", count: 50 },
     "day3": { folder: "day3", count: 45 },
     "day4": { folder: "day4", count: 35 },
