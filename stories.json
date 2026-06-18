@@ -31,6 +31,36 @@
     "day": "all"
   },
   {
+    "id": "6398751539112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention June 2026 Day 1 Highlights: Change the World by Changing Yourself",
+      "ar": "V-Convention يونيو 2026 أبرز أحداث اليوم الأول: غيّروا العالم بتغيير أنفسكم",
+      "id": "Sorotan Hari ke-1 V-Convention June 2026: Ubah Dunia dengan Mengubah Diri Sendiri",
+      "fr": "V-Convention June 2026 Points saillants du jour 1 : Changez le monde en vous changeant vous-même",
+      "ru": "V-Convention June 2026 Основные моменты 1-го дня: Измените мир, изменив себя",
+      "tr": "V-Convention June 2026 1. Günün Özeti: Kendini Değiştirerek Dünyayı Değiştir"
+    },
+    "description": {
+      "en": "The opening day of V-Convention 2026 was a reminder that true change begins from within.",
+      "ar": "كان اليوم الافتتاحي لـ V-Convention 2026 بمثابة تذكير بأن التغيير الحقيقي يبدأ من الداخل.",
+      "id": "Hari pembukaan V-Convention 2026 adalah pengingat bahwa perubahan sejati dimulai dari dalam diri.",
+      "fr": "La première journée de V-Convention 2026 a rappelé que le vrai changement commence de l'intérieur.",
+      "ru": "Первый день V-Convention 2026 напомнил нам, что настоящие перемены начинаются изнутри.",
+      "tr": "V-Convention 2026’nın açılış günü, gerçek değişimin içeriden başladığına dair bir hatırlatmaydı."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/06182026-v-convention-june-2026-day-1-highlights-change-the-world-by-changing-yourself.jpg",
+      "ar": "assets/video-article/06182026-v-convention-june-2026-day-1-highlights-change-the-world-by-changing-yourself.jpg",
+      "id": "assets/video-article/06182026-v-convention-june-2026-day-1-highlights-change-the-world-by-changing-yourself.jpg",
+      "fr": "assets/video-article/06182026-v-convention-june-2026-day-1-highlights-change-the-world-by-changing-yourself.jpg",
+      "ru": "assets/video-article/06182026-v-convention-june-2026-day-1-highlights-change-the-world-by-changing-yourself.jpg",
+      "tr": "assets/video-article/06182026-v-convention-june-2026-day-1-highlights-change-the-world-by-changing-yourself.jpg"
+    },
+    "speaker": "Highlights Video",
+    "day": "all"
+  },
+  {
     "id": "article#5",
     "type": "article",
     "title": {
