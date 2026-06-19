@@ -31,6 +31,36 @@
     "day": "all"
   },
   {
+    "id": "6398856711112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention June 2026 Day 2 Highlights: Change the Way You Think, Change the Way You Live",
+      "ar": "V-Convention يونيو 2026 أبرز أحداث اليوم الثاني: غيّروا طريقة تفكيركم. غيّروا طريقة معيشتكم.",
+      "id": "V-Convention June 2026 Cuplikan Hari ke-2: Ubah Cara Berpikir Anda, Ubah Cara Hidup Anda",
+      "fr": "V-Convention June 2026 Moments forts du Jour 2 : Changez votre façon de penser, changez votre façon de vivre",
+      "ru": "V-Convention June 2026 Основные моменты 2-го дня: Измените свой образ мышления, измените свой образ жизни",
+      "tr": "V-Convention June 2026 2. Günün Önemli Anları: Düşünce Biçiminizi Değiştirin, Yaşam Biçiminizi Değiştirin"
+    },
+    "description": {
+      "en": "Day 2 of V-Convention 2026 reminded us that transformation begins with a decision.",
+      "ar": "ذكّرنا اليوم الثاني من V-Convention 2026 بأنّ التحول يبدأ بقرار.",
+      "id": "Hari ke-2 V-Convention 2026 Hal ini mengingatkan kita bahwa transformasi dimulai dengan sebuah keputusan.",
+      "fr": "Le Jour 2 de V-Convention 2026 nous a rappelé que la transformation commence par une décision.",
+      "ru": "Второй день V-Convention 2026 напомнил нам, что трансформация начинается с решения.",
+      "tr": "V-Convention 2026'nın 2. Günü, bizlere dönüşümün bir kararla başladığını hatırlattı."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/06192026-v-convention-june-2026-day-2-highlights-change-the-way-you-think-change-the-way-you-live.jpg",
+      "ar": "assets/video-article/06192026-v-convention-june-2026-day-2-highlights-change-the-way-you-think-change-the-way-you-live.jpg",
+      "id": "assets/video-article/06192026-v-convention-june-2026-day-2-highlights-change-the-way-you-think-change-the-way-you-live.jpg",
+      "fr": "assets/video-article/06192026-v-convention-june-2026-day-2-highlights-change-the-way-you-think-change-the-way-you-live.jpg",
+      "ru": "assets/video-article/06192026-v-convention-june-2026-day-2-highlights-change-the-way-you-think-change-the-way-you-live.jpg",
+      "tr": "assets/video-article/06192026-v-convention-june-2026-day-2-highlights-change-the-way-you-think-change-the-way-you-live.jpg"
+    },
+    "speaker": "Highlights Video",
+    "day": "Day 2"
+  },
+  {
     "id": "6398842905112",
     "type": "video",
     "title": {
