@@ -31,35 +31,35 @@
     "day": "all"
   },
   {
-    "disabled": true,
-    "id": "6398751539112",
-    "type": "video",
+    "id": "article#6",
+    "type": "article",
     "title": {
-      "en": "V-Convention June 2026 Day 1 Highlights: Change the World by Changing Yourself",
-      "ar": "V-Convention يونيو 2026 أبرز أحداث اليوم الأول: غيّروا العالم بتغيير أنفسكم",
-      "id": "Sorotan Hari ke-1 V-Convention June 2026: Ubah Dunia dengan Mengubah Diri Sendiri",
-      "fr": "V-Convention June 2026 Points saillants du jour 1 : Changez le monde en vous changeant vous-même",
-      "ru": "V-Convention June 2026 Основные моменты 1-го дня: Измените мир, изменив себя",
-      "tr": "V-Convention June 2026 1. Günün Özeti: Kendini Değiştirerek Dünyayı Değiştir"
+      "en": "V-Convention June 2026 DAY 1: The Beginning of a Better You",
+      "ar": "V-Convention يونيو 2026 اليوم الأول: بداية نسخة أفضل من أنفسكم",
+      "id": "V-Convention June 2026 HARI 1: Awal dari Anda yang Lebih Baik",
+      "fr": "V-Convention June 2026 JOUR 1 : Le début d’une meilleure version de vous-même",
+      "ru": "V-Convention June 2026 ДЕНЬ 1: Начало пути к лучшему «я»",
+      "tr": "V-Convention June 2026 1. GÜN: Daha İyi Bir 'Siz' İçin Başlangıç"
     },
     "description": {
-      "en": "The opening day of V-Convention 2026 was a reminder that true change begins from within.",
-      "ar": "كان اليوم الافتتاحي لـ V-Convention 2026 بمثابة تذكير بأن التغيير الحقيقي يبدأ من الداخل.",
-      "id": "Hari pembukaan V-Convention 2026 adalah pengingat bahwa perubahan sejati dimulai dari dalam diri.",
-      "fr": "La première journée de V-Convention 2026 a rappelé que le vrai changement commence de l'intérieur.",
-      "ru": "Первый день V-Convention 2026 напомнил нам, что настоящие перемены начинаются изнутри.",
-      "tr": "V-Convention 2026’nın açılış günü, gerçek değişimin içeriden başladığına dair bir hatırlatmaydı."
+      "en": "Thousands begin their journey to REFORM.",
+      "ar": "يبدأ الآلاف رحلتهم نحو الإصلاح.",
+      "id": "Ribuan orang memulai perjalanan mereka untuk REFORM.",
+      "fr": "Des milliers de personnes commencent leur voyage vers la REFORM.",
+      "ru": "Тысячи людей начинают свой путь к РЕФОРМАЦИИ.",
+      "tr": "Binlerce kişi REFORM yolculuğuna başlıyor."
     },
     "thumbnail": {
-      "en": "assets/video-article/06182026-v-convention-june-2026-day-1-highlights-change-the-world-by-changing-yourself.jpg",
-      "ar": "assets/video-article/06182026-v-convention-june-2026-day-1-highlights-change-the-world-by-changing-yourself.jpg",
-      "id": "assets/video-article/06182026-v-convention-june-2026-day-1-highlights-change-the-world-by-changing-yourself.jpg",
-      "fr": "assets/video-article/06182026-v-convention-june-2026-day-1-highlights-change-the-world-by-changing-yourself.jpg",
-      "ru": "assets/video-article/06182026-v-convention-june-2026-day-1-highlights-change-the-world-by-changing-yourself.jpg",
-      "tr": "assets/video-article/06182026-v-convention-june-2026-day-1-highlights-change-the-world-by-changing-yourself.jpg"
+      "en": "assets/video-article/06192026-v-convention-june-2026-day-1-the-beginning-of-a-better-you.jpg",
+      "ar": "assets/video-article/06192026-v-convention-june-2026-day-1-the-beginning-of-a-better-you.jpg",
+      "id": "assets/video-article/06192026-v-convention-june-2026-day-1-the-beginning-of-a-better-you.jpg",
+      "fr": "assets/video-article/06192026-v-convention-june-2026-day-1-the-beginning-of-a-better-you.jpg",
+      "ru": "assets/video-article/06192026-v-convention-june-2026-day-1-the-beginning-of-a-better-you.jpg",
+      "tr": "assets/video-article/06192026-v-convention-june-2026-day-1-the-beginning-of-a-better-you.jpg"
     },
-    "speaker": "Highlights Video",
-    "day": "all"
+    "speaker": "Wrap up Article",
+    "day": "all",
+    "link": "https://the-v.net/{{lang}}/news?id=06192026-v-convention-june-2026-day-1-the-beginning-of-a-better-you"
   },
   {
     "id": "6398773138112",
