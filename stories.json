@@ -31,6 +31,7 @@
     "day": "all"
   },
   {
+    "disabled": true,
     "id": "6398751539112",
     "type": "video",
     "title": {
