@@ -1004,6 +1004,7 @@ window.handleCategoryChange = function() {
         options = [
             { val: 'all', key: 'filter.all_articles', fallback: 'All Articles' }, 
             { val: 'Pre-Event', key: 'filter.pre_event', fallback: 'Pre-Event Articles' },
+            { val: 'Wrap Up Article', key: 'filter.wrap_up', fallback: 'Wrap Up Article' },
             { val: 'Daily', key: 'filter.daily', fallback: 'Daily Articles' },
             { val: 'Post-Event', key: 'filter.post_event', fallback: 'Post-Event Articles' }
         ];
@@ -1011,10 +1012,10 @@ window.handleCategoryChange = function() {
         options = [
             { val: 'all', key: 'filter.all_videos', fallback: 'All Videos' },
             { val: 'Teasers', key: 'filter.teasers', fallback: 'Teasers' },
-            { val: 'Invite', key: 'filter.invite', fallback: 'Invite Videos' },
+            { val: 'Invite Video', key: 'filter.invite', fallback: 'Invite Video' },
             { val: 'Campaign', key: 'filter.campaign', fallback: 'Campaign Videos' },
-            { val: 'FoundersChief', key: 'filter.founders', fallback: 'Founders Dailies' },
-            { val: 'Highlights', key: 'filter.highlights', fallback: 'Daily Highlights' },
+            { val: 'Founders Dailies', key: 'filter.founders', fallback: 'Founders Dailies' },
+            { val: 'Highlights Video', key: 'filter.highlights', fallback: 'Highlights Video' },
             { val: 'Post-Event', key: 'filter.post_video', fallback: 'Post-Event Videos' }
         ];
     } else {

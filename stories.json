@@ -87,7 +87,7 @@
       "ru": "assets/video-article/06192026-v-convention-2026-day-1-live-today-in-gratitude-by-dato-sri-vijay-eswaran.jpg",
       "tr": "assets/video-article/06192026-v-convention-2026-day-1-live-today-in-gratitude-by-dato-sri-vijay-eswaran.jpg"
     },
-    "speaker": "Founders Video",
+    "speaker": "Founders Dailies",
     "day": "Day 1"
   },
   {
@@ -117,7 +117,7 @@
       "ru": "assets/video-article/06192026-v-convention-2026-day-1-designed-to-move-forward-by-dato-sri-vijay-eswaran.jpg",
       "tr": "assets/video-article/06192026-v-convention-2026-day-1-designed-to-move-forward-by-dato-sri-vijay-eswaran.jpg"
     },
-    "speaker": "Founders Video",
+    "speaker": "Founders Dailies",
     "day": "Day 1"
   },
   {
@@ -147,7 +147,7 @@
       "ru": "assets/video-article/06192026-v-convention-2026-day-1-reform-by-dato-sri-vijay-eswaran.jpg",
       "tr": "assets/video-article/06192026-v-convention-2026-day-1-reform-by-dato-sri-vijay-eswaran.jpg"
     },
-    "speaker": "Founders Video",
+    "speaker": "Founders Dailies",
     "day": "Day 1"
   },
   {
@@ -177,7 +177,7 @@
       "ru": "assets/video-article/06192026-v-convention-2026-day-1-the-school-of-life-by-dato-sri-vijay-eswaran.jpg",
       "tr": "assets/video-article/06192026-v-convention-2026-day-1-the-school-of-life-by-dato-sri-vijay-eswaran.jpg"
     },
-    "speaker": "Founders Video",
+    "speaker": "Founders Dailies",
     "day": "Day 1"
   },
   {
@@ -207,7 +207,7 @@
       "ru": "assets/video-article/06192026-v-convention-june-2026-day-1-the-beginning-of-a-better-you.jpg",
       "tr": "assets/video-article/06192026-v-convention-june-2026-day-1-the-beginning-of-a-better-you.jpg"
     },
-    "speaker": "Wrap up Article",
+    "speaker": "Wrap Up Article",
     "day": "Day 1",
     "link": "https://the-v.net/{{lang}}/news?id=06192026-v-convention-june-2026-day-1-the-beginning-of-a-better-you"
   },
@@ -238,7 +238,7 @@
       "ru": "assets/video-article/06192026-v-convention-june-2026-day-1-never-stop-working-to-better-yourself-by-joseph-japadas-bismark.jpg",
       "tr": "assets/video-article/06192026-v-convention-june-2026-day-1-never-stop-working-to-better-yourself-by-joseph-japadas-bismark.jpg"
     },
-    "speaker": "Founders Video",
+    "speaker": "Founders Dailies",
     "day": "Day 1"
   },
   {
@@ -268,7 +268,7 @@
       "ru": "assets/video-article/06192026-v-convention-june-2026-day-1-unlearn-the-negativity-to-make-room-for-positivity-by-joseph-japadas-bismark.jpg",
       "tr": "assets/video-article/06192026-v-convention-june-2026-day-1-unlearn-the-negativity-to-make-room-for-positivity-by-joseph-japadas-bismark.jpg"
     },
-    "speaker": "Founders Video",
+    "speaker": "Founders Dailies",
     "day": "Day 1"
   },
   {
@@ -328,8 +328,8 @@
       "ru": "assets/video-article/06162026-v-convention-june-2026-registration-day-welcome-to-penang.jpg",
       "tr": "assets/video-article/06162026-v-convention-june-2026-registration-day-welcome-to-penang.jpg"
     },
-    "speaker": "Wrap up Article",
-    "day": "all",
+    "speaker": "Wrap Up Article",
+    "day": "Registration Day",
     "link": "https://the-v.net/{{lang}}/news?id=06162026-v-convention-june-2026-registration-day-welcome-to-penang"
   },
   {
