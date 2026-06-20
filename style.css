@@ -4494,3 +4494,105 @@ html[dir="rtl"] #v-kids .v-gold-title {
         display: none;
     }
 }
+
+/* Highly specific sandbox styles for Hero 3 Post-Event Banner */
+#hero3.vcon26-post-section {
+  background-image: url('assets/images/POST-EVENT-BG.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: none; /* Controlled explicitly by the JS timer */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  color: #ffffff !important;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.vcon26-post-container {
+  max-width: 850px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  box-sizing: border-box;
+}
+
+.vcon26-post-img {
+  max-width: 240px !important;
+  height: auto !important;
+  margin-bottom: 35px !important;
+  display: inline-block !important;
+}
+
+.vcon26-post-title {
+  font-size: 3.2rem !important;
+  font-weight: 900 !important;
+  color: #AFFF00 !important; /* Neon green */
+  letter-spacing: 0.5px !important;
+  margin: 0 0 20px 0 !important;
+  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5) !important;
+  line-height: 1.2 !important;
+}
+
+.vcon26-post-subtitle {
+  font-size: 1.6rem !important;
+  font-weight: 600 !important;
+  margin: 0 0 25px 0 !important;
+  letter-spacing: 0.2px !important;
+  color: #ffffff !important;
+  line-height: 1.3 !important;
+}
+
+.vcon26-post-body, 
+.vcon26-post-body-alt {
+  font-size: 1.25rem !important;
+  line-height: 1.6 !important;
+  margin: 0 0 25px 0 !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.2px !important;
+  color: #ffffff !important;
+}
+
+.vcon26-post-body-alt {
+  font-size: 1.2rem !important;
+  margin-bottom: 40px !important;
+}
+
+.vcon26-post-highlight {
+  color: #AFFF00 !important;
+  font-weight: inherit;
+}
+
+/* Scoped Orange Pill Button */
+.vcon26-post-btn {
+  display: inline-block !important;
+  background: linear-gradient(180deg, #F05423 0%, #D83B0B 100%) !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  padding: 15px 45px !important;
+  border-radius: 50px !important;
+  border: 1px solid #FF6B3D !important;
+  box-shadow: 0 4px 15px rgba(216, 59, 11, 0.4) !important;
+  transition: all 0.3s ease !important;
+  text-transform: uppercase !important;
+  cursor: pointer !important;
+}
+
+.vcon26-post-btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(216, 59, 11, 0.6) !important;
+  background: linear-gradient(180deg, #FA6030 0%, #E34312 100%) !important;
+}
+
+/* Isolated Responsive Adjustments */
+@media (max-width: 768px) {
+  .vcon26-post-title { font-size: 2.1rem !important; }
+  .vcon26-post-subtitle { font-size: 1.3rem !important; }
+  .vcon26-post-body, .vcon26-post-body-alt { font-size: 1.05rem !important; }
+  .vcon26-post-img { max-width: 180px !important; }
+  .vcon26-post-btn { padding: 12px 35px !important; font-size: 1rem !important; }
+}

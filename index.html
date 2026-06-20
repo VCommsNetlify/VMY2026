@@ -183,6 +183,34 @@
 
 </section>
 
+<section id="hero3" class="vcon26-post-section" style="display: none !important;">
+  <div class="vcon26-post-container">
+    
+    <div class="vcon26-post-logo-wrap">
+      <img src="assets/images/04272026-Vconvention2026-Malaysia-Logo-v2-1.png" alt="V-Convention 2026 Logo" class="vcon26-post-img">
+    </div>
+
+    <h1 class="vcon26-post-title">THE WORLD AWAITS THE NEW YOU,</h1>
+    
+    <h2 class="vcon26-post-subtitle">Thank you for being part of <span class="vcon26-post-highlight">V-CONVENTION 2026!</span></h2>
+    
+    <p class="vcon26-post-body">
+      Now, you are ready to go out there, take on any challenge,<br>
+      and fulfill your biggest dreams!
+    </p>
+    
+    <p class="vcon26-post-body-alt">
+      <span class="vcon26-post-highlight">The V family</span> is beyond excited to see you all again — and everything<br>
+      you have achieved by then!
+    </p>
+
+    <div class="vcon26-post-cta-wrap">
+      <a href="https://the-v.net/" class="vcon26-post-btn" target="_blank">BE PART OF OUR NEXT EVENTS</a>
+    </div>
+
+  </div>
+</section>
+
     <section id="video" class="master-section stories-theater">
         <div class="news-header-container">
             <h2 class="v-section-heading-news" data-i18n="stories.banner">Event News & Updates</h2>
@@ -578,24 +606,47 @@
 <script src="script.js"></script>
 <script>
 
+
+
 document.addEventListener("DOMContentLoaded", function () {
-    const oldSection = document.getElementById("home");
-    const newSection = document.getElementById("home2");
+    const hero1 = document.getElementById("home");
+    const hero2 = document.getElementById("home2"); // Matches your 'home2' ID
+    const hero3 = document.getElementById("hero3"); // The new post-event banner
 
-    // Set your target date: Year, Month (0-11), Day, Hour, Minute
-    // Note: Months are 0-indexed (0 = Jan, 5 = June, 11 = Dec)
-    const launchDate = new Date(2026, 5, 17, 0, 0); // June 10, 2026, at midnight
-    const currentTime = new Date();
+    // Target Dates (Reminder: Months are 0-indexed, so 5 = June)
+    const hero2Launch = new Date(2026, 5, 17, 0, 0); // June 17, 2026
+    const hero3Launch = new Date(2026, 5, 22, 0, 0); // June 22, 2026 (Tomorrow!)
 
-    if (currentTime >= launchDate) {
-        // It's go time! Hide old, show new
-        if (oldSection) oldSection.style.display = "none";
-        if (newSection) newSection.style.display = "flex";
-    } else {
-        // Keep the old one active until the date hits
-        if (oldSection) oldSection.style.display = "flex";
-        if (newSection) newSection.style.display = "none";
+    function checkTimeline() {
+        const currentTime = new Date();
+
+        // 1. First, temporarily hide everything to prevent overlapping
+        if (hero1) hero1.style.setProperty("display", "none", "important");
+        if (hero2) hero2.style.setProperty("display", "none", "important");
+        if (hero3) hero3.style.setProperty("display", "none", "important");
+
+        // 2. Determine which banner wins based on the current clock
+        if (currentTime >= hero3Launch) {
+            // It's June 22 or later: Show Hero 3
+            if (hero3) hero3.style.setProperty("display", "flex", "important");
+        } 
+        else if (currentTime >= hero2Launch) {
+            // It's between June 17 and June 22: Show Hero 2
+            if (hero2) hero2.style.setProperty("display", "flex", "important");
+        } 
+        else {
+            // It's before June 17: Show Hero 1
+            if (hero1) hero1.style.setProperty("display", "flex", "important");
+        }
     }
+
+    // Run right away when the page loads
+    checkTimeline();
+
+    // OPTIONAL TICKER: Checks the time every second. 
+    // If a user is actively browsing your site at 11:59 PM tonight, 
+    // it will switch to Hero 3 at midnight sharp without making them refresh.
+    setInterval(checkTimeline, 1000);
 });
 
 
