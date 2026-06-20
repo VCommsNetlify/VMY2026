@@ -31,6 +31,37 @@
     "day": "all"
   },
   {
+    "id": "article#7",
+    "type": "article",
+    "title": {
+      "en": "V-Convention June 2026 DAY 2: The Work of Transformation",
+      "ar": "V-Convention يونيو 2026 اليوم الثاني: عمل التحول",
+      "id": "V-Convention June 2026 HARI ke-2: Proses Transformasi",
+      "fr": "V-Convention June 2026 JOUR 2 : Le Travail de la Transformation",
+      "ru": "V-Convention June 2026 ДЕНЬ 2: Работа над трансформацией",
+      "tr": "V-Convention June 2026 2. GÜN: Dönüşümün Emeği"
+    },
+    "description": {
+      "en": "Thousands embrace the daily process of becoming more.",
+      "ar": "تبنى الآلاف عملية التطور اليومي.",
+      "id": "Ribuan orang merangkul proses harian untuk menjadi lebih baik.",
+      "fr": "Des milliers de participants adoptent le processus quotidien qui permet de devenir davantage.",
+      "ru": "Тысячи людей принимают ежедневный процесс становления лучше.",
+      "tr": "Binlerce kişi daha fazlası olma yolundaki günlük süreci benimsiyor."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/06202026-v-convention-june-2026-day-2-the-work-of-transformation.jpg",
+      "ar": "assets/video-article/06202026-v-convention-june-2026-day-2-the-work-of-transformation.jpg",
+      "id": "assets/video-article/06202026-v-convention-june-2026-day-2-the-work-of-transformation.jpg",
+      "fr": "assets/video-article/06202026-v-convention-june-2026-day-2-the-work-of-transformation.jpg",
+      "ru": "assets/video-article/06202026-v-convention-june-2026-day-2-the-work-of-transformation.jpg",
+      "tr": "assets/video-article/06202026-v-convention-june-2026-day-2-the-work-of-transformation.jpg"
+    },
+    "speaker": "Wrap Up Article",
+    "day": "Day 2",
+    "link": "https://the-v.net/{{lang}}/news?id=06202026-v-convention-june-2026-day-2-the-work-of-transformation"
+  },
+  {
     "id": "6398856711112",
     "type": "video",
     "title": {
