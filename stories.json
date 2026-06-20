@@ -31,6 +31,156 @@
     "day": "all"
   },
   {
+    "id": "6398946339112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention June 2026 Day 3 Highlights: Become the Change, Inspire the Change",
+      "ar": "V-Convention June 2026 Day 3 Highlights: Become the Change, Inspire the Change",
+      "id": "V-Convention June 2026 Day 3 Highlights: Become the Change, Inspire the Change",
+      "fr": "V-Convention June 2026 Day 3 Highlights: Become the Change, Inspire the Change",
+      "ru": "V-Convention June 2026 Day 3 Highlights: Become the Change, Inspire the Change",
+      "tr": "V-Convention June 2026 Day 3 Highlights: Become the Change, Inspire the Change"
+    },
+    "description": {
+      "en": "Day 3 of V-Convention 2026 showed us that transformation is never just about ourselves.",
+      "ar": "Day 3 of V-Convention 2026 showed us that transformation is never just about ourselves.",
+      "id": "Day 3 of V-Convention 2026 showed us that transformation is never just about ourselves.",
+      "fr": "Day 3 of V-Convention 2026 showed us that transformation is never just about ourselves.",
+      "ru": "Day 3 of V-Convention 2026 showed us that transformation is never just about ourselves.",
+      "tr": "Day 3 of V-Convention 2026 showed us that transformation is never just about ourselves."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/06212026-v-convention-june-2026-day-3-highlights-become-the-change-inspire-the-change.jpg",
+      "ar": "assets/video-article/06212026-v-convention-june-2026-day-3-highlights-become-the-change-inspire-the-change.jpg",
+      "id": "assets/video-article/06212026-v-convention-june-2026-day-3-highlights-become-the-change-inspire-the-change.jpg",
+      "fr": "assets/video-article/06212026-v-convention-june-2026-day-3-highlights-become-the-change-inspire-the-change.jpg",
+      "ru": "assets/video-article/06212026-v-convention-june-2026-day-3-highlights-become-the-change-inspire-the-change.jpg",
+      "tr": "assets/video-article/06212026-v-convention-june-2026-day-3-highlights-become-the-change-inspire-the-change.jpg"
+    },
+    "speaker": "Highlights Video",
+    "day": "Day 3"
+  },
+  {
+    "id": "6398945070112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention 2026 Day 2: Dare to Fail, Dare to Succeed by Dato Sri Vijay Eswaran",
+      "ar": "V-Convention 2026 Day 2: Dare to Fail, Dare to Succeed by Dato Sri Vijay Eswaran",
+      "id": "V-Convention 2026 Day 2: Dare to Fail, Dare to Succeed by Dato Sri Vijay Eswaran",
+      "fr": "V-Convention 2026 Day 2: Dare to Fail, Dare to Succeed by Dato Sri Vijay Eswaran",
+      "ru": "V-Convention 2026 Day 2: Dare to Fail, Dare to Succeed by Dato Sri Vijay Eswaran",
+      "tr": "V-Convention 2026 Day 2: Dare to Fail, Dare to Succeed by Dato Sri Vijay Eswaran"
+    },
+    "description": {
+      "en": "“When you make a mistake, and you fall, that’s a learning.”",
+      "ar": "“When you make a mistake, and you fall, that’s a learning.”",
+      "id": "“When you make a mistake, and you fall, that’s a learning.”",
+      "fr": "“When you make a mistake, and you fall, that’s a learning.”",
+      "ru": "“When you make a mistake, and you fall, that’s a learning.”",
+      "tr": "“When you make a mistake, and you fall, that’s a learning.”"
+    },
+    "thumbnail": {
+      "en": "assets/video-article/06202026-v-convention-2026-day-2-dare-to-fail-dare-to-succeed-by-dato-sri-vijay-eswaran.jpg",
+      "ar": "assets/video-article/06202026-v-convention-2026-day-2-dare-to-fail-dare-to-succeed-by-dato-sri-vijay-eswaran.jpg",
+      "id": "assets/video-article/06202026-v-convention-2026-day-2-dare-to-fail-dare-to-succeed-by-dato-sri-vijay-eswaran.jpg",
+      "fr": "assets/video-article/06202026-v-convention-2026-day-2-dare-to-fail-dare-to-succeed-by-dato-sri-vijay-eswaran.jpg",
+      "ru": "assets/video-article/06202026-v-convention-2026-day-2-dare-to-fail-dare-to-succeed-by-dato-sri-vijay-eswaran.jpg",
+      "tr": "assets/video-article/06202026-v-convention-2026-day-2-dare-to-fail-dare-to-succeed-by-dato-sri-vijay-eswaran.jpg"
+    },
+    "speaker": "Founders Dailies",
+    "day": "Day 2"
+  },
+  {
+    "id": "6398944759112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention 2026 Day 2: Conform Before You Transform by Dato Sri Vijay Eswaran",
+      "ar": "V-Convention 2026 Day 2: Conform Before You Transform by Dato Sri Vijay Eswaran",
+      "id": "V-Convention 2026 Day 2: Conform Before You Transform by Dato Sri Vijay Eswaran",
+      "fr": "V-Convention 2026 Day 2: Conform Before You Transform by Dato Sri Vijay Eswaran",
+      "ru": "V-Convention 2026 Day 2: Conform Before You Transform by Dato Sri Vijay Eswaran",
+      "tr": "V-Convention 2026 Day 2: Conform Before You Transform by Dato Sri Vijay Eswaran"
+    },
+    "description": {
+      "en": "“Conforming means adapt, adjust, and accommodate.”",
+      "ar": "“Conforming means adapt, adjust, and accommodate.”",
+      "id": "“Conforming means adapt, adjust, and accommodate.”",
+      "fr": "“Conforming means adapt, adjust, and accommodate.”",
+      "ru": "“Conforming means adapt, adjust, and accommodate.”",
+      "tr": "“Conforming means adapt, adjust, and accommodate.”"
+    },
+    "thumbnail": {
+      "en": "assets/video-article/06202026-v-convention-2026-day-2-conform-before-you-transform-by-dato-sri-vijay-eswaran.jpg",
+      "ar": "assets/video-article/06202026-v-convention-2026-day-2-conform-before-you-transform-by-dato-sri-vijay-eswaran.jpg",
+      "id": "assets/video-article/06202026-v-convention-2026-day-2-conform-before-you-transform-by-dato-sri-vijay-eswaran.jpg",
+      "fr": "assets/video-article/06202026-v-convention-2026-day-2-conform-before-you-transform-by-dato-sri-vijay-eswaran.jpg",
+      "ru": "assets/video-article/06202026-v-convention-2026-day-2-conform-before-you-transform-by-dato-sri-vijay-eswaran.jpg",
+      "tr": "assets/video-article/06202026-v-convention-2026-day-2-conform-before-you-transform-by-dato-sri-vijay-eswaran.jpg"
+    },
+    "speaker": "Founders Dailies",
+    "day": "Day 2"
+  },
+  {
+    "id": "6398942850112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention 2026 Day 2: The Path from Thought to Destiny by Dato Sri Vijay Eswaran",
+      "ar": "V-Convention 2026 Day 2: The Path from Thought to Destiny by Dato Sri Vijay Eswaran",
+      "id": "V-Convention 2026 Day 2: The Path from Thought to Destiny by Dato Sri Vijay Eswaran",
+      "fr": "V-Convention 2026 Day 2: The Path from Thought to Destiny by Dato Sri Vijay Eswaran",
+      "ru": "V-Convention 2026 Day 2: The Path from Thought to Destiny by Dato Sri Vijay Eswaran",
+      "tr": "V-Convention 2026 Day 2: The Path from Thought to Destiny by Dato Sri Vijay Eswaran"
+    },
+    "description": {
+      "en": "“The world itself changes when you start changing your thinking.”",
+      "ar": "“The world itself changes when you start changing your thinking.”",
+      "id": "“The world itself changes when you start changing your thinking.”",
+      "fr": "“The world itself changes when you start changing your thinking.”",
+      "ru": "“The world itself changes when you start changing your thinking.”",
+      "tr": "“The world itself changes when you start changing your thinking.”"
+    },
+    "thumbnail": {
+      "en": "assets/video-article/06202026-v-convention-2026-day-2-the-path-from-thought-to-destiny-by-dato-sri-vijay-eswaran.jpg",
+      "ar": "assets/video-article/06202026-v-convention-2026-day-2-the-path-from-thought-to-destiny-by-dato-sri-vijay-eswaran.jpg",
+      "id": "assets/video-article/06202026-v-convention-2026-day-2-the-path-from-thought-to-destiny-by-dato-sri-vijay-eswaran.jpg",
+      "fr": "assets/video-article/06202026-v-convention-2026-day-2-the-path-from-thought-to-destiny-by-dato-sri-vijay-eswaran.jpg",
+      "ru": "assets/video-article/06202026-v-convention-2026-day-2-the-path-from-thought-to-destiny-by-dato-sri-vijay-eswaran.jpg",
+      "tr": "assets/video-article/06202026-v-convention-2026-day-2-the-path-from-thought-to-destiny-by-dato-sri-vijay-eswaran.jpg"
+    },
+    "speaker": "Founders Dailies",
+    "day": "Day 2"
+  },
+  {
+    "id": "6398942850112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention 2026 Day 2: Transformation is a Decision by Dato Sri Vijay Eswaran",
+      "ar": "V-Convention 2026 Day 2: Transformation is a Decision by Dato Sri Vijay Eswaran",
+      "id": "V-Convention 2026 Day 2: Transformation is a Decision by Dato Sri Vijay Eswaran",
+      "fr": "V-Convention 2026 Day 2: Transformation is a Decision by Dato Sri Vijay Eswaran",
+      "ru": "V-Convention 2026 Day 2: Transformation is a Decision by Dato Sri Vijay Eswaran",
+      "tr": "V-Convention 2026 Day 2: Transformation is a Decision by Dato Sri Vijay Eswaran"
+    },
+    "description": {
+      "en": "“Reform is us wanting to change. Transform is where we begin to change.”",
+      "ar": "“Reform is us wanting to change. Transform is where we begin to change.”",
+      "id": "“Reform is us wanting to change. Transform is where we begin to change.”",
+      "fr": "“Reform is us wanting to change. Transform is where we begin to change.”",
+      "ru": "“Reform is us wanting to change. Transform is where we begin to change.”",
+      "tr": "“Reform is us wanting to change. Transform is where we begin to change.”"
+    },
+    "thumbnail": {
+      "en": "assets/video-article/06202026-v-convention-2026-day-2-transformation-is-a-decision-by-dato-sri-vijay-eswaran.jpg",
+      "ar": "assets/video-article/06202026-v-convention-2026-day-2-transformation-is-a-decision-by-dato-sri-vijay-eswaran.jpg",
+      "id": "assets/video-article/06202026-v-convention-2026-day-2-transformation-is-a-decision-by-dato-sri-vijay-eswaran.jpg",
+      "fr": "assets/video-article/06202026-v-convention-2026-day-2-transformation-is-a-decision-by-dato-sri-vijay-eswaran.jpg",
+      "ru": "assets/video-article/06202026-v-convention-2026-day-2-transformation-is-a-decision-by-dato-sri-vijay-eswaran.jpg",
+      "tr": "assets/video-article/06202026-v-convention-2026-day-2-transformation-is-a-decision-by-dato-sri-vijay-eswaran.jpg"
+    },
+    "speaker": "Founders Dailies",
+    "day": "Day 2"
+  },
+  {
     "id": "article#7",
     "type": "article",
     "title": {
