@@ -31,6 +31,37 @@
     "day": "all"
   },
   {
+    "id": "article#8",
+    "type": "article",
+    "title": {
+      "en": "V-Convention June 2026 DAY 3: The Decision to Become",
+      "ar": "V-Convention يونيو 2026 اليوم الثالث: القرار أن تكونوا",
+      "id": "V-Convention June 2026 HARI KE-3: Keputusan untuk Berubah",
+      "fr": "V-Convention June 2026 JOUR 3 : La décision de devenir",
+      "ru": "V-Convention June 2026 ДЕНЬ 3: Решение становиться",
+      "tr": "V-Convention June 2026 3. GÜN: Olma Kararı"
+    },
+    "description": {
+      "en": "Thousands choose to take ownership of their future.",
+      "ar": "اختار الآلاف تولي زمام مستقبلهم.",
+      "id": "Ribuan orang memilih untuk mengambil kendali atas masa depan mereka.",
+      "fr": "Des milliers de personnes choisissent de prendre leur avenir en main.",
+      "ru": "Тысячи людей решили взять своё будущее в свои руки.",
+      "tr": "Binlerce kişi geleceğinin sorumluluğunu üstlenmeyi seçiyor."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/06212026-v-convention-june-2026-day-3-the-decision-to-become.jpg",
+      "ar": "assets/video-article/06212026-v-convention-june-2026-day-3-the-decision-to-become.jpg",
+      "id": "assets/video-article/06212026-v-convention-june-2026-day-3-the-decision-to-become.jpg",
+      "fr": "assets/video-article/06212026-v-convention-june-2026-day-3-the-decision-to-become.jpg",
+      "ru": "assets/video-article/06212026-v-convention-june-2026-day-3-the-decision-to-become.jpg",
+      "tr": "assets/video-article/06212026-v-convention-june-2026-day-3-the-decision-to-become.jpg"
+    },
+    "speaker": "Wrap Up Article",
+    "day": "Day 3",
+    "link": "https://the-v.net/{{lang}}/news?id=06212026-v-convention-june-2026-day-3-the-decision-to-become"
+  },
+  {
     "id": "6398946339112",
     "type": "video",
     "title": {
