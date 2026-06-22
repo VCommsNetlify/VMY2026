@@ -31,6 +31,66 @@
     "day": "all"
   },
   {
+    "id": "6399096610112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention June 2026 Day 2: Transformation is a Journey by Joseph ‘Japadas’ Bismark",
+      "ar": "V-Convention June 2026 Day 2: Transformation is a Journey by Joseph ‘Japadas’ Bismark",
+      "id": "V-Convention June 2026 Day 2: Transformation is a Journey by Joseph ‘Japadas’ Bismark",
+      "fr": "V-Convention June 2026 Day 2: Transformation is a Journey by Joseph ‘Japadas’ Bismark",
+      "ru": "V-Convention June 2026 Day 2: Transformation is a Journey by Joseph ‘Japadas’ Bismark",
+      "tr": "V-Convention June 2026 Day 2: Transformation is a Journey by Joseph ‘Japadas’ Bismark"
+    },
+    "description": {
+      "en": "“Transformation takes more work than anything. But once you do it properly, the journey gets easier.”",
+      "ar": "“Transformation takes more work than anything. But once you do it properly, the journey gets easier.”",
+      "id": "“Transformation takes more work than anything. But once you do it properly, the journey gets easier.”",
+      "fr": "“Transformation takes more work than anything. But once you do it properly, the journey gets easier.”",
+      "ru": "“Transformation takes more work than anything. But once you do it properly, the journey gets easier.”",
+      "tr": "“Transformation takes more work than anything. But once you do it properly, the journey gets easier.”"
+    },
+    "thumbnail": {
+      "en": "assets/video-article/06222026-v-convention-june-2026-day-2-transformation-is-a-journey-by-joseph-japadas-bismark.jpg",
+      "ar": "assets/video-article/06222026-v-convention-june-2026-day-2-transformation-is-a-journey-by-joseph-japadas-bismark.jpg",
+      "id": "assets/video-article/06222026-v-convention-june-2026-day-2-transformation-is-a-journey-by-joseph-japadas-bismark.jpg",
+      "fr": "assets/video-article/06222026-v-convention-june-2026-day-2-transformation-is-a-journey-by-joseph-japadas-bismark.jpg",
+      "ru": "assets/video-article/06222026-v-convention-june-2026-day-2-transformation-is-a-journey-by-joseph-japadas-bismark.jpg",
+      "tr": "assets/video-article/06222026-v-convention-june-2026-day-2-transformation-is-a-journey-by-joseph-japadas-bismark.jpg"
+    },
+    "speaker": "Founders Dailies",
+    "day": "Day 2"
+  },
+  {
+    "id": "6399094444112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention June 2026 Day 2: Face the Ego by Joseph ‘Japadas’ Bismark",
+      "ar": "V-Convention June 2026 Day 2: Face the Ego by Joseph ‘Japadas’ Bismark",
+      "id": "V-Convention June 2026 Day 2: Face the Ego by Joseph ‘Japadas’ Bismark",
+      "fr": "V-Convention June 2026 Day 2: Face the Ego by Joseph ‘Japadas’ Bismark",
+      "ru": "V-Convention June 2026 Day 2: Face the Ego by Joseph ‘Japadas’ Bismark",
+      "tr": "V-Convention June 2026 Day 2: Face the Ego by Joseph ‘Japadas’ Bismark"
+    },
+    "description": {
+      "en": "“You need cognizance, awareness, clarity, and knowing the truth about who you are as a person.”",
+      "ar": "“You need cognizance, awareness, clarity, and knowing the truth about who you are as a person.”",
+      "id": "“You need cognizance, awareness, clarity, and knowing the truth about who you are as a person.”",
+      "fr": "“You need cognizance, awareness, clarity, and knowing the truth about who you are as a person.”",
+      "ru": "“You need cognizance, awareness, clarity, and knowing the truth about who you are as a person.”",
+      "tr": "“You need cognizance, awareness, clarity, and knowing the truth about who you are as a person.”"
+    },
+    "thumbnail": {
+      "en": "assets/video-article/06222026-v-convention-june-2026-day-2-face-the-ego-by-joseph-japadas-bismark.jpg",
+      "ar": "assets/video-article/06222026-v-convention-june-2026-day-2-face-the-ego-by-joseph-japadas-bismark.jpg",
+      "id": "assets/video-article/06222026-v-convention-june-2026-day-2-face-the-ego-by-joseph-japadas-bismark.jpg",
+      "fr": "assets/video-article/06222026-v-convention-june-2026-day-2-face-the-ego-by-joseph-japadas-bismark.jpg",
+      "ru": "assets/video-article/06222026-v-convention-june-2026-day-2-face-the-ego-by-joseph-japadas-bismark.jpg",
+      "tr": "assets/video-article/06222026-v-convention-june-2026-day-2-face-the-ego-by-joseph-japadas-bismark.jpg"
+    },
+    "speaker": "Founders Dailies",
+    "day": "Day 2"
+  },
+  {
     "id": "article#8",
     "type": "article",
     "title": {
