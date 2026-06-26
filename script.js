@@ -1322,7 +1322,7 @@ const galleryData = {
     "day1": { folder: "day1", count: 58 },
     "day2": { folder: "day2", count: 155 },
     "day3": { folder: "day3", count: 81 },
-    "day4": { folder: "day4", count: 35 },
+    "day4": { folder: "day4", count: 117 },
     "day5": { folder: "day5", count: 30 },
     "fashion": { folder: "fashionshow", count: 20 }
 };
@@ -1739,6 +1739,36 @@ const vkidsData = {
         //     },
         //     "videoId": "6391837452112"
         // },
+        {
+            "id": "item3",
+            "type": "article",
+            "banner": {
+                "en": "assets/video-article/06262026-v-kids-v-teens-at-v-convention-2026-all-set-to-reform-transform-and-perform.jpg",
+                "ar": "assets/video-article/06262026-v-kids-v-teens-at-v-convention-2026-all-set-to-reform-transform-and-perform.jpg",
+                "id": "assets/video-article/06262026-v-kids-v-teens-at-v-convention-2026-all-set-to-reform-transform-and-perform.jpg",
+                "fr": "assets/video-article/06262026-v-kids-v-teens-at-v-convention-2026-all-set-to-reform-transform-and-perform.jpg",
+                "ru": "assets/video-article/06262026-v-kids-v-teens-at-v-convention-2026-all-set-to-reform-transform-and-perform.jpg",
+                "tr": "assets/video-article/06262026-v-kids-v-teens-at-v-convention-2026-all-set-to-reform-transform-and-perform.jpg"
+            },
+            "title": {
+                "en": "V-Kids & V-Teens at V-Convention 2026: All Set to Reform, Transform, and Perform!",
+                "ar": "الـ V-Kids وV-Teens في V-Convention 2026: كل شيء تم إعداده للإصلا، التحولـ والأداء!",
+                "id": "V-Kids & V-Teens di V-Convention 2026: Semua Siap Untuk Reform, Transform, dan Perform!",
+                "fr": "V-Kids & V-Teens à la V-Convention 2026: Prêts à Reform, Transform, et Perform!",
+                "ru": "V-Kids и V-Teens на V-Convention 2026: готовы Реформировать, Трансформировать и Проявить себя!  ",
+                "tr": "V-Convention 2026'da V-Kids & V-Teens: Reform, Transform ve Perform İçin Tamamen Hazırlar!"
+            },
+            "desc": {
+                "en": "From wide-eyed dreamers to next-generation empowered leaders, our V-Kids & V-Teens have truly blossomed spectacularly during V-Convention June 2026! Thanks to our Founders, V Ambassadors, and ISB family, the young minds of The V have learned new things, discovered new creative ways, and even defined their dreams. Check out their awesome highlights!",
+                "ar": " من الحالمين المتحمسين إلى قادة الجيل القادم المتمكنين، ازدهر الـ V-Kids وV-Teens بشكلٍ مذهل خلال V-Convention يونيو 2026! بفضل مؤسسينا والـ V Ambassadors وعائلة الـ ISB، تعلمت عقول The V الشابة أشياء جديدة، واكتشفت طرقًا إبداعية مبتكرة، بل وحتى حددت أحلامها. شاهدوا أبرز إنجازاتهم!",
+                "id": "Dari pemimpi yang tercengang hingga generasi pemimpin yang berdaya, V-Kids & V-Teens kami benar-benar berkembang secara spektakuler selama V-Convention Juni 2026! Terima kasih kepada Pendiri kami, V Ambassadors, dan keluarga ISB, para generasi muda The V telah mempelajari hal-hal baru, menemukan cara-cara kreatif baru, dan bahkan mewujudkan impian mereka. Lihatlah sorotan luar biasa mereka di bawah ini!",
+                "fr": "De jeunes rêveurs aux yeux émerveillés à une nouvelle génération de leaders autonomisés, nos V-Kids & V-Teens se sont véritablement épanouis de façon spectaculaire lors de la V-Convention Juin 2026 ! Grâce à nos Founders, aux V Ambassadors et à notre famille ISB, les jeunes esprits de The V ont appris de nouvelles choses, découvert de nouvelles façons créatives de s’exprimer et même défini leurs rêves. Découvrez leurs meilleurs moments!",
+                "ru": "От мечтателей с широко раскрытыми глазами до уверенных в себе лидеров нового поколения — наши V-Kids и V-Teens по-настоящему расцвели во время V-Convention June 2026! Благодаря нашим Основателям, V Ambassadors и семье ISB юные участники The V узнали много нового, открыли для себя новые творческие подходы и даже сформулировали свои мечты. Ознакомьтесь с их потрясающими моментами! ",
+                "tr": "Gözleri parıldayan hayalperestlerden yeni neslin güçlendirilmiş liderlerine; V-Kids & V-Teens'imiz V-Convention Haziran 2026 boyunca gerçekten göz kamaştırıcı bir gelişim gösterdi! Kurucularımıza, V Ambassador’larımıza ve ISB ailemize teşekkürler; The V'nin genç beyinleri yeni şeyler öğrendi, yeni yaratıcı yollar keşfetti ve hatta hayallerini tanımladı. Onların bu harika anlarına buradan göz atın!"
+            },
+            "link": "https://the-v.net/{{lang}}/news?id=06262026-v-kids-v-teens-at-v-convention-2026-all-set-to-reform-transform-and-perform"
+            
+        },
         {
             "id": "item2",
             "type": "article",

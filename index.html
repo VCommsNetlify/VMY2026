@@ -190,7 +190,7 @@
       <img src="assets/images/04272026-Vconvention2026-Malaysia-Logo-v2-1.png" alt="V-Convention 2026 Logo" class="vcon26-post-img">
     </div>
 
-    <h1 class="vcon26-post-title">THE WORLD AWAITS<br>THE NEW YOU!</h1>
+    <h1 class="vcon26-post-title">THE WORLD AWAITS <br>THE NEW YOU!</h1>
     
     <h2 class="vcon26-post-subtitle">Thank you for being part of <span class="vcon26-post-highlight">V-CONVENTION 2026!</span></h2>
     
@@ -322,8 +322,8 @@
             <button class="g-btn" onclick="switchGallery('day1')" data-i18n="gallery.day1">Day 1</button>
              <button class="g-btn" onclick="switchGallery('day2')" data-i18n="gallery.day2">Day 2</button>
             <button class="g-btn" onclick="switchGallery('day3')" data-i18n="gallery.day3">Day 3</button>
-            <!--<button class="g-btn" onclick="switchGallery('day4')" data-i18n="gallery.day4">Day 4</button>
-            <button class="g-btn" onclick="switchGallery('day5')" data-i18n="gallery.day5">Day 5</button>
+            <button class="g-btn" onclick="switchGallery('day4')" data-i18n="gallery.day4">Day 4</button>
+            <!--<button class="g-btn" onclick="switchGallery('day5')" data-i18n="gallery.day5">Day 5</button>
             <button class="g-btn" onclick="switchGallery('fashion')" data-i18n="gallery.fashion">Fashion Show</button>
             <button class="g-btn" onclick="switchGallery('vkids')" data-i18n="gallery.vkids">V-Kids and V-Teens 2026</button> -->
         </div>
@@ -1270,72 +1270,72 @@ function triggerWin() {
 
 
 
-    // 1. THE BULLETPROOF RANDOM SPAWNER FUNCTION
-    window.spawnHuntItems = function() {
-        // Clean up any old items on the screen (important for language switching)
-        document.querySelectorAll('.v-hunt-wrapper').forEach(el => el.remove());
+   
+    // window.spawnHuntItems = function() {
+       
+    //     document.querySelectorAll('.v-hunt-wrapper').forEach(el => el.remove());
 
-        // Calculate how many they still need to find
-        let itemsNeeded = TOTAL_ITEMS - foundItems.length;
-        if (itemsNeeded <= 0) return; // They already won!
+       
+    //     let itemsNeeded = TOTAL_ITEMS - foundItems.length;
+    //     if (itemsNeeded <= 0) return;
 
-        // Grab a massive list of safe containers across the entire site
-        let rawSpots = document.querySelectorAll('.hero-section, section, .faq-item, .vkids-card, .story-item, footer, .speaker-bio, .gallery-scroll-container, .navbar');
         
-        let hidingSpots = [];
+    //     let rawSpots = document.querySelectorAll('.hero-section, section, .faq-item, .vkids-card, .story-item, footer, .speaker-bio, .gallery-scroll-container, .navbar');
         
-        // Filter the spots: Only keep elements that are actually visible and big enough
-        rawSpots.forEach(el => {
-            if (el.offsetHeight > 80 && el.offsetWidth > 80) {
-                hidingSpots.push(el);
-            }
-        });
+    //     let hidingSpots = [];
+        
+       
+    //     rawSpots.forEach(el => {
+    //         if (el.offsetHeight > 80 && el.offsetWidth > 80) {
+    //             hidingSpots.push(el);
+    //         }
+    //     });
 
-        // Shuffle the spots completely randomly like a deck of cards!
-        hidingSpots = hidingSpots.sort(() => 0.5 - Math.random());
+      
+    //     hidingSpots = hidingSpots.sort(() => 0.5 - Math.random());
 
-        // Spawn the items!
-        for (let i = 0; i < itemsNeeded; i++) {
-            // The '%' guarantees we never run out of spots, even if the list is short
-            const targetSpot = hidingSpots[i % hidingSpots.length];
+      
+    //     for (let i = 0; i < itemsNeeded; i++) {
+           
+    //         const targetSpot = hidingSpots[i % hidingSpots.length];
             
-            // Critical: make the container relative so the item stays inside it
-            targetSpot.style.position = 'relative'; 
+           
+    //         targetSpot.style.position = 'relative'; 
 
-            const itemHTML = document.createElement('div');
-            itemHTML.className = 'v-hunt-wrapper';
+    //         const itemHTML = document.createElement('div');
+    //         itemHTML.className = 'v-hunt-wrapper';
             
-            // Give it a random ID so we can track clicks uniquely
-            itemHTML.setAttribute('data-hunt-id', 'hunt_' + Math.random().toString(36).substr(2, 9));
+          
+    //         itemHTML.setAttribute('data-hunt-id', 'hunt_' + Math.random().toString(36).substr(2, 9));
             
-            // Randomize position INSIDE the box (between 10% and 80% to avoid clipping the edges)
-            const randomTop = Math.floor(Math.random() * 70) + 10;
-            const randomLeft = Math.floor(Math.random() * 70) + 10;
+           
+    //         const randomTop = Math.floor(Math.random() * 70) + 10;
+    //         const randomLeft = Math.floor(Math.random() * 70) + 10;
             
-            itemHTML.style.cssText = `
-                position: absolute; 
-                z-index: 9999; 
-                cursor: pointer; 
-                transition: transform 0.3s, opacity 0.3s; 
-                top: ${randomTop}%; 
-                left: ${randomLeft}%;
-            `;
+    //         itemHTML.style.cssText = `
+    //             position: absolute; 
+    //             z-index: 9999; 
+    //             cursor: pointer; 
+    //             transition: transform 0.3s, opacity 0.3s; 
+    //             top: ${randomTop}%; 
+    //             left: ${randomLeft}%;
+    //         `;
             
-            // Added a drop-shadow so the image stands out no matter what background it spawns on!
-            itemHTML.innerHTML = `<img src="assets/images/vhunt.png" alt="Hunt Item" class="v-hunt-animated-item" style="width: 45px; height: 45px; filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.4)); " />`;
+         
+    //         itemHTML.innerHTML = `<img src="assets/images/vhunt.png" alt="Hunt Item" class="v-hunt-animated-item" style="width: 45px; height: 45px; filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.4)); " />`;
 
-            // Inject it into the site
-            targetSpot.appendChild(itemHTML);
-        }
-    };
+         
+    //         targetSpot.appendChild(itemHTML);
+    //     }
+    // };
 
-// --- CHECK STATUS & SHOW FLOATING BUTTON ---
+
     // window.checkHuntStatus = function() {
     //     const claimBtn = document.getElementById('vHuntClaimBtn');
     //     const rewardPopup = document.getElementById('vHuntRewardPopup');
     //     if (!claimBtn) return;
 
-      
+       
     //     const isPopupOpen = rewardPopup && rewardPopup.style.display === 'flex';
 
        
@@ -1353,102 +1353,94 @@ function triggerWin() {
     //         };
     //         claimBtn.innerText = btnTexts[lang] || btnTexts['en'];
     //     } else {
-         
+           
     //         claimBtn.style.display = 'none';
     //     }
     // };
 
-    // Run this immediately when the page loads
-    // checkHuntStatus();
-
-    // Run the spawner immediately on load
-    // spawnHuntItems();
-
-    // 2. THE MASTER CLICK LISTENER (Handles items, claim buttons, downloads, and closing!)
-
     
-    // document.body.addEventListener('click', function(e) {
+    document.body.addEventListener('click', function(e) {
         
        
-    //     const clickedItem = e.target.closest('.v-hunt-wrapper');
-    //     if (clickedItem) {
-    //         e.stopPropagation(); 
-    //         const huntId = clickedItem.getAttribute('data-hunt-id');
+        const clickedItem = e.target.closest('.v-hunt-wrapper');
+        if (clickedItem) {
+            e.stopPropagation(); 
+            const huntId = clickedItem.getAttribute('data-hunt-id');
 
-    //         if (!foundItems.includes(huntId)) {
-    //             clickedItem.style.transform = 'scale(0) rotate(180deg)';
-    //             clickedItem.style.opacity = '0';
-    //             setTimeout(() => clickedItem.remove(), 300);
+            if (!foundItems.includes(huntId)) {
+                clickedItem.style.transform = 'scale(0) rotate(180deg)';
+                clickedItem.style.opacity = '0';
+                setTimeout(() => clickedItem.remove(), 300);
 
-    //             foundItems.push(huntId);
-    //             localStorage.setItem(STORAGE_KEY, JSON.stringify(foundItems));
+                foundItems.push(huntId);
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(foundItems));
 
-    //             if (typeof showToast === "function") showToast(foundItems.length);
+                if (typeof showToast === "function") showToast(foundItems.length);
 
-    //             if (foundItems.length >= TOTAL_ITEMS) {
-    //                 if (typeof triggerWin === "function") triggerWin();
-    //             }
-    //         }
-    //         return; 
-    //     }
+                if (foundItems.length >= TOTAL_ITEMS) {
+                    if (typeof triggerWin === "function") triggerWin();
+                }
+            }
+            return; 
+        }
 
       
-    //     if (e.target.closest('#vHuntClaimBtn')) {
-    //         e.preventDefault();
+        if (e.target.closest('#vHuntClaimBtn')) {
+            e.preventDefault();
             
-    //         document.getElementById('vHuntClaimBtn').style.display = 'none';
-    //         if (typeof triggerWin === "function") triggerWin();
-    //         return;
-    //     }
+            document.getElementById('vHuntClaimBtn').style.display = 'none';
+            if (typeof triggerWin === "function") triggerWin();
+            return;
+        }
 
        
-    //     if (e.target.closest('#vDownloadFinalBtn') || e.target.closest('[data-i18n="hunt_reward_btn"]')) {
-    //         setTimeout(() => {
-    //             foundItems = [];
-    //             localStorage.setItem(STORAGE_KEY, JSON.stringify(foundItems));
+        if (e.target.closest('#vDownloadFinalBtn') || e.target.closest('[data-i18n="hunt_reward_btn"]')) {
+            setTimeout(() => {
+                foundItems = [];
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(foundItems));
                 
-    //             const rewardPopup = document.getElementById('vHuntRewardPopup');
-    //             if (rewardPopup) rewardPopup.style.display = 'none';
-    //             document.body.style.overflow = 'auto';
+                const rewardPopup = document.getElementById('vHuntRewardPopup');
+                if (rewardPopup) rewardPopup.style.display = 'none';
+                document.body.style.overflow = 'auto';
 
-    //             if (typeof window.spawnHuntItems === "function") window.spawnHuntItems();
-    //             if (typeof window.checkHuntStatus === "function") window.checkHuntStatus();
-    //         }, 500);
-    //         return;
-    //     }
+                if (typeof window.spawnHuntItems === "function") window.spawnHuntItems();
+                if (typeof window.checkHuntStatus === "function") window.checkHuntStatus();
+            }, 500);
+            return;
+        }
 
       
-    //     if (e.target.closest('#vHuntCloseBtn') || e.target.id === 'vHuntRewardPopup') {
-    //         e.preventDefault();
-    //         const rewardPopup = document.getElementById('vHuntRewardPopup');
-    //         if (rewardPopup) {
-    //             rewardPopup.style.display = 'none';
-    //             document.body.style.overflow = 'auto'; 
-    //         }
+        if (e.target.closest('#vHuntCloseBtn') || e.target.id === 'vHuntRewardPopup') {
+            e.preventDefault();
+            const rewardPopup = document.getElementById('vHuntRewardPopup');
+            if (rewardPopup) {
+                rewardPopup.style.display = 'none';
+                document.body.style.overflow = 'auto'; 
+            }
             
            
-    //         if (typeof window.checkHuntStatus === "function") window.checkHuntStatus();
-    //         return;
-    //     }
-    // });
+            if (typeof window.checkHuntStatus === "function") window.checkHuntStatus();
+            return;
+        }
+    });
 
-    // Check if they ALREADY won before setting up the observer
-//     if (foundItems.length >= TOTAL_ITEMS) {
-       
-//         console.log("Scavenger hunt already completed.");
-//     } else {
-       
-//         setTimeout(() => {
-//             const targets = document.querySelectorAll('.v-hunt-target');
-//             targets.forEach(target => {
-//                 const huntId = target.getAttribute('data-hunt-id');
-//                 if (!foundItems.includes(huntId)) {
-//                     observer.observe(target);
-//                 }
-//             });
-//         }, 500); 
-//     }
-// })();
+   
+    if (foundItems.length >= TOTAL_ITEMS) {
+     
+        console.log("Scavenger hunt already completed.");
+    } else {
+      
+        setTimeout(() => {
+            const targets = document.querySelectorAll('.v-hunt-target');
+            targets.forEach(target => {
+                const huntId = target.getAttribute('data-hunt-id');
+                if (!foundItems.includes(huntId)) {
+                    observer.observe(target);
+                }
+            });
+        }, 500); 
+    }
+})();
 
 
 
