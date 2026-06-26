@@ -457,7 +457,7 @@
 <!-- <div class="v-hunt-target" data-hunt-id="item-5"></div> -->
     </section>
 
-<div id="volt-assistant-bottom" class="volt-assistant-container pos-bottom">
+<!-- <div id="volt-assistant-bottom" class="volt-assistant-container pos-bottom">
     <div id="volt-bubble-bottom" class="volt-speech-bubble"></div>
     <img id="volt-media-bottom" src="assets/volt-animation.webp" width="200" alt="Volt Assistant" loading="eager" data-no-lazy="1" data-skip-lazy>
 </div>
@@ -470,7 +470,7 @@
 <div id="volt-assistant-right" class="volt-assistant-container pos-right">
     <div id="volt-bubble-right" class="volt-speech-bubble"></div>
     <img id="volt-media-right" src="assets/volt-animation-right.webp" width="200" alt="Volt Assistant" loading="eager" data-no-lazy="1" data-skip-lazy>
-</div>
+</div> -->
 
 </main>
 
@@ -1330,124 +1330,125 @@ function triggerWin() {
     };
 
 // --- CHECK STATUS & SHOW FLOATING BUTTON ---
-    window.checkHuntStatus = function() {
-        const claimBtn = document.getElementById('vHuntClaimBtn');
-        const rewardPopup = document.getElementById('vHuntRewardPopup');
-        if (!claimBtn) return;
+    // window.checkHuntStatus = function() {
+    //     const claimBtn = document.getElementById('vHuntClaimBtn');
+    //     const rewardPopup = document.getElementById('vHuntRewardPopup');
+    //     if (!claimBtn) return;
 
-        // Is the popup currently open on the screen?
-        const isPopupOpen = rewardPopup && rewardPopup.style.display === 'flex';
+      
+    //     const isPopupOpen = rewardPopup && rewardPopup.style.display === 'flex';
 
-        // ONLY show the button if they have 10 items AND the popup is closed
-        if (foundItems.length >= TOTAL_ITEMS && !isPopupOpen) {
-            claimBtn.style.display = 'block';
+       
+    //     if (foundItems.length >= TOTAL_ITEMS && !isPopupOpen) {
+    //         claimBtn.style.display = 'block';
             
-            const lang = localStorage.getItem('selectedLanguage') || 'en';
-            const btnTexts = {
-                en: "🎁 Claim your surprise!", 
-                ar: "🎁 احصل على مفاجأتك!", 
-                id: "🎁 Klaim kejutanmu!",
-                fr: "🎁 Réclamez votre surprise !", 
-                ru: "🎁 Забери свой сюрприз!", 
-                tr: "🎁 Sürprizini al!"
-            };
-            claimBtn.innerText = btnTexts[lang] || btnTexts['en'];
-        } else {
-            // Hide it if they haven't won, or if they are currently looking at the popup
-            claimBtn.style.display = 'none';
-        }
-    };
+    //         const lang = localStorage.getItem('selectedLanguage') || 'en';
+    //         const btnTexts = {
+    //             en: "🎁 Claim your surprise!", 
+    //             ar: "🎁 احصل على مفاجأتك!", 
+    //             id: "🎁 Klaim kejutanmu!",
+    //             fr: "🎁 Réclamez votre surprise !", 
+    //             ru: "🎁 Забери свой сюрприз!", 
+    //             tr: "🎁 Sürprizini al!"
+    //         };
+    //         claimBtn.innerText = btnTexts[lang] || btnTexts['en'];
+    //     } else {
+         
+    //         claimBtn.style.display = 'none';
+    //     }
+    // };
 
     // Run this immediately when the page loads
-    checkHuntStatus();
+    // checkHuntStatus();
 
     // Run the spawner immediately on load
-    spawnHuntItems();
+    // spawnHuntItems();
 
     // 2. THE MASTER CLICK LISTENER (Handles items, claim buttons, downloads, and closing!)
-    document.body.addEventListener('click', function(e) {
+
+    
+    // document.body.addEventListener('click', function(e) {
         
-        // --- SCENARIO 1: They click a hidden Scavenger Hunt Item ---
-        const clickedItem = e.target.closest('.v-hunt-wrapper');
-        if (clickedItem) {
-            e.stopPropagation(); 
-            const huntId = clickedItem.getAttribute('data-hunt-id');
+       
+    //     const clickedItem = e.target.closest('.v-hunt-wrapper');
+    //     if (clickedItem) {
+    //         e.stopPropagation(); 
+    //         const huntId = clickedItem.getAttribute('data-hunt-id');
 
-            if (!foundItems.includes(huntId)) {
-                clickedItem.style.transform = 'scale(0) rotate(180deg)';
-                clickedItem.style.opacity = '0';
-                setTimeout(() => clickedItem.remove(), 300);
+    //         if (!foundItems.includes(huntId)) {
+    //             clickedItem.style.transform = 'scale(0) rotate(180deg)';
+    //             clickedItem.style.opacity = '0';
+    //             setTimeout(() => clickedItem.remove(), 300);
 
-                foundItems.push(huntId);
-                localStorage.setItem(STORAGE_KEY, JSON.stringify(foundItems));
+    //             foundItems.push(huntId);
+    //             localStorage.setItem(STORAGE_KEY, JSON.stringify(foundItems));
 
-                if (typeof showToast === "function") showToast(foundItems.length);
+    //             if (typeof showToast === "function") showToast(foundItems.length);
 
-                if (foundItems.length >= TOTAL_ITEMS) {
-                    if (typeof triggerWin === "function") triggerWin();
-                }
-            }
-            return; 
-        }
+    //             if (foundItems.length >= TOTAL_ITEMS) {
+    //                 if (typeof triggerWin === "function") triggerWin();
+    //             }
+    //         }
+    //         return; 
+    //     }
 
-        // --- SCENARIO 2: They click the Floating "Claim Reward" Button ---
-        if (e.target.closest('#vHuntClaimBtn')) {
-            e.preventDefault();
-            // Hide the button instantly as soon as they click it
-            document.getElementById('vHuntClaimBtn').style.display = 'none';
-            if (typeof triggerWin === "function") triggerWin();
-            return;
-        }
-
-        // --- SCENARIO 3: They click the Download Button to get their picture ---
-        if (e.target.closest('#vDownloadFinalBtn') || e.target.closest('[data-i18n="hunt_reward_btn"]')) {
-            setTimeout(() => {
-                foundItems = [];
-                localStorage.setItem(STORAGE_KEY, JSON.stringify(foundItems));
-                
-                const rewardPopup = document.getElementById('vHuntRewardPopup');
-                if (rewardPopup) rewardPopup.style.display = 'none';
-                document.body.style.overflow = 'auto';
-
-                if (typeof window.spawnHuntItems === "function") window.spawnHuntItems();
-                if (typeof window.checkHuntStatus === "function") window.checkHuntStatus();
-            }, 500);
-            return;
-        }
-
-        // --- SCENARIO 4: They CLOSE the popup WITHOUT downloading ---
-        if (e.target.closest('#vHuntCloseBtn') || e.target.id === 'vHuntRewardPopup') {
-            e.preventDefault();
-            const rewardPopup = document.getElementById('vHuntRewardPopup');
-            if (rewardPopup) {
-                rewardPopup.style.display = 'none';
-                document.body.style.overflow = 'auto'; 
-            }
+      
+    //     if (e.target.closest('#vHuntClaimBtn')) {
+    //         e.preventDefault();
             
-            // Now that the popup is closed, check the status! 
-            // (Because they have 10 items, this will instantly SHOW the floating button)
-            if (typeof window.checkHuntStatus === "function") window.checkHuntStatus();
-            return;
-        }
-    });
+    //         document.getElementById('vHuntClaimBtn').style.display = 'none';
+    //         if (typeof triggerWin === "function") triggerWin();
+    //         return;
+    //     }
+
+       
+    //     if (e.target.closest('#vDownloadFinalBtn') || e.target.closest('[data-i18n="hunt_reward_btn"]')) {
+    //         setTimeout(() => {
+    //             foundItems = [];
+    //             localStorage.setItem(STORAGE_KEY, JSON.stringify(foundItems));
+                
+    //             const rewardPopup = document.getElementById('vHuntRewardPopup');
+    //             if (rewardPopup) rewardPopup.style.display = 'none';
+    //             document.body.style.overflow = 'auto';
+
+    //             if (typeof window.spawnHuntItems === "function") window.spawnHuntItems();
+    //             if (typeof window.checkHuntStatus === "function") window.checkHuntStatus();
+    //         }, 500);
+    //         return;
+    //     }
+
+      
+    //     if (e.target.closest('#vHuntCloseBtn') || e.target.id === 'vHuntRewardPopup') {
+    //         e.preventDefault();
+    //         const rewardPopup = document.getElementById('vHuntRewardPopup');
+    //         if (rewardPopup) {
+    //             rewardPopup.style.display = 'none';
+    //             document.body.style.overflow = 'auto'; 
+    //         }
+            
+           
+    //         if (typeof window.checkHuntStatus === "function") window.checkHuntStatus();
+    //         return;
+    //     }
+    // });
 
     // Check if they ALREADY won before setting up the observer
-    if (foundItems.length >= TOTAL_ITEMS) {
-        // Do nothing on page reload! They already won, so we just stay quiet.
-        console.log("Scavenger hunt already completed.");
-    } else {
-        // Otherwise, start observing the hidden targets
-        setTimeout(() => {
-            const targets = document.querySelectorAll('.v-hunt-target');
-            targets.forEach(target => {
-                const huntId = target.getAttribute('data-hunt-id');
-                if (!foundItems.includes(huntId)) {
-                    observer.observe(target);
-                }
-            });
-        }, 500); 
-    }
-})();
+//     if (foundItems.length >= TOTAL_ITEMS) {
+       
+//         console.log("Scavenger hunt already completed.");
+//     } else {
+       
+//         setTimeout(() => {
+//             const targets = document.querySelectorAll('.v-hunt-target');
+//             targets.forEach(target => {
+//                 const huntId = target.getAttribute('data-hunt-id');
+//                 if (!foundItems.includes(huntId)) {
+//                     observer.observe(target);
+//                 }
+//             });
+//         }, 500); 
+//     }
+// })();
 
 
 

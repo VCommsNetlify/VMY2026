@@ -3674,6 +3674,7 @@ html[dir="rtl"] #v-kids .v-gold-title {
         box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         transition: bottom 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55); 
         z-index: 999999;
+        display: none;
     }
 
     .v-hunt-toast.show {
