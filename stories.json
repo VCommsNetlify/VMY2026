@@ -31,6 +31,66 @@
     "day": "all"
   },
   {
+    "id": "6399787426112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention 2026 Day 3: What Real Success Truly Means by Datin Sri Umayal Eswaran",
+      "ar": "V-Convention 2026 Day 3: What Real Success Truly Means by Datin Sri Umayal Eswaran",
+      "id": "V-Convention 2026 Day 3: What Real Success Truly Means by Datin Sri Umayal Eswaran",
+      "fr": "V-Convention 2026 Day 3: What Real Success Truly Means by Datin Sri Umayal Eswaran",
+      "ru": "V-Convention 2026 Day 3: What Real Success Truly Means by Datin Sri Umayal Eswaran",
+      "tr": "V-Convention 2026 Day 3: What Real Success Truly Means by Datin Sri Umayal Eswaran"
+    },
+    "description": {
+      "en": "“Success is not about what you achieved. It’s about what you did that made a difference in someone else’s life.”",
+      "ar": "“Success is not about what you achieved. It’s about what you did that made a difference in someone else’s life.”",
+      "id": "“Success is not about what you achieved. It’s about what you did that made a difference in someone else’s life.”",
+      "fr": "“Success is not about what you achieved. It’s about what you did that made a difference in someone else’s life.”",
+      "ru": "“Success is not about what you achieved. It’s about what you did that made a difference in someone else’s life.”",
+      "tr": "“Success is not about what you achieved. It’s about what you did that made a difference in someone else’s life.”"
+    },
+    "thumbnail": {
+      "en": "assets/video-article/07012026-v-convention-2026-day-3-what-real-success-truly-means-by-datin-sri-umayal-eswaran.jpg",
+      "ar": "assets/video-article/07012026-v-convention-2026-day-3-what-real-success-truly-means-by-datin-sri-umayal-eswaran.jpg",
+      "id": "assets/video-article/07012026-v-convention-2026-day-3-what-real-success-truly-means-by-datin-sri-umayal-eswaran.jpg",
+      "fr": "assets/video-article/07012026-v-convention-2026-day-3-what-real-success-truly-means-by-datin-sri-umayal-eswaran.jpg",
+      "ru": "assets/video-article/07012026-v-convention-2026-day-3-what-real-success-truly-means-by-datin-sri-umayal-eswaran.jpg",
+      "tr": "assets/video-article/07012026-v-convention-2026-day-3-what-real-success-truly-means-by-datin-sri-umayal-eswaran.jpg"
+    },
+    "speaker": "Founders Dailies",
+    "day": "Day 3"
+  },
+  {
+    "id": "6399789565112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention 2026 Day 3: Building a Legacy for Future Generations by Datin Sri Umayal Eswaran",
+      "ar": "V-Convention 2026 Day 3: Building a Legacy for Future Generations by Datin Sri Umayal Eswaran",
+      "id": "V-Convention 2026 Day 3: Building a Legacy for Future Generations by Datin Sri Umayal Eswaran",
+      "fr": "V-Convention 2026 Day 3: Building a Legacy for Future Generations by Datin Sri Umayal Eswaran",
+      "ru": "V-Convention 2026 Day 3: Building a Legacy for Future Generations by Datin Sri Umayal Eswaran",
+      "tr": "V-Convention 2026 Day 3: Building a Legacy for Future Generations by Datin Sri Umayal Eswaran"
+    },
+    "description": {
+      "en": "“If we don’t do the right thing today, then what are we leaving behind for the next generation?”",
+      "ar": "“If we don’t do the right thing today, then what are we leaving behind for the next generation?”",
+      "id": "“If we don’t do the right thing today, then what are we leaving behind for the next generation?”",
+      "fr": "“If we don’t do the right thing today, then what are we leaving behind for the next generation?”",
+      "ru": "“If we don’t do the right thing today, then what are we leaving behind for the next generation?”",
+      "tr": "“If we don’t do the right thing today, then what are we leaving behind for the next generation?”"
+    },
+    "thumbnail": {
+      "en": "assets/video-article/07012026-v-convention-2026-day-3-building-a-legacy-for-future-generations-by-datin-sri-umayal-eswaran.jpg",
+      "ar": "assets/video-article/07012026-v-convention-2026-day-3-building-a-legacy-for-future-generations-by-datin-sri-umayal-eswaran.jpg",
+      "id": "assets/video-article/07012026-v-convention-2026-day-3-building-a-legacy-for-future-generations-by-datin-sri-umayal-eswaran.jpg",
+      "fr": "assets/video-article/07012026-v-convention-2026-day-3-building-a-legacy-for-future-generations-by-datin-sri-umayal-eswaran.jpg",
+      "ru": "assets/video-article/07012026-v-convention-2026-day-3-building-a-legacy-for-future-generations-by-datin-sri-umayal-eswaran.jpg",
+      "tr": "assets/video-article/07012026-v-convention-2026-day-3-building-a-legacy-for-future-generations-by-datin-sri-umayal-eswaran.jpg"
+    },
+    "speaker": "Founders Dailies",
+    "day": "Day 3"
+  },
+  {
     "id": "6399791307112",
     "type": "video",
     "title": {
