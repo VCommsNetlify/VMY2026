@@ -31,6 +31,66 @@
     "day": "all"
   },
   {
+    "id": "6400083536112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention June 2026 Day 4: Share Your Story by Joseph ‘Japadas’ Bismark",
+      "ar": "V-Convention June 2026 Day 4: Share Your Story by Joseph ‘Japadas’ Bismark",
+      "id": "V-Convention June 2026 Day 4: Share Your Story by Joseph ‘Japadas’ Bismark",
+      "fr": "V-Convention June 2026 Day 4: Share Your Story by Joseph ‘Japadas’ Bismark",
+      "ru": "V-Convention June 2026 Day 4: Share Your Story by Joseph ‘Japadas’ Bismark",
+      "tr": "V-Convention June 2026 Day 4: Share Your Story by Joseph ‘Japadas’ Bismark"
+    },
+    "description": {
+      "en": "“Your personal experience is the most powerful way to close someone.”",
+      "ar": "“Your personal experience is the most powerful way to close someone.”",
+      "id": "“Your personal experience is the most powerful way to close someone.”",
+      "fr": "“Your personal experience is the most powerful way to close someone.”",
+      "ru": "“Your personal experience is the most powerful way to close someone.”",
+      "tr": "“Your personal experience is the most powerful way to close someone.”"
+    },
+    "thumbnail": {
+      "en": "assets/video-article/07032026-v-convention-june-2026-day-4-share-your-story-by-joseph-japadas-bismark.jpg",
+      "ar": "assets/video-article/07032026-v-convention-june-2026-day-4-share-your-story-by-joseph-japadas-bismark.jpg",
+      "id": "assets/video-article/07032026-v-convention-june-2026-day-4-share-your-story-by-joseph-japadas-bismark.jpg",
+      "fr": "assets/video-article/07032026-v-convention-june-2026-day-4-share-your-story-by-joseph-japadas-bismark.jpg",
+      "ru": "assets/video-article/07032026-v-convention-june-2026-day-4-share-your-story-by-joseph-japadas-bismark.jpg",
+      "tr": "assets/video-article/07032026-v-convention-june-2026-day-4-share-your-story-by-joseph-japadas-bismark.jpg"
+    },
+    "speaker": "Founders Dailies",
+    "day": "Day 4"
+  },
+  {
+    "id": "6400084931112",
+    "type": "video",
+    "title": {
+      "en": "V-Convention June 2026 Day 4: Objection Opens a Window for You to Listen by Joseph ‘Japadas’ Bismark",
+      "ar": "V-Convention June 2026 Day 4: Objection Opens a Window for You to Listen by Joseph ‘Japadas’ Bismark",
+      "id": "V-Convention June 2026 Day 4: Objection Opens a Window for You to Listen by Joseph ‘Japadas’ Bismark",
+      "fr": "V-Convention June 2026 Day 4: Objection Opens a Window for You to Listen by Joseph ‘Japadas’ Bismark",
+      "ru": "V-Convention June 2026 Day 4: Objection Opens a Window for You to Listen by Joseph ‘Japadas’ Bismark",
+      "tr": "V-Convention June 2026 Day 4: Objection Opens a Window for You to Listen by Joseph ‘Japadas’ Bismark"
+    },
+    "description": {
+      "en": "“Objection is not a wall. It is a window for an invitation.”",
+      "ar": "“Objection is not a wall. It is a window for an invitation.”",
+      "id": "“Objection is not a wall. It is a window for an invitation.”",
+      "fr": "“Objection is not a wall. It is a window for an invitation.”",
+      "ru": "“Objection is not a wall. It is a window for an invitation.”",
+      "tr": "“Objection is not a wall. It is a window for an invitation.”"
+    },
+    "thumbnail": {
+      "en": "assets/video-article/07032026-v-convention-june-2026-day-4-objection-opens-a-window-for-you-to-listen-by-joseph-japadas-bismark.jpg",
+      "ar": "assets/video-article/07032026-v-convention-june-2026-day-4-objection-opens-a-window-for-you-to-listen-by-joseph-japadas-bismark.jpg",
+      "id": "assets/video-article/07032026-v-convention-june-2026-day-4-objection-opens-a-window-for-you-to-listen-by-joseph-japadas-bismark.jpg",
+      "fr": "assets/video-article/07032026-v-convention-june-2026-day-4-objection-opens-a-window-for-you-to-listen-by-joseph-japadas-bismark.jpg",
+      "ru": "assets/video-article/07032026-v-convention-june-2026-day-4-objection-opens-a-window-for-you-to-listen-by-joseph-japadas-bismark.jpg",
+      "tr": "assets/video-article/07032026-v-convention-june-2026-day-4-objection-opens-a-window-for-you-to-listen-by-joseph-japadas-bismark.jpg"
+    },
+    "speaker": "Founders Dailies",
+    "day": "Day 4"
+  },
+  {
     "id": "6399787426112",
     "type": "video",
     "title": {
