@@ -31,6 +31,37 @@
     "day": "all"
   },
   {
+    "id": "article#9",
+    "type": "article",
+    "title": {
+      "en": "V-Convention June 2026 DAY 5: The Journey Out There",
+      "ar": "V-Convention يونيو 2026 اليوم الخامس: الرحلة إلى هناك في الخارج",
+      "id": "V-Convention June 2026 HARI KE- 5: Perjalanan yang Luas",
+      "fr": "V-Convention June 2026 JOUR 5 : Le Voyage Qui Vous Attend",
+      "ru": "V-Convention June 2026 5-Й ДЕНЬ: Путь вперед",
+      "tr": "V-Convention June 2026 5. GÜN: Dışarıdaki Yolculuk"
+    },
+    "description": {
+      "en": "Thousands became ready for what lies ahead.",
+      "ar": "الآلاف أصبحوا مستعدين لما ينتظرهم.",
+      "id": "Ribuan orang bersiap menghadapi apa yang akan terjadi.",
+      "fr": "Des milliers de personnes se sont préparées à ce qui les attend..",
+      "ru": "Тысячи людей подготовились к тому, что ждёт их впереди.",
+      "tr": "Binlerce kişi önlerinde uzanan geleceğe hazır hale geldi."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/07062026-v-convention-june-2026-day-5-the-journey-out-there.jpg",
+      "ar": "assets/video-article/07062026-v-convention-june-2026-day-5-the-journey-out-there.jpg",
+      "id": "assets/video-article/07062026-v-convention-june-2026-day-5-the-journey-out-there.jpg",
+      "fr": "assets/video-article/07062026-v-convention-june-2026-day-5-the-journey-out-there.jpg",
+      "ru": "assets/video-article/07062026-v-convention-june-2026-day-5-the-journey-out-there.jpg",
+      "tr": "assets/video-article/07062026-v-convention-june-2026-day-5-the-journey-out-there.jpg"
+    },
+    "speaker": "Wrap Up Article",
+    "day": "Day 5",
+    "link": "https://the-v.net/{{lang}}/news?id=07062026-v-convention-june-2026-day-5-the-journey-out-there"
+  },
+  {
     "id": "6400083536112",
     "type": "video",
     "title": {
@@ -878,19 +909,19 @@
     "type": "video",
     "title": {
       "en": "V-Convention 2026 Day 1: Designed to Move Forward by Dato Sri Vijay Eswaran",
-      "ar": "V-Convention 2026 Day 1: Designed to Move Forward by Dato Sri Vijay Eswaran",
-      "id": "V-Convention 2026 Day 1: Designed to Move Forward by Dato Sri Vijay Eswaran",
-      "fr": "V-Convention 2026 Day 1: Designed to Move Forward by Dato Sri Vijay Eswaran",
-      "ru": "V-Convention 2026 Day 1: Designed to Move Forward by Dato Sri Vijay Eswaran",
-      "tr": "V-Convention 2026 Day 1: Designed to Move Forward by Dato Sri Vijay Eswaran"
+      "ar": "V-Convention، يونيو 2026 اليوم الأول: 'مُصممون للمضي قدمًا' تقديم Dato Sri Vijay Eswaran",
+      "id": "V-Convention 2026 Day 1: Dirancang untuk Melangkah Maju oleh Dato Sri Vijay Eswaran",
+      "fr": "V-Convention 2026 Day 1:  Conçu pour aller de l’avant de Dato Sri Vijay Eswaran",
+      "ru": "V-Convention 2026 Day 1: Созданный для движения вперёд от Dato Sri Vijay Eswaran",
+      "tr": "V-Convention 2026 Day 1: İleriye Doğru Hareket Etmek İçin Tasarlandı - Dato Sri Vijay Eswaran"
     },
     "description": {
       "en": "“Your body teaches you more than anything else on this planet.”",
-      "ar": "“Your body teaches you more than anything else on this planet.”",
-      "id": "“Your body teaches you more than anything else on this planet.”",
-      "fr": "“Your body teaches you more than anything else on this planet.”",
-      "ru": "“Your body teaches you more than anything else on this planet.”",
-      "tr": "“Your body teaches you more than anything else on this planet.”"
+      "ar": "“إن جسدكم يعلمكم أكثر من أي شيء آخر على هذا الكوكب”",
+      "id": "“Tubuh Anda mengajarkan Anda lebih banyak daripada apa pun di planet ini.”",
+      "fr": "« Votre corps vous en apprend plus que toute autre chose sur cette planète. »",
+      "ru": "«Ваше тело учит вас больше, чем что-либо другое на этой планете».",
+      "tr": "“Bedeniniz size bu gezegendeki her şeyden daha fazlasını öğretir.”"
     },
     "thumbnail": {
       "en": "assets/video-article/06192026-v-convention-2026-day-1-designed-to-move-forward-by-dato-sri-vijay-eswaran.jpg",
@@ -908,19 +939,19 @@
     "type": "video",
     "title": {
       "en": "V-Convention 2026 Day 1: Reform by Dato Sri Vijay Eswaran",
-      "ar": "V-Convention 2026 Day 1: Reform by Dato Sri Vijay Eswaran",
-      "id": "V-Convention 2026 Day 1: Reform by Dato Sri Vijay Eswaran",
-      "fr": "V-Convention 2026 Day 1: Reform by Dato Sri Vijay Eswaran",
-      "ru": "V-Convention 2026 Day 1: Reform by Dato Sri Vijay Eswaran",
-      "tr": "V-Convention 2026 Day 1: Reform by Dato Sri Vijay Eswaran"
+      "ar": "V-Convention، يونيو 2026 اليوم الأول: 'الإصلاح' تقديم Dato Sri Vijay Eswaran",
+      "id": "V-Convention 2026 Day 1: Reform oleh Dato Sri Vijay Eswaran",
+      "fr": "V-Convention 2026 Day 1: La réforme de Dato Sri Vijay Eswaran",
+      "ru": "V-Convention 2026 Day 1: Реформация от Dato Sri Vijay Eswaran",
+      "tr": "V-Convention Day 1: Reform - Dato Sri Vijay Eswaran"
     },
     "description": {
       "en": "“I am not here to change you. I am here to tell you that you need to change yourself.”",
-      "ar": "“I am not here to change you. I am here to tell you that you need to change yourself.”",
-      "id": "“I am not here to change you. I am here to tell you that you need to change yourself.”",
-      "fr": "“I am not here to change you. I am here to tell you that you need to change yourself.”",
-      "ru": "“I am not here to change you. I am here to tell you that you need to change yourself.”",
-      "tr": "“I am not here to change you. I am here to tell you that you need to change yourself.”"
+      "ar": "“أنا لستُ هنا لأغيّركم، بل لأقول لكم إنكم بحاجة إلى تغيير أنفسكم”",
+      "id": "“Saya di sini bukan untuk mengubah Anda. Saya di sini untuk memberi tahu Anda bahwa Anda perlu mengubah diri Anda sendiri.”",
+      "fr": "« Je ne suis pas ici pour vous changer. Je suis ici pour vous dire que c’est à vous de changer. »",
+      "ru": "«Я здесь не для того, чтобы изменить вас. Я здесь, чтобы сказать вам, что вам нужно изменить себя».",
+      "tr": "“Ben sizi değiştirmek için burada değilim. Kendinizi değiştirmeniz gerektiğini söylemek için buradayım.”"
     },
     "thumbnail": {
       "en": "assets/video-article/06192026-v-convention-2026-day-1-reform-by-dato-sri-vijay-eswaran.jpg",
@@ -938,19 +969,19 @@
     "type": "video",
     "title": {
       "en": "V-Convention 2026 Day 1: The School of Life by Dato Sri Vijay Eswaran",
-      "ar": "V-Convention 2026 Day 1: The School of Life by Dato Sri Vijay Eswaran",
-      "id": "V-Convention 2026 Day 1: The School of Life by Dato Sri Vijay Eswaran",
+      "ar": "V-Convention، يونيو 2026 اليوم الأول: 'مدرسة الحياة' تقديم Dato Sri Vijay Eswaran",
+      "id": "V-Convention 2026 Day 1: Sekolah Kehidupan oleh Dato Sri Vijay Eswaran",
       "fr": "V-Convention 2026 Day 1: The School of Life by Dato Sri Vijay Eswaran",
-      "ru": "V-Convention 2026 Day 1: The School of Life by Dato Sri Vijay Eswaran",
-      "tr": "V-Convention 2026 Day 1: The School of Life by Dato Sri Vijay Eswaran"
+      "ru": "V-Convention 2026 Day 1: Школа жизни от Dato Sri Vijay Eswaran",
+      "tr": "V-Convention 2026 Day 1: Hayat Okulu- Dato Sri Vijay Eswaran"
     },
     "description": {
       "en": "“The exams are very painful, but it is through them that we get better.”",
-      "ar": "“The exams are very painful, but it is through them that we get better.”",
-      "id": "“The exams are very painful, but it is through them that we get better.”",
+      "ar": "“الامتحانات مؤلمة للغاية، ولكن من خلالها نحن نتحسن”",
+      "id": "“Ujian memang sangat menyakitkan, tetapi justru melalui ujian itulah kita menjadi lebih baik.”",
       "fr": "“The exams are very painful, but it is through them that we get better.”",
-      "ru": "“The exams are very painful, but it is through them that we get better.”",
-      "tr": "“The exams are very painful, but it is through them that we get better.”"
+      "ru": "«Испытания — это очень тяжело, но именно благодаря им мы становимся лучше».",
+      "tr": "“Sınavlar çok acı vericidir, ancak onlar sayesinde daha iyiye ulaşırız.”"
     },
     "thumbnail": {
       "en": "assets/video-article/06192026-v-convention-2026-day-1-the-school-of-life-by-dato-sri-vijay-eswaran.jpg",
