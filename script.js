@@ -1323,7 +1323,7 @@ const galleryData = {
     "day2": { folder: "day2", count: 155 },
     "day3": { folder: "day3", count: 81 },
     "day4": { folder: "day4", count: 117 },
-    "day5": { folder: "day5", count: 30 },
+    "day5": { folder: "day5", count: 97 },
     "fashion": { folder: "fashionshow", count: 20 }
 };
 
