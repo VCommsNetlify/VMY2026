@@ -197,7 +197,7 @@ header {
 }
 /* --- 4. STORIES THEATER (PERMANENT) --- */
 .stories-theater { 
-    /* background: #fff !important;  */
+    background-image: url(assets/BG-venue.png);
     /* opacity: 0.85 !important; */
     padding: 40px 4%; 
     display: flex !important; 
@@ -3514,7 +3514,7 @@ html[dir="rtl"] #v-kids .v-gold-title {
 }
 
 /* --- Pin Video to the Background --- */
-.bg-video {
+/* .bg-video {
     position: fixed;
     top: 0;
     left: 0;
@@ -3524,7 +3524,7 @@ html[dir="rtl"] #v-kids .v-gold-title {
     z-index: -2; 
     pointer-events: none; 
     opacity: 40%;
-}
+} */
 
 /* --- The Dark Overlay --- */
 .video-overlay {
