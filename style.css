@@ -4498,7 +4498,8 @@ html[dir="rtl"] #v-kids .v-gold-title {
 
 /* Highly specific sandbox styles for Hero 3 Post-Event Banner */
 #home3.vcon26-post-section {
-  background-image: url('assets/images/POST-EVENT-BG.png');
+  /* background-image: url('assets/images/POST-EVENT-BG.png'); */
+  background-image:url('assets/images/bg-fx.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -4551,9 +4552,11 @@ html[dir="rtl"] #v-kids .v-gold-title {
   font-size: 1.25rem !important;
   line-height: 1.6 !important;
   margin: 0 0 25px 0 !important;
-  font-weight: 400 !important;
+  font-weight: 500 !important; /* Bumped to 500 to keep the italic letters readable */
   letter-spacing: 0.2px !important;
   color: #ffffff !important;
+  /* Dark, tight drop shadow to cut through the light background flares */
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.8) !important; 
 }
 
 .vcon26-post-body-alt {
@@ -4583,15 +4586,30 @@ html[dir="rtl"] #v-kids .v-gold-title {
   cursor: pointer !important;
 }
 
+.vcon26-post-btn a{
+    color: white;
+}
+
 .vcon26-post-btn:hover {
   transform: translateY(-2px) !important;
   box-shadow: 0 6px 20px rgba(216, 59, 11, 0.6) !important;
   background: linear-gradient(180deg, #FA6030 0%, #E34312 100%) !important;
 }
 
-/* Isolated Responsive Adjustments */
+/* 1. DESKTOP / WEB VIEW (Forces the slogan onto one line) */
+.vcon26-post-title .vcon26-post-highlight {
+  white-space: nowrap !important;
+}
+
+/* 2. MOBILE VIEW (Your existing clean mobile styles) */
 @media (max-width: 768px) {
-  .vcon26-post-title { font-size: 2.1rem !important; }
+  .vcon26-post-title { 
+    font-size: 2.1rem !important; 
+  }
+  /* Allows the slogan to safely wrap on tiny mobile screens so it doesn't bleed off-screen */
+  .vcon26-post-title .vcon26-post-highlight {
+    white-space: normal !important; 
+  }
   .vcon26-post-subtitle { font-size: 1.3rem !important; }
   .vcon26-post-body, .vcon26-post-body-alt { font-size: 1.05rem !important; }
   .vcon26-post-img { max-width: 180px !important; }

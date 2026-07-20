@@ -20,6 +20,21 @@ const translations = {
         "countdown-secs":"SECS",
         "event_date":"JUNE 17 - 21 2026",
 
+        
+        "sept.event_date": "12-16 SEPTEMBER 2026",
+        "sept.title_ready": "GET READY TO",
+        "sept.title_slogan": "REFORM, TRANSFORM, PERFORM",
+        "sept.title_event": "AT V-CONVENTION 2026!",
+        "sept.body_text": "Share the experience with more people <br> and invite them on this journey <br> to discover what's possible.",
+        "sept.btn_text_start": "Tickets are available",
+        "sept.btn_text_now": "NOW",
+        "sept.btn_text_mid": "on",
+        "sept.btn_text_platform": "VShoppe Pro",
+        "sept.help_prefix": "Need help? Click",
+        "sept.help_link": "HERE",
+        "sept.help_suffix": "to learn how to use our newest ticket purchasing platform!",
+        
+
 
         // Floating CTA
         "cta.main_label": "GET TICKETS NOW!",
@@ -151,6 +166,21 @@ const translations = {
         "countdown-secs":"DETIK",
         "event_date": "17 - 21 Juni 2026",
 
+        
+        "sept.event_date": "12-16 SEPTEMBER 2026",
+        "sept.title_ready": "BERSIAPLAH UNTUK",
+        "sept.title_slogan": "REFORM, TRANSFORM, PERFORM",
+        "sept.title_event": "DI V-CONVENTION 2026!",
+        "sept.body_text": "Bagikan pengalaman ini dengan lebih banyak orang <br> dan ajak mereka dalam perjalanan <br> ini untuk menemukan kesempatan.",
+        "sept.btn_text_start": "Tiket tersedia",
+        "sept.btn_text_now": "SEKARANG",
+        "sept.btn_text_mid": "di",
+        "sept.btn_text_platform": "VShoppe Pro",
+        "sept.help_prefix": "Butuh bantuan? Klik",
+        "sept.help_link": "DISINI",
+        "sept.help_suffix": "untuk mempelajari cara menggunakan platform pembelian tiket terbaru kami!",
+        
+
         "cta.main_label": "DAPATKAN TIKETNYA SEKARANG!",
         "cta.choose_type": "PILIH JENIS",
         "cta.vmy_title": "Tiket<br>V-CONVENTION 2026 September",
@@ -276,6 +306,21 @@ const translations = {
         "countdown-secs":"SECONDES",
         "event_date": "17 - 21 juin 2026",
 
+         
+        "sept.event_date": "12–16 SEPTEMBRE 2026",
+        "sept.title_ready": "PRÉPAREZ-VOUS À",
+        "sept.title_slogan": "REFORM, TRANSFORM, PERFORM",
+        "sept.title_event": "LORS DE LA V-CONVENTION 2026 !",
+        "sept.body_text": "Partagez cette expérience avec davantage de personnes <br> et invitez-les à entreprendre ce voyage <br> pour découvrir ce qui est possible.",
+        "sept.btn_text_start": "Les billets sont disponibles ",
+        "sept.btn_text_now": "DÈS MAINTENANT",
+        "sept.btn_text_mid": "sur",
+        "sept.btn_text_platform": "VShoppe Pro",
+        "sept.help_prefix": "Besoin d'aide ? Cliquez",
+        "sept.help_link": "ICI",
+        "sept.help_suffix": "pour apprendreà utiliser notre toute nouvelle plateforme d'achat de billets !",
+        
+
         "cta.main_label": "ACHETEZ VOS BILLETS DÈS MAINTENANT !",
         "cta.choose_type": "CHOISIR LE TYPE",
         "cta.vmy_title": "Billets pour la<br> V-CONVENTION 2026 Septembre",
@@ -399,6 +444,21 @@ const translations = {
         "countdown-mins":"МИНУТ",
         "countdown-secs":"СЕКУНД",
         "event_date": "17 - 21 июня 2026",
+
+     
+        "sept.event_date": "12-16 СЕНТЯБРЯ 2026",
+        "sept.title_ready": "ГОТОВЬТЕСЬ К",
+        "sept.title_slogan": "РЕФОРМАЦИИ, ТРАНСФОРМАЦИИ И ДЕЙСТВИЯМ",
+        "sept.title_event": "НА V-CONVENTION 2026!",
+        "sept.body_text": "Поделитесь этим опытом с большим количеством людей <br> и пригласите их в это путешествие, <br> чтобы открыть для себя новые возможности.",
+        "sept.btn_text_start": "Билеты уже доступны",
+        "sept.btn_text_now": "",
+        "sept.btn_text_mid": "на",
+        "sept.btn_text_platform": "VShoppe Pro",
+        "sept.help_prefix": "Нужна помощь? Нажмите",
+        "sept.help_link": "ЗДЕСЬ",
+        "sept.help_suffix": ", чтобы узнать, как пользоваться нашей новой платформой для покупки билетов!",
+        
 
         "cta.main_label": "КУПИТЕ БИЛЕТЫ ПРЯМО СЕЙЧАС!",
         "cta.choose_type": "ВЫБЕРИТЕ ТИП",
@@ -525,6 +585,21 @@ const translations = {
         "countdown-secs":"SANİYE",
         "event_date": "17 - 21 Haziran 2026",
 
+        
+        "sept.event_date": "12-16 EYLÜL 2026",
+        "sept.title_ready": "V-CONVENTION 2026'DA",
+        "sept.title_slogan": "REFORM, TRANSFORM VE PERFORM ETMEYE",
+        "sept.title_event": "HAZIR OLUN!",
+        "sept.body_text": "Deneyimi daha fazla insanla paylaşın <br> ve neyin mümkün olduğunu keşfedecekleri <br> bu yolculuğa onları da davet edin.",
+        "sept.btn_text_start": "Biletler",
+        "sept.btn_text_now": "ŞİMDİ",
+        "sept.btn_text_mid": "",
+        "sept.btn_text_platform": "VShoppe Pro'da satışta.",
+        "sept.help_prefix": "Yardıma mı ihtiyacınız var? En yeni bilet satın alma platformumuzu nasıl kullanacağınızı öğrenmek için",
+        "sept.help_link": "BURAYA",
+        "sept.help_suffix": "tıklayın!",
+        
+
         "cta.main_label": "BİLETİNİZİ ŞİMDİ ALIN!",
         "cta.choose_type": "TİP SEÇ",
         "cta.vmy_title": "V-CONVENTION 2026 Eylül Biletleri",
@@ -650,6 +725,21 @@ const translations = {
         "countdown-mins":"دقائق",
         "countdown-secs":"ثواني",
         "event_date": "17 - 21 يونيو 2026",
+
+         
+        "sept.event_date": "12-16 سبتمبر 2026",
+        "sept.title_ready": "استعدوا",
+        "sept.title_slogan": "للإصلاح والتحول والأداء",
+        "sept.title_event": "في V-CONVENTION 2026!",
+        "sept.body_text": "شاركوا هذه التجربة مع المزيد من الأشخاص <br> وادعوهم للانضمام إلينا في هذه الرحلة <br> لاكتشاف ما هو ممكن.",
+        "sept.btn_text_start": "التذاكر متوفرة",
+        "sept.btn_text_now": "الآن",
+        "sept.btn_text_mid": "على",
+        "sept.btn_text_platform": "VShoppe Pro.",
+        "sept.help_prefix": "هل تحتاجون إلى مساعدة؟ انقروا",
+        "sept.help_link": "هنا",
+        "sept.help_suffix": "لمعرفة كيفية استخدام منصة شراء التذاكر الجديدة لدينا!",
+        
 
         "cta.main_label": "احصلوا على التذاكر الآن!",
         "cta.choose_type": "اختر النوع",
