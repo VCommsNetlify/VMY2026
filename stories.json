@@ -1,4 +1,6 @@
-[ {
+[ 
+  
+  {
     "id": "6402206399112",
     "event": "september_2026",
     "type": "video",
@@ -30,7 +32,39 @@
     "day": "all"
   },
   {
-    "id": "september_article_1",
+    "id": "september_article_3",
+    "event": "september_2026",
+    "type": "article",
+    "title": {
+      "en": "Celebrating WINS with VC Arun Asokan",
+      "ar": "احتفالًا بالانتصارات مع VC Arun Asokan",
+      "id": "Celebrating WINS bersama VC Arun Asokan",
+      "fr": "Celebrating WINS avec VC Arun Asokan",
+      "ru": "Celebrating WINS с VC Arun Asokan",
+      "tr": "VC Arun Asokan ile Celebrating WINS"
+    },
+    "description": {
+      "en": "His wins deserve recognition!",
+      "ar": "انتصاراته تستحق التقدير!",
+      "id": "Kemenangannya layak mendapatkan pengakuan!",
+      "fr": "Ses victoires m&eacute;ritent d&#39;&ecirc;tre salu&eacute;es !",
+      "ru": "Его победы заслуживают признания!",
+      "tr": "Zaferleri takdir edilmeyi hak ediyor!"
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/07232026-celebrating-wins-with-vc-arun-asokan.jpg",
+      "ar": "assets/video-article/september/07232026-celebrating-wins-with-vc-arun-asokan.jpg",
+      "id": "assets/video-article/september/07232026-celebrating-wins-with-vc-arun-asokan.jpg",
+      "fr": "assets/video-article/september/07232026-celebrating-wins-with-vc-arun-asokan.jpg",
+      "ru": "assets/video-article/september/07232026-celebrating-wins-with-vc-arun-asokan.jpg",
+      "tr": "assets/video-article/september/07232026-celebrating-wins-with-vc-arun-asokan.jpg"
+    },
+    "speaker": "Pre-Event Article",
+    "day": "Pre-Event",
+    "link": "https://the-v.net/{{lang}}/news?id=07232026-celebrating-wins-with-vc-arun-asokan"
+  },
+  {
+    "id": "september_article_2",
     "event": "september_2026",
     "type": "article",
     "title": {
@@ -61,6 +95,7 @@
     "day": "Pre-Event",
     "link": "https://the-v.net/{{lang}}/news?id=07172026-reform-transform-perform-at-v-convention-september-2026"
   },
+  
   {
     "disabled": true,
     "id": "6391119540112",
@@ -92,6 +127,38 @@
     },
     "speaker": "Teasers",
     "day": "all"
+  },
+  {
+    "id": "september_article_1",
+    "event": "september_2026",
+    "type": "article",
+    "title": {
+      "en": "Celebrating WINS with AVP Kriti &amp; Praneshwar",
+      "ar": "احتفالًا بالانتصارات مع AVP Kriti وPraneshwar",
+      "id": "Celebrating WINS bersama AVP Kriti &amp; Praneshwar",
+      "fr": "Celebrating WINS with AVP Kriti &amp; Praneshwar",
+      "ru": "Celebrating WINS с AVP Kriti &amp; Praneshwar",
+      "tr": "AVP Kriti &amp; Praneshwar ile Celebrating WINS"
+    },
+    "description": {
+      "en": "What exactly were the highlights of their journey?",
+      "ar": "ما هي تحديداً أبرز محطات رحلتهم؟",
+      "id": "Apa saja momen-momen penting dalam perjalanan mereka?",
+      "fr": "Quelles ont &eacute;t&eacute;, exactement, les &eacute;tapes marquantes de leur parcours ?",
+      "ru": "Какими именно были ключевые моменты их пути?",
+      "tr": "Yolculuklarının tam olarak &ouml;ne &ccedil;ıkan d&ouml;n&uuml;m noktaları nelerdi?"
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/07162026-celebrating-wins-with-avp-kriti-and-praneshwar.jpg",
+      "ar": "assets/video-article/september/07162026-celebrating-wins-with-avp-kriti-and-praneshwar.jpg",
+      "id": "assets/video-article/september/07162026-celebrating-wins-with-avp-kriti-and-praneshwar.jpg",
+      "fr": "assets/video-article/september/07162026-celebrating-wins-with-avp-kriti-and-praneshwar.jpg",
+      "ru": "assets/video-article/september/07162026-celebrating-wins-with-avp-kriti-and-praneshwar.jpg",
+      "tr": "assets/video-article/september/07162026-celebrating-wins-with-avp-kriti-and-praneshwar.jpg"
+    },
+    "speaker": "Pre-Event Article",
+    "day": "Pre-Event",
+    "link": "https://the-v.net/{{lang}}/news?id=07162026-celebrating-wins-with-avp-kriti-and-praneshwar"
   },
   {
     "id": "article#9",
