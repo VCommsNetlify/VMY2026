@@ -1074,7 +1074,7 @@ async function loadStories() {
             if (activeStories.length > 0) {
                 updatePreview(activeStories[0]);
                 renderFilteredPlaylist(activeStories);
-                startAutoplay();
+                if (typeof startAutoplay === 'function') startAutoplay();
             }
         }
     } catch (error) {
@@ -1137,6 +1137,8 @@ window.translateStaticFilters = function() {
 };
 
 window.applyFilters = function() {
+    const eventVal = document.getElementById('filterEvent') ? document.getElementById('filterEvent').value : 'september_2026';
+    
     const typeVal = document.getElementById('filterType').value;
     const speakerVal = document.getElementById('filterSpeaker').value;
     const dayVal = document.getElementById('filterDay').value;
@@ -1151,25 +1153,29 @@ window.applyFilters = function() {
     }
 
     const filtered = storiesData.filter(item => {
-        if (item.disabled) return false; // Hide disabled items
+        if (item.disabled) return false; 
         
+        
+        const itemEvent = item.event || 'september_2026';
+        const matchEvent = (itemEvent === eventVal);
+
         const matchType = (typeVal === 'all' || item.type === typeVal);
         const matchSpeaker = (speakerVal === 'all' || item.speaker === speakerVal);
         const matchDay = (dayVal === 'all' || item.day === dayVal);
-        return matchType && matchSpeaker && matchDay;
+        
+        return matchEvent && matchType && matchSpeaker && matchDay;
     });
 
     renderFilteredPlaylist(filtered);
     
-    // Reset to the first item and restart autoplay
     if (filtered.length > 0) {
         currentStoryIndex = 0;
         updatePreview(filtered[0]);
-        if (!isHoveringNews) {
-            startAutoplay(); 
+        if (typeof isHoveringNews !== 'undefined' && !isHoveringNews) {
+            if (typeof startAutoplay === 'function') startAutoplay(); 
         }
     } else {
-        stopAutoplay(); 
+        if (typeof stopAutoplay === 'function') stopAutoplay(); 
     }
 };
 
@@ -1182,7 +1188,6 @@ function renderFilteredPlaylist(data) {
     container.innerHTML = data.map((story, index) => {
         const displayTitle = story.title[lang] || story.title['en'];
         
-        // Safely get localized thumbnail
         const bannerSrc = typeof story.thumbnail === 'object' 
             ? (story.thumbnail[lang] || story.thumbnail['en']) 
             : story.thumbnail;
@@ -1203,25 +1208,32 @@ function renderFilteredPlaylist(data) {
 }
 
 window.updatePreviewByIndex = function(index) {
+    const eventVal = document.getElementById('filterEvent') ? document.getElementById('filterEvent').value : 'september_2026';
+    
     const typeVal = document.getElementById('filterType').value;
     const speakerVal = document.getElementById('filterSpeaker').value;
     const dayVal = document.getElementById('filterDay').value;
 
     const filtered = storiesData.filter(item => {
         if (item.disabled) return false; 
+        
+        const itemEvent = item.event || 'september_2026';
+        const matchEvent = (itemEvent === eventVal);
+
         const matchType = (typeVal === 'all' || item.type === typeVal);
         const matchSpeaker = (speakerVal === 'all' || item.speaker === speakerVal);
         const matchDay = (dayVal === 'all' || item.day === dayVal);
-        return matchType && matchSpeaker && matchDay;
+        
+        return matchEvent && matchType && matchSpeaker && matchDay;
     });
 
     if (filtered[index]) {
-        currentStoryIndex = index; // Let the tracker know the user picked a specific item
+        currentStoryIndex = index; 
         updatePreview(filtered[index]);
         
-        stopAutoplay();
-        if (!isHoveringNews) {
-            startAutoplay(); // Restart the timer so it doesn't immediately switch
+        if (typeof stopAutoplay === 'function') stopAutoplay();
+        if (typeof isHoveringNews !== 'undefined' && !isHoveringNews) {
+            if (typeof startAutoplay === 'function') startAutoplay(); 
         }
     }
 };
@@ -1231,9 +1243,8 @@ window.updatePreviewByObject = function(storyStr) {
     updatePreview(story);
 };
 
-// --- UPDATE PREVIEW WITH FADE ANIMATION ---
 window.updatePreview = function(story) {
-    currentStory = story;
+    window.currentStory = story; 
     const lang = localStorage.getItem('selectedLanguage') || 'en';
     
     const titleEl = document.getElementById('stageTitle');
@@ -1243,10 +1254,8 @@ window.updatePreview = function(story) {
 
     const elementsToAnimate = [titleEl, descEl, btn, stageImg].filter(el => el !== null);
 
-    // 1. Trigger the fade out
     elementsToAnimate.forEach(el => el.classList.add('fade-out-stage'));
 
-    // 2. Wait 300ms for the fade to finish, THEN swap the content and fade back in
     setTimeout(() => {
         const translatedTitle = story.title[lang] || story.title['en'];
         const translatedDesc = story.description[lang] || story.description['en'];
@@ -1254,7 +1263,6 @@ window.updatePreview = function(story) {
         if (titleEl) titleEl.innerText = translatedTitle;
         if (descEl) descEl.innerText = translatedDesc;
         
-        // Localized image mapping
         if (stageImg) {
             const bannerSrc = typeof story.thumbnail === 'object' 
                 ? (story.thumbnail[lang] || story.thumbnail['en']) 
@@ -1262,7 +1270,6 @@ window.updatePreview = function(story) {
             stageImg.src = bannerSrc;
         }
         
-        // Dynamic button mapping
         if (btn) {
             if (story.type === 'article') {
                 const readText = getManualTranslation('news.read', 'READ ARTICLE'); 
@@ -1275,7 +1282,6 @@ window.updatePreview = function(story) {
         
         if (typeof adjustTitleSize === 'function') adjustTitleSize();
 
-        // 3. Remove the fade-out class to trigger the fade-in
         elementsToAnimate.forEach(el => el.classList.remove('fade-out-stage'));
 
     }, 300); 
@@ -1306,20 +1312,20 @@ window.getManualTranslation = function(key, fallback) {
 };
 
 window.launchContent = function() {
-    if (!currentStory) return;
+    if (!window.currentStory) return;
     const lang = localStorage.getItem('selectedLanguage') || 'en';
 
-    if (currentStory.type === 'video') {
+    if (window.currentStory.type === 'video') {
         const playerWrap = document.getElementById('newsPlayerWrap');
         const stageImg = document.getElementById('stageImage');
         
         if(playerWrap) playerWrap.style.display = 'block';
         if(stageImg) stageImg.style.display = 'none';
 
-        const myPlayer = videojs.getPlayer('newsBrightcovePlayer');
+        const myPlayer = typeof videojs !== 'undefined' ? videojs.getPlayer('newsBrightcovePlayer') : null;
         
         if (myPlayer) {
-            myPlayer.catalog.getVideo(currentStory.id, function(error, video) {
+            myPlayer.catalog.getVideo(window.currentStory.id, function(error, video) {
                 if (error) return;
                 myPlayer.catalog.load(video);
                 myPlayer.one('loadedmetadata', function() {
@@ -1328,8 +1334,8 @@ window.launchContent = function() {
                 });
             });
         }
-    } else if (currentStory.type === 'article' && currentStory.link) {
-        let finalLink = currentStory.link;
+    } else if (window.currentStory.type === 'article' && window.currentStory.link) {
+        let finalLink = window.currentStory.link;
         if (finalLink.includes('{{lang}}')) {
              finalLink = finalLink.replace('{{lang}}', lang);
         }
@@ -1340,7 +1346,7 @@ window.launchContent = function() {
 window.closeVideo = function() {
     const playerWrap = document.getElementById('newsPlayerWrap');
     const stageImg = document.getElementById('stageImage');
-    const myPlayer = videojs.getPlayer('newsBrightcovePlayer');
+    const myPlayer = typeof videojs !== 'undefined' ? videojs.getPlayer('newsBrightcovePlayer') : null;
     
     if (playerWrap) playerWrap.style.display = 'none';
     if (stageImg) stageImg.style.display = 'block';
@@ -1349,7 +1355,7 @@ window.closeVideo = function() {
 
 window.closeVideoModalVKids = function() {
     const modal = document.getElementById('videoModal');
-    const myPlayer = videojs.getPlayer('myBrightcovePlayer');
+    const myPlayer = typeof videojs !== 'undefined' ? videojs.getPlayer('myBrightcovePlayer') : null;
     
     if (modal) modal.style.display = 'none';
     if (myPlayer) myPlayer.pause();
@@ -1383,18 +1389,17 @@ window.resetAllFilters = function() {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Target the specific wrapper that holds the stage and the playlist
     const newsSection = document.querySelector('.stories-container'); 
     
     if (newsSection) {
         newsSection.addEventListener('mouseenter', () => {
-            isHoveringNews = true;
-            stopAutoplay();
+            window.isHoveringNews = true;
+            if (typeof stopAutoplay === 'function') stopAutoplay();
         });
         
         newsSection.addEventListener('mouseleave', () => {
-            isHoveringNews = false;
-            startAutoplay();
+            window.isHoveringNews = false;
+            if (typeof startAutoplay === 'function') startAutoplay();
         });
     }
 });

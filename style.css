@@ -881,6 +881,175 @@ header {
     }
 }
 
+/* =======================================================
+   MODERN APP-LIKE MOBILE LAYOUT
+   Place this at the VERY BOTTOM of your CSS file
+   ======================================================= */
+@media (max-width: 1024px) {
+    /* 1. CINEMATIC 16:9 MEDIA PLAYER */
+    #stageViewport {
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 16 / 9 !important; /* Locks to standard video size */
+        min-height: auto !important; 
+        display: block !important;
+        border-radius: 0 !important;
+    }
+
+    #stageImage {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        filter: none !important; /* Removes the blur! */
+        transform: none !important; /* Removes the zoom! */
+        z-index: 1;
+    }
+
+    /* 2. METADATA SECTION (Below the video, not on top) */
+    .stage-info-bar {
+        position: relative !important; /* Stops the text from floating over the image */
+        background: #17043d !important; /* Solid dark background */
+        padding: 20px 15px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important; /* Left-align like YouTube */
+        justify-content: flex-start !important;
+        height: auto !important;
+    }
+
+    .text-group {
+        align-items: flex-start !important;
+        text-align: left !important;
+        margin: 0 !important;
+    }
+
+    #stageTitle {
+        text-align: left !important;
+        font-size: 1.25rem !important;
+        line-height: 1.3 !important;
+        text-shadow: none !important; /* Remove heavy shadows */
+        margin-bottom: 8px !important;
+        color: #ffffff !important;
+    }
+
+    #stageDesc {
+        text-align: left !important;
+        font-size: 0.95rem !important;
+        line-height: 1.4 !important;
+        color: #cccccc !important; /* Softer text for description */
+        text-shadow: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .button-group {
+        width: 100% !important;
+        margin-top: 15px !important;
+        justify-content: flex-start !important; /* Align left */
+        position: relative !important;
+        display: flex !important;
+    }
+
+    .action-btn {
+        width: auto !important; 
+        background: #ffffff !important;
+        color: #17043d !important;
+        padding: 10px 24px !important;
+        font-size: 14px !important;
+        font-weight: bold !important;
+        margin: 0 !important;
+        border: none !important;
+        border-radius: 6px !important; /* Modern app button radius */
+    }
+
+    /* 3. HORIZONTAL SCROLLING FILTERS (Like app tags) */
+    .filter-bar {
+        flex-wrap: nowrap !important; 
+        overflow-x: auto !important; 
+        -webkit-overflow-scrolling: touch !important; 
+        padding: 5px 15px 5px 15px !important;
+        gap: 10px !important;
+        margin-bottom: 15px !important; 
+    }
+
+    /* Centers the Top Event Dropdown */
+    .event-filter-container {
+        justify-content: center !important;
+    }
+
+    /* Keep the bottom filters left-aligned for smooth swiping */
+    .filter-bar:not(.event-filter-container) {
+        justify-content: flex-start !important;
+        padding-right: 0 !important; 
+    }
+
+    /* Hides the scrollbar for the filters to keep it clean */
+    .filter-bar::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    /* FIX: The stubborn iOS parenthesis bug */
+    .filter-bar select {
+        flex: 0 0 auto !important; 
+        white-space: nowrap !important;
+        margin: 0 !important;
+        -webkit-appearance: none !important; /* Forces iPhones to drop native styling */
+        appearance: none !important;
+        border: 1.5px solid #240760 !important; /* Solid border forced */
+        border-radius: 30px !important;       /* Perfect pill */
+        background-color: transparent !important;
+        color: #240760 !important;
+    }
+
+    /* FIX: Bring back the Solid Reset Button */
+    .filter-bar button#resetFilters {
+        flex: 0 0 auto !important; 
+        white-space: nowrap !important;
+        margin: 0 !important;
+        background-color: #240760 !important; /* Dark purple background */
+        color: #ffffff !important;            /* White text */
+        border: 1.5px solid #240760 !important;
+        border-radius: 30px !important;
+        padding: 5px 15px !important;
+    }
+
+    /* FIX: Adds an invisible bumper to the right so Reset isn't cut off */
+    .filter-bar select:last-child,
+    .filter-bar button#resetFilters {
+        margin-right: 20px !important; 
+    }
+
+    /* 4. PLAYLIST CLEANUP */
+    .stories-playlist {
+        padding: 20px 0 !important;
+        border-radius: 0 !important;
+        background-color: #F4F3ED !important;
+    }
+
+    /* FIX: Centers "FEATURED STORIES" */
+    .stories-playlist h4 {
+        text-align: center !important;
+        padding-left: 0 !important;
+        margin-bottom: 15px !important;
+    }
+
+    .playlist-scroll {
+        padding: 0 15px !important;
+    }
+    
+    .story-item {
+        border-radius: 8px !important;
+        margin-bottom: 8px !important;
+        border: none !important;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05) !important;
+    }
+
+}
+
 /* --- 6. HERO SECTION --- */
 .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background-image: url('assets/images/bg-fx.png'); opacity: 90%; background-size: cover; color: white; text-align: center; padding-top: 60px; }
 .logo-emblem { width: clamp(200px, 30vw, 300px); height: clamp(200px, 30vw, 300px); border: 2px solid #D4AF37; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 30px; background: rgba(212,175,55,0.05); }

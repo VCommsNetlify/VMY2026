@@ -1,7 +1,70 @@
-[
+[ {
+    "id": "6402206399112",
+    "event": "september_2026",
+    "type": "video",
+    "title": {
+      "en": "Come Home & Share the Journey at V-Convention September 2026!",
+      "ar": "تعالوا إلى الديار وشاركوا الرحلة في V-Convention 2026!",
+      "id": "Pulanglah & Bagikan Perjalanan Ini di V-Convention September 2026!",
+      "fr": "Venez à la maison et partagez cette aventure lors de la V-Convention September 2026!",
+      "ru": "Вернитесь домой и поделитесь этим путешествием на V-Convention September 2026!",
+      "tr": "V-Convention September 2026'da Eve Dönün ve Yolculuğu Paylaşın!"
+    },
+    "description": {
+      "en": "Start looking for your fellow dreamers and take them on this journey with you to REFORM, TRANSFORM, PERFORM at V-Convention 2026!",
+      "ar": "ابدأ بالبحث عن رفاقك من أصحاب الأحلام واصطحبهم معك في هذه الرحلة نحو الإصلاح والتحول والأداء المتميز في مؤتمر V-Convention لعام 2026!",
+      "id": "Mulailah mencari sesama pemimpi dan ajak mereka dalam perjalanan ini bersama Anda untuk melakukan REFORM, TRANSFORM, dan PERFORM di V-Convention 2026!",
+      "fr": "Commencez à rechercher vos compagnons rêveurs et emmenez-les avec vous dans cette aventure pour REFORM, TRANSFORM, PERFORM lors de la V-Convention 2026!",
+      "ru": "Начните искать своих товарищей-мечтателей и пригласите их в это путешествие, чтобы РЕФОРМИРОВАТЬСЯ, ТРАНСФОРМИРОВАТЬСЯ, ДЕЙСТВОВАТЬ на V-Convention 2026!",
+      "tr": "Hayal ortaklarınızı aramaya başlayın ve V-Convention 2026'da YENİLEMEK, DÖNÜŞTÜRMEK ve PERFORMANS SERGİLEMEK üzere onları da bu yolculuğa dahil edin!"
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/07272026-come-home-and-share-the-journey-at-v-convention-september-2026.jpg",
+      "ar": "assets/video-article/september/07272026-come-home-and-share-the-journey-at-v-convention-september-2026.jpg",
+      "id": "assets/video-article/september/07272026-come-home-and-share-the-journey-at-v-convention-september-2026.jpg",
+      "fr": "assets/video-article/september/07272026-come-home-and-share-the-journey-at-v-convention-september-2026.jpg",
+      "ru": "assets/video-article/september/07272026-come-home-and-share-the-journey-at-v-convention-september-2026.jpg",
+      "tr": "assets/video-article/september/07272026-come-home-and-share-the-journey-at-v-convention-september-2026.jpg"
+    },
+    "speaker": "Teasers",
+    "day": "all"
+  },
+  {
+    "id": "september_article_1",
+    "event": "september_2026",
+    "type": "article",
+    "title": {
+      "en": "Reform, Transform, Perform at V-Convention September 2026!",
+      "ar": "قوموا بالإصلاح، والتحول، والأداء في V-Convention سبتمبر 2026!",
+      "id": "Reform, Transform, Perform di V-Convention 2026 September!",
+      "fr": "Reform, Transform, Perform &agrave; la V-Convention 2026 en septembre!",
+      "ru": "Реформируйтесь, трансформируйтесь, действуйте на V-Convention 2026 в сентябре!",
+      "tr": "Eylül 2026'daki V-Convention'da Yenilen, Dönüş ve Performans Sergile!"
+    },
+    "description": {
+      "en": "Save these life-changing dates!",
+      "ar": "احفظوا هذه التواريخ التي ستغير حياتكم!",
+      "id": "Catat tanggal-tanggal penting yang akan mengubah hidup ini!",
+      "fr": "R&eacute;servez ces dates qui peuvent changer votre vie!",
+      "ru": "Запомните эти даты, которые изменят вашу жизнь!",
+      "tr": "Hayatınızı değiştirecek bu tarihleri ​​not edin!"
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/07172026-reform-transform-perform-at-v-convention-september-2026.png",
+      "ar": "assets/video-article/september/07172026-reform-transform-perform-at-v-convention-september-2026-ar.png",
+      "id": "assets/video-article/september/07172026-reform-transform-perform-at-v-convention-september-2026-id.png",
+      "fr": "assets/video-article/september/07172026-reform-transform-perform-at-v-convention-september-2026-fr.png",
+      "ru": "assets/video-article/september/07172026-reform-transform-perform-at-v-convention-september-2026-ru.png",
+      "tr": "assets/video-article/september/07172026-reform-transform-perform-at-v-convention-september-2026-tr.png"
+    },
+    "speaker": "Pre-Event Article",
+    "day": "Pre-Event",
+    "link": "https://the-v.net/{{lang}}/news?id=07172026-reform-transform-perform-at-v-convention-september-2026"
+  },
   {
     "disabled": true,
     "id": "6391119540112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "CONFORM, TRANSFORM, REFORM, PERFORM at V-Convention 2026 This June!",
@@ -32,6 +95,7 @@
   },
   {
     "id": "article#9",
+    "event": "june_2026",
     "type": "article",
     "title": {
       "en": "V-Convention June 2026 DAY 5: The Journey Out There",
@@ -63,6 +127,7 @@
   },
   {
     "id": "6400083536112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention June 2026 Day 4: Share Your Story by Joseph ‘Japadas’ Bismark",
@@ -93,6 +158,7 @@
   },
   {
     "id": "6400084931112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention June 2026 Day 4: Objection Opens a Window for You to Listen by Joseph ‘Japadas’ Bismark",
@@ -123,6 +189,7 @@
   },
   {
     "id": "6399787426112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026 Day 3: What Real Success Truly Means by Datin Sri Umayal Eswaran",
@@ -153,6 +220,7 @@
   },
   {
     "id": "6399789565112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026 Day 3: Building a Legacy for Future Generations by Datin Sri Umayal Eswaran",
@@ -183,6 +251,7 @@
   },
   {
     "id": "6399791307112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026 Day 4: Reform, Transform, Perform by Dato Sri Vijay Eswaran",
@@ -213,6 +282,7 @@
   },
   {
     "id": "6399792181112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026 Day 4: Nothing Worth Having Comes Easy by Dato Sri Vijay Eswaran",
@@ -243,6 +313,7 @@
   },
   {
     "id": "6399789934112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026 Day 4: Silence is a Superpower by Dato Sri Vijay Eswaran",
@@ -273,6 +344,7 @@
   },
   {
     "id": "6399790129112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026 Day 4: Your Next Destination Awaits by Dato Sri Vijay Eswaran",
@@ -303,6 +375,7 @@
   },
   {
     "id": "6399470938112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026 Day 3: V-Convention – Where Learning Meets Life by Dato Sri Vijay Eswaran",
@@ -333,6 +406,7 @@
   },
   {
     "id": "6399470246112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026 Day 3: Reform, Transform, Conform by Dato Sri Vijay Eswaran",
@@ -363,6 +437,7 @@
   },
   {
     "id": "6399468552112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026 Day 3: The Next Best Answer by Dato Sri Vijay Eswaran",
@@ -393,6 +468,7 @@
   },
   {
     "id": "6399468124112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026 Day 3: The Power of Focus by Dato Sri Vijay Eswaran",
@@ -423,6 +499,7 @@
   },
   {
     "id": "article#8",
+    "event": "june_2026",
     "type": "article",
     "title": {
       "en": "V-Convention June 2026 DAY 4: The Price of Performance",
@@ -454,6 +531,7 @@
   },
   {
     "id": "6399354407112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention June 2026 Day 5 Highlights: Ready to Change the World",
@@ -484,6 +562,7 @@
   },
   {
     "id": "6399322874112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention June 2026 Day 3: Become the Upline Your Downline Deserves by Joseph ‘Japadas’ Bismark",
@@ -514,6 +593,7 @@
   },
     {
     "id": "6399323065112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention June 2026 Day 3: Bury the Old to Make Room for the New by Joseph ‘Japadas’ Bismark",
@@ -544,6 +624,7 @@
   },
   {
     "id": "6399322201112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention June 2026 Day 4 Highlights: Bring Your Best Forward",
@@ -574,6 +655,7 @@
   },
   {
     "id": "6399096610112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention June 2026 Day 2: Transformation is a Journey by Joseph ‘Japadas’ Bismark",
@@ -604,6 +686,7 @@
   },
   {
     "id": "6399094444112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention June 2026 Day 2: Face the Ego by Joseph ‘Japadas’ Bismark",
@@ -634,6 +717,7 @@
   },
   {
     "id": "article#8",
+    "event": "june_2026",
     "type": "article",
     "title": {
       "en": "V-Convention June 2026 DAY 3: The Decision to Become",
@@ -665,6 +749,7 @@
   },
   {
     "id": "6398946339112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention June 2026 Day 3 Highlights: Become the Change, Inspire the Change",
@@ -695,6 +780,7 @@
   },
   {
     "id": "6398945070112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026 Day 2: Dare to Fail, Dare to Succeed by Dato Sri Vijay Eswaran",
@@ -725,6 +811,7 @@
   },
   {
     "id": "6398944759112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026 Day 2: Conform Before You Transform by Dato Sri Vijay Eswaran",
@@ -755,6 +842,7 @@
   },
   {
     "id": "6398942850112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026 Day 2: The Path from Thought to Destiny by Dato Sri Vijay Eswaran",
@@ -784,7 +872,8 @@
     "day": "Day 2"
   },
   {
-    "id": "6398942850112",
+    "id": "6398942850112_2",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026 Day 2: Transformation is a Decision by Dato Sri Vijay Eswaran",
@@ -815,6 +904,7 @@
   },
   {
     "id": "article#7",
+    "event": "june_2026",
     "type": "article",
     "title": {
       "en": "V-Convention June 2026 DAY 2: The Work of Transformation",
@@ -846,6 +936,7 @@
   },
   {
     "id": "6398856711112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention June 2026 Day 2 Highlights: Change the Way You Think, Change the Way You Live",
@@ -876,6 +967,7 @@
   },
   {
     "id": "6398842905112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026 Day 1: Live Today in Gratitude by Dato Sri Vijay Eswaran",
@@ -906,6 +998,7 @@
   },
   {
     "id": "6398841324112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026 Day 1: Designed to Move Forward by Dato Sri Vijay Eswaran",
@@ -936,6 +1029,7 @@
   },
   {
     "id": "6398841907112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026 Day 1: Reform by Dato Sri Vijay Eswaran",
@@ -966,6 +1060,7 @@
   },
   {
     "id": "6398840811112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026 Day 1: The School of Life by Dato Sri Vijay Eswaran",
@@ -996,6 +1091,7 @@
   },
   {
     "id": "article#6",
+    "event": "june_2026",
     "type": "article",
     "title": {
       "en": "V-Convention June 2026 DAY 1: The Beginning of a Better You",
@@ -1027,6 +1123,7 @@
   },
   {
     "id": "6398773138112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention June 2026 Day 1: Never Stop Working to Better Yourself by Joseph ‘Japadas’ Bismark",
@@ -1057,6 +1154,7 @@
   },
   {
     "id": "6398767791112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention June 2026 Day 1: Unlearn the Negativity to Make Room for Positivity by Joseph ‘Japadas’ Bismark",
@@ -1087,6 +1185,7 @@
   },
   {
     "id": "6398751539112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention June 2026 Day 1 Highlights: Change the World by Changing Yourself",
@@ -1117,6 +1216,7 @@
   },
   {
     "id": "article#5",
+    "event": "june_2026",
     "type": "article",
     "title": {
       "en": "V-Convention June 2026 Registration Day: Welcome to Penang!",
@@ -1148,6 +1248,7 @@
   },
   {
     "id": "6398315794112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026: Get Ready for Your Click",
@@ -1178,6 +1279,7 @@
   },
   {
     "id": "6398240237112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026: Dato Sri Vijay Eswaran’s Untold Stories",
@@ -1208,6 +1310,7 @@
   },
   {
     "id": "6398124349112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026: Joseph ‘Japadas’ Bismark’s Untold Stories",
@@ -1238,6 +1341,7 @@
   },
   {
     "id": "6397868900112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026: VP Kalai Manikam’s Untold Stories",
@@ -1268,6 +1372,7 @@
   },
   {
     "id": "6397611602112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026: VP Sathi Senathirajah’s Untold Stories",
@@ -1298,6 +1403,7 @@
   },
   {
     "id": "6397602375112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026: AVP Suresh Perumal’s Untold Stories",
@@ -1328,6 +1434,7 @@
   },
   {
     "id": "6397521365112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026: AVP Balajee Kumar’s Untold Stories",
@@ -1358,6 +1465,7 @@
   },
    {
     "id": "6397421346112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026: VEL Dr. Dodi Sidarta Halim & VEL Dr. Maria Marissa’s Untold Stories",
@@ -1388,6 +1496,7 @@
   },
   {
     "id": "6397409473112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026: A Better You Awaits",
@@ -1418,6 +1527,7 @@
   },
   {
     "id": "6397203689112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026: VEL Manikantaa Kumar’s Untold Stories",
@@ -1449,6 +1559,7 @@
   {
     "disabled": true,
     "id": "6396928505112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026: VC Midhulaj’s Untold Stories",
@@ -1479,6 +1590,7 @@
   },
   {
     "id": "6396648498112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026: VP Donna Imson-Lecaroz’s Untold Stories",
@@ -1509,6 +1621,7 @@
   },
   {
     "id": "6396034929112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026: VPN Digvijay Singh’s Untold Stories",
@@ -1539,6 +1652,7 @@
   },
   {
     "id": "6395412043112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026: VEL Cheah Pei Yun’s Untold Stories",
@@ -1569,6 +1683,7 @@
   },
   {
     "id": "6394850908112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026: Let Your Passion Come Alive",
@@ -1599,6 +1714,7 @@
   },
    {
     "id": "article#4",
+    "event": "june_2026",
     "type": "article",
     "title": {
       "en": "Reform, Transform, and Perform LIMITLESSLY!",
@@ -1630,6 +1746,7 @@
   },
   {
     "id": "6394161365112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026: VP Kavita Sugandh’s Untold Stories",
@@ -1660,6 +1777,7 @@
   },
   {
     "id": "6393621030112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026: Uncover the Confessions of a Dreamer",
@@ -1690,6 +1808,7 @@
   },
   {
     "id": "6392948728112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "V-Convention 2026: Home is Where Your Journey Begins",
@@ -1720,6 +1839,7 @@
   },
   {
     "id": "article#3",
+    "event": "june_2026",
     "type": "article",
     "title": {
       "en": "Serve Above Self as InService at V-Convention 2026 this June!",
@@ -1733,9 +1853,9 @@
       "en": "Applications are now open!",
       "ar": "باب التقديم مفتوح الآن!",
       "id": "Pendaftaran telah dibuka!",
-      "fr": "Les candidatures sont d&eacute;sormais ouvertes !",
+      "fr": "Les candidatures sont désormais ouvertes !",
       "ru": "Прием заявок открыт!",
-      "tr": "Başvurular artık a&ccedil;ık!"
+      "tr": "Başvurular artık açık!"
     },
     "thumbnail": {
       "en": "assets/video-article/04102026-serve-above-self-as-inservice-at-v-convention-2026-this-june.jpg",
@@ -1752,6 +1872,7 @@
   {
     "disabled": true,
     "id": "article#2",
+    "event": "june_2026",
     "type": "article",
     "title": {
       "en": "CONFORM, TRANSFORM, REFORM, PERFORM at V-Convention 2026 This June!",
@@ -1783,6 +1904,7 @@
   },
   {
     "id": "6393776623112",
+    "event": "june_2026",
     "type": "video",
     "title": {
       "en": "CONFORM, TRANSFORM, REFORM, PERFORM at V-Convention 2026 This June!",
@@ -1813,20 +1935,21 @@
   },
   {
     "id": "article#1",
+    "event": "june_2026",
     "type": "article",
     "title": {
       "en": "Save Your Seats for V-Convention 2026!",
       "ar": "كن مستعدًا لخوض مؤتمر V-Conference 2026!",
       "id": "Amankan Tempat Duduk Anda untuk V-Convention 2026!",
-      "fr": "R&eacute;servez vos places pour la V-Convention 2026!",
+      "fr": "Réservez vos places pour la V-Convention 2026!",
       "ru": "Забронируйте места на V-Convention 2026!",
-      "tr": "V-Convention 2026 i&ccedil;in Yerinizi Ayırtın!"
+      "tr": "V-Convention 2026 için Yerinizi Ayırtın!"
     },
     "description": {
       "en": "Get ready for an unbelievable experience this June!",
       "ar": "استعد لتجربة لا تُصدق في شهر يونيو القادم!",
       "id": "Bersiaplah untuk pengalaman luar biasa di bulan Juni ini!",
-      "fr": "Pr&eacute;parez-vous &agrave; vivre une exp&eacute;rience incroyable en juin prochain!",
+      "fr": "Préparez-vous à vivre une expérience incroyable en juin prochain!",
       "ru": "Приготовьтесь к невероятным впечатлениям в июне этого года!",
       "tr": "Bu Haziran ayında inanılmaz bir deneyime hazır olun!"
     },
@@ -1842,5 +1965,8 @@
     "day": "all",
     "link": "https://the-v.net/{{lang}}/news?id=03062026-save-your-seats-for-v-convention-2026"
   }
+  
+  
+  
+ 
 ]
-

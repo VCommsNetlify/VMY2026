@@ -266,7 +266,7 @@ you have achieved by then!
   </div>
 </section>
 
-    <section id="video" class="master-section stories-theater">
+<section id="video" class="master-section stories-theater">
         <div class="news-header-container">
             <h2 class="v-section-heading-news" data-i18n="stories.banner">Event News & Updates</h2>
             <p class="v-section-heading-news-sub" data-i18n="stories.subheader">
@@ -296,6 +296,16 @@ you have achieved by then!
 
             <div class="stories-playlist">
                 <h4 data-i18n="stories.featured">Featured Stories</h4>
+                
+                <!-- NEW EVENT FILTER (Now with 'filter-bar' class to inherit the capsule style) -->
+                <div class="filter-bar event-filter-container" style="justify-content: center; margin-bottom: 10px;">
+                    <select id="filterEvent" onchange="applyFilters()">
+                        <option value="september_2026" data-i18n="filter.september_2026">V-Convention September 2026</option>
+                        <option value="june_2026" data-i18n="filter.june_2026">V-Convention June 2026</option>
+                    </select>
+                </div>
+
+                <!-- ORIGINAL FILTERS -->
                 <div class="filter-bar">
                     <select id="filterType" onchange="handleCategoryChange()">
                         <option value="all" data-i18n="filter.all_media">All Media</option>
@@ -317,15 +327,12 @@ you have achieved by then!
                         <option value="Day 3" data-i18n="filter.day3">Day 3</option>
                         <option value="Day 4" data-i18n="filter.day4">Day 4</option>
                         <option value="Day 5" data-i18n="filter.day5">Day 5</option>
-
                     </select>
                     <button id="resetFilters" onclick="resetAllFilters()" data-i18n="filter.reset">Reset</button>
                 </div>
                 <div class="playlist-scroll"></div>
             </div>
         </div>
-
-
     </section>
 
 <!-- <section class="confession-section" id="v-kids-confessions">
