@@ -966,61 +966,54 @@ header {
         border-radius: 6px !important; /* Modern app button radius */
     }
 
-    /* 3. HORIZONTAL SCROLLING FILTERS (Like app tags) */
-    .filter-bar {
-        flex-wrap: nowrap !important; 
-        overflow-x: auto !important; 
-        -webkit-overflow-scrolling: touch !important; 
-        padding: 5px 15px 5px 15px !important;
-        gap: 10px !important;
-        margin-bottom: 15px !important; 
-    }
-
-    /* Centers the Top Event Dropdown */
+    /* 3. MOBILE GRID FILTERS (No scrolling!) */
+    
+    /* Centers the Top Event Dropdown and makes it a nice wide pill */
     .event-filter-container {
+        display: flex !important;
         justify-content: center !important;
+        margin-bottom: 12px !important;
+        padding: 0 15px !important;
     }
 
-    /* Keep the bottom filters left-aligned for smooth swiping */
+    .event-filter-container select {
+        width: 100% !important;
+        max-width: 350px !important; /* Keeps it from getting too stretched on tablets */
+    }
+
+    /* Creates a 2x2 Grid for the other 4 options */
     .filter-bar:not(.event-filter-container) {
-        justify-content: flex-start !important;
-        padding-right: 0 !important; 
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important; /* Two equal columns */
+        gap: 10px !important; /* Space between the pills */
+        padding: 0 15px 15px 15px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
     }
 
-    /* Hides the scrollbar for the filters to keep it clean */
-    .filter-bar::-webkit-scrollbar {
-        display: none !important;
-    }
-
-    /* FIX: The stubborn iOS parenthesis bug */
-    .filter-bar select {
-        flex: 0 0 auto !important; 
-        white-space: nowrap !important;
+    /* Enforces the Solid Pill Shape and fills the grid cell */
+    .filter-bar select,
+    .filter-bar button#resetFilters {
+        width: 100% !important; /* Stretches pill to neatly fill its half of the screen */
         margin: 0 !important;
-        -webkit-appearance: none !important; /* Forces iPhones to drop native styling */
+        -webkit-appearance: none !important; 
         appearance: none !important;
-        border: 1.5px solid #240760 !important; /* Solid border forced */
-        border-radius: 30px !important;       /* Perfect pill */
+        border: 1.5px solid #240760 !important; 
+        border-radius: 30px !important;       
         background-color: transparent !important;
         color: #240760 !important;
-    }
-
-    /* FIX: Bring back the Solid Reset Button */
-    .filter-bar button#resetFilters {
-        flex: 0 0 auto !important; 
+        box-sizing: border-box !important;
+        
+        /* Keeps text centered and cuts off with '...' if it's too long */
+        text-overflow: ellipsis !important;
+        overflow: hidden !important;
         white-space: nowrap !important;
-        margin: 0 !important;
-        background-color: #240760 !important; /* Dark purple background */
-        color: #ffffff !important;            /* White text */
-        border: 1.5px solid #240760 !important;
-        border-radius: 30px !important;
-        padding: 5px 15px !important;
     }
 
-    /* FIX: Adds an invisible bumper to the right so Reset isn't cut off */
-    .filter-bar select:last-child,
+    /* Bring back the Solid Reset Button */
     .filter-bar button#resetFilters {
-        margin-right: 20px !important; 
+        background-color: #240760 !important; 
+        color: #ffffff !important;            
     }
 
     /* 4. PLAYLIST CLEANUP */
