@@ -1005,7 +1005,7 @@ window.closeMenu = function() {
 
     // --- 3. COUNTDOWN (STABLE) ---
 // Target date: June 16, 2026 (Adjust as needed)
-const targetDate = new Date("September 11, 2026 00:00:00").getTime();
+const targetDate = new Date("September 12, 2026 00:00:00").getTime();
 
 function updateCountdown() {
     const now = new Date().getTime();
