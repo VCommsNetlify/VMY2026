@@ -22,7 +22,7 @@ const translations = {
 
         
         "sept.event_date": "12-16 SEPTEMBER 2026",
-        "sept.title_ready": "GET READY TO",
+        "sept.title_ready": "COME HOME & SHARE THE JOURNEY TO",
         "sept.title_slogan": "REFORM, TRANSFORM, PERFORM",
         "sept.title_event": "AT V-CONVENTION 2026!",
         "sept.body_text": "Share the experience with more people <br> and invite them on this journey <br> to discover what's possible.",
@@ -168,7 +168,7 @@ const translations = {
 
         
         "sept.event_date": "12-16 SEPTEMBER 2026",
-        "sept.title_ready": "BERSIAPLAH UNTUK",
+        "sept.title_ready": "Pulanglah dan bagikan perjalanan menuju",
         "sept.title_slogan": "REFORM, TRANSFORM, PERFORM",
         "sept.title_event": "DI V-CONVENTION 2026!",
         "sept.body_text": "Bagikan pengalaman ini dengan lebih banyak orang <br> dan ajak mereka dalam perjalanan <br> ini untuk menemukan kesempatan.",
@@ -308,7 +308,7 @@ const translations = {
 
          
         "sept.event_date": "12–16 SEPTEMBRE 2026",
-        "sept.title_ready": "PRÉPAREZ-VOUS À",
+        "sept.title_ready": "RETOURNEZ CHEZ VOUS ET PARTAGEZ LE VOYAGE VERS",
         "sept.title_slogan": "REFORM, TRANSFORM, PERFORM",
         "sept.title_event": "LORS DE LA V-CONVENTION 2026 !",
         "sept.body_text": "Partagez cette expérience avec davantage de personnes <br> et invitez-les à entreprendre ce voyage <br> pour découvrir ce qui est possible.",
@@ -447,7 +447,7 @@ const translations = {
 
      
         "sept.event_date": "12-16 СЕНТЯБРЯ 2026",
-        "sept.title_ready": "ГОТОВЬТЕСЬ К",
+        "sept.title_ready": "Возвращайтесь домой и разделите путь к",
         "sept.title_slogan": "РЕФОРМАЦИИ, ТРАНСФОРМАЦИИ И ДЕЙСТВИЯМ",
         "sept.title_event": "НА V-CONVENTION 2026!",
         "sept.body_text": "Поделитесь этим опытом с большим количеством людей <br> и пригласите их в это путешествие, <br> чтобы открыть для себя новые возможности.",
@@ -588,8 +588,8 @@ const translations = {
         
         "sept.event_date": "12-16 EYLÜL 2026",
         "sept.title_ready": "V-CONVENTION 2026'DA",
-        "sept.title_slogan": "REFORM, TRANSFORM VE PERFORM ETMEYE",
-        "sept.title_event": "HAZIR OLUN!",
+        "sept.title_slogan": "Yenilenme, Dönüşüm ve Üstün Performans",
+        "sept.title_event": "yolculuğunu paylaşmak için Eve Dönün",
         "sept.body_text": "Deneyimi daha fazla insanla paylaşın <br> ve neyin mümkün olduğunu keşfedecekleri <br> bu yolculuğa onları da davet edin.",
         "sept.btn_text_start": "Biletler",
         "sept.btn_text_now": "ŞİMDİ",
@@ -728,7 +728,7 @@ const translations = {
 
          
         "sept.event_date": "12-16 سبتمبر 2026",
-        "sept.title_ready": "استعدوا",
+        "sept.title_ready": "عُد إلى الديار وشارك في الرحلة نحو",
         "sept.title_slogan": "للإصلاح والتحول والأداء",
         "sept.title_event": "في V-CONVENTION 2026!",
         "sept.body_text": "شاركوا هذه التجربة مع المزيد من الأشخاص <br> وادعوهم للانضمام إلينا في هذه الرحلة <br> لاكتشاف ما هو ممكن.",
@@ -1005,7 +1005,7 @@ window.closeMenu = function() {
 
     // --- 3. COUNTDOWN (STABLE) ---
 // Target date: June 16, 2026 (Adjust as needed)
-const targetDate = new Date("June 17, 2026 00:00:00").getTime();
+const targetDate = new Date("September 11, 2026 00:00:00").getTime();
 
 function updateCountdown() {
     const now = new Date().getTime();
