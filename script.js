@@ -1805,6 +1805,35 @@ function toggleFaq(index) {
 // 1. DATA (Fixed the rogue comma between items)
 const vkidsData = {
     "en": [
+        {
+            "id": "item1",
+            "type": "video",
+            "banner": {
+                "en": "assets/vkids/08032026-v-kids-v-teens-awaken-their-superpowers-at-v-convention-september-2026.jpg",
+                "ar": "assets/vkids/08032026-v-kids-v-teens-awaken-their-superpowers-at-v-convention-september-2026.jpg",
+                "id": "assets/vkids/08032026-v-kids-v-teens-awaken-their-superpowers-at-v-convention-september-2026.jpg",
+                "fr": "assets/vkids/08032026-v-kids-v-teens-awaken-their-superpowers-at-v-convention-september-2026.jpg",
+                "ru": "assets/vkids/08032026-v-kids-v-teens-awaken-their-superpowers-at-v-convention-september-2026.jpg",
+                "tr": "assets/vkids/08032026-v-kids-v-teens-awaken-their-superpowers-at-v-convention-september-2026.jpg"
+            },
+            "title": {
+                "en": "V-Kids & V-Teens: Awaken Their Superpowers at V-Convention September 2026!",
+                "ar": "الـ V-Kids والـ V-Teens: أيقظوا قواهم الخارقة في V-Convention سبتمبر 2026!",
+                "id": "V-Kids & V-Teens: Bangkitkan Kekuatan Super Mereka di V-Convention September 2026!",
+                "fr": "V-Kids & V-Teens: Réveillez leurs super-pouvoirs à la V-Convention de septembre 2026!",
+                "ru": "V-Kids & V-Teens: Пробудите их суперспособности на V-Convention в сентябре 2026 года! ",
+                "tr": "V-Kids & V-Teens: V-Convention Eylül 2026'da İçlerindeki Süper Güçleri Uyandırın!"
+            },
+            "desc": {
+                "en": "From 12 to 16 September 2026, we’re going on an epic adventure at V-Kids & V-Teens at V-Convention 2026!",
+                "ar": "من 12 إلى 16 سبتمبر 2026، ننطلق في مغامرةٍ ملحمية مع الـ V-Kids والـ V-Teens في V-Convention 2026!",
+                "id": "Mulai tanggal 12 hingga 16 September 2026, kita akan memulai petualangan luar biasa di V-Kids & V-Teens dalam ajang V-Convention 2026!",
+                "fr": "Du 12 au 16 septembre 2026, nous partons pour une aventure épique avec V-Kids & V-Teens à la V-Convention 2026 !",
+                "ru": "С 12 по 16 сентября 2026 года мы отправляемся в грандиозное приключение с V-Kids и V-Teens на V-Convention 2026!",
+                "tr": "12 - 16 Eylül 2026 tarihleri arasında, V-Convention 2026'daki V-Kids & V-Teens ile destansı bir maceraya atılıyoruz!"
+            },
+            "videoId": "6402671143112"
+        }
         // {
         //     "id": "item1",
         //     "type": "video",
@@ -1834,95 +1863,95 @@ const vkidsData = {
         //     },
         //     "videoId": "6391837452112"
         // },
-        {
-            "id": "item3",
-            "type": "article",
-            "banner": {
-                "en": "assets/video-article/06262026-v-kids-v-teens-at-v-convention-2026-all-set-to-reform-transform-and-perform.jpg",
-                "ar": "assets/video-article/06262026-v-kids-v-teens-at-v-convention-2026-all-set-to-reform-transform-and-perform.jpg",
-                "id": "assets/video-article/06262026-v-kids-v-teens-at-v-convention-2026-all-set-to-reform-transform-and-perform.jpg",
-                "fr": "assets/video-article/06262026-v-kids-v-teens-at-v-convention-2026-all-set-to-reform-transform-and-perform.jpg",
-                "ru": "assets/video-article/06262026-v-kids-v-teens-at-v-convention-2026-all-set-to-reform-transform-and-perform.jpg",
-                "tr": "assets/video-article/06262026-v-kids-v-teens-at-v-convention-2026-all-set-to-reform-transform-and-perform.jpg"
-            },
-            "title": {
-                "en": "V-Kids & V-Teens at V-Convention 2026: All Set to Reform, Transform, and Perform!",
-                "ar": "الـ V-Kids وV-Teens في V-Convention 2026: كل شيء تم إعداده للإصلا، التحولـ والأداء!",
-                "id": "V-Kids & V-Teens di V-Convention 2026: Semua Siap Untuk Reform, Transform, dan Perform!",
-                "fr": "V-Kids & V-Teens à la V-Convention 2026: Prêts à Reform, Transform, et Perform!",
-                "ru": "V-Kids и V-Teens на V-Convention 2026: готовы Реформировать, Трансформировать и Проявить себя!  ",
-                "tr": "V-Convention 2026'da V-Kids & V-Teens: Reform, Transform ve Perform İçin Tamamen Hazırlar!"
-            },
-            "desc": {
-                "en": "From wide-eyed dreamers to next-generation empowered leaders, our V-Kids & V-Teens have truly blossomed spectacularly during V-Convention June 2026! Thanks to our Founders, V Ambassadors, and ISB family, the young minds of The V have learned new things, discovered new creative ways, and even defined their dreams. Check out their awesome highlights!",
-                "ar": " من الحالمين المتحمسين إلى قادة الجيل القادم المتمكنين، ازدهر الـ V-Kids وV-Teens بشكلٍ مذهل خلال V-Convention يونيو 2026! بفضل مؤسسينا والـ V Ambassadors وعائلة الـ ISB، تعلمت عقول The V الشابة أشياء جديدة، واكتشفت طرقًا إبداعية مبتكرة، بل وحتى حددت أحلامها. شاهدوا أبرز إنجازاتهم!",
-                "id": "Dari pemimpi yang tercengang hingga generasi pemimpin yang berdaya, V-Kids & V-Teens kami benar-benar berkembang secara spektakuler selama V-Convention Juni 2026! Terima kasih kepada Pendiri kami, V Ambassadors, dan keluarga ISB, para generasi muda The V telah mempelajari hal-hal baru, menemukan cara-cara kreatif baru, dan bahkan mewujudkan impian mereka. Lihatlah sorotan luar biasa mereka di bawah ini!",
-                "fr": "De jeunes rêveurs aux yeux émerveillés à une nouvelle génération de leaders autonomisés, nos V-Kids & V-Teens se sont véritablement épanouis de façon spectaculaire lors de la V-Convention Juin 2026 ! Grâce à nos Founders, aux V Ambassadors et à notre famille ISB, les jeunes esprits de The V ont appris de nouvelles choses, découvert de nouvelles façons créatives de s’exprimer et même défini leurs rêves. Découvrez leurs meilleurs moments!",
-                "ru": "От мечтателей с широко раскрытыми глазами до уверенных в себе лидеров нового поколения — наши V-Kids и V-Teens по-настоящему расцвели во время V-Convention June 2026! Благодаря нашим Основателям, V Ambassadors и семье ISB юные участники The V узнали много нового, открыли для себя новые творческие подходы и даже сформулировали свои мечты. Ознакомьтесь с их потрясающими моментами! ",
-                "tr": "Gözleri parıldayan hayalperestlerden yeni neslin güçlendirilmiş liderlerine; V-Kids & V-Teens'imiz V-Convention Haziran 2026 boyunca gerçekten göz kamaştırıcı bir gelişim gösterdi! Kurucularımıza, V Ambassador’larımıza ve ISB ailemize teşekkürler; The V'nin genç beyinleri yeni şeyler öğrendi, yeni yaratıcı yollar keşfetti ve hatta hayallerini tanımladı. Onların bu harika anlarına buradan göz atın!"
-            },
-            "link": "https://the-v.net/{{lang}}/news?id=06262026-v-kids-v-teens-at-v-convention-2026-all-set-to-reform-transform-and-perform"
+        // {
+        //     "id": "item3",
+        //     "type": "article",
+        //     "banner": {
+        //         "en": "assets/video-article/06262026-v-kids-v-teens-at-v-convention-2026-all-set-to-reform-transform-and-perform.jpg",
+        //         "ar": "assets/video-article/06262026-v-kids-v-teens-at-v-convention-2026-all-set-to-reform-transform-and-perform.jpg",
+        //         "id": "assets/video-article/06262026-v-kids-v-teens-at-v-convention-2026-all-set-to-reform-transform-and-perform.jpg",
+        //         "fr": "assets/video-article/06262026-v-kids-v-teens-at-v-convention-2026-all-set-to-reform-transform-and-perform.jpg",
+        //         "ru": "assets/video-article/06262026-v-kids-v-teens-at-v-convention-2026-all-set-to-reform-transform-and-perform.jpg",
+        //         "tr": "assets/video-article/06262026-v-kids-v-teens-at-v-convention-2026-all-set-to-reform-transform-and-perform.jpg"
+        //     },
+        //     "title": {
+        //         "en": "V-Kids & V-Teens at V-Convention 2026: All Set to Reform, Transform, and Perform!",
+        //         "ar": "الـ V-Kids وV-Teens في V-Convention 2026: كل شيء تم إعداده للإصلا، التحولـ والأداء!",
+        //         "id": "V-Kids & V-Teens di V-Convention 2026: Semua Siap Untuk Reform, Transform, dan Perform!",
+        //         "fr": "V-Kids & V-Teens à la V-Convention 2026: Prêts à Reform, Transform, et Perform!",
+        //         "ru": "V-Kids и V-Teens на V-Convention 2026: готовы Реформировать, Трансформировать и Проявить себя!  ",
+        //         "tr": "V-Convention 2026'da V-Kids & V-Teens: Reform, Transform ve Perform İçin Tamamen Hazırlar!"
+        //     },
+        //     "desc": {
+        //         "en": "From wide-eyed dreamers to next-generation empowered leaders, our V-Kids & V-Teens have truly blossomed spectacularly during V-Convention June 2026! Thanks to our Founders, V Ambassadors, and ISB family, the young minds of The V have learned new things, discovered new creative ways, and even defined their dreams. Check out their awesome highlights!",
+        //         "ar": " من الحالمين المتحمسين إلى قادة الجيل القادم المتمكنين، ازدهر الـ V-Kids وV-Teens بشكلٍ مذهل خلال V-Convention يونيو 2026! بفضل مؤسسينا والـ V Ambassadors وعائلة الـ ISB، تعلمت عقول The V الشابة أشياء جديدة، واكتشفت طرقًا إبداعية مبتكرة، بل وحتى حددت أحلامها. شاهدوا أبرز إنجازاتهم!",
+        //         "id": "Dari pemimpi yang tercengang hingga generasi pemimpin yang berdaya, V-Kids & V-Teens kami benar-benar berkembang secara spektakuler selama V-Convention Juni 2026! Terima kasih kepada Pendiri kami, V Ambassadors, dan keluarga ISB, para generasi muda The V telah mempelajari hal-hal baru, menemukan cara-cara kreatif baru, dan bahkan mewujudkan impian mereka. Lihatlah sorotan luar biasa mereka di bawah ini!",
+        //         "fr": "De jeunes rêveurs aux yeux émerveillés à une nouvelle génération de leaders autonomisés, nos V-Kids & V-Teens se sont véritablement épanouis de façon spectaculaire lors de la V-Convention Juin 2026 ! Grâce à nos Founders, aux V Ambassadors et à notre famille ISB, les jeunes esprits de The V ont appris de nouvelles choses, découvert de nouvelles façons créatives de s’exprimer et même défini leurs rêves. Découvrez leurs meilleurs moments!",
+        //         "ru": "От мечтателей с широко раскрытыми глазами до уверенных в себе лидеров нового поколения — наши V-Kids и V-Teens по-настоящему расцвели во время V-Convention June 2026! Благодаря нашим Основателям, V Ambassadors и семье ISB юные участники The V узнали много нового, открыли для себя новые творческие подходы и даже сформулировали свои мечты. Ознакомьтесь с их потрясающими моментами! ",
+        //         "tr": "Gözleri parıldayan hayalperestlerden yeni neslin güçlendirilmiş liderlerine; V-Kids & V-Teens'imiz V-Convention Haziran 2026 boyunca gerçekten göz kamaştırıcı bir gelişim gösterdi! Kurucularımıza, V Ambassador’larımıza ve ISB ailemize teşekkürler; The V'nin genç beyinleri yeni şeyler öğrendi, yeni yaratıcı yollar keşfetti ve hatta hayallerini tanımladı. Onların bu harika anlarına buradan göz atın!"
+        //     },
+        //     "link": "https://the-v.net/{{lang}}/news?id=06262026-v-kids-v-teens-at-v-convention-2026-all-set-to-reform-transform-and-perform"
             
-        },
-        {
-            "id": "item2",
-            "type": "article",
-            "banner": {
-                "en": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june.jpg",
-                "ar": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june-ar.jpg",
-                "id": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june-id.jpg",
-                "fr": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june-fr.jpg",
-                "ru": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june-ru.jpg",
-                "tr": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june-tr.jpg"
-            },
-            "title": {
-                "en": "Raise V-Convention 2026 Trailblazers at V-Kids & V-Teens this June!",
-                "ar": "انهضوا في الـ V-Kids والـ V-Teens في V-Convention 2026 أيها الرواد!",
-                "id": "Rayakan V-Convention 2026 Trailblazers di V-Kids & V-Teens bulan Juni ini!",
-                "fr": "Elever les pionniers de la V-Convention 2026 au V-Kids & V-Teens en juin prochain !",
-                "ru": "Развивайте первопроходцев V-Convention 2026 на V-Kids & V-Teens в июне этого года!",
-                "tr": "V-Convention 2026 Öncülerini Bu Haziran'da V-Kids & V-Teens ile Yükseltin!"
-            },
-            "desc": {
-                "en": "You hold the power to raise the next generation of unbelievable leaders who will Conform with confidence, Transform through creativity, Reform their habits, and create a future where they can Perform beyond all limits — and this all starts with V-Kids & V-Teens at V-Convention 2026!",
-                "ar": "أنتم تملكون القدرة على تنشئة جيلٍ جديدٍ من القادة المُلهمين الذين سيتوافقون بثقة، ويتحولون من خلال الإبداع، ويُصلحون عاداتهم، ويأدون بما يتجاوز كل الحدود - ويبدأ كل هذا مع الـ V-Kids والـ V-Teens في V-Convention 2026!",
-                "id": "Anda memegang kekuatan untuk mendidik generasi pemimpin luar biasa berikutnya yang akan Conform dengan percaya diri, Transform melalui kreativitas, Reform kebiasaan mereka, dan menciptakan masa depan di mana mereka dapat Perform melampaui semua batasan — dan semua ini dimulai dengan V-Kids & V-Teens di V-Convention 2026!",
-                "fr": "Vous avez le pouvoir d’élever la prochaine génération de leaders exceptionnels, qui sauront Conform avec assurance, Transform grâce à leur créativité, Reform leurs habitudes et bâtir un avenir où ils pourront Perform au-delà de toutes les limites — et tout cela commence par V-Kids & V-Teens à la V-Convention 2026 !",
-                "ru": "У вас есть сила вырастить следующее поколение невероятных лидеров, которые будут с уверенностью приспосабливаться, трансформироваться через творчество, реформировать свои привычки и создавать будущее, в котором они смогут действовать вне всех ограничений — и все это начинается с V-Kids & V-Teens на V-Convention 2026!",
-                "tr": "Geleceğin inanılmaz lider neslini yetiştirme gücü sizin elinizde: Özgüvenle Conform, Yaratıcılıkla Transform, Alışkanlıklarıyla Reform eden ve sınırların ötesinde Perform sergileyen... Her şey, V-Convention 2026'daki V-Kids & V-Teens ile başlıyor!"
-            },
-            "link": "https://the-v.net/{{lang}}/news?id=03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june"
+        // },
+        // {
+        //     "id": "item2",
+        //     "type": "article",
+        //     "banner": {
+        //         "en": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june.jpg",
+        //         "ar": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june-ar.jpg",
+        //         "id": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june-id.jpg",
+        //         "fr": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june-fr.jpg",
+        //         "ru": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june-ru.jpg",
+        //         "tr": "assets/video-article/03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june-tr.jpg"
+        //     },
+        //     "title": {
+        //         "en": "Raise V-Convention 2026 Trailblazers at V-Kids & V-Teens this June!",
+        //         "ar": "انهضوا في الـ V-Kids والـ V-Teens في V-Convention 2026 أيها الرواد!",
+        //         "id": "Rayakan V-Convention 2026 Trailblazers di V-Kids & V-Teens bulan Juni ini!",
+        //         "fr": "Elever les pionniers de la V-Convention 2026 au V-Kids & V-Teens en juin prochain !",
+        //         "ru": "Развивайте первопроходцев V-Convention 2026 на V-Kids & V-Teens в июне этого года!",
+        //         "tr": "V-Convention 2026 Öncülerini Bu Haziran'da V-Kids & V-Teens ile Yükseltin!"
+        //     },
+        //     "desc": {
+        //         "en": "You hold the power to raise the next generation of unbelievable leaders who will Conform with confidence, Transform through creativity, Reform their habits, and create a future where they can Perform beyond all limits — and this all starts with V-Kids & V-Teens at V-Convention 2026!",
+        //         "ar": "أنتم تملكون القدرة على تنشئة جيلٍ جديدٍ من القادة المُلهمين الذين سيتوافقون بثقة، ويتحولون من خلال الإبداع، ويُصلحون عاداتهم، ويأدون بما يتجاوز كل الحدود - ويبدأ كل هذا مع الـ V-Kids والـ V-Teens في V-Convention 2026!",
+        //         "id": "Anda memegang kekuatan untuk mendidik generasi pemimpin luar biasa berikutnya yang akan Conform dengan percaya diri, Transform melalui kreativitas, Reform kebiasaan mereka, dan menciptakan masa depan di mana mereka dapat Perform melampaui semua batasan — dan semua ini dimulai dengan V-Kids & V-Teens di V-Convention 2026!",
+        //         "fr": "Vous avez le pouvoir d’élever la prochaine génération de leaders exceptionnels, qui sauront Conform avec assurance, Transform grâce à leur créativité, Reform leurs habitudes et bâtir un avenir où ils pourront Perform au-delà de toutes les limites — et tout cela commence par V-Kids & V-Teens à la V-Convention 2026 !",
+        //         "ru": "У вас есть сила вырастить следующее поколение невероятных лидеров, которые будут с уверенностью приспосабливаться, трансформироваться через творчество, реформировать свои привычки и создавать будущее, в котором они смогут действовать вне всех ограничений — и все это начинается с V-Kids & V-Teens на V-Convention 2026!",
+        //         "tr": "Geleceğin inanılmaz lider neslini yetiştirme gücü sizin elinizde: Özgüvenle Conform, Yaratıcılıkla Transform, Alışkanlıklarıyla Reform eden ve sınırların ötesinde Perform sergileyen... Her şey, V-Convention 2026'daki V-Kids & V-Teens ile başlıyor!"
+        //     },
+        //     "link": "https://the-v.net/{{lang}}/news?id=03272026-raise-v-convention-2026-trailblazers-at-v-kids-v-teens-2026-this-june"
             
-        },
-        {
-            "id": "item1",
-            "type": "video",
-            "banner": {
-                "en": "assets/video-article/05192026-v-kids-v-teens-at-v-convention-2026-ready-to-begin-the-quest.jpg",
-                "ar": "assets/video-article/05192026-v-kids-v-teens-at-v-convention-2026-ready-to-begin-the-quest.jpg",
-                "id": "assets/video-article/05192026-v-kids-v-teens-at-v-convention-2026-ready-to-begin-the-quest.jpg",
-                "fr": "assets/video-article/05192026-v-kids-v-teens-at-v-convention-2026-ready-to-begin-the-quest.jpg",
-                "ru": "assets/video-article/05192026-v-kids-v-teens-at-v-convention-2026-ready-to-begin-the-quest.jpg",
-                "tr": "assets/video-article/05192026-v-kids-v-teens-at-v-convention-2026-ready-to-begin-the-quest.jpg"
-            },
-            "title": {
-                "en": "V-Kids & V-Teens at V-Convention 2026: Ready to Begin the Quest?",
-                "ar": "الـ V-Kids والـ V-Teens في V-Convention 2026: هل أنتم مستعد لبدء الرحلة؟",
-                "id": "V-Kids & V-Teens di V-Convention 2026: Siap memulai petualangan?",
-                "fr": "V-Kids & V-Teens à la V-Convention 2026: prêts à débuter l’aventure ?",
-                "ru": "V-Kids & V-Teens на V-Convention 2026: готовы начать квест?",
-                "tr": "V-Convention 2026'da V-Kids & V-Teens: Göreve Başlamaya Hazır Mısınız?"
-            },
-            "desc": {
-                "en": "Gear up for our grand adventure with V-Kids & V-Teens at V-Convention 2026! Happening from 17 to 21 June at the Setia SPICE Arena, the young minds of The V are in for awesome core-memory experiences! ",
-                "ar": "استعدوا لمغامرتنا الكبرى مع الـ V-Kids والـ V-Teens في V-Convention 2026! في الفترة من 17 إلى 21 يونيو في ساحة Setia SPICE، حيث ينتظر العقول الشابة في The V تجارب رائعة ستُخلّد في ذاكرتهم!",
-                "id": "Bersiaplah untuk petualangan besar kita bersama V-Kids &V-Teens di V-Convention 2026! Berlangsung dari tanggal 17 hingga 21 Juni di Setia SPICE Arena, para generasi muda The V akan mendapatkan pengalaman yang tak terlupakan!",
-                "fr": "Préparez-vous pour notre grande aventure avec V-Kids & V-Teens à la V-Convention 2026 ! Du 17 au 21 juin à la Setia SPICE Arena, les jeunes esprits de The V vont vivre des expériences inoubliables !",
-                "ru": "Приготовьтесь к грандиозному приключению с V-Kids и V-Teens на V-Convention 2026! С 17 по 21 июня в Setia SPICE Arena молодые умы The V получат потрясающие впечатления, которые останутся в памяти на всю жизнь!",
-                "tr": "V-Convention 2026'da V-Kids & V-Teens ile büyük maceramıza hazır olun! 17-21 Haziran tarihleri arasında Setia SPICE Arena'da gerçekleşecek bu etkinlikte, The V'nin genç beyinlerini unutulmaz ve harika deneyimler bekliyor!"
-            },
-            "videoId": "6396037796112"
-        }
+        // },
+        // {
+        //     "id": "item1",
+        //     "type": "video",
+        //     "banner": {
+        //         "en": "assets/video-article/05192026-v-kids-v-teens-at-v-convention-2026-ready-to-begin-the-quest.jpg",
+        //         "ar": "assets/video-article/05192026-v-kids-v-teens-at-v-convention-2026-ready-to-begin-the-quest.jpg",
+        //         "id": "assets/video-article/05192026-v-kids-v-teens-at-v-convention-2026-ready-to-begin-the-quest.jpg",
+        //         "fr": "assets/video-article/05192026-v-kids-v-teens-at-v-convention-2026-ready-to-begin-the-quest.jpg",
+        //         "ru": "assets/video-article/05192026-v-kids-v-teens-at-v-convention-2026-ready-to-begin-the-quest.jpg",
+        //         "tr": "assets/video-article/05192026-v-kids-v-teens-at-v-convention-2026-ready-to-begin-the-quest.jpg"
+        //     },
+        //     "title": {
+        //         "en": "V-Kids & V-Teens at V-Convention 2026: Ready to Begin the Quest?",
+        //         "ar": "الـ V-Kids والـ V-Teens في V-Convention 2026: هل أنتم مستعد لبدء الرحلة؟",
+        //         "id": "V-Kids & V-Teens di V-Convention 2026: Siap memulai petualangan?",
+        //         "fr": "V-Kids & V-Teens à la V-Convention 2026: prêts à débuter l’aventure ?",
+        //         "ru": "V-Kids & V-Teens на V-Convention 2026: готовы начать квест?",
+        //         "tr": "V-Convention 2026'da V-Kids & V-Teens: Göreve Başlamaya Hazır Mısınız?"
+        //     },
+        //     "desc": {
+        //         "en": "Gear up for our grand adventure with V-Kids & V-Teens at V-Convention 2026! Happening from 17 to 21 June at the Setia SPICE Arena, the young minds of The V are in for awesome core-memory experiences! ",
+        //         "ar": "استعدوا لمغامرتنا الكبرى مع الـ V-Kids والـ V-Teens في V-Convention 2026! في الفترة من 17 إلى 21 يونيو في ساحة Setia SPICE، حيث ينتظر العقول الشابة في The V تجارب رائعة ستُخلّد في ذاكرتهم!",
+        //         "id": "Bersiaplah untuk petualangan besar kita bersama V-Kids &V-Teens di V-Convention 2026! Berlangsung dari tanggal 17 hingga 21 Juni di Setia SPICE Arena, para generasi muda The V akan mendapatkan pengalaman yang tak terlupakan!",
+        //         "fr": "Préparez-vous pour notre grande aventure avec V-Kids & V-Teens à la V-Convention 2026 ! Du 17 au 21 juin à la Setia SPICE Arena, les jeunes esprits de The V vont vivre des expériences inoubliables !",
+        //         "ru": "Приготовьтесь к грандиозному приключению с V-Kids и V-Teens на V-Convention 2026! С 17 по 21 июня в Setia SPICE Arena молодые умы The V получат потрясающие впечатления, которые останутся в памяти на всю жизнь!",
+        //         "tr": "V-Convention 2026'da V-Kids & V-Teens ile büyük maceramıza hazır olun! 17-21 Haziran tarihleri arasında Setia SPICE Arena'da gerçekleşecek bu etkinlikte, The V'nin genç beyinlerini unutulmaz ve harika deneyimler bekliyor!"
+        //     },
+        //     "videoId": "6396037796112"
+        // }
     ]
 };
 
