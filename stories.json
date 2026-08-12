@@ -1,5 +1,35 @@
 [ 
-  
+  {
+    "id": "6403200464112",
+    "event": "september_2026",
+    "type": "video",
+    "title": {
+      "en": "VEL KC Tolentino Invites You to V-Convention September 2026",
+      "ar": "VEL KC Tolentino تدعوكم إلى V-Convention سبتمبر 2026",
+      "id": "VEL KC Tolentino Mengundang Anda ke V-Convention September 2026",
+      "fr": "VEL KC Tolentino vous invite à la V-Convention September 2026",
+      "ru": "VEL KC Tolentino приглашает вас на V-Convention September 2026.",
+      "tr": "VEL KC Tolentino Sizi V-Convention September 2026’a Davet Ediyor"
+    },
+    "description": {
+      "en": "This September, join VEL KC Tolentino at V-Convention 2026 and discover how you can REFORM, TRANSFORM, PERFORM — not just for yourself, but for the people whose lives you will help change along the way.",
+      "ar": "انضموا إلى VEL KC Tolentino في V-Convention 2026 في سبتمبر القادم، واكتشفوا كيف يمكنكم الإصلاح والتحول والاداء - ليس فقط لأنفسكم، بل وللآخرين الذين ستساعدون في تغيير حياتهم على طول الطريق.",
+      "id": "September ini, bergabunglah bersama VEL KC Tolentino di V-Convention 2026 dan temukan bagaimana Anda dapat REFORM, TRANSFORM, PERFORM — bukan hanya untuk diri Anda sendiri, tetapi juga untuk orang-orang yang hidupnya akan Anda bantu ubah di sepanjang perjalanan.",
+      "fr": "En septembre prochain, rejoignez VEL KC Tolentino à la V-Convention 2026 et découvrez comment vous pouvez REFORM, TRANSFORM, PERFORM — non seulement pour vous-même, mais aussi pour les personnes dont vous contribuerez à changer la vie au fil de votre parcours.",
+      "ru": "В сентябре этого года присоединяйтесь к VEL KC Tolentino на V-Convention 2026 и узнайте, как вы можете РЕФОРМИРОВАТЬСЯ, ТРАНСФОРМИРОВАТЬСЯ, ДЕЙСТВОВАТЬ — не только ради себя, но и ради тех, чьи жизни вы поможете изменить на этом пути.",
+      "tr": "Bu Eylül'de, V-Convention 2026’da VEL KC Tolentino’ya katılın ve yalnızca kendiniz için değil, yol boyunca hayatlarını değiştirmeye yardımcı olacağınız insanlar için de nasıl REFORM, TRANSFORM, PERFORM sürecini başlatacağınızı keşfedin."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/08122026-vel-kc-tolentino-invites-you-to-v-convention-september-2026.jpg",
+      "ar": "assets/video-article/september/08122026-vel-kc-tolentino-invites-you-to-v-convention-september-2026.jpg",
+      "id": "assets/video-article/september/08122026-vel-kc-tolentino-invites-you-to-v-convention-september-2026.jpg",
+      "fr": "assets/video-article/september/08122026-vel-kc-tolentino-invites-you-to-v-convention-september-2026.jpg",
+      "ru": "assets/video-article/september/08122026-vel-kc-tolentino-invites-you-to-v-convention-september-2026.jpg",
+      "tr": "assets/video-article/september/08122026-vel-kc-tolentino-invites-you-to-v-convention-september-2026.jpg"
+    },
+    "speaker": "Invite Video",
+    "day": "all"
+  },
   {
     "id": "6402206399112",
     "event": "september_2026",
