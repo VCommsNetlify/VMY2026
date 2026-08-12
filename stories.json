@@ -1,5 +1,36 @@
 [ 
   {
+    "id": "6403254239112",
+    "event": "september_2026",
+    "type": "video",
+    "title": {
+      "en": "Boarding for V-Convention September 2026 Shall Commence Shortly",
+      "ar": "سيبدأ الصعود إلى طائرة V-CONVENTION 2026 قريبًا",
+      "id": "Keberangkatan untuk V-Convention September 2026 Akan Segera Dimulai",
+      "fr": "L'embarquement pour la V-Convention September 2026 commencera sous peu",
+      "ru": "Посадка на V-Convention September 2026 начнётся в ближайшее время",
+      "tr": "V-Convention September 2026 İçin Uçağa Biniş İşlemleri Birazdan Başlıyor"
+    },
+    "description": {
+      "en": "BOARDING FOR V-CONVENTION 2026 SHALL COMMENCE SHORTLY. Your journey back HOME is just a month away! Prepare for take-off and join thousands of fellow dreamers flying in from around the world for five unforgettable days to REFORM, TRANSFORM, PERFORM.",
+      "ar": "سيبدأ الصعود إلى طائرة V-CONVENTION 2026 قريبًا. رحلة عودتكم إلى الديار على بُعد شهر واحد فقط! استعدوا للإقلاع وانضموا إلى آلاف الحالمين القادمين من جميع أنحاء العالم لخمسة أيام لا تُنسى من أجل الإصلاح والتحوّل والأنداء.",
+      "id": "KEBERANGKATAN UNTUK V-CONVENTION 2026 AKAN SEGERA DIMULAI. Perjalanan pulangmu ke RUMAH tinggal sebulan lagi! Bersiaplah untuk lepas landas dan bergabunglah dengan ribuan pemimpi lainnya yang terbang dari seluruh dunia untuk lima hari. REFORM, TRANSFORM, PERFORM yang tak terlupakan",
+      "fr": "L'EMBARQUEMENT POUR LA V-CONVENTION 2026 COMMENCERA SOUS PEU. ne reste plus qu’un mois avant votre retour CHEZ VOUS ! Préparez-vous au décollage et rejoignez des milliers d’autres rêveurs venus du monde entier pour cinq jours inoubliables afin de REFORM, TRANSFORM, PERFORM.",
+      "ru": "ПОСАДКА НА V-CONVENTION 2026 НАЧНЁТСЯ В БЛИЖАЙШЕЕ ВРЕМЯ. До вашего возвращения ДОМОЙ остался всего месяц! Готовьтесь к взлёту и присоединяйтесь к тысячам таких же мечтателей со всего мира, которые соберутся на пять незабываемых дней, чтобы РЕФОРМИРОВАТЬСЯ, ТРАНСФОРМИРОВАТЬСЯ, ДЕЙСТВОВАТЬ.",
+      "tr": "V-CONVENTION 2026 İÇİN UÇAĞA BİNİŞ İŞLEMLERİ BİRAZDAN BAŞLIYOR. EVİNİZE dönüş yolculuğunuza sadece bir ay kaldı! Kalkışa hazırlanın ve REFORM, TRANSFORM, PERFORM sloganıyla gerçekleşecek unutulmaz beş gün için dünyanın dört bir yanından gelen binlerce hayal ortağına katılın."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/08122026-boarding-for-v-convention-september-2026-shall-commence-shortly.jpg",
+      "ar": "assets/video-article/september/08122026-boarding-for-v-convention-september-2026-shall-commence-shortly.jpg",
+      "id": "assets/video-article/september/08122026-boarding-for-v-convention-september-2026-shall-commence-shortly.jpg",
+      "fr": "assets/video-article/september/08122026-boarding-for-v-convention-september-2026-shall-commence-shortly.jpg",
+      "ru": "assets/video-article/september/08122026-boarding-for-v-convention-september-2026-shall-commence-shortly.jpg",
+      "tr": "assets/video-article/september/08122026-boarding-for-v-convention-september-2026-shall-commence-shortly.jpg"
+    },
+    "speaker": "Teasers",
+    "day": "all"
+  },
+  {
     "id": "6403200464112",
     "event": "september_2026",
     "type": "video",
