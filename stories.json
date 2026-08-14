@@ -1,5 +1,36 @@
 [ 
   {
+    "id": "6403386253112",
+    "event": "september_2026",
+    "type": "video",
+    "title": {
+      "en": "VEL Phariidah Invites You to V-Convention September 2026",
+      "ar": "VEL Phariidah تدعوكم إلى V-Convention سبتمبر 2026",
+      "id": "VEL Phariidah Mengundang Anda ke V-Convention September 2026",
+      "fr": "VEL Phariidah vous invite à la V-Convention September 2026",
+      "ru": "VEL Phariidah Invites You to V-Convention September 2026",
+      "tr": "VEL Phariidah V-Convention September 2026’ya Davet Ediyor"
+    },
+    "description": {
+      "en": "For VEL Phariidah, one of the greatest rewards of this journey is seeing people rediscover hope, transform their lives, and realise what is possible for themselves and their families.",
+      "ar": "بالنسبة لـ VEL Phariidah، فإنّ من أعظم مكافآت هذه الرحلة رؤية الناس يستعيدون الأمل، ويُحولون حياتهم، ويُدركون ما هو ممكن لأنفسهم ولعائلاتهم.",
+      "id": "Bagi VEL Phariidah, salah satu imbalan terbesar dari perjalanan ini adalah melihat orang-orang menemukan kembali harapan, mengubah hidup mereka, dan menyadari berbagai kemungkinan yang dapat mereka wujudkan bagi diri sendiri maupun keluarga.",
+      "fr": "Pour VEL Phariidah, l’une des plus grandes récompenses de ce parcours est de voir les gens redécouvrir l’espoir, transformer leur vie et prendre conscience de ce dont ils sont capables, pour eux-mêmes et pour leur famille.",
+      "ru": "For VEL Phariidah, one of the greatest rewards of this journey is seeing people rediscover hope, transform their lives, and realise what is possible for themselves and their families.",
+      "tr": "VEL Phariidah için bu yolculuğun en büyük ödüllerinden biri; insanların umudu yeniden keşfettiğini, hayatlarını dönüştürdüğünü, kendileri ve aileleri için nelerin mümkün olduğunu fark ettiğini görmektir."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/08142026-vel-phariidah-invites-you-to-v-convention-september-2026.jpg",
+      "ar": "assets/video-article/september/08142026-vel-phariidah-invites-you-to-v-convention-september-2026.jpg",
+      "id": "assets/video-article/september/08142026-vel-phariidah-invites-you-to-v-convention-september-2026.jpg",
+      "fr": "assets/video-article/september/08142026-vel-phariidah-invites-you-to-v-convention-september-2026.jpg",
+      "ru": "assets/video-article/september/08142026-vel-phariidah-invites-you-to-v-convention-september-2026.jpg",
+      "tr": "assets/video-article/september/08142026-vel-phariidah-invites-you-to-v-convention-september-2026.jpg"
+    },
+    "speaker": "Invite Video",
+    "day": "all"
+  },
+  {
     "id": "6403254239112",
     "event": "september_2026",
     "type": "video",
