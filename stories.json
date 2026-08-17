@@ -1,5 +1,36 @@
 [ 
   {
+    "id": "6403574203112",
+    "event": "september_2026",
+    "type": "video",
+    "title": {
+      "en": "VP Sathi Senathirajah & VP Ferdie Tolentino Invite You to V-Convention September 2026",
+      "ar": "VP Sathi Senathirajah وVP Ferdie Tolentino يدعوانكم إلى V-Convention سبتمبر 2026",
+      "id": "VP Sathi Senathirajah & VP Ferdie Tolentino Mengundang Anda ke V-Convention September 2026",
+      "fr": "VP Sathi Senathirajah et VP Ferdie Tolentino vous invite à la V-Convention September 2026",
+      "ru": "VP Sathi Senathirajah и VP Ferdie Tolentino приглашают вас на V-Convention September 2026",
+      "tr": "VP Sathi Senathirajah & VP Ferdie Tolentino sizi V-Convention September 2026’a Davet Ediyor"
+    },
+    "description": {
+      "en": "VP Sathi Senathirajah and VP Ferdie Tolentino share why V-Convention 2026 is an experience you will want to have with your team — learning together, growing together, and raising each other to extraordinary heights.",
+      "ar": "يشارك VP Sathi Senathirajah وVP Ferdie Tolentino لماذا يُعدّ V-Convention 2026 تجربةً ترغبون أن تحظوا بها مع فريقكم - تتعلّموا معًا، وتنموا معًا، وتقوموا بالارتقاء ببعضكم البعض إلى آفاقٍ استثنائية.",
+      "id": "VP Sathi Senathirajah dan VP Ferdie Tolentino berbagi alasan mengapa V-Convention 2026 adalah pengalaman yang patut Anda alami bersama tim Anda—belajar bersama, tumbuh bersama, dan saling mengangkat satu sama lain menuju pencapaian yang luar biasa.",
+      "fr": "VP Sathi Senathirajah et VP Ferdie Tolentino vous expliquent pourquoi la V-Convention 2026 est une expérience à vivre avec votre équipe : pour apprendre ensemble, grandir ensemble et s'élever mutuellement vers des sommets extraordinaires.",
+      "ru": "VP Sathi Senathirajah и VP Ferdie Tolentino рассказывают, почему V-Convention 2026 — это опыт, который вы захотите получить вместе со своей командой: учиться вместе, расти вместе и помогать друг другу достичь невероятных высот.",
+      "tr": "VP Sathi Senathirajah ve VP Ferdie Tolentino; birlikte öğrenmek, birlikte büyümek ve birbirinizi olağanüstü yüksekliklere taşımak için V-Convention 2026'nın neden ekibinizle birlikte yaşamak isteyeceğiniz bir deneyim olduğunu paylaşıyor."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/08172026-vp-sathi-senathirajah-vp-ferdie-tolentino-invite-you-to-v-convention-september-2026.jpg",
+      "ar": "assets/video-article/september/08172026-vp-sathi-senathirajah-vp-ferdie-tolentino-invite-you-to-v-convention-september-2026.jpg",
+      "id": "assets/video-article/september/08172026-vp-sathi-senathirajah-vp-ferdie-tolentino-invite-you-to-v-convention-september-2026.jpg",
+      "fr": "assets/video-article/september/08172026-vp-sathi-senathirajah-vp-ferdie-tolentino-invite-you-to-v-convention-september-2026.jpg",
+      "ru": "assets/video-article/september/08172026-vp-sathi-senathirajah-vp-ferdie-tolentino-invite-you-to-v-convention-september-2026.jpg",
+      "tr": "assets/video-article/september/08172026-vp-sathi-senathirajah-vp-ferdie-tolentino-invite-you-to-v-convention-september-2026.jpg"
+    },
+    "speaker": "Invite Video",
+    "day": "all"
+  },
+  {
     "id": "6403386253112",
     "event": "september_2026",
     "type": "video",
