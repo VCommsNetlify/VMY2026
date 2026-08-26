@@ -1,5 +1,36 @@
 [ 
   {
+    "id": "6403999220112",
+    "event": "september_2026",
+    "type": "video",
+    "title": {
+      "en": "VP Cherian Mathew & VP Dr. Motaz Qais Invite You to V-Convention September 2026",
+      "ar": "VP Cherian Mathew وVP Dr. Motaz Qais يدعوانكم إلى V-Convention سبتمبر 2026",
+      "id": "VP Cherian Mathew & VP Dr. Motaz Qais Mengundang Anda ke V-Convention September 2026",
+      "fr": "VP Cherian Mathew et VP Dr Motaz Qais vous invite à la V-Convention September 2026",
+      "ru": "VP Cherian Mathew и VP д-р Motaz Qais приглашают вас на V-Convention September 2026",
+      "tr": "VP Cherian Mathew & VP Dr. Motaz Qais Sizi V-Convention September 2026’ya Davet Ediyor"
+    },
+    "description": {
+      "en": "The impact it has had on VP Cherian Mathew and VP Dr. Motaz Qais is an experience worth passing on.",
+      "ar": "إن الأثر الذي تركه الـ V-Convention على تجربة VP Cherian Mathew وVP Dr. Motaz Qais جدير بالمشاركة.",
+      "id": "Dampak yang dirasakan oleh VP Cherian Mathew dan VP Dr. Motaz Qais adalah pengalaman yang layak untuk dibagikan.",
+      "fr": "L’impact que cela a eu sur VP Cherian Mathew et VP Dr Motaz Qais est une expérience qui mérite d’être partagée.",
+      "ru": "То влияние, которое это оказало на VP Cherian Mathew и VP д-ра Motaz Qais, — это опыт, которым стоит поделиться.",
+      "tr": "VP Cherian Mathew ve VP Dr. Motaz Qais üzerinde bıraktığı etki, kesinlikle geleceğe aktarılmaya değer bir deneyim."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/08262026-vp-cherian-mathew-vp-dr-motaz-qais-invite-you-to-v-convention-september-2026.jpg",
+      "ar": "assets/video-article/september/08262026-vp-cherian-mathew-vp-dr-motaz-qais-invite-you-to-v-convention-september-20266.jpg",
+      "id": "assets/video-article/september/08262026-vp-cherian-mathew-vp-dr-motaz-qais-invite-you-to-v-convention-september-2026.jpg",
+      "fr": "assets/video-article/september/08262026-vp-cherian-mathew-vp-dr-motaz-qais-invite-you-to-v-convention-september-2026.jpg",
+      "ru": "assets/video-article/september/08262026-vp-cherian-mathew-vp-dr-motaz-qais-invite-you-to-v-convention-september-2026.jpg",
+      "tr": "assets/video-article/september/08262026-vp-cherian-mathew-vp-dr-motaz-qais-invite-you-to-v-convention-september-2026.jpg"
+    },
+    "speaker": "Invite Video",
+    "day": "all"
+  },
+  {
     "id": "6403574203112",
     "event": "september_2026",
     "type": "video",
