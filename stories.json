@@ -1,5 +1,36 @@
 [ 
   {
+    "id": "6404114576112",
+    "event": "september_2026",
+    "type": "video",
+    "title": {
+      "en": "VP Mohannad Qais & VP Sachin Gupta Invite You to V-Convention September 2026",
+      "ar": "VP Mohannad Qais وVP Sachin Gupta يدعوانكم إلى V-Convention سبتمبر 2026",
+      "id": "VP Mohannad Qais & VP Sachin Gupta Mengundang Anda ke V-Convention September 2026",
+      "fr": "VP Mohannad Qais & VP Sachin Gupta vous invitent à la V-Convention September 2026",
+      "ru": "VP Mohannad Qais и VP Sachin Gupta приглашают вас на V-Convention September 2026",
+      "tr": "VP Mohannad Qais & VP Sachin Gupta Sizi V-Convention September 2026’ya Davet Ediyor"
+    },
+    "description": {
+      "en": "VP Mohannad Qais and VP Sachin Gupta remind us that every person we raise carries the potential to grow far beyond what we see today.",
+      "ar": "يذكرنا VP Mohannad Qais وVP Sachin Gupta بأن كل فرد نرتقي به يحمل في داخل إمكانات هائلة للنمو تتجاوز بكثير مما نراه اليوم.",
+      "id": "VP Mohannad Qais dan VP Sachin Gupta mengingatkan kita bahwa setiap orang yang kita besarkan memiliki potensi untuk tumbuh jauh melampaui apa yang kita lihat hari ini.",
+      "fr": "VP Mohannad Qais et VP Sachin Gupta nous rappellent que chaque personne que nous accompagnons dans son développement recèle un potentiel qui va bien au-delà de ce que nous voyons aujourd’hui.",
+      "ru": "VP Mohannad Qais и VP Sachin Gupta напоминают нам, что каждый человек, которого мы поднимаем, обладает потенциалом для роста, далеко превосходящим то, что мы видим сегодня.",
+      "tr": "VP Mohannad Qais ve VP Sachin Gupta, yetiştirdiğimiz her bir insanın bugün gördüğümüzün çok ötesine geçme potansiyeli taşıdığını bize hatırlatıyor."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/08272026-vp-mohannad-qais-vp-sachin-gupta-invite-you-to-v-convention-september-2026.jpg",
+      "ar": "assets/video-article/september/08272026-vp-mohannad-qais-vp-sachin-gupta-invite-you-to-v-convention-september-2026.jpg",
+      "id": "assets/video-article/september/08272026-vp-mohannad-qais-vp-sachin-gupta-invite-you-to-v-convention-september-2026.jpg",
+      "fr": "assets/video-article/september/08272026-vp-mohannad-qais-vp-sachin-gupta-invite-you-to-v-convention-september-2026.jpg",
+      "ru": "assets/video-article/september/08272026-vp-mohannad-qais-vp-sachin-gupta-invite-you-to-v-convention-september-2026.jpg",
+      "tr": "assets/video-article/september/08272026-vp-mohannad-qais-vp-sachin-gupta-invite-you-to-v-convention-september-2026.jpg"
+    },
+    "speaker": "Invite Video",
+    "day": "all"
+  },
+  {
     "id": "6403999220112",
     "event": "september_2026",
     "type": "video",
@@ -21,7 +52,7 @@
     },
     "thumbnail": {
       "en": "assets/video-article/september/08262026-vp-cherian-mathew-vp-dr-motaz-qais-invite-you-to-v-convention-september-2026.jpg",
-      "ar": "assets/video-article/september/08262026-vp-cherian-mathew-vp-dr-motaz-qais-invite-you-to-v-convention-september-20266.jpg",
+      "ar": "assets/video-article/september/08262026-vp-cherian-mathew-vp-dr-motaz-qais-invite-you-to-v-convention-september-2026.jpg",
       "id": "assets/video-article/september/08262026-vp-cherian-mathew-vp-dr-motaz-qais-invite-you-to-v-convention-september-2026.jpg",
       "fr": "assets/video-article/september/08262026-vp-cherian-mathew-vp-dr-motaz-qais-invite-you-to-v-convention-september-2026.jpg",
       "ru": "assets/video-article/september/08262026-vp-cherian-mathew-vp-dr-motaz-qais-invite-you-to-v-convention-september-2026.jpg",
