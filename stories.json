@@ -1,5 +1,36 @@
 [ 
   {
+    "id": "6404198625112",
+    "event": "september_2026",
+    "type": "video",
+    "title": {
+      "en": "AVP Ahmed Hamza Invites You to V-Convention September 2026",
+      "ar": "AVP Ahmed Hamza يدعوكم إلى V-Convention سبتمبر 2026",
+      "id": "AVP Ahmed Hamza Mengundang Anda ke V-Convention September 2026",
+      "fr": "AVP Ahmed Hamza vous invite à la V-Convention September 2026",
+      "ru": "AVP Ahmed Hamza приглашает вас на V-Convention September 2026",
+      "tr": "AVP Ahmed Hamza Sizi V-Convention September 2026’ya Davet Ediyor"
+    },
+    "description": {
+      "en": "AVP Ahmed Hamza’s first V-Convention gave him greater belief in his journey — and immediately made him wish the people he cared about had been there to experience it too. ",
+      "ar": "منح حضور ا AVP Ahmed Hamza لأول V-Convention ثقةً أكبر في مسيرته، وجعله يتمنى لو كان أحباؤه حاضرين ليشاركوه هذه التجربة.",
+      "id": "V-Convention pertama AVP Ahmed Hamza memberinya keyakinan yang lebih besar dalam perjalanannya — dan langsung membuatnya berharap orang-orang yang ia sayangi ada di sana untuk mengalaminya juga.",
+      "fr": "La première V-Convention d’AVP Ahmed Hamza renforcé sa conviction dans son parcours — et lui a immédiatement donné envie que les personnes qui lui sont chères aient pu être là pour vivre cette expérience elles aussi. ",
+      "ru": "Первый V-Convention придал AVP Ahmed Hamza еще больше веры в свой путь — и сразу же заставил его пожалеть, что близкие ему люди не были там, чтобы тоже испытать это.",
+      "tr": "AVP Ahmed Hamza’nın ilk V-Convention deneyimi, ona çıktığı yolculukta çok daha güçlü bir inanç kazandırdı ve daha o an, önem verdiği insanların da bu deneyimi yaşamak üzere yanında olmasını diledi."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/08282026-avp-ahmed-hamza-invites-you-to-v-convention-september-2026.jpg",
+      "ar": "assets/video-article/september/08282026-avp-ahmed-hamza-invites-you-to-v-convention-september-2026.jpg",
+      "id": "assets/video-article/september/08282026-avp-ahmed-hamza-invites-you-to-v-convention-september-2026.jpg",
+      "fr": "assets/video-article/september/08282026-avp-ahmed-hamza-invites-you-to-v-convention-september-2026.jpg",
+      "ru": "assets/video-article/september/08282026-avp-ahmed-hamza-invites-you-to-v-convention-september-2026.jpg",
+      "tr": "assets/video-article/september/08282026-avp-ahmed-hamza-invites-you-to-v-convention-september-2026.jpg"
+    },
+    "speaker": "Invite Video",
+    "day": "all"
+  },
+  {
     "id": "6404177083112",
     "event": "september_2026",
     "type": "video",
