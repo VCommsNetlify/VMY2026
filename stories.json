@@ -1,5 +1,36 @@
 [ 
   {
+    "id": "6404177083112",
+    "event": "september_2026",
+    "type": "video",
+    "title": {
+      "en": "VP Yaser Khamis & VP Digvijay Singh Invite You to V-Convention September 2026",
+      "ar": "VP Yaser Khamis وVP Digvijay Singh يدعوانكم إلى V-Convention سبتمبر 2026",
+      "id": "VP Yaser Khamis & VP Digvijay Singh Mengundang Anda ke V-Convention September 2026",
+      "fr": "VP Yaser Khamis & VP Digvijay Singh vous invitent à la V-Convention September 2026",
+      "ru": "VP Yaser Khamis и VP Digvijay Singh приглашают вас на V-Convention September 2026 ",
+      "tr": "VP Yaser Khamis & VP Digvijay Singh Sizi V-Convention September 2026’ya Davet Ediyor"
+    },
+    "description": {
+      "en": "VP Yaser Khamis and VP Digvijay Singh encourage us to celebrate every win of those we are raising — then share the opportunity to go even further with us at V-Convention 2026!",
+      "ar": "جعنا VP Yaser Khamis وVP Digvijay Singh على الاحتفاء بهذه الإنجازات - ثم مشاركة فرصة تحقيق المزيد من التقدم معنا في V-Convention 2026!",
+      "id": "VP Yaser Khamis dan VP Digvijay Singh mendorong kami untuk merayakan setiap kemenangan dari mereka yang kami besarkan — lalu bagikan kesempatan untuk melangkah lebih jauh bersama kami di V-Convention 2026!",
+      "fr": "VP Yaser Khamis et VP Digvijay Singh nous encouragent à célébrer chaque victoire de ceux que nous accompagnons, puis à partager avec nous l’opportunité d’aller encore plus loin lors de la V-Convention 2026!",
+      "ru": "VP Yaser Khamis и VP Digvijay Singh призывают нас отмечать каждую победу тех, кого мы воспитываем, — а затем делиться с ними возможностью продвинуться ещё дальше вместе с нами на V-Convention 2026!",
+      "tr": "VP Yaser Khamis ve VP Digvijay Singh, yetiştirmekte olduğumuz kişilerin elde ettiği her başarıyı kutlamamızı — ardından V-Convention 2026'da bizimle daha da ileriye gitme fırsatını paylaşmamızı teşvik ediyor!"
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/08282026-vp-yaser-khamis-vp-digvijay-singh-invite-you-to-v-convention.jpg",
+      "ar": "assets/video-article/september/08282026-vp-yaser-khamis-vp-digvijay-singh-invite-you-to-v-convention.jpg",
+      "id": "assets/video-article/september/08282026-vp-yaser-khamis-vp-digvijay-singh-invite-you-to-v-convention.jpg",
+      "fr": "assets/video-article/september/08282026-vp-yaser-khamis-vp-digvijay-singh-invite-you-to-v-convention.jpg",
+      "ru": "assets/video-article/september/08282026-vp-yaser-khamis-vp-digvijay-singh-invite-you-to-v-convention.jpg",
+      "tr": "assets/video-article/september/08282026-vp-yaser-khamis-vp-digvijay-singh-invite-you-to-v-convention.jpg"
+    },
+    "speaker": "Invite Video",
+    "day": "all"
+  },
+  {
     "id": "6404114576112",
     "event": "september_2026",
     "type": "video",
