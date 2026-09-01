@@ -1,5 +1,36 @@
 [ 
   {
+    "id": "6404202191112",
+    "event": "september_2026",
+    "type": "video",
+    "title": {
+      "en": "VP Donna Imson-Lecaroz & VP TG Kintanar Invite You to V-Convention September 2026",
+      "ar": "VP Donna Imson-Lecaroz وVP TG Kintanar يدعوانكم إلى V-Convention سبتمبر 2026",
+      "id": "VP Donna Imson-Lecaroz & VP TG Kintanar Mengundang Anda ke V-Convention September 2026",
+      "fr": "VP Donna Imson-Lecaroz et VP TG Kintanar vous invite à la V-Convention September 2026",
+      "ru": "VP Donna Imson-Lecaroz и VP TG Kintanar приглашают вас на V-Convention September 2026",
+      "tr": "VP Donna Imson-Lecaroz & VP TG Kintanar Sizi V-Convention September 2026’ya Davet Ediyor"
+    },
+    "description": {
+      "en": "VP Donna Imson-Lecaroz and VP TG Kintanar highlight how raising others means teaching what we know, developing more leaders, and giving them the environment to experience that growth for themselves.",
+      "ar": "يُسلط كل من VP Donna Imson-Lecaroz وVP TG Kintanar الضوء على كيف أن الارتقاء بالآخرين يعني تعليم ما نعرفه، وتطوير المزيد من القادة، وتوفير البيئة المناسبة لهم ليختبروا هذا النمو بأنفسهم.",
+      "id": "VP Donna Imson-Lecaroz dan VP TG Kintanar menekankan tentang bagaimana mendidik orang lain berarti mengajarkan apa yang kita ketahui, mengembangkan lebih banyak pemimpin, dan memberi mereka lingkungan untuk mengalami pertumbuhan itu sendiri.",
+      "fr": "VP Donna Imson-Lecaroz et VP TG Kintanar soulignent que pour élever les autres, il faut transmettre nos connaissances, former davantage de leaders et leur offrir un environnement propice à leur épanouissement personnel.",
+      "ru": "VP Donna Imson-Lecaroz и VP TG Kintanar подчеркивают, что помогать другим — это делиться своими знаниями, воспитывать новых лидеров и создавать для них условия, в которых они смогут самостоятельно расти и развиваться.",
+      "tr": "VP Donna Imson-Lecaroz ve VP TG Kintanar, başkalarını yükseltmenin; bildiklerimizi öğretmek, daha fazla lider yetiştirmek ve onlara bu gelişimi bizzat deneyimleyebilecekleri ortamı sunmak anlamına geldiğini vurguluyor."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/09012026-vp-donna-imson-lecaroz-vp-tg-kintanar-invite-you-to-v-convention-september-2026.jpg",
+      "ar": "assets/video-article/september/09012026-vp-donna-imson-lecaroz-vp-tg-kintanar-invite-you-to-v-convention-september-2026.jpg",
+      "id": "assets/video-article/september/09012026-vp-donna-imson-lecaroz-vp-tg-kintanar-invite-you-to-v-convention-september-2026.jpg",
+      "fr": "assets/video-article/september/09012026-vp-donna-imson-lecaroz-vp-tg-kintanar-invite-you-to-v-convention-september-2026.jpg",
+      "ru": "assets/video-article/september/09012026-vp-donna-imson-lecaroz-vp-tg-kintanar-invite-you-to-v-convention-september-2026.jpg",
+      "tr": "assets/video-article/september/09012026-vp-donna-imson-lecaroz-vp-tg-kintanar-invite-you-to-v-convention-september-2026.jpg"
+    },
+    "speaker": "Invite Video",
+    "day": "all"
+  },
+  {
     "id": "6404198625112",
     "event": "september_2026",
     "type": "video",
