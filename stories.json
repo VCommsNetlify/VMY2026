@@ -1,5 +1,36 @@
 [ 
   {
+    "id": "6404412941112",
+    "event": "september_2026",
+    "type": "video",
+    "title": {
+      "en": "Switch On for V-Convention September 2026",
+      "ar": "قوموا بتشغيل وضع V-Convention سبتمبر 2026",
+      "id": "Nyalakan Mode Aktif untuk V-Convention September 2026",
+      "fr": "Préparez-vous pour la  V-Convention September 2026",
+      "ru": "Включайтесь для V-Convention September 2026",
+      "tr": "V-Convention September 2026 için Modunuzu Açın"
+    },
+    "description": {
+      "en": "10 DAYS TO GO: TURN ON V-CONVENTION MODE! It’s time to switch off the distractions and switch on your focus, excitement, and desire for change. Buckle up with all the fellow dreamers you are raising and get ready to REFORM, TRANSFORM, PERFORM at V-Convention 2026!",
+      "ar": "10 أيام للانطلاق: قوموا بتشغيل وضع الـ V-Convention! حان الوقت لوضع المشتتات في وضع الإيقاف والتركيز والحماس والرغبة في التغيير في وضع التشغيل.",
+      "id": "10 HARI LAGI: AKTIFKAN MODE V-CONVENTION! Saatnya untuk mematikan gangguan dan mengaktifkan fokus, semangat, dan keinginan Anda untuk perubahan.",
+      "fr": "PLUS QUE 10 JOURS : PASSEZ EN MODE V-CONVENTION ! Il est temps de mettre de côté les distractions et de vous concentrer sur votre enthousiasme et votre envie de changement.",
+      "ru": "ОСТАЛОСЬ 10 ДНЕЙ: ВКЛЮЧАЙТЕ РЕЖИМ V-CONVENTION! Пришло время отключить все отвлекающие факторы и включить сосредоточенность, воодушевление и стремление к переменам.",
+      "tr": "SON 10 GÜN: V-CONVENTION MODUNU AÇIN! Dikkatinizi dağıtan her şeyi kapatmanın; odağınızı, heyecanınızı ve değişim arzunuzu harekete geçirmenin zamanı geldi."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/09012026-switch-on-for-v-convention-september-2026.jpg",
+      "ar": "assets/video-article/september/09012026-switch-on-for-v-convention-september-2026.jpg",
+      "id": "assets/video-article/september/09012026-switch-on-for-v-convention-september-2026.jpg",
+      "fr": "assets/video-article/september/09012026-switch-on-for-v-convention-september-2026.jpg",
+      "ru": "assets/video-article/september/09012026-switch-on-for-v-convention-september-2026.jpg",
+      "tr": "assets/video-article/september/09012026-switch-on-for-v-convention-september-2026.jpg"
+    },
+    "speaker": "Teasers",
+    "day": "all"
+  },
+  {
     "id": "6404202191112",
     "event": "september_2026",
     "type": "video",
