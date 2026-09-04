@@ -1,5 +1,36 @@
 [ 
   {
+    "id": "6404593566112",
+    "event": "september_2026",
+    "type": "video",
+    "title": {
+      "en": "Dato Sri Vijay Eswaran & Joseph ‘Japadas’ Bismark Invite You to V-Convention September 2026",
+      "ar": "Dato Sri Vijay Eswaran وJoseph ‘Japadas’ Bismark يدعوانكم إلى V-Convention سبتمبر 2026",
+      "id": "Dato Sri Vijay Eswaran & Joseph ‘Japadas’ Bismark Mengundang Anda ke V-Convention September 2026",
+      "fr": "Dato Sri Vijay Eswaran et Joseph ‘Japadas’ Bismark vous invitent à la V-Convention September 2026",
+      "ru": "Dato Sri Vijay Eswaran и Joseph «Japadas» Bismark приглашают вас на V-Convention September 2026 ",
+      "tr": "Dato Sri Vijay Eswaran & Joseph ‘Japadas’ Bismark Sizi V-Convention September 2026’ya Davet ediyor"
+    },
+    "description": {
+      "en": "Join our Founders Dato Sri Vijay Eswaran and Joseph ‘Japadas’ Bismark, and experience the meaning of REFORM, TRANSFORM, PERFORM at V-Convention 2026!",
+      "ar": "انضموا إلى مؤسسينا Dato Sri Vijay Eswaran وJoseph ‘Japadas’ Bismark، واختبروا معنى الإصلاح والتحول والأداء في V-Convention 2026!",
+      "id": "Bergabunglah bersama para Founders kita Dato Sri Vijay Eswaran dan Joseph ‘Japadas’ Bismark, dan rasakan makna sesungguhnya dari REFORM, TRANSFORM, dan PERFORM di V-Convention 2026!",
+      "fr": "Rejoignez nos Founders Dato Sri Vijay Eswaran et Joseph ‘Japadas’ Bismark, et découvrez la signification de REFORM, TRANSFORM, PERFORM lors de la V-Convention 2026!",
+      "ru": "Присоединяйтесь к нашим основателям Dato Sri Vijay Eswaran и Joseph «Japadas» Bismark и откройте для себя истинный смысл слов РЕФОРМИРОВАТЬСЯ, ТРАНСФОРМИРОВАТЬСЯ, ДЕЙСТВОВАТЬ на V-Convention 2026!",
+      "tr": "Kurucularımız Dato Sri Vijay Eswaran ve Joseph ‘Japadas’ Bismark'a katılın; V-Convention 2026'da REFORM, TRANSFORM, PERFORM kavramlarının gerçek anlamını deneyimleyin!"
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/09042026-dato-sri-vijay-eswaran-joseph-japadas-bismark-invite-you-to-v-convention-september-2026.jpg",
+      "ar": "assets/video-article/september/09042026-dato-sri-vijay-eswaran-joseph-japadas-bismark-invite-you-to-v-convention-september-2026.jpg",
+      "id": "assets/video-article/september/09042026-dato-sri-vijay-eswaran-joseph-japadas-bismark-invite-you-to-v-convention-september-2026.jpg",
+      "fr": "assets/video-article/september/09042026-dato-sri-vijay-eswaran-joseph-japadas-bismark-invite-you-to-v-convention-september-2026.jpg",
+      "ru": "assets/video-article/september/09042026-dato-sri-vijay-eswaran-joseph-japadas-bismark-invite-you-to-v-convention-september-2026.jpg",
+      "tr": "assets/video-article/september/09042026-dato-sri-vijay-eswaran-joseph-japadas-bismark-invite-you-to-v-convention-september-2026.jpg"
+    },
+    "speaker": "Invite Video",
+    "day": "all"
+  },
+  {
     "id": "6404412941112",
     "event": "september_2026",
     "type": "video",
