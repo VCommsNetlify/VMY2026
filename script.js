@@ -34,11 +34,13 @@ const translations = {
         "sept.help_link": "HERE",
         "sept.help_suffix": "to learn how to use our newest ticket purchasing platform!",
 
+        "home-sept-hero-title": "YOUR STORY CONTINUES WITH YOU!",
+        "home-sept-hero-thankyou": "Thank you for being part of<br/><strong class=\"vcon-tag\" style=\"color: #d1ff6c; font-size: 3rem; display: inline-block; margin-top: 10px;\">V-CONVENTION 2026!</strong>",
+        "home-sept-hero-message": "The greatest journeys are the ones we continue to share.<br/>Keep the spirit of <strong class=\"vcon-tag\" style=\"color: #d1ff6c;\">REFORM, TRANSFORM, PERFORM</strong> alive by inspiring more people to be part of what you have experienced.",
+        "home-sept-hero-footer": "SEE YOU IN OUR NEXT EVENTS!",
         "home2-sept-welcome-home-title": "WELCOME HOME!",
         "home2-sept-welcome-home-subtitle": "FIND YOUR CLICKS,<br>RAISE ONE ANOTHER,<br>AND UNLOCK YOUR BEST SELVES<br>AT <span class=\"highlight-green\">V-CONVENTION 2026!</span>",
         "home2-sept-welcome-home-social": "Share photos and videos<br>from your <strong class=\"highlight-green\">#VCONVENTION2026</strong> journey<br>and tag our official channels.",
-
-
 
         // Floating CTA
         "cta.main_label": "GET TICKETS NOW!",
@@ -183,7 +185,14 @@ const translations = {
         "sept.help_prefix": "Butuh bantuan? Klik",
         "sept.help_link": "DISINI",
         "sept.help_suffix": "untuk mempelajari cara menggunakan platform pembelian tiket terbaru kami!",
-        
+
+        "home-sept-hero-title": "KISAH ANDA AKAN TERUS BERLANGSUNG BERSAMA ANDA!",
+        "home-sept-hero-thankyou": "Terima kasih telah menjadi bagian dari<br/><strong class=\"vcon-tag\" style=\"color: #d1ff6c; font-size: 3rem; display: inline-block; margin-top: 10px;\">V-CONVENTION 2026!</strong>",
+        "home-sept-hero-message": "Perjalanan terhebat adalah perjalanan yang terus kita lalui bersama.<br/>Jaga semangat <strong class=\"vcon-tag\" style=\"color: #d1ff6c;\">REFORM, TRANSFORM, PERFORM</strong> tetap hidup dengan menginspirasi lebih banyak orang untuk menjadi bagian dari apa yang telah Anda alami.",
+        "home-sept-hero-footer": "SAMPAI JUMPA DI ACARA KAMI SELANJUTNYA!",
+        "home2-sept-welcome-home-title": "SELAMAT DATANG KEMBALI!",
+        "home2-sept-welcome-home-subtitle": "TEMUKAN KLIK ANDA,<br>SALING MENDUKUNG,<br>DAN BUKA SISI TERBAIK ANDA DI<br><span class=\"highlight-green\">V-CONVENTION 2026!</span>",
+        "home2-sept-welcome-home-social": "Bagikan foto dan video<br>dariperjalanan <strong class=\"highlight-green\">#VCONVENTION2026</strong> Anda dan<br>tag saluran resmi kami.",
 
         "cta.main_label": "DAPATKAN TIKETNYA SEKARANG!",
         "cta.choose_type": "PILIH JENIS",
@@ -323,6 +332,14 @@ const translations = {
         "sept.help_prefix": "Besoin d'aide ? Cliquez",
         "sept.help_link": "ICI",
         "sept.help_suffix": "pour apprendreà utiliser notre toute nouvelle plateforme d'achat de billets !",
+
+        "home-sept-hero-title": "VOTRE HISTOIRE SE POURSUIT AVEC VOUS !",
+        "home-sept-hero-thankyou": "Merci d'avoir participé à<br/> LA<strong class=\"vcon-tag\" style=\"color: #d1ff6c; font-size: 3rem; display: inline-block; margin-top: 10px;\">V-CONVENTION 2026!</strong>",
+        "home-sept-hero-message": "Les plus beaux voyages sont ceux que nous continuons à partager.<br/>Faites vivre l'esprit de <strong class=\"vcon-tag\" style=\"color: #d1ff6c;\">REFORM, TRANSFORM, PERFORM</strong> en inspirant davantage de personnes à faire partie de ce que vous avez vécu.",
+        "home-sept-hero-footer": "À TRÈS BIENTÔT LORS DE NOS PROCHAINS ÉVÉNEMENTS !",
+        "home2-sept-welcome-home-title": "BON RETOUR CHEZ VOUS !",
+        "home2-sept-welcome-home-subtitle": "RETROUVEZ VOTRE TRIBU,<br>ÉLEVEZ-VOUS LES UNS LES AUTRES,<br>ET RÉVÉLEZ LE MEILLEUR DE VOUS-MÊMES<br>LORS DE LA <span class=\"highlight-green\">V-CONVENTION 2026!</span>",
+        "home2-sept-welcome-home-social": "Partagez vos photos et vidéos<br>de votre aventure <strong class=\"highlight-green\">#VCONVENTION2026</strong> <br>et identifiez nos canaux officiels.",
         
 
         "cta.main_label": "ACHETEZ VOS BILLETS DÈS MAINTENANT !",
@@ -462,6 +479,14 @@ const translations = {
         "sept.help_prefix": "Нужна помощь? Нажмите",
         "sept.help_link": "ЗДЕСЬ",
         "sept.help_suffix": ", чтобы узнать, как пользоваться нашей новой платформой для покупки билетов!",
+
+        "home-sept-hero-title": "ВАША ИСТОРИЯ ПРОДОЛЖАЕТСЯ ВМЕСТЕ С ВАМИ!",
+        "home-sept-hero-thankyou": "Спасибо, что стали частью<br/><strong class=\"vcon-tag\" style=\"color: #d1ff6c; font-size: 3rem; display: inline-block; margin-top: 10px;\">V-CONVENTION 2026!</strong>",
+        "home-sept-hero-message": "Самые замечательные путешествия — это те, которыми мы продолжаем делиться.<br/>Поддерживайте дух <strong class=\"vcon-tag\" style=\"color: #d1ff6c;\">РЕФОРМАЦИИ, ТРАНСФОРМАЦИИ и ДЕЙСТВИЙ</strong>, вдохновляя всё больше людей присоединиться к тому, что вы пережили.",
+        "home-sept-hero-footer": "УВИДИМСЯ НА НАШИХ СЛЕДУЮЩИХ МЕРОПРИЯТИЯХ!",
+        "home2-sept-welcome-home-title": "ДОБРО ПОЖАЛОВАТЬ ДОМОЙ!",
+        "home2-sept-welcome-home-subtitle": "НАХОДИТЕ СВОИ КЛИКИ,<br>ПОДНИМАЙТЕ ДРУГ ДРУГА<br>И РАСКРЫВАЙТЕ СВОЙ ЛУЧШИЙ ПОТЕНЦИАЛ<br>НА <span class=\"highlight-green\">V-CONVENTION 2026!</span>",
+        "home2-sept-welcome-home-social": "Делитесь фотографиями и видео<br>из вашего путешествия <strong class=\"highlight-green\">#VCONVENTION2026</strong> <br>и отмечайте наши официальные каналы.",
         
 
         "cta.main_label": "КУПИТЕ БИЛЕТЫ ПРЯМО СЕЙЧАС!",
@@ -602,6 +627,14 @@ const translations = {
         "sept.help_prefix": "Yardıma mı ihtiyacınız var? En yeni bilet satın alma platformumuzu nasıl kullanacağınızı öğrenmek için",
         "sept.help_link": "BURAYA",
         "sept.help_suffix": "tıklayın!",
+
+        "home-sept-hero-title": "HİKAYENİZ SİZİNLE DEVAM EDİYOR!",
+        "home-sept-hero-thankyou": "<br/><strong class=\"vcon-tag\" style=\"color: #d1ff6c; font-size: 3rem; display: inline-block; margin-top: 10px;\">V-CONVENTION 2026</strong>nın bir parçası olduğunuz için teşekkür ederiz!",
+        "home-sept-hero-message": "En büyük yolculuklar, paylaşmaya devam ettiklerimizdir.<br/>Deneyimlediklerinizin bir parçası olmaları için daha fazla insana ilham vererek <strong class=\"vcon-tag\" style=\"color: #d1ff6c;\">REFORM, TRANSFORM, PERFORM</strong> ruhunu yaşatmaya devam edin.",
+        "home-sept-hero-footer": "SONRAKİ ETKİNLİKLERİMİZDE GÖRÜŞMEK ÜZERE!",
+        "home2-sept-welcome-home-title": "EVİNE HOŞ GELDİN!",
+        "home2-sept-welcome-home-subtitle": "<span class=\"highlight-green\">V-CONVENTION 2026</span>'DA AYDINLANMA<br>ANLARINIZI YAKALAYIN,<br>BİRBİRİNİZİ YÜKSELTİN VE<br>EN İYİ VERSİYONUNUZU AÇIĞA ÇIKARIN!",
+        "home2-sept-welcome-home-social": "<strong class=\"highlight-green\">#VCONVENTION2026</strong>olculuğunuzdan fotoğraf<br>ve videolar paylaşın ve resmi kanallarımızı etiketleyin.",
         
 
         "cta.main_label": "BİLETİNİZİ ŞİMDİ ALIN!",
@@ -743,6 +776,14 @@ const translations = {
         "sept.help_prefix": "هل تحتاجون إلى مساعدة؟ انقروا",
         "sept.help_link": "هنا",
         "sept.help_suffix": "لمعرفة كيفية استخدام منصة شراء التذاكر الجديدة لدينا!",
+
+        "home-sept-hero-title": "قصتكم تستمر معكم!",
+        "home-sept-hero-thankyou": "شكرًا لكونكم جزءًا من <br/><strong class=\"vcon-tag\" style=\"color: #d1ff6c; font-size: 3rem; display: inline-block; margin-top: 10px;\">V-CONVENTION 2026!</strong>",
+        "home-sept-hero-message": "أعظم الرحلات هي تلك التي نواصل مشاركتها.<br/>حافظوا على روح <strong class=\"vcon-tag\" style=\"color: #d1ff6c;\">الإصلاح والتحول والأداء</strong> من خلال إلهام المزيد من الناس ليكونوا جزءًا مما قمتم بتجربته.",
+        "home-sept-hero-footer": "نراكم في فعالياتنا القادمة!",
+        "home2-sept-welcome-home-title": "مرحباً بكم في الديار!",
+        "home2-sept-welcome-home-subtitle": "اعثروا على الـ CLICKS الخاصة بكم<br>أنهضوا ببعضكم البعض<br>وأطلقوا أفضل نسخة من ذواتكم<br>في <span class=\"highlight-green\">V-CONVENTION 2026!</span>",
+        "home2-sept-welcome-home-social": "شاركونا صور وفيديوهات<br>من رحلتكم في <strong class=\"highlight-green\">#VCONVENTION2026</strong><br>ولا تنسَوا الإشارة إلى حساباتنا الرسمية.",
         
 
         "cta.main_label": "احصلوا على التذاكر الآن!",
