@@ -33,7 +33,11 @@ const translations = {
         "sept.help_prefix": "Need help? Click",
         "sept.help_link": "HERE",
         "sept.help_suffix": "to learn how to use our newest ticket purchasing platform!",
-        
+
+        "home2-sept-welcome-home-title": "WELCOME HOME!",
+        "home2-sept-welcome-home-subtitle": "FIND YOUR CLICKS,<br>RAISE ONE ANOTHER,<br>AND UNLOCK YOUR BEST SELVES<br>AT <span class=\"highlight-green\">V-CONVENTION 2026!</span>",
+        "home2-sept-welcome-home-social": "Share photos and videos<br>from your <strong class=\"highlight-green\">#VCONVENTION2026</strong> journey<br>and tag our official channels.",
+
 
 
         // Floating CTA
