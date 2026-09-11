@@ -1,5 +1,37 @@
 [ 
   {
+    "id": "september_article_4",
+    "event": "september_2026",
+    "type": "article",
+    "title": {
+      "en": "Registration Opens for #VCON2026 September",
+      "ar": "فتح باب التسجيل لـ #VCON2026 سبتمبر",
+      "id": "Pendaftaran Dibuka untuk #VCON2026 September",
+      "fr": "Ouverture des inscriptions pour le #VCON2026 de septembre",
+      "ru": "Регистрация на #VCON2026 September началась",
+      "tr": "Kayıtlar Açıldı: #VCON2026 Eylül"
+    },
+    "description": {
+      "en": "We’re excited for the journey ahead.",
+      "ar": "نحن متحمسون للرحلة القادمة.",
+      "id": "Kami antusias menyongsong perjalanan ke depan.",
+      "fr": "Nous avons hâte de vivre cette aventure qui nous attend.",
+      "ru": "Мы с нетерпением ждем предстоящего путешествия.",
+      "tr": "Önümüzdeki yolculuk için heyecanlıyız."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/09112026-registration-opens-for-vcon2026-september.jpg",
+      "ar": "assets/video-article/september/09112026-registration-opens-for-vcon2026-september.jpg",
+      "id": "assets/video-article/september/09112026-registration-opens-for-vcon2026-september.jpg",
+      "fr": "assets/video-article/september/09112026-registration-opens-for-vcon2026-september.jpg",
+      "ru": "assets/video-article/september/09112026-registration-opens-for-vcon2026-september.jpg",
+      "tr": "assets/video-article/september/09112026-registration-opens-for-vcon2026-september.jpg"
+    },
+    "speaker": "Pre-Event Article",
+    "day": "Registration Day",
+    "link": "https://the-v.net/{{lang}}/news?id=09112026-registration-opens-for-vcon2026-september"
+  },
+  {
     "id": "6404593566112",
     "event": "september_2026",
     "type": "video",
