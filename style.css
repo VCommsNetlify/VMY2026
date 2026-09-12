@@ -1,12 +1,12 @@
 /* --- 1. GLOBAL SETUP --- */
 html { scroll-behavior: smooth; scrollbar-gutter: stable;}
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, sans-serif;
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, sans-serif; }
 
 @font-face {
     font-family: 'Font Awesome 5 Brands'; 
     font-display: swap;
     src: local('Font Awesome 5 Brands'); 
-}}
+}
 body { background-color: #f4f4f4; overflow-x: hidden; }
 
 body.v-popup-open {
@@ -4582,9 +4582,9 @@ html[dir="rtl"] #v-kids .v-gold-title {
 
 /* Typography Styles */
 .vcon-title {
-    color: #cfff67; /* Mockup lime-green */
-    font-family: 'Apotek ExtraCond', 'Impact', sans-serif; /* Fallback heavy fonts if you don't have custom ones */
-    font-size: clamp(8rem, 5vw, 4.8rem);
+    color: #cfff67; 
+    font-family: 'Apotek ExtraCond', 'Impact', sans-serif; 
+    font-size: clamp(3rem, 5vw, 4.8rem); /* FIX: Minimum is now 3rem */
     font-weight: 900;
     margin: 0 0 5px 0;
     text-transform: uppercase;
@@ -4869,55 +4869,52 @@ html[dir="rtl"] #v-kids .v-gold-title {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Adds a subtle shadow to make it pop */
 }
 
-/* Responsive Fixes for Mobile */
+/* ULTRA-STRICT MOBILE FIXES */
 @media (max-width: 768px) {
-    /* 1. Stop the page from shifting off-center */
-    #home2 {
-        width: 100%;
-        overflow-x: hidden; /* Hides any invisible elements pushing the screen wide */
+    /* 1. Prevent the entire page from breaking its width limits */
+    html, body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+        max-width: 100vw !important;
     }
 
-    /* 2. Force the containers to stay perfectly centered */
-    .vcon-main-row, .vcon-text-col {
-        width: 100%;
-        max-width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin: 0;
-        padding: 0;
+    /* 2. Force the hero section to stay in bounds */
+    section#home2.hero2 {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 40px 15px !important; 
+        overflow: hidden !important;
+        box-sizing: border-box !important;
     }
 
-    /* 3. Shrink the massive title text significantly */
-    .vcon-title {
-        /* 10vw means it will perfectly scale to 10% of the screen width, so "WELCOME" always fits */
-        font-size: clamp(28px, 10vw, 45px) !important; 
-        line-height: 1.1;
-        letter-spacing: 1px; 
-        margin-top: 15px;
-        margin-bottom: 15px;
-        word-wrap: break-word;
+    /* 3. Force columns to center perfectly */
+    section#home2 .vcon-main-row, 
+    section#home2 .vcon-text-col,
+    section#home2 .vcon-social-box {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        margin: 0 auto !important;
     }
 
-    /* 4. Control the logo size */
-    .vcon-logo {
-        max-width: 200px !important; 
-        height: auto;
-        margin-bottom: 15px;
+    /* 4. Shrink the massive text */
+    section#home2 .vcon-title {
+        font-size: clamp(30px, 12vw, 45px) !important;
+        line-height: 1 !important;
+        white-space: normal !important; 
+        word-wrap: break-word !important;
+        word-break: break-word !important; 
+        margin: 15px 0 !important;
+        max-width: 100% !important;
     }
 
     /* 5. Keep the button from covering text */
-    .vcon-social-box {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 90px !important; /* Bumper for the floating tickets button */
-    }
-    
-    .vcon-subtitle {
+    section#home2 .vcon-subtitle {
         font-size: 16px !important;
-        padding: 0 10px;
+        padding-bottom: 90px !important; 
     }
 }
