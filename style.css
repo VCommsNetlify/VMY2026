@@ -4901,20 +4901,22 @@ html[dir="rtl"] #v-kids .v-gold-title {
         margin: 0 auto !important;
     }
 
-    /* 4. Shrink the massive text */
+   /* 4. Increase the title size (The Goldilocks zone) */
     section#home2 .vcon-title {
-        font-size: clamp(30px, 12vw, 45px) !important;
+        /* Changed minimum from 30px to 45px, and max from 45px to 65px */
+        font-size: clamp(45px, 15vw, 65px) !important;
         line-height: 1 !important;
         white-space: normal !important; 
         word-wrap: break-word !important;
         word-break: break-word !important; 
-        margin: 15px 0 !important;
+        margin: 15px 0 20px 0 !important; /* Added a tiny bit of space below */
         max-width: 100% !important;
     }
 
-    /* 5. Keep the button from covering text */
+    /* 5. Make the subtitle easier to read */
     section#home2 .vcon-subtitle {
-        font-size: 16px !important;
+        font-size: 18px !important; /* Bumped up from 16px */
+        line-height: 1.4 !important; /* Adds some breathing room between lines */
         padding-bottom: 90px !important; 
     }
 }
