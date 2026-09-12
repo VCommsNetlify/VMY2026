@@ -1456,21 +1456,67 @@ loadStories();
 
 const galleryBase = "assets/gallery/";
 
-// Example: Day 1 has 40 images
 const galleryData = {
-    "reg": { folder: "day0", count: 43 },
-    "day1": { folder: "day1", count: 58 },
-    "day2": { folder: "day2", count: 155 },
-    "day3": { folder: "day3", count: 81 },
-    "day4": { folder: "day4", count: 117 },
-    "day5": { folder: "day5", count: 97 },
-    "fashion": { folder: "fashionshow", count: 20 }
+    june: {
+        "reg": { folder: "day0", count: 43 },
+        "day1": { folder: "day1", count: 58 },
+        "day2": { folder: "day2", count: 155 },
+        "day3": { folder: "day3", count: 81 },
+        "day4": { folder: "day4", count: 117 },
+        "day5": { folder: "day5", count: 97 },
+        "fashion": { folder: "fashionshow", count: 20 },
+        "vkids": { folder: "vkids", count: 30 } // (Added this since you had a vkids button in HTML!)
+    },
+    september: {
+        // Change "15" to the exact number of photos in your September reg folder
+        "reg": { folder: "day0", count: 29 } 
+    }
+};
+
+// Global variable to track the active month
+let activeMonth = 'june';
+
+// NEW: Function to handle switching between June and September
+window.switchMonth = function(month, element) {
+    activeMonth = month;
+
+    // 1. Update Month Buttons Active State
+    document.querySelectorAll('.m-btn').forEach(btn => btn.classList.remove('active'));
+    if (element) {
+        element.classList.add('active');
+    }
+
+    // 2. Show/Hide Category Buttons based on the month
+    document.querySelectorAll('.g-btn').forEach(btn => {
+        if (month === 'september') {
+            // Only show buttons meant for 'both' months (Registration Day)
+            if (btn.getAttribute('data-month') === 'both') {
+                btn.style.display = 'inline-block';
+            } else {
+                btn.style.display = 'none';
+            }
+        } else {
+            // Show all buttons for June
+            btn.style.display = 'inline-block';
+        }
+    });
+
+    // 3. Automatically load 'reg' category when switching months
+    // We pass the 'reg' button element so it gets highlighted automatically
+    const regBtn = document.querySelector('.g-btn[data-month="both"]');
+    switchGallery('reg', regBtn);
 };
 
 window.switchGallery = function(cat, element) {
     const stage = document.getElementById('galleryStage');
-    const category = galleryData[cat];
-    if (!category) return;
+    
+    // NEW: Grab the data for the currently active month (june or september)
+    const currentMonthData = galleryData[activeMonth];
+    if (!currentMonthData) return; // Failsafe if month doesn't exist
+
+    // NEW: Grab the specific category from inside that month
+    const category = currentMonthData[cat];
+    if (!category) return; // Failsafe if the category doesn't exist for this month
 
     // 1. Update Buttons
     document.querySelectorAll('.g-btn').forEach(btn => btn.classList.remove('active'));
@@ -1481,13 +1527,14 @@ window.switchGallery = function(cat, element) {
         element.classList.add('active');
     } else {
         const defaultBtn = Array.from(document.querySelectorAll('.g-btn'))
-                                .find(btn => btn.innerText.toLowerCase().includes(cat) || btn.getAttribute('onclick').includes(cat));
+                                .find(btn => btn.innerText.toLowerCase().includes(cat) || (btn.getAttribute('onclick') || '').includes(cat));
         if (defaultBtn) defaultBtn.classList.add('active');
     }
 
     let html = '';
     for (let i = 1; i <= category.count; i++) {
-        const fullPath = `${galleryBase}${category.folder}/${i}.webp`;
+        // Path still works exactly the same!
+        const fullPath = `${galleryBase}${activeMonth}/${category.folder}/${i}.webp`;
         html += `
             <div class="m-item">
                 <img src="${fullPath}" loading="lazy" alt="Gallery Image">
@@ -1498,6 +1545,7 @@ window.switchGallery = function(cat, element) {
     stage.scrollLeft = 0; // Reset scroll position to start
 };
 
+// UNCHANGED: Your existing scroll function
 function scrollGallery(direction) {
     const stage = document.querySelector('.gallery-scroll-container');
     // Scroll by 80% of the visible container width to keep it smooth
@@ -1510,16 +1558,51 @@ function scrollGallery(direction) {
     }
 }
 
-loadStories(); // Assuming this is your main data loader
+// loadStories(); // Assuming this is your main data loader
 
-// Add this to ensure the gallery isn't empty
+// UNCHANGED: Initialize the gallery on page load
 document.addEventListener('DOMContentLoaded', () => {
     // We pass 'reg' as the category and null for the element 
     // because no button was physically clicked yet.
-    if (typeof switchGallery === "function") {
-        switchGallery('reg'); 
+    if (typeof window.switchGallery === "function") {
+        window.switchGallery('reg'); 
     }
 });
+
+// Global variable to let your existing gallery function know which month is currently active
+let activeGalleryMonth = 'june'; 
+
+function switchMonth(selectedMonth, buttonElement) {
+    activeGalleryMonth = selectedMonth;
+
+    // 1. Update the active state on the Month buttons
+    const monthBtns = document.querySelectorAll('.m-btn');
+    monthBtns.forEach(btn => btn.classList.remove('active'));
+    buttonElement.classList.add('active');
+
+    // 2. Show or Hide the Day buttons based on the month
+    const galleryBtns = document.querySelectorAll('.g-btn');
+    
+    galleryBtns.forEach(btn => {
+        if (selectedMonth === 'september') {
+            // Hide everything unless its data-month is "both" (Registration Day)
+            if (btn.getAttribute('data-month') === 'both') {
+                btn.style.display = 'inline-block'; 
+            } else {
+                btn.style.display = 'none';
+            }
+        } else {
+            // If June, show all buttons
+            btn.style.display = 'inline-block';
+        }
+    });
+
+    // 3. Automatically click "Registration Day" so the gallery resets cleanly
+    const regButton = document.querySelector('.g-btn[data-month="both"]');
+    if (regButton) {
+        regButton.click(); 
+    }
+}
 
 //video modal logic
 // Global variable to store the player instance

@@ -4833,3 +4833,38 @@ html[dir="rtl"] #v-kids .v-gold-title {
         font-size: 0.95rem;      /* Prevents text from overflowing mobile viewports */
     }
 }
+
+/* Container to space out the month buttons */
+.month-switcher {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between the two buttons */
+    margin-bottom: 25px;
+}
+
+/* Base style for the Month Buttons (.m-btn) */
+.m-btn {
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #555555; /* Text color */
+    background-color: #f8f9fa; /* Light gray background */
+    border: 2px solid #dddddd; /* Light gray border */
+    border-radius: 30px; /* Gives the button a rounded pill shape */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth animation when clicked or hovered */
+}
+
+/* Hover effect when the user hovers over the button */
+.m-btn:hover {
+    background-color: #e9ecef;
+    color: #333333;
+}
+
+/* Active State (The currently selected month) */
+.m-btn.active {
+    color: #ffffff; /* White text for contrast */
+    background-color: #0056b3; /* CHANGE THIS: Your brand's main color */
+    border-color: #0056b3; /* CHANGE THIS: Should match the background color above */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Adds a subtle shadow to make it pop */
+}
