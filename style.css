@@ -4868,3 +4868,39 @@ html[dir="rtl"] #v-kids .v-gold-title {
     border-color: #0056b3; /* CHANGE THIS: Should match the background color above */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Adds a subtle shadow to make it pop */
 }
+
+/* Responsive Fixes for Mobile */
+@media (max-width: 768px) {
+    /* 1. Fix the massive title text */
+    .vcon-title {
+        /* clamp() makes it dynamic: min 40px, ideal 12vw, max 60px */
+        font-size: clamp(40px, 12vw, 60px) !important; 
+        line-height: 1.1;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        word-wrap: break-word;
+    }
+
+    /* 2. Fix the logo size so it doesn't take up the whole screen */
+    .vcon-logo {
+        max-width: 250px; 
+        width: 100%;
+        height: auto;
+    }
+
+    /* 3. Prevent the "Get Tickets" button from covering the text */
+    .vcon-subtitle {
+        font-size: 16px;
+        line-height: 1.5;
+        /* Adds space at the bottom so the floating button hovers over empty space, not text */
+        padding-bottom: 80px; 
+    }
+
+    /* 4. Ensure the columns stack cleanly */
+    .vcon-main-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
