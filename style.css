@@ -4871,36 +4871,53 @@ html[dir="rtl"] #v-kids .v-gold-title {
 
 /* Responsive Fixes for Mobile */
 @media (max-width: 768px) {
-    /* 1. Fix the massive title text */
+    /* 1. Stop the page from shifting off-center */
+    #home2 {
+        width: 100%;
+        overflow-x: hidden; /* Hides any invisible elements pushing the screen wide */
+    }
+
+    /* 2. Force the containers to stay perfectly centered */
+    .vcon-main-row, .vcon-text-col {
+        width: 100%;
+        max-width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* 3. Shrink the massive title text significantly */
     .vcon-title {
-        /* clamp() makes it dynamic: min 40px, ideal 12vw, max 60px */
-        font-size: clamp(40px, 12vw, 60px) !important; 
+        /* 10vw means it will perfectly scale to 10% of the screen width, so "WELCOME" always fits */
+        font-size: clamp(28px, 10vw, 45px) !important; 
         line-height: 1.1;
+        letter-spacing: 1px; 
         margin-top: 15px;
         margin-bottom: 15px;
         word-wrap: break-word;
     }
 
-    /* 2. Fix the logo size so it doesn't take up the whole screen */
+    /* 4. Control the logo size */
     .vcon-logo {
-        max-width: 250px; 
-        width: 100%;
+        max-width: 200px !important; 
         height: auto;
+        margin-bottom: 15px;
     }
 
-    /* 3. Prevent the "Get Tickets" button from covering the text */
-    .vcon-subtitle {
-        font-size: 16px;
-        line-height: 1.5;
-        /* Adds space at the bottom so the floating button hovers over empty space, not text */
-        padding-bottom: 80px; 
-    }
-
-    /* 4. Ensure the columns stack cleanly */
-    .vcon-main-row {
+    /* 5. Keep the button from covering text */
+    .vcon-social-box {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        padding-bottom: 90px !important; /* Bumper for the floating tickets button */
+    }
+    
+    .vcon-subtitle {
+        font-size: 16px !important;
+        padding: 0 10px;
     }
 }
