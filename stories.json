@@ -1,5 +1,37 @@
 [ 
   {
+    "id": "september_article_5",
+    "event": "september_2026",
+    "type": "article",
+    "title": {
+      "en": "#VCON2026 September Day 1: Our Historical Homecoming",
+      "ar": "#VCON2026 September Day 1: Our Historical Homecoming",
+      "id": "#VCON2026 September Day 1: Our Historical Homecoming",
+      "fr": "#VCON2026 September Day 1: Our Historical Homecoming",
+      "ru": "#VCON2026 September Day 1: Our Historical Homecoming",
+      "tr": "#VCON2026 September Day 1: Our Historical Homecoming"
+    },
+    "description": {
+      "en": "Home is where hearts unite.",
+      "ar": "Home is where hearts unite.",
+      "id": "Home is where hearts unite.",
+      "fr": "Home is where hearts unite.",
+      "ru": "Home is where hearts unite.",
+      "tr": "Home is where hearts unite."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/09142026-vcon2026-september-day-1-our-historical-homecoming.jpg",
+      "ar": "assets/video-article/september/09142026-vcon2026-september-day-1-our-historical-homecoming.jpg",
+      "id": "assets/video-article/september/09142026-vcon2026-september-day-1-our-historical-homecoming.jpg",
+      "fr": "assets/video-article/september/09142026-vcon2026-september-day-1-our-historical-homecoming.jpg",
+      "ru": "assets/video-article/september/09142026-vcon2026-september-day-1-our-historical-homecoming.jpg",
+      "tr": "assets/video-article/september/09142026-vcon2026-september-day-1-our-historical-homecoming.jpg"
+    },
+    "speaker": "Wrap Up Article",
+    "day": "Day 1",
+    "link": "https://the-v.net/{{lang}}/news?id=09142026-vcon2026-september-day-1-our-historical-homecoming"
+  },
+  {
     "id": "6404997341112",
     "event": "september_2026",
     "type": "video",
