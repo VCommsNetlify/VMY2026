@@ -1,5 +1,37 @@
 [ 
   {
+    "id": "september_article_6",
+    "event": "september_2026",
+    "type": "article",
+    "title": {
+      "en": "#VCON September Day 2: Discovering the True Dream Within",
+      "ar": "#VCON September Day 2: Discovering the True Dream Within",
+      "id": "#VCON September Day 2: Discovering the True Dream Within",
+      "fr": "#VCON September Day 2: Discovering the True Dream Within",
+      "ru": "#VCON September Day 2: Discovering the True Dream Within",
+      "tr": "#VCON September Day 2: Discovering the True Dream Within"
+    },
+    "description": {
+      "en": "Is your dream strong enough for the journey? ",
+      "ar": "Is your dream strong enough for the journey? ",
+      "id": "Is your dream strong enough for the journey? ",
+      "fr": "Is your dream strong enough for the journey? ",
+      "ru": "Is your dream strong enough for the journey? ",
+      "tr": "Is your dream strong enough for the journey? "
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/09152026-vcon-september-day-2-discovering-the-true-dream-within.jpg",
+      "ar": "assets/video-article/september/09152026-vcon-september-day-2-discovering-the-true-dream-within.jpg",
+      "id": "assets/video-article/september/09152026-vcon-september-day-2-discovering-the-true-dream-within.jpg",
+      "fr": "assets/video-article/september/09152026-vcon-september-day-2-discovering-the-true-dream-within.jpg",
+      "ru": "assets/video-article/september/09152026-vcon-september-day-2-discovering-the-true-dream-within.jpg",
+      "tr": "assets/video-article/september/09152026-vcon-september-day-2-discovering-the-true-dream-within.jpg"
+    },
+    "speaker": "Wrap Up Article",
+    "day": "Day 2",
+    "link": "https://the-v.net/{{lang}}/news?id=09152026-vcon-september-day-2-discovering-the-true-dream-within"
+  },
+  {
     "id": "6405037505112",
     "event": "september_2026",
     "type": "video",
@@ -36,19 +68,19 @@
     "type": "article",
     "title": {
       "en": "#VCON2026 September Day 1: Our Historical Homecoming",
-      "ar": "#VCON2026 September Day 1: Our Historical Homecoming",
-      "id": "#VCON2026 September Day 1: Our Historical Homecoming",
-      "fr": "#VCON2026 September Day 1: Our Historical Homecoming",
-      "ru": "#VCON2026 September Day 1: Our Historical Homecoming",
-      "tr": "#VCON2026 September Day 1: Our Historical Homecoming"
+      "ar": "#VCON2026 سبتمبر اليوم الأول: لحظات العودة التاريخية",
+      "id": "Hari ke-1 #VCON2026 bulan September: Kedatangan Bersejarah Kami",
+      "fr": "#VCON2026 September Jour 1: notre retour historique",
+      "ru": "#VCON2026 Сентябрь, день 1: Наше историческое возвращение",
+      "tr": "#VCON2026 Eylül 1. Gün: Tarihi Yuvaya Dönüşümüz"
     },
     "description": {
       "en": "Home is where hearts unite.",
-      "ar": "Home is where hearts unite.",
-      "id": "Home is where hearts unite.",
-      "fr": "Home is where hearts unite.",
-      "ru": "Home is where hearts unite.",
-      "tr": "Home is where hearts unite."
+      "ar": "الديار هي المكان الذي تتحد فيه القلوب.",
+      "id": "Rumah adalah tempat di mana hati bersatu.",
+      "fr": "La maison, c'est là où les cœurs se réunissent.",
+      "ru": "Дом — это место, где объединяются сердца.",
+      "tr": "Ev, kalplerin birleştiği yerdir."
     },
     "thumbnail": {
       "en": "assets/video-article/september/09142026-vcon2026-september-day-1-our-historical-homecoming.jpg",
@@ -68,19 +100,19 @@
     "type": "video",
     "title": {
       "en": "#VCON2026 September Day 1 Highlights",
-      "ar": "#VCON2026 September Day 1 Highlights",
-      "id": "#VCON2026 September Day 1 Highlights",
-      "fr": "#VCON2026 September Day 1 Highlights",
-      "ru": "#VCON2026 September Day 1 Highlights",
-      "tr": "#VCON2026 September Day 1 Highlights"
+      "ar": "#VCON2026 سبتمبر: أبرز أحداث اليوم الأول",
+      "id": "Sorotan Hari ke-1 #VCON2026 bulan September",
+      "fr": "#VCON2026  September les temps forts du jour 1",
+      "ru": "Основные моменты первого дня сентябрьского #VCON2026",
+      "tr": "#VCON2026 Eylül 1. Gün Öne Çıkanlar!"
     },
     "description": {
       "en": "The kickoff energy from Day 1 of V-Convention September 2026 was unbeatable!",
-      "ar": "The kickoff energy from Day 1 of V-Convention September 2026 was unbeatable!",
-      "id": "The kickoff energy from Day 1 of V-Convention September 2026 was unbeatable!",
-      "fr": "The kickoff energy from Day 1 of V-Convention September 2026 was unbeatable!",
-      "ru": "The kickoff energy from Day 1 of V-Convention September 2026 was unbeatable!",
-      "tr": "The kickoff energy from Day 1 of V-Convention September 2026 was unbeatable!"
+      "ar": "كانت طاقة الانطلاق في اليوم الأول من V-Convention سبتمبر 2026 لا تُضاهى!",
+      "id": "Energi pembukaan Hari ke-1 V-Convention September 2026 sangat luar biasa!",
+      "fr": "L’énergie qui a marqué le coup d’envoi du premier jour de la V-Convention de septembre 2026 était incomparable !",
+      "ru": "Энергия, с которой стартовал первый день V-Convention September 2026, была просто непревзойденной!",
+      "tr": "V-Convention Eylül 2026'nın 1. Günündeki açılış enerjisi rakipsizdi!"
     },
     "thumbnail": {
       "en": "assets/video-article/september/09132026-vcon2026-september-day-1-highlights.jpg",
