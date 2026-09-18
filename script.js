@@ -1469,7 +1469,8 @@ const galleryData = {
     september: {
         "reg": { folder: "day0", count: 29 },
         "day1": { folder: "day1", count: 166 }, 
-        "day2": { folder: "day2", count: 164 }
+        "day2": { folder: "day2", count: 164 },
+        "day3": { folder: "day3", count: 131 }
     }
 };
 
