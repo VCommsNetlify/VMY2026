@@ -1,5 +1,36 @@
 [ 
   {
+    "id": "6405175125112",
+    "event": "september_2026",
+    "type": "video",
+    "title": {
+      "en": "#VCON2026 September Day 4 Highlights",
+      "ar": "#VCON2026 سبتمبر: أبرز أحداث اليوم الثالث",
+      "id": "Sorotan #VCON2026 September Hari ke-4",
+      "fr": "Les temps forts du 4e jour du #VCON2026 de septembre",
+      "ru": "#VCON2026 Сентябрь, основные моменты 4-го дня",
+      "tr": "#VCON2026 Eylül 4. Gün Öne Çıkanlar!"
+    },
+    "description": {
+      "en": "Founder Joseph “Japadas” Bismark, our V Ambassadors, and leaders from around the world reminded us that taking action is the key to moving forward.",
+      "ar": "لقد ذكّرنا المؤسس Joseph “Japadas” Bismark، والـ V Ambassadors، وقادة من جميع أنحاء العالم بأن اتخاذ الخطوات العملية هو السبيل للمضي قدماً؛",
+      "id": "Founder Joseph “Japadas” Bismark, V Ambassadors kami, dan para pemimpin di seluruh dunia mengingatkan kita bahwa mengambil tindakan adalah kunci untuk bergerak maju.",
+      "fr": "Le Founder Joseph “Japadas” Bismark, nos V Ambassadors et des leaders du monde entier nous ont rappelé que passer à l’action est la clé pour aller de l’avant.",
+      "ru": "Основатель Joseph «Japadas» Bismark, наши V Ambassadors и лидеры со всего мира напомнили нам, что действие — это ключ к продвижению вперёд.",
+      "tr": "Kurucu Joseph “Japadas” Bismark, V Ambassadorlarımız ve dünyanın dört bir yanından liderler, ilerlemenin anahtarının harekete geçmek olduğunu bizlere bir kez daha hatırlattı."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/09182026-vcon2026-september-day-4-highlights.jpg",
+      "ar": "assets/video-article/september/09182026-vcon2026-september-day-4-highlights.jpg",
+      "id": "assets/video-article/september/09182026-vcon2026-september-day-4-highlights.jpg",
+      "fr": "assets/video-article/september/09182026-vcon2026-september-day-4-highlights.jpg",
+      "ru": "assets/video-article/september/09182026-vcon2026-september-day-4-highlights.jpg",
+      "tr": "assets/video-article/september/09182026-vcon2026-september-day-4-highlights.jpg"
+    },
+    "speaker": "Highlights Video",
+    "day": "Day 4"
+  },
+  {
     "id": "6405085635112",
     "event": "september_2026",
     "type": "video",
