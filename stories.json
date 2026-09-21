@@ -1,5 +1,67 @@
 [ 
   {
+    "id": "6405353076112",
+    "event": "september_2026",
+    "type": "video",
+    "title": {
+      "en": "Make the Blockbuster Movie of Your Life",
+      "ar": "اصنعوا الفيلم الملحمي الخاص بحياتكم",
+      "id": "Membangun Koneksi dengan Keberanian",
+      "fr": "Réalisez le film à succès de votre vie",
+      "ru": "Снимите блокбастер своей жизни",
+      "tr": "Hayatının Gişe Rekortmeni Filmini Çek"
+    },
+    "description": {
+      "en": "“Tell us your story — because that is a story to hear.” Watch Joseph ‘Japadas’ Bismark at V-Convention September 2026 Day 2!",
+      "ar": ";أخبرونا بقصتكم - لأنها قصة تستحق أن تُروى'. شاهدوا Joseph ‘Japadas’ Bismark في اليوم الثاني من V-Convention سبتمبر 2026!",
+      "id": "“Ceritakan kisah Anda — karena itu adalah kisah yang patut didengar.” Tonton Joseph ‘Japadas’ Bismark di V-Convention September 2026 Hari ke-2!",
+      "fr": "« Racontez-nous votre histoire — car c'est une histoire qui mérite d'être entendue. » Regardez Joseph ‘Japadas’ Bismark le deuxième jour de la V-Convention September 2026 ! ",
+      "ru": "«Расскажите нам свою историю — ведь это история, которую стоит услышать». Смотрите выступление Joseph «Japadas» Bismark на V-Convention September 2026, день 2!",
+      "tr": "“Anlat bize hikâyeni — çünkü bu, dinlenmeye değer bir hikâye.” Joseph ‘Japadas’ Bismark’ın V-Convention September 2026’nın 2. Gününde gerçekleştirdiği konuşmayı kaçırmayın!"
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/09212026-make-the-blockbuster-movie-of-your-life.jpg",
+      "ar": "assets/video-article/september/09212026-make-the-blockbuster-movie-of-your-life.jpg",
+      "id": "assets/video-article/september/09212026-make-the-blockbuster-movie-of-your-life.jpg",
+      "fr": "assets/video-article/september/09212026-make-the-blockbuster-movie-of-your-life.jpg",
+      "ru": "assets/video-article/september/09212026-make-the-blockbuster-movie-of-your-life.jpg",
+      "tr": "assets/video-article/september/09212026-make-the-blockbuster-movie-of-your-life.jpg"
+    },
+    "speaker": "Founders Dailies",
+    "day": "Day 2"
+  },
+  {
+    "id": "6405351389112",
+    "event": "september_2026",
+    "type": "video",
+    "title": {
+      "en": "Build Connections with Courage",
+      "ar": "ابنوا الروابط بشجاعة",
+      "id": "Membangun Koneksi dengan Keberanian",
+      "fr": "Tissez des liens avec courage",
+      "ru": "Смело налаживайте связи",
+      "tr": "Cesaretle Bağlar Kurmak"
+    },
+    "description": {
+      "en": "“It takes courage to do what we do.” Watch Joseph ‘Japadas’ Bismark at V-Convention September 2026 Day 2!",
+      "ar": "'ما نقوم به يتطلب شجاعةً'. شاهدوا Joseph ‘Japadas’ Bismark في اليوم الثاني من V-Convention سبتمبر 2026!",
+      "id": "“Dibutuhkan keberanian untuk melakukan apa yang kita lakukan.” Tonton “Membangun Koneksi dengan Keberanian” oleh Joseph ‘Japadas’ Bismark di V-Convention September 2026 Hari ke-2!",
+      "fr": "« Il faut du courage pour faire ce que nous faisons. » Regardez Joseph ‘Japadas’ Bismark le deuxième jour de la V-Convention September 2026 ! ",
+      "ru": "«Чтобы делать то, чем мы занимаемся, нужна смелость». Смотрите выступление Joseph «Japadas» Bismark на V-Convention September 2026, день 2!",
+      "tr": "“Yaptığımız şeyi yapmak cesaret ister.” Joseph ‘Japadas’ Bismark’ın V-Convention September 2026’nın 2. Gününde gerçekleştirdiği konuşmayı kaçırmayın!"
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/09212026-build-connections-with-courage.jpg",
+      "ar": "assets/video-article/september/09212026-build-connections-with-courage.jpg",
+      "id": "assets/video-article/september/09212026-build-connections-with-courage.jpg",
+      "fr": "assets/video-article/september/09212026-build-connections-with-courage.jpg",
+      "ru": "assets/video-article/september/09212026-build-connections-with-courage.jpg",
+      "tr": "assets/video-article/september/09212026-build-connections-with-courage.jpg"
+    },
+    "speaker": "Founders Dailies",
+    "day": "Day 2"
+  },
+  {
     "id": "6405175125112",
     "event": "september_2026",
     "type": "video",
