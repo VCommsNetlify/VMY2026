@@ -1,5 +1,131 @@
 [ 
   {
+    "id": "september_article_8",
+    "event": "september_2026",
+    "type": "article",
+    "title": {
+      "en": "The Preparation Towards Peak Performance",
+      "ar": "الاستعداد لبلوغ ذروة الأداء",
+      "id": "Persiapan Menuju Performa Terbaik",
+      "fr": "La préparation pour atteindre des performances optimales",
+      "ru": "Подготовка к максимальной результативности",
+      "tr": "Zirve Performansına Hazırlık"
+    },
+    "description": {
+      "en": "V-Convention September 2026 Day 4",
+      "ar": "V-Convention سبتمبر 2026 اليوم الرابع",
+      "id": "V-Convention September 2026 Hari ke-4",
+      "fr": "V-Convention septembre 2026, Jour 4",
+      "ru": "V-Convention, сентябрь 2026 года, 4-й день",
+      "tr": "V-Convention Eylül 2026 4. Gün"
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/09222026-the-preparation-towards-peak-performance.jpg",
+      "ar": "assets/video-article/september/09222026-the-preparation-towards-peak-performance.jpg",
+      "id": "assets/video-article/september/09222026-the-preparation-towards-peak-performance.jpg",
+      "fr": "assets/video-article/september/09222026-the-preparation-towards-peak-performance.jpg",
+      "ru": "assets/video-article/september/09222026-the-preparation-towards-peak-performance.jpg",
+      "tr": "assets/video-article/september/09222026-the-preparation-towards-peak-performance.jpg"
+    },
+    "speaker": "Wrap Up Article",
+    "day": "Day 4",
+    "link": "https://the-v.net/{{lang}}/news?id=09222026-the-preparation-towards-peak-performance"
+  },
+    {
+    "id": "september_article_7",
+    "event": "september_2026",
+    "type": "article",
+    "title": {
+      "en": "Decide, Defy, Transform",
+      "ar": "قرروا، تحدوا، غيّروا",
+      "id": "Putuskan, Tantang, Transformasi",
+      "fr": "D&eacute;cider, d&eacute;fier, transformer",
+      "ru": "Принимайте решения, бросайте вызов, трансформируйтесь",
+      "tr": "Karar Ver, Meydan Oku, D&ouml;n&uuml;ş"
+    },
+    "description": {
+      "en": "V-Convention September 2026 Day 3",
+      "ar": "V-Convention سبتمبر اليوم الثالث",
+      "id": "V-Convention September 2026 Hari Ke-3",
+      "fr": "V-Convention Septembre 2026 Jour 3",
+      "ru": "V-Convention September 2026 День 3",
+      "tr": "V-Convention Eyl&uuml;l 2026 3. G&uuml;n"
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/09182026-decide-defy-transform.jpg",
+      "ar": "assets/video-article/september/09182026-decide-defy-transform.jpg",
+      "id": "assets/video-article/september/09182026-decide-defy-transform.jpg",
+      "fr": "assets/video-article/september/09182026-decide-defy-transform.jpg",
+      "ru": "assets/video-article/september/09182026-decide-defy-transform.jpg",
+      "tr": "assets/video-article/september/09182026-decide-defy-transform.jpg"
+    },
+    "speaker": "Wrap Up Article",
+    "day": "Day 3",
+    "link": "https://the-v.net/{{lang}}/news?id=09182026-decide-defy-transform"
+  },
+  {
+    "id": "6405398002112",
+    "event": "september_2026",
+    "type": "video",
+    "title": {
+      "en": "It’s Okay to Rest, Just Never Stop",
+      "ar": "It’s Okay to Rest, Just Never Stop",
+      "id": "Carilah Sudut Pandang, Bukan Opini",
+      "fr": "It’s Okay to Rest, Just Never Stop",
+      "ru": "Можно отдыхать, главное — никогда не останавливаться",
+      "tr": "Dinlenmekte Sorun Yok, Yeter Ki Asla Durmayın"
+    },
+    "description": {
+      "en": "“Breaks are good. But the question is: what do you do during those breaks?” Watch Joseph ‘Japadas’ Bismark at V-Convention September 2026 Day 3!",
+      "ar": "“Breaks are good. But the question is: what do you do during those breaks?” Watch Joseph ‘Japadas’ Bismark at V-Convention September 2026 Day 3!",
+      "id": "“Kita tidak bisa menjalani hidup berdasarkan opini semua orang.” Tonton Joseph ‘Japadas’ Bismark di V-Convention September 2026 Hari ke-3!",
+      "fr": "« Les pauses, c’est bien. Mais la question est : que faites-vous pendant ces pauses ? » Regardez Joseph « Japadas » Bismark lors de la V-Convention de septembre 2026, jour 3!",
+      "ru": "«Перерывы — это хорошо. Но вопрос в том: чем вы занимаетесь во время этих перерывов?»  Смотрите выступление Joseph «Japadas» Bismark на V-Convention September 2026, день 3!",
+      "tr": "“Mola vermek iyidir. Ama asıl soru şu: Bu molalar sırasında ne yapıyorsunuz?” Joseph ‘Japadas’ Bismark’ın V-Convention September 2026 3. Gün konuşmasını izleyin!"
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/09222026-its-okay-to-rest-just-never-stop.jpg",
+      "ar": "assets/video-article/september/09222026-its-okay-to-rest-just-never-stop.jpg",
+      "id": "assets/video-article/september/09222026-its-okay-to-rest-just-never-stop.jpg",
+      "fr": "assets/video-article/september/09222026-its-okay-to-rest-just-never-stop.jpg",
+      "ru": "assets/video-article/september/09222026-its-okay-to-rest-just-never-stop.jpg",
+      "tr": "assets/video-article/september/09222026-its-okay-to-rest-just-never-stop.jpg"
+    },
+    "speaker": "Founders Dailies",
+    "day": "Day 3"
+  },
+  {
+    "id": "6405397519112",
+    "event": "september_2026",
+    "type": "video",
+    "title": {
+      "en": "Seek Points of View, Not Opinions",
+      "ar": "ابحثوا عن وجهات النظر، لا الآراء",
+      "id": "Carilah Sudut Pandang, Bukan Opini",
+      "fr": "Recherchez des points de vue, pas des opinions",
+      "ru": "Ищите точки зрения, а не мнения",
+      "tr": "Görüş Alın, Fikir Değil"
+    },
+    "description": {
+      "en": "“We cannot live our lives based on everyone’s opinions.” Watch Joseph ‘Japadas’ Bismark at V-Convention September 2026 Day 3!",
+      "ar": "'لا يمكننا أن نعيش حياتنا بناءً على آراء الجميع'. Joseph ‘Japadas’ Bismark في اليوم الثالث من V-Convention سبتمبر 2026!",
+      "id": "“Kita tidak bisa menjalani hidup berdasarkan opini semua orang.” Tonton Joseph ‘Japadas’ Bismark di V-Convention September 2026 Hari ke-3!",
+      "fr": "« On ne peut pas vivre sa vie en se basant sur les opinions de tout le monde. » Regardez Joseph « Japadas » Bismark lors de la V-Convention de septembre 2026, jour 3 !",
+      "ru": "«Мы не можем жить, ориентируясь на мнения всех подряд». Смотрите выступление Joseph «Japadas» Bismark на V-Convention September 2026, день 3!",
+      "tr": "“Hayatımızı herkesin fikirlerine göre yaşayamayız.” Joseph ‘Japadas’ Bismark’ın V-Convention September 2026 3. Gün konuşmasını izleyin!"
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/09222026-seek-points-of-view-not-opinions.jpg",
+      "ar": "assets/video-article/september/09222026-seek-points-of-view-not-opinions.jpg",
+      "id": "assets/video-article/september/09222026-seek-points-of-view-not-opinions.jpg",
+      "fr": "assets/video-article/september/09222026-seek-points-of-view-not-opinions.jpg",
+      "ru": "assets/video-article/september/09222026-seek-points-of-view-not-opinions.jpg",
+      "tr": "assets/video-article/september/09222026-seek-points-of-view-not-opinions.jpg"
+    },
+    "speaker": "Founders Dailies",
+    "day": "Day 3"
+  },
+  {
     "id": "6405353076112",
     "event": "september_2026",
     "type": "video",
