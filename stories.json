@@ -1,5 +1,36 @@
 [ 
   {
+    "id": "6405474624112",
+    "event": "september_2026",
+    "type": "video",
+    "title": {
+      "en": "#VCON2026 September Day 5 Highlights",
+      "ar": "#VCON2026 سبتمبر: أبرز أحداث اليوم الخامس",
+      "id": "Sorotan #VCON2026 September Hari ke-5!",
+      "fr": "Les temps forts du 5e jour de la #VCON2026 Septembre",
+      "ru": "#VCON2026 Сентябрь, день 5: основные моменты",
+      "tr": "#VCON2026 Eylül 5. Gün Öne Çıkanlar!"
+    },
+    "description": {
+      "en": "V-Convention 2026 has reached its historic conclusion, marking the completion of a life-changing journey for thousands of dreamers through REFORM, TRANSFORM, PERFORM.",
+      "ar": "وصل V-Convention 2026 إلى ختامه التاريخي، مُتوجاً بذلك رحلةً غيّرت حياة الآلاف من الحالمين، وذلك عبر الإصلاح، والتحوّل، والأداء.",
+      "id": "V-Convention 2026 telah mencapai kesimpulan bersejarahnya, menandai selesainya perjalanan yang mengubah hidup bagi ribuan pemimpi melalui REFORM, TRANSFORM, PERFORM.",
+      "fr": "La V-Convention 2026 a connu une conclusion historique, marquant l’aboutissement d’un parcours qui a changé la vie de milliers de rêveurs grâce à REFORM, TRANSFORM, PERFORM.",
+      "ru": "V-Convention 2026 подошел к своему историческому завершению, ознаменовав окончание изменяющего жизнь путешествия для тысяч мечтателей под девизом «РЕФОРМИРОВАТЬСЯ, ТРАНСФОРМИРОВАТЬСЯ, ДЕЙСТВОВАТЬ».",
+      "tr": "V-Convention 2026; REFORM, TRANSFORM, PERFORM mottosuyla binlerce hayalperest için hayat değiştiren bir yolculuğun tamamlanışını simgeleyerek tarihi kapanışını gerçekleştirdi."
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/09232026-vcon2026-september-day-5-highlights.jpg",
+      "ar": "assets/video-article/september/09232026-vcon2026-september-day-5-highlights.jpg",
+      "id": "assets/video-article/september/09232026-vcon2026-september-day-5-highlights.jpg",
+      "fr": "assets/video-article/september/09232026-vcon2026-september-day-5-highlights.jpg",
+      "ru": "assets/video-article/september/09232026-vcon2026-september-day-5-highlights.jpg",
+      "tr": "assets/video-article/september/09232026-vcon2026-september-day-5-highlights.jpg"
+    },
+    "speaker": "Highlights Video",
+    "day": "Day 5"
+  },
+  {
     "id": "september_article_8",
     "event": "september_2026",
     "type": "article",
