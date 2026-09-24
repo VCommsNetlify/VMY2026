@@ -1470,7 +1470,9 @@ const galleryData = {
         "reg": { folder: "day0", count: 29 },
         "day1": { folder: "day1", count: 166 }, 
         "day2": { folder: "day2", count: 164 },
-        "day3": { folder: "day3", count: 131 }
+        "day3": { folder: "day3", count: 131 },
+        "day4": { folder: "day4", count: 200 },
+        "day5": { folder: "day5", count: 169 }
     }
 };
 
