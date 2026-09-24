@@ -1,5 +1,37 @@
 [ 
   {
+    "id": "september_article_9",
+    "event": "september_2026",
+    "type": "article",
+    "title": {
+      "en": "Launch Into the New Future",
+      "ar": "انطلاق نحو المستقبل الجديد",
+      "id": "Menuju Masa Depan yang Baru",
+      "fr": "Lancez-vous vers un nouvel avenir",
+      "ru": "Отправляйтесь навстречу новому будущему",
+      "tr": "Geleceğe Güçlü Bir Başlangıç"
+    },
+    "description": {
+      "en": "V-Convention September 2026",
+      "ar": "V-Convention سبتمبر 2026",
+      "id": "V-Convention September 2026",
+      "fr": "V-Convention Septembre 2026",
+      "ru": "V-Convention September 2026",
+      "tr": "V-Convention Eylül 2026"
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/09242026-launch-into-the-new-future.jpg",
+      "ar": "assets/video-article/september/09242026-launch-into-the-new-future.jpg",
+      "id": "assets/video-article/september/09242026-launch-into-the-new-future.jpg",
+      "fr": "assets/video-article/september/09242026-launch-into-the-new-future.jpg",
+      "ru": "assets/video-article/september/09242026-launch-into-the-new-future.jpg",
+      "tr": "assets/video-article/september/09242026-launch-into-the-new-future.jpg"
+    },
+    "speaker": "Wrap Up Article",
+    "day": "Day 5",
+    "link": "https://the-v.net/{{lang}}/news?id=09242026-launch-into-the-new-future"
+  },
+  {
     "id": "6405474624112",
     "event": "september_2026",
     "type": "video",
