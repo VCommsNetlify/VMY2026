@@ -1464,7 +1464,7 @@ const galleryData = {
         "day4": { folder: "day4", count: 117 },
         "day5": { folder: "day5", count: 97 },
         "fashion": { folder: "fashionshow", count: 20 },
-        "vkids": { folder: "vkids", count: 30 } 
+        // "vkids": { folder: "vkids", count: 30 } 
     },
     september: {
         "reg": { folder: "day0", count: 29 },
@@ -1912,6 +1912,35 @@ function toggleFaq(index) {
 // 1. DATA (Fixed the rogue comma between items)
 const vkidsData = {
     "en": [
+        {
+            "id": "item2",
+            "type": "video",
+            "banner": {
+                "en": "assets/vkids/09242026-ready-to-carry-our-dreams-forward.jpg",
+                "ar": "assets/vkids/09242026-ready-to-carry-our-dreams-forward.jpg",
+                "id": "assets/vkids/09242026-ready-to-carry-our-dreams-forward.jpg",
+                "fr": "assets/vkids/09242026-ready-to-carry-our-dreams-forward.jpg",
+                "ru": "assets/vkids/09242026-ready-to-carry-our-dreams-forward.jpg",
+                "tr": "assets/vkids/09242026-ready-to-carry-our-dreams-forward.jpg"
+            },
+            "title": {
+                "en": "V-Kids & V-Teens 2026: Ready to Carry Our Dreams Forward",
+                "ar": "الـ V-Kids والـ V-Teens 2026: مستعدون ليحملوا أحلامنا قدماً",
+                "id": "V-Kids & V-Teens 2026: Siap Mewujudkan Impian Kami",
+                "fr": "V-Kids & V-Teens 2026: Prêts à porter nos rêves vers l’avenir",
+                "ru": "V-Kids & V-Teens 2026: Готовы воплощать наши мечты в жизнь",
+                "tr": "V-Kids & V-Teens 2026: Hayallerimizi İleriye Taşımaya Hazırız"
+            },
+            "desc": {
+                "en": "Five days of learning, creating, and growing have shaped our newest Certified V-Kids & V-Teens.",
+                "ar": "لقد ساهمت خمسة أيام حافلة بالتعلم والإبداع والنمو في صقل مهارات أحدث خريجي الـ V-Kids والـ V-Teens المعتمدين.",
+                "id": "Lima hari belajar, berkreasi, dan berkembang telah membentuk Certified V-Kids & V-Teens terbaru kami.",
+                "fr": "Cinq jours d’apprentissage, de création et d’épanouissement ont façonné nos nouveaux V-Kids & V-Teens certifiés.",
+                "ru": "Пять дней обучения, творчества и развития сформировали наших новых Certified V-Kids & V-Teens.",
+                "tr": "Beş günlük öğrenme, üretme ve gelişim süreci, en yeni Certified V-Kids & V-Teens mezunlarımızı şekillendirdi."
+            },
+            "videoId": "6405530471112"
+        },
         {
             "id": "item1",
             "type": "video",
