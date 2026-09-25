@@ -1,5 +1,36 @@
 [ 
   {
+    "id": "6405612568112",
+    "event": "september_2026",
+    "type": "video",
+    "title": {
+      "en": "The V in Your Journey",
+      "ar": "The V في رحلتكم",
+      "id": "The V dalam Perjalanan Anda",
+      "fr": "The V in Your Journey",
+      "ru": "The V в вашем путешествии",
+      "tr": "Yolculuğunuzda The V"
+    },
+    "description": {
+      "en": "“The V equips you with what you need to fight the battle inside you.” Watch Joseph ‘Japadas’ Bismark at V-Convention September 2026 Day 4!",
+      "ar": "'يعدكم The V بما تحتاجونه لخوض المعركة الدائرة بداخلكم'. شاهدوا Joseph ‘Japadas’ Bismark في اليوم الرابع من V-Convention سبتمبر 2026 الآن!",
+      "id": "“The V membekali Anda dengan apa yang Anda butuhkan untuk memenangkan pertarungan di dalam diri Anda.” Saksikan Joseph ‘Japadas’ Bismark di V-Convention September 2026 Hari ke-4!",
+      "fr": "“The Vvous donne ce dont vous avez besoin pour affronter le combat qui se déroule en vous. » Découvrez Joseph ‘Japadas’ Bismark à la V-Convention Septembre 2026 – Jour 4!",
+      "ru": "«The V вооружает вас всем необходимым для борьбы внутри вас». Смотрите выступление Joseph «Japadas» Bismark на V-Convention September 2026, 4-й день!  ",
+      "tr": "“The V, içinizdeki savaşla mücadele etmek için ihtiyacınız olan şeylerle sizi donatır.” Joseph ‘Japadas’ Bismark’ın V-Convention September 2026 4. Gün konuşmasını izleyin!"
+    },
+    "thumbnail": {
+      "en": "assets/video-article/september/092502026-the-v-in-your-journey.jpg",
+      "ar": "assets/video-article/september/092502026-the-v-in-your-journey.jpg",
+      "id": "assets/video-article/september/092502026-the-v-in-your-journey.jpg",
+      "fr": "assets/video-article/september/092502026-the-v-in-your-journey.jpg",
+      "ru": "assets/video-article/september/092502026-the-v-in-your-journey.jpg",
+      "tr": "assets/video-article/september/092502026-the-v-in-your-journey.jpg"
+    },
+    "speaker": "Founders Dailies",
+    "day": "Day 4"
+  },
+  {
     "id": "6405604956112",
     "event": "september_2026",
     "type": "video",
